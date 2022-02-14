@@ -54,7 +54,8 @@ En esta tema realizaremos la configuración de Selenium Webdriver en Eclipse IDE
 
 ### 3. Postwork :memo:
 
-Esta sesión no tiene postwork.
+- Instala Java Software Development Kit (JDK), Eclipse IDE y Selenium Java Client & Webdriver en tu maquina.
+- Configura Eclipse IDE con Selenium para que tengas todo listo para la proxima sesión!!
 
 <br/>
 
