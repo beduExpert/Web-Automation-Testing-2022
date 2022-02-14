@@ -1,68 +1,60 @@
-## Sesión 1: Nombre de sesión 🤖
+## Sesión 1: Selenium Installation & Setup 🤖
 
 <img src="../images/android-kotlin.png" align="right" height="120" hspace="10">
 <div style="text-align: justify;">
 
 ### 1. Objetivos :dart: 
 
-- Reconocer el IDE Android Studio con el que desarrollan aplicaciones móviles.
-- Conocer la estructura de un proyecto android y todos los archivos generados por el IDE
+- Establecer la instalación y configurar correctamente Selenium
 
 ### 2. Contenido :blue_book:
-
-Android Studio te ayudará a desarrollar tu app más productivamente a escala. Android Studio ofrece las herramientas más rápidas para crear apps de Android. Codifica más rápido. Codifica con seguridad. Crea el mejor código. Elimina tareas tediosas. Compila sin límites.
+Selenium es un entorno de pruebas que se utiliza para comprobar si el software que se está desarrollando funciona correctamente, cabe acotar que, con selenium solo se pueden probar las aplicaciones web. Esta herramienta permite: grabar, editar y depurar casos de pruebas que se pueden automatizar. Lo interesante de Selenium es que se pueden editar acciones o crearlas desde cero. También ayuda mucho en las pruebas de regresión porque consigue pruebas automatizadas que luego se pueden reutilizar cuando se necesite. 
+  
+En esta sesión realizaremos todas las instalaciones y configuraciones necesarias para que selenium funcione de forma correcta. 
 
 ---
 
 <img src="images/tools.png" align="right" height="90"> 
 
-#### <ins>Tema 1</ins>
+#### <ins>Tema 1: Instalación de Java Software Development Kit (JDK)</ins>
 
-Se detalla como crear un proyecto android desde nuestra IDE __Android Studio__, viendo el significado de los distintos campos y opciones para su configuración.
-
-- [**`EJEMPLO 1`**](./Ejemplo-01)
+Un software development kit (SDK) es un conjunto de herramientas que ayudan a desarrollar aplicaciones para hardware o software específicos o en un lenguaje de programación concretos. En algunos lenguajes interpretados, el SDK puede ser idéntico al sistema en tiempo de ejecución. Algunos fabricantes utilizan denominaciones alternativas para sus paquetes de software en lugar de SDK.Oracle, por ejemplo, llama JDK (Java (SE) Development Kit) a su paquete para el lenguaje de programación que distribuye, Java.
+  
+En esta tema realizaremos la instalacion del Java (SE) Development Kit
 
 ---
 
 <img src="images/structure.png" align="right" height="90"> 
 
-#### <ins>Tema 2</ins>
-
-Una vez que el proyecto está creado, la estructura o forma en la que se organiza es de suma importancia. No sólo nos ayuda a mantener nuestro código organizado, sino que también es importante para el funcionamiento de nuestra nueva app.
-
-- [**`EJEMPLO 2`**](./Ejemplo-02)
-- [**`RETO 1`**](./Reto-01)
+#### <ins>Tema 2: Instalación de Eclipse IDE. </ins>
+  
+Eclipse es un proyecto de código abierto cuyo principal objetivo es proporcionar una plataforma de desarrollo abierta e independiente de los fabricantes de software además de una serie de frameworks para construir software.
+    
+En esta tema realizaremos la instalacion de Eclipse IDE.
+  
 ---
 
 <img src="images/emulator.jpg" align="right" height="90"> 
 
-#### <ins>Tema 3</ins>
+#### <ins>Tema 3: Instalación de Selenium JAVA Cliente Driver + Webdriver</ins>
 
-Ahora que tenemos mayor conocimiento de nuestro proyecto, vamos a configurar un emulador de algún dispositivo móvil para poder correr nuestra aplicación! :iphone:. Es decir, vamos a correr un dispositivo móvil virtual en nuestra computadora para simular la funcionalidad de nuestra app.
-
-**Nota al Experto:**
+Es una herramienta de selenium que sirve para manejar un navegador de forma nativa, como lo haría un usuario, ya sea localmente o en una máquina remota usando el servidor Selenium, marca un salto adelante en términos de automatización del navegador.
   
- + Recuerda que cada subtema puede contener un ejemplo, un reto, o más de un ejemplo y más de un reto. Recuerda borrar esta línea después de haberla leído.
-- [**`RETO 2`**](./Reto-02)
+En esta tema realizaremos la instalacion de Selenium JAVA Cliente Driver y Selenium Webdriver
+
 ---
 
 <img src="images/chaomi.png" align="right" height="110"> 
 
-#### <ins>Tema 4</ins>
+#### <ins>Tema 4: Configuración de Eclipse IDE con Selenium WebDriver</ins>
 
-Basta de emulaciones, ahora veamos como funciona en el mundo real. Nuestra app, por muy sencilla que sea ya está lista para ser instalada en un dispositivo móvil y para verla en acción.
+En esta tema realizaremos la configuración de Selenium Webdriver en Eclipse IDE, para que todo este listo para comenzar con la sesión 02.
 
-**Nota al Experto:**
-  
- + Recuerda que cada subtema puede contener un ejemplo, un reto, o más de un ejemplo y más de un reto. Recuerda borrar esta línea después de haberla leído.
-- [**`RETO 3`**](./Reto-03)
 ---
 
 ### 3. Postwork :memo:
 
-Encuentra las indicaciones y consejos para reflejar los avances de tu proyecto de este módulo.
-
-- [**`POSTWORK SESIÓN 1`**](./Postwork/)
+Esta sesión no tiene postwork.
 
 <br/>
 
