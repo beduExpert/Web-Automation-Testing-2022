@@ -65,8 +65,11 @@ En esta tema realizaremos la instalacion de Selenium JAVA Cliente Driver + Selen
 
 
 #### <ins>Tema 4: Configuración de Eclipse IDE con Selenium WebDriver</ins>
+Eclipse es un entorno de desarrollo sobre el que se pueden montar mediante plugins herramientas de desarrollo para cualquier lenguaje de programación.
 
-En esta tema realizaremos la configuración de Selenium Webdriver en Eclipse IDE, para que todo este listo para comenzar con la sesión 02.
+Pero para poder integrarse correctamente con Selenium requiere de la importación de sus librerías al proyecto en el que se está trabajando, sin esta integración, el eclipse no será capaz de interpretar los comandos de selenium y generará errores en el proceso de compilación.
+
+En esta tema realizaremos la configuración de Selenium Webdriver en Eclipse IDE.
 
   [Manual de configuración de Eclipse IDE con Selenium WebDriver](./Ejemplo-04)
 
