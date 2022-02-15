@@ -20,18 +20,17 @@ Ahora que sabes como funciona la integración de Selenium con el IDE, copia este
   <dependencies>
 	<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
 	<dependency>
-	    <groupId>org.seleniumhq.selenium</groupId>
-	    <artifactId>selenium-java</artifactId>
+		<groupId>org.seleniumhq.selenium</groupId>
+		<artifactId>selenium-java</artifactId>
  		<scope>test</scope>
 	</dependency>
     
 	<dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>4.11</version>
-      <scope>test</scope>
-    </dependency>
-
+		<groupId>junit</groupId>
+		<artifactId>junit</artifactId>
+		<version>4.11</version>
+		<scope>test</scope>
+	</dependency>
   </dependencies>
 </project>
 
@@ -50,10 +49,10 @@ Ahora que sabes como funciona la integración de Selenium con el IDE, copia este
   > Agregar la version de selenium al archivo pom.xml
     
    ```xml 
-    <dependency>
-	    <groupId>org.seleniumhq.selenium</groupId>
-	    <artifactId>selenium-java</artifactId>
-	    <version>4.1.2</version>
+	<dependency>
+		<groupId>org.seleniumhq.selenium</groupId>
+		<artifactId>selenium-java</artifactId>
+		<version>4.1.2</version>
  		<scope>test</scope>
 	</dependency>
    ```
