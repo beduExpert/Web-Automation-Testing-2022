@@ -26,5 +26,7 @@ Estos son los pasos requeridos para la instalación:
   ><img src="assets/eclipse_paso2.png"  width="360" > 
 * Finalizado la instalación se habilitara un botón "Launch" realizar click en el para abrir Eclipse.
   ><img src="assets/eclipse_paso3.png"  width="360" > 
-* Al abrir Eclipse tendremos que configurar la ruta del workspace
+* Al abrir Eclipse tendremos que seleccionar la ruta del workspace, puede dejarse la ruta por defecto, realizar click en "Launch"
   ><img src="assets/eclipse_paso4.png"  width="360" > 
+* De esta forma veremos la pagina de inicio de Eclipse IDE
+  ><img src="assets/eclipse_paso5.png"  width="360" > 
