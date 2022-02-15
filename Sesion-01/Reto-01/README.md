@@ -1,59 +1,60 @@
-# Reto #: Nombre del reto
+# Reto #1: Dependencias Selenium
 
 ## Objetivo
 
-- Implementar los dos tipos de errores y gestionarlos mediante las opciones del dashboard de Crashlytics.
+- Analizar el comportamiento en la ejecución del script de prueba cuando no se importan las librerias de selenium webdriver.
 
 ## Desarrollo
 
-Ya conociste el primer tipo de error: el producido en el Ejemplo 2. Este evento es de tipo Falla y es provocado cuando la app obtiene una excepción y no sabe cómo responder, por lo que el resultado es el cierre inesperado. 
+Ahora que sabes como funciona la integración de Selenium con el IDE, copia este contenido en tu archivo pom.xml y ejecuta tu script de pruebas.
 
-El segundo tipo es Error recuperable. Este tipo sucede cuando agregamos un bloque de try / catch. Si el código dentro del try falla, es posible almacenar la excepción y Crashlytics enviará el error en algún momento, pues este error no tiene la misma prioridad que el otro y tardará más en enviarlo.
+#### Ejemplo del archivo pom.xml
 
-Notas: 
-- Crashlytics guarda máximo 64 kb del log en memoria para evitar saturar la app.
-- Los errores pueden tardar hasta 5 minutos en aparecer, por lo que debe tenerse paciencia si no aparecen rápido.
+```xml
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.bedu.web_automation_course</groupId>
+  <artifactId>BeduWebAutomationCourse</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
 
-Ahora que reconoces los tipos de errores y las formas de gestionarlos, sigue las indicaciones expuestas a continuación para resolver el reto 2.
+  <dependencies>
+	<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+	<dependency>
+	    <groupId>org.seleniumhq.selenium</groupId>
+	    <artifactId>selenium-java</artifactId>
+ 		<scope>test</scope>
+	</dependency>
+    
+	<dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.11</version>
+      <scope>test</scope>
+    </dependency>
 
-1. Genera un error recuperable dentro del clickListener del botón Crash.
-2. Después, genera una falla en el mismo evento, de modo que cierre la app.
-3. Gestiona los errores en Crashlytics:
-    - **a)** Agrega notas (Comentarios) a los errores generados, previamente
-    - **b)** Silencia el error indicando que ya corregiste el error y no tiene caso que te siga notificando, por lo que es posible cancelar los avisos.
-    - **c)** Cierra el error indicando que ya fue solucionado.
+  </dependencies>
+</project>
 
-    </br>
+```
+
+#### 1. ¿Puedes identificar cual es el error?
+#### 2. ¿Puedes solucionarlo?
 
 <details>
-    <summary>Solución 1-2</summary>
-    
-  ```kotlin
-  binding.btnCrash.setOnClickListener {
-  //1
-    try {
-        Log.e(TAG, "handleClick: " + 0 / 0)
-    } catch (e: Exception) {
-        FirebaseCrashlytics.getInstance().recordException(e)
-    }
-  //2
-    throw RuntimeException("Test Crash") // Force a crash
-  }
-  ```
+  <summary>Solución 1 </summary>
+  > La dependencia de selenium en el archivo pom.xml no tiene la versión. por ende cuando se ejecuta el proyecto, maven no es capaz de importarlas correctamente, esto genera un error.
 </details>
-
-  </br>
 
 <details>
-  <summary>Solución 3</summary>
-a)
-    <img src="assets/01.png" width="50%"/>
-
-b)
-    <img src="assets/02.png" width="50%"/>
+  <summary>Solución 2 </summary>
+  > Agregar la version de selenium al archivo pom.xml
     
-c)
-    <img src="assets/03.png" width="50%"/>
+   ```xml 
+    <dependency>
+	    <groupId>org.seleniumhq.selenium</groupId>
+	    <artifactId>selenium-java</artifactId>
+	    <version>4.1.2</version>
+ 		<scope>test</scope>
+	</dependency>
+   ```
 </details>
-
-</br>
