@@ -6,10 +6,6 @@
 
 ## Desarrollo
 
->**💡 Nota para experto(a)**
->
-> Este es un ejemplo por si el experto necesita tener en cuenta un punto clave durante el ejemplo.
->Si no es necesario, puedes borrar esta nota.
 
 * Para realizar la instalación  primero deberemos dirigirnos a la pagina oficial de Selenium: https://www.selenium.dev/downloads/ 
 * Nos dirigirnos a la sección "Selenium Clients and WebDriver Language Bindings"
