@@ -18,7 +18,7 @@ En esta sesión realizaremos todas las instalaciones y configuraciones necesaria
 #### <ins>Tema 1: Instalación de Java Software Development Kit (JDK)</ins>
 
 Un software development kit (SDK) es un conjunto de herramientas que ayudan a desarrollar aplicaciones para hardware o software específicos o en un lenguaje de programación concretos. En algunos lenguajes interpretados, el SDK puede ser idéntico al sistema en tiempo de ejecución. Algunos fabricantes utilizan denominaciones alternativas para sus paquetes de software en lugar de SDK.Oracle, por ejemplo, llama JDK (Java (SE) Development Kit) a su paquete para el lenguaje de programación que distribuye, Java.
-  ><img src="./JDK" width="360">    
+  ><img src="./JDK.png" width="360">    
 En esta tema realizaremos la instalacion del Java (SE) Development Kit
   - [Manual Instalación de Java Software Development Kit (JDK)](./Ejemplo-01)
 
@@ -29,7 +29,7 @@ En esta tema realizaremos la instalacion del Java (SE) Development Kit
 #### <ins>Tema 2: Instalación de Eclipse IDE. </ins>
   
 Eclipse es un proyecto de código abierto cuyo principal objetivo es proporcionar una plataforma de desarrollo abierta e independiente de los fabricantes de software además de una serie de frameworks para construir software.
-   ><img src="./eclipse" width="360">     
+   ><img src="./eclipse.png" width="360">     
 En esta tema realizaremos la instalacion de Eclipse IDE.
    - [Manual Instalación de de Eclipse IDE](./Ejemplo-02)
   
