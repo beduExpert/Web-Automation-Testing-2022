@@ -106,4 +106,5 @@ public class BeduSesion01 {
 }
   ```
 </details>
-* Ahora ejecutamos el script, para eso solo basta con hacer click en el botón de "run" de eclipse. :rocket:
+
+#### Ahora ejecutamos el script, para eso solo basta con hacer click en el botón de "run" de eclipse. :rocket:
