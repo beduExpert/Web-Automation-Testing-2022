@@ -55,7 +55,8 @@ En esta tema realizaremos la instalacion de Selenium JAVA Cliente Driver + Selen
  
   #### ¿Qué es un Selenium IDE?
   > Selenium IDE es una extensión de navegador fácil de usar que registra las acciones de un usuario en el navegador utilizando los comandos existentes de Selenium, con parámetros definidos por el contexto de cada elemento, también proporciona una excelente manera de aprender la sintaxis de Selenium. 
-   ><img src="./seleniumIDE.png" width="360">  
+  
+  ><img src="./seleniumIDE.png" width="360">  
   
 [Manual Selenium JAVA Cliente Driver + Webdriver + IDE](./Ejemplo-03)
 
