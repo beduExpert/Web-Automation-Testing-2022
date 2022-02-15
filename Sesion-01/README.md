@@ -37,15 +37,23 @@ En esta tema realizaremos la instalacion de Eclipse IDE.
 
 
 
-#### <ins>Tema 3: Instalación de Selenium JAVA Cliente Driver + Webdriver</ins>
+#### <ins>Tema 3: Instalación de Selenium JAVA Cliente Driver + Webdriver + IDE</ins>
 
-Es una herramienta que permite interactuar con los navegadores directamente con la ayuda de scripts de automatización. Admite varias plataformas y la ejecución es más rápida que Selenium Remote Control (Selenium RC, que ahora está en desuso) o IDE. Selenium Webdriver proporciona múltiples librerías de clientes para lenguajes de programación como Java, Python, Ruby, C#, etc. para crear los scripts de automatización de pruebas de Selenium. 
+En esta tema realizaremos la instalacion de Selenium JAVA Cliente Driver + Selenium Webdriver + IDE
+  ><img src="./arquitectura_selenium.png" width="360">  
+
+#### ¿Qué es JAVA Cliente Driver?
+  > Es un controlador que le permite a los comandos de Java crear secuencias de comandos que interactúen con Selenium Server (Remote WebDriver) o crear secuencias de comandos locales de Selenium WebDriver.
+#### ¿Qué es un Selenium Webdriver?
+  > Es una herramienta que permite interactuar con los navegadores directamente con la ayuda de scripts de automatización. Admite varias plataformas y la ejecución es más rápida que Selenium Remote Control (Selenium RC, que ahora está en desuso) o IDE. Selenium Webdriver proporciona múltiples librerías de clientes para lenguajes de programación como Java, Python, Ruby, C#, etc. para crear los scripts de automatización de pruebas de Selenium. 
   
-La comunicación entre estos clientes y el servidor ocurre a través de un protocolo de cable JSON. Por ejemplo: cuando se da un comando para abrir un navegador con una URL específica, toda la información necesaria, como el tipo de navegador, la versión del navegador y las capacidades deseadas, se usará para crear una carga JSON. El cliente enviará esta carga útil que contiene toda la información requerida a través del protocolo JSON al cliente HTTP. Luego, el servidor identificaría el tipo de navegador en el que se debe ejecutar el comando y ejecutaría el comando especificado en ese navegador en particular.
+  > La comunicación entre estos clientes y el servidor ocurre a través de un protocolo de cable JSON. Por ejemplo: cuando se da un comando para abrir un navegador con una URL específica, toda la información necesaria, como el tipo de navegador, la versión del navegador y las capacidades deseadas, se usará para crear una carga JSON. El cliente enviará esta carga útil que contiene toda la información requerida a través del protocolo JSON al cliente HTTP. Luego, el servidor identificaría el tipo de navegador en el que se debe ejecutar el comando y ejecutaría el comando especificado en ese navegador en particular.
   
-  ><img src="arquitectura_selenium_webdriver.png" width="360">  
+  ><img src="./arquitectura_selenium_webdriver.png" width="360">  
+ 
+  #### ¿Qué es un Selenium IDE?
+  > Selenium IDE es una extensión de navegador fácil de usar que registra las acciones de un usuario en el navegador utilizando los comandos existentes de Selenium, con parámetros definidos por el contexto de cada elemento, también proporciona una excelente manera de aprender la sintaxis de Selenium. 
   
-En esta tema realizaremos la instalacion de Selenium JAVA Cliente Driver y Selenium Webdriver
   - [Manual Selenium JAVA Cliente Driver y Selenium Webdriver](./Ejemplo-03)
 
 ---
