@@ -39,7 +39,11 @@ En esta tema realizaremos la instalacion de Eclipse IDE.
 
 #### <ins>Tema 3: Instalación de Selenium JAVA Cliente Driver + Webdriver</ins>
 
-Es una herramienta de selenium que sirve para manejar un navegador de forma nativa, como lo haría un usuario, ya sea localmente o en una máquina remota usando el servidor Selenium, marca un salto adelante en términos de automatización del navegador.
+Es una herramienta que permite interactuar con los navegadores directamente con la ayuda de scripts de automatización. Admite varias plataformas y la ejecución es más rápida que Selenium Remote Control (Selenium RC, que ahora está en desuso) o IDE. Selenium Webdriver proporciona múltiples librerías de clientes para lenguajes de programación como Java, Python, Ruby, C#, etc. para crear los scripts de automatización de pruebas de Selenium. 
+  
+La comunicación entre estos clientes y el servidor ocurre a través de un protocolo de cable JSON. Por ejemplo: cuando se da un comando para abrir un navegador con una URL específica, toda la información necesaria, como el tipo de navegador, la versión del navegador y las capacidades deseadas, se usará para crear una carga JSON. El cliente enviará esta carga útil que contiene toda la información requerida a través del protocolo JSON al cliente HTTP. Luego, el servidor identificaría el tipo de navegador en el que se debe ejecutar el comando y ejecutaría el comando especificado en ese navegador en particular.
+  
+  ><img src="arquitectura_selenium_webdriver.png" width="360">  
   
 En esta tema realizaremos la instalacion de Selenium JAVA Cliente Driver y Selenium Webdriver
   - [Manual Selenium JAVA Cliente Driver y Selenium Webdriver](./Ejemplo-03)
