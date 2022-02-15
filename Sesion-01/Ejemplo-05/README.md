@@ -73,4 +73,37 @@
 
   ><img src="assets/junit_2.png"  width="450" >
 
-* Ahora ejecutamos el script, para eso solo basta con hacer click en el botón de "run" de eclipse.
+<details>
+    <summary>Código de la clase</summary>
+  
+```java
+package com.bedu.web_automation_course;
+import java.time.Duration;
+import org.junit.Before;
+import org.junit.Test;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class BeduSesion01 {
+	
+	private WebDriver driver;
+	
+	@Before
+	public void setUp(){
+		
+		System.setProperty("webdriver.chrome.driver", "src/test/resources/webdrivers/chromedriver");
+		driver = new ChromeDriver();
+		
+		driver.manage().window().maximize();
+		driver.get("https://bedu.org/");
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		driver.close();
+	}
+	
+	@Test
+	public void test() {}
+
+}
+  ```
+</details>
+* Ahora ejecutamos el script, para eso solo basta con hacer click en el botón de "run" de eclipse. :rocket:
