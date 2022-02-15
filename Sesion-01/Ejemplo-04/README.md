@@ -95,4 +95,14 @@
         
         NOTA: de esta manera no tendremos que hacer la importación manual de las librerias a nuestro proyecto, si no que automaticamente seran importadas.
 
-#### Ahora, estamos listos para escribir nuestros scripts de prueba en Eclipse y ejecutarlos en WebDriver.
+* Ahora vamos a crear una nueva clase, para ello nos vamos a la seccion: src/test/java, y selecionamos la opción New > Class 
+    ><img src="assets/conf_eclipse_23.png" width="400">  
+        
+* Ingresamos los datos y hacemos click en el botón "Finish"
+    > Package: com.bedu.web_automation_course / Name: BeduSesion01
+    
+
+    ><img src="assets/conf_eclipse_24.png" width="400"> 
+
+
+#### Ahora estamos listos para escribir nuestros scripts de prueba en Eclipse y ejecutarlos con Selenium WebDriver!!
