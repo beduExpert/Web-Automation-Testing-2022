@@ -74,11 +74,17 @@ En esta tema realizaremos la configuración de Selenium Webdriver en Eclipse IDE
   [Manual de configuración de Eclipse IDE con Selenium WebDriver](./Ejemplo-04)
 
 ---
+#### <ins>Tema 5: Instalación y Configuración de Selenium Browser Drivers</ins>
+Un browser driver es un componente que necesita tener nuestro proyecto de pruebas automatizadas sobre selenium para ejecutar los scripts en el explorador mientras se ejecuta la prueba. Es necesario tener configurado cada driver dependiendo del explorador en el que queramos ejecutar nuestros scripts.
 
+En esta tema realizaremos la instalación y configuración de Selenium Webdriver.
+
+  [Manual de Configuración Selenium browser Drivers](./Ejemplo-05)
+
+---
 ### 3. Postwork :memo:
 
-- Instala Java Software Development Kit (JDK), Eclipse IDE y Selenium Java Client & Webdriver en tu maquina.
-- Configura Eclipse IDE con Selenium para que tengas todo listo para la proxima sesión!!
+- Crea tu primer proyecto con selenium. Un simple script que realice alguna accion en el explorador, 
 
 <br/>
 
