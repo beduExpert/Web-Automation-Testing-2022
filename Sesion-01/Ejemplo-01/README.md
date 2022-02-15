@@ -15,10 +15,14 @@ Estos son los pasos requeridos para la instalación:
 * Validar que no tenga previamente el JDK instalado en su maquina: https://www.java.com/es/download/help/version_manual.html
   
 * Si no lo tiene instalado, procederemos a la descarga por el link oficial de descargas de oracle: https://www.oracle.com/java/technologies/downloads/ seleccionando su sistema operativo: Linux, macOS o Windows
+* Abrir el ejecutable para iniciar el proceso de instalacion:
 
 <img src="assets/descargaJDK.png" width="360">  
+* Click en botón de continuar
 <img src="assets/instalacion_paso1.png"  width="360"> 
+* Click en botón de instalar
 <img src="assets/instalacion_paso2.png"width="360"> 
+* Click en botón de cerrar
 <img src="assets/instalacion_paso3.png" width="360"> 
 
 * Para validar que se instalo correctamente, abrir la terminal y ejecutar el siguiente comando: 
