@@ -6,6 +6,14 @@
 
 ## Desarrollo
 
+
+#### Existen 2 maneras de configurar nuestro proyecto dentro de Eclipse IDE:
+#### 1. Proyecto JAVA: 
+    Indicaremos como se importan las librerias de Selenium manualmente en este tipo de proyectos.
+#### 2. Proyecto MAVEN (Recomendado)
+    Indicaremos como se importan las librerias de Selenium en este tipo de proyectos. Esta configuración es la que se debe realizar para nuestras sesiones.
+
+#### 1. Configuración para proyectos Java:
 * Abrir el Eclipse IDE y seleccionar la opcion "Crear nuevo proyecto de Java"
     - Si estas desde la pantalla principal de Bienvenida de Eclipse, se encuentra en esta opcion:
       ><img src="assets/conf_eclipse_1.png" width="400"> 
@@ -55,5 +63,36 @@
 
 * Una vez que se encuentren todas las librerias de selenium importadas, hacer click en el botón "Apply and Close". Esto creara una sección en nuestro proyecto llamado "Referenced Libraries"
   ><img src="assets/conf_eclipse_15.png" width="400"> 
+
+#### 2. Configuración para proyectos Maven (Recomendado)
+* Seleccionar la opcion de eclipse new > Other
+  ><img src="assets/conf_eclipse_16.png" width="400"> 
+
+* Desplegar la carpeta "Maven", seleccionar la opcion "Maven Project" y hacer click en botón "next"
+  ><img src="assets/conf_eclipse_17.png" width="400"> 
+
+* Marcamos el check de la opción "Create a simple project" y hacer click en botón "next"
+  ><img src="assets/conf_eclipse_18.png" width="400"> 
+
+* Completamos la información para la configuración del artefacto del proyecto maven y hacer click en botón "Finish"
+    > Group Id: com.bedu.web_automation_course / Artifact Id: BeduWebAutomationCourse
+    
+    ><img src="assets/conf_eclipse_19.png" width="400"> 
+
+* Una vez creado el proyecto, abrimos el archivo pom.xml para ingresar las dependencias de eclipse
+
+      > pom, responde a las siglas de Project Object Model, es un fichero XML, que es la «unidad» principal de un proyecto Maven. Contiene información a cerca del proyecto, fuentes, test, dependencias, plugins, version.   
+      
+     ><img src="assets/conf_eclipse_20.png" width="400">   
+
+* Ingresamos la estructura de dependencias en el archivo pom.xml: '<dependencies>' y '</dependencies>'
+      
+    ><img src="assets/conf_eclipse_21.png" width="400">   
+
+* Buscamos en la pagina oficial de maven, las dependencias de la libreria de selenium: https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java/4.1.2 y la ingresamos en el en el archivo pom.xml
+    
+    ><img src="assets/conf_eclipse_22.png" width="400">  
+        
+        NOTA: de esta manera no tendremos que hacer la importación manual de las librerias a nuestro proyecto, si no que automaticamente seran importadas.
 
 #### Ahora, estamos listos para escribir nuestros scripts de prueba en Eclipse y ejecutarlos en WebDriver.
