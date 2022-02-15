@@ -18,4 +18,13 @@
 Estos son los pasos requeridos para la instalación:
 * Descarga de Eclipse IDE desde su pagina oficial: https://www.eclipse.org/downloads/ 
   ><img src="assets/eclipse_page.png"  width="360" > 
-
+* Realizar click en el botón "Donwload"
+  ><img src="assets/eclipse_page2.png"  width="360" > 
+* Abrir el instalador de eclipse descargado, y hacer click en la opción "Eclipse IDE for Java Developers"
+  ><img src="assets/eclipse_paso1.png"  width="360" > 
+* Se visualizara la siguiente imagen, si es deseado puede cambiarse la ruta donde sera instalado eclipse (se recomienda dejar la ruta por defecto), hacer click en el botón "Install"
+  ><img src="assets/eclipse_paso2.png"  width="360" > 
+* Finalizado la instalación se habilitara un botón "Launch" realizar click en el para abrir Eclipse.
+  ><img src="assets/eclipse_paso3.png"  width="360" > 
+* Al abrir Eclipse tendremos que configurar la ruta del workspace
+  ><img src="assets/eclipse_paso4.png"  width="360" > 
