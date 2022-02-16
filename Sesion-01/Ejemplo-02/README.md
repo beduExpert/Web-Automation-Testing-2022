@@ -1,4 +1,4 @@
-# Manual de instalación de Eclipse IDE
+# Ejemplo-02: Instalación de instalación de Eclipse IDE
 
 ## Objetivo
 
