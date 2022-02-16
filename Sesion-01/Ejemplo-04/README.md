@@ -1,4 +1,4 @@
-# Manual de configuración de Eclipse IDE con Selenium WebDriver
+# Ejemplo-04: Configuración de Eclipse IDE con Selenium WebDriver
 
 ## Objetivo
 
