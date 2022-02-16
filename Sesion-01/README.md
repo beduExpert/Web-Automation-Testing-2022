@@ -87,7 +87,7 @@ En esta tema realizaremos la instalación y configuración de Selenium Webdriver
 - Creación de casos de prueba para la página web de mercadolibre: https://www.mercadolibre.com.mx/
 - Configurar y ejecutar nuestro primer script en Eclipse IDE con TesngNG + Selenium.
 
-  Postwork](./Postwork)
+  [Postwork](./Postwork)
 
 <br/>
 
