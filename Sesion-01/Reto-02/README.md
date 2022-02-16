@@ -6,7 +6,8 @@
 
 ## Desarrollo
 + Descarga la siguiente versión de chromedriver: https://chromedriver.storage.googleapis.com/index.html?path=70.0.3538.16/
-+ Importala en tu proyecto.
++ Elimina el ejecutable de chromedriver que tienes importada en tu proyecto (debe encontarse dentro de la carpeta webdrivers)
++ Importala el nuevo ejecutable de chromedriver en la carpeta de webdrivers de tu proyecto.
 + Ejecuta tu script de prueba.
 
 
