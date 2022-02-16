@@ -1,4 +1,4 @@
-# Manual Selenium JAVA Cliente Driver + Webdriver + IDE
+# Ejemplo-03: Configuración de Selenium JAVA Cliente Driver + Webdriver + IDE
 
 ## Objetivo
 
