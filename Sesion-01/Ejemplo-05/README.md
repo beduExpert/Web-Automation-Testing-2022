@@ -45,66 +45,174 @@
 
 ## Creación de nuestro primer script con Eclipse + Selenium. :nerd_face:
 
-#### Agregamos JUnit para nuestra primera prueba :space_invader:
-* Agregamos dependiencia a nuestra libreria pom.xml: https://maven.apache.org/surefire/maven-surefire-plugin/examples/junit.html
-* Agregamos la configuración para ejecutar JUnit, ingresamos a la seccion de eclipse RUN > Run Configutation > JUnit
-  ><img src="assets/junit_1.png"  width="450" >
-* Hacer click en "Apply"
-* Agregar en la clase las siguientes anotaciones de JUnit
-`@Before`
-`@Test`
+#### Agregamos TestNG para nuestra primera prueba :space_invader:
+* Agregamos dependiencia a nuestra libreria pom.xml: https://mvnrepository.com/artifact/org.testng/testng/7.4.0
 
+
+	```XML 
+	<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	  <modelVersion>4.0.0</modelVersion>
+	  <groupId>com.bedu.web_automation_course</groupId>
+	  <artifactId>BeduWebAutomationCourse</artifactId>
+	  <version>0.0.1-SNAPSHOT</version>
+
+	  <dependencies>
+		<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+		<dependency>
+		    <groupId>org.seleniumhq.selenium</groupId>
+		    <artifactId>selenium-java</artifactId>
+		    <version>4.1.2</version>
+			<scope>test</scope>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.testng/testng -->
+		<dependency>
+		    <groupId>org.testng</groupId>
+		    <artifactId>testng</artifactId>
+		    <version>7.4.0</version>
+		    <scope>test</scope>
+		</dependency>
+
+	  </dependencies>
+	</project>
+   ```
+
+* Instalar el pluging de TestNG para Eclipse: Hacer click en ‘Help'  > Eclipse Market Place, buscar TestNG for Eclipse y hacer click en "Install". Luego click en "Confirm", Aceptar los Terminos y Condiciones y hacer click en "Finish"
+* En el explorador de paquetes hacer click derecho en la carpeta src/test/java y seleccionar new ->other
+
+* Desplegar la carpeta de TestNG, seleccionar TestNG class y hacer click en "next"
+  ><img src="assets/testng_0.png"  width="450" >
+  
+* En la siguiente ventana tendremos que seleccionar "source folder", para ello hacer click "browse" y vamos desplegando las carpetas hasta llegar a donde tendremos nuestras clases.
+  ><img src="assets/testng_2.png"  width="450" >
+  
+* Seleccionamos las anotaciones `@BeforeTest` y `@AfterTest` 
+  ><img src="assets/testng_2.png"  width="450" >
+
+
+* Vemos que se crea una nueva clase con la siguiente información:
+
+   ```Java
+   
+	import org.testng.annotations.Test;
+	import org.testng.annotations.BeforeTest;
+	import org.testng.annotations.AfterTest;
+
+	public class NewTest {
+	  @Test
+	  public void f() {
+	  }
+	  @BeforeTest
+	  public void beforeTest() {
+	  }
+
+	  @AfterTest
+	  public void afterTest() {
+	  }
+
+	}
+
+   ```
 
 #### Creamos un script basico de prueba  :robot:
-* Crear el objeto Webdriver con el siguiente comando:  `private WebDriver driver;`. Si hacemos click sobre la lupa veremos la opción de importar la libreria requerida de selenium en nuestra clase.
 
-  ><img src="assets/selenium_bd10.png"  width="450" >
-* Bajo la anotación de `@Before` creamos un metodo que se llame `public void setUp(){}` 
-* Bajo la anotación de `@Test` creamos un metodo que se llame `public void test() {}` -> no haremos nada con este metodo por ahora.
-* Dentro del metodo que se llame `public void setUp(){}`:
-  * Agregar la ubicación del ejecutable de chromedriver con el siguiente comando: `System.setProperty("webdriver.chrome.driver", "./src/test/resourses/webdrivers/chromedriver.exe");` 
-  * Declaramos el objeto driver de tipo chromedriver `driver = new ChromeDriver();`. Si hacemos click sobre la lupa veremos la opción de importar la libreria requerida de selenium chromedriver en nuestra clase.
+* Crear el objeto Webdriver con el siguiente comando:  `private WebDriver driver;`. 
+
+* Bajo la anotación de `@Test` modificamos el metodo para que se llame ` public void test() {}` -> no haremos nada con este metodo por ahora.
+
+   ```Java
+	import org.testng.annotations.Test;
+	import org.testng.annotations.BeforeTest;
+	import org.testng.annotations.AfterTest;
+
+	public class NewTest {
+	private WebDriver driver;
+	  @BeforeTest
+	  public void beforeTest() {
+	  }
+
+	  @Test
+	  public void test() {
+	  }
+
+	  @AfterTest
+	  public void afterTest() {
+	  }
+
+	}
+   
+   
+   ```
+   
+
+* Dentro del metodo `public void beforeTest(){}` agregamos los siguientes comandos:
+  * Agregar la ubicación del ejecutable de chromedriver con el siguiente comando: 
+
+   ```Java
+   System.setProperty("webdriver.chrome.driver", "./src/test/resourses/webdrivers/chromedriver.exe");
+   ```
+  * Declaramos el objeto driver de tipo chromedriver:
+   
+   ```Java
+   driver = new ChromeDriver();
+   ```
+   
   * Realizamos algunas acciones basicas con el explorador:
    - Maximizamos la pantalla `driver.manage().window().maximize();` 
    - Ingresamos a una url `driver.get("https://bedu.org/");` 
    - Agregamos un tiempo de espera: `driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));`
    - Cerramos el navegador `driver.close();` 
 
+   
+   ```Java
+	driver.manage().window().maximize();
+	driver.get("https://bedu.org/");
+	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+	driver.close();
+   
+   ```
 
-  ><img src="assets/junit_2.png"  width="450" >
+#### Código de la clase
+   ```Java
+		package com.bedu.web_automation_course;
 
-<details>
-    <summary>Código de la clase</summary>
-  
-```java
-package com.bedu.web_automation_course;
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.AfterTest;
+
 import java.time.Duration;
-import org.junit.Before;
-import org.junit.Test;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class BeduSesion01 {
-	
+
+public class NewTest {
+
 	private WebDriver driver;
-	
-	@Before
-	public void setUp(){
-		
-		System.setProperty("webdriver.chrome.driver", "src/test/resources/webdrivers/chromedriver");
-		driver = new ChromeDriver();
-		
-		driver.manage().window().maximize();
-		driver.get("https://bedu.org/");
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-		driver.close();
-	}
-	
-	@Test
-	public void test() {}
+
+		  @BeforeTest
+		  public void beforeTest() {
+				System.setProperty("webdriver.chrome.driver", "src/test/resources/webdrivers/chromedriver");
+				driver = new ChromeDriver();
+
+				driver.manage().window().maximize();
+				driver.get("https://bedu.org/");
+				driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+				driver.close();
+		  }
+
+		  @Test
+		  public void test() {
+		  }
+
+		  @AfterTest
+		  public void afterTest() {
+		  }
 
 }
-  ```
-</details>
+   
+   ```
+
+
 
 #### Ahora ejecutamos el script, para eso solo basta con hacer click en el botón de "run" de eclipse. :rocket:
