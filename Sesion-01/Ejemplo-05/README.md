@@ -114,6 +114,9 @@
 
    ```
 
+  > NOTA: no te preocupes por ahora en entender las anotaciones de TestNG, el contenido de TestNG sera dado en la siguiente sesión.
+
+
 #### Creamos un script basico de prueba  :robot:
 
 * Crear el objeto Webdriver con el siguiente comando:  `private WebDriver driver;`. 
@@ -174,7 +177,7 @@
 
 #### Código de la clase
    ```Java
-		package com.bedu.web_automation_course;
+package com.bedu.web_automation_course;
 
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeTest;
