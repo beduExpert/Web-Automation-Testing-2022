@@ -20,17 +20,20 @@ Ahora que sabes como funciona la integración de Selenium con el IDE, copia este
   <dependencies>
 	<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
 	<dependency>
-		<groupId>org.seleniumhq.selenium</groupId>
-		<artifactId>selenium-java</artifactId>
+	    <groupId>org.seleniumhq.selenium</groupId>
+	    <artifactId>selenium-java</artifactId>
  		<scope>test</scope>
 	</dependency>
     
+	<!-- https://mvnrepository.com/artifact/org.testng/testng -->
 	<dependency>
-		<groupId>junit</groupId>
-		<artifactId>junit</artifactId>
-		<version>4.11</version>
-		<scope>test</scope>
+	    <groupId>org.testng</groupId>
+	    <artifactId>testng</artifactId>
+	    <version>7.4.0</version>
+	    <scope>test</scope>
 	</dependency>
+
+
   </dependencies>
 </project>
 
