@@ -84,7 +84,8 @@ En esta tema realizaremos la instalación y configuración de Selenium Webdriver
 ---
 ### 3. Postwork :memo:
 
-- Crea tu primer proyecto con selenium. Un simple script que realice alguna accion en el explorador, 
+- Creación de casos de prueba para la página web de mercadolibre: https://www.mercadolibre.com.mx/
+- Configurar y ejecutar nuestro primer script en Eclipse IDE con TesngNG + Selenium.
 
 <br/>
 
