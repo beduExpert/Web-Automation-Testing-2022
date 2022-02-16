@@ -21,8 +21,8 @@ Un software development kit (SDK) es un conjunto de herramientas que ayudan a de
   ><img src="./JDK.png" width="360">    
 En esta tema realizaremos la instalacion del Java (SE) Development Kit
 
-  [Ejemplo Instalación de Java Software Development Kit (JDK)](./Ejemplo-01)
-
+  [`Ejemplo-01` Instalación de Java Software Development Kit (JDK)](./Ejemplo-01)
+  
 ---
 
 
@@ -33,10 +33,9 @@ Eclipse es un proyecto de código abierto cuyo principal objetivo es proporciona
    ><img src="./eclipse.png" width="360">     
 En esta tema realizaremos la instalacion de Eclipse IDE.
 
-  [Ejemplo Instalación de de Eclipse IDE](./Ejemplo-02)
+  [`Ejemplo-02` Instalación de de Eclipse IDE](./Ejemplo-02)
   
 ---
-
 
 
 #### <ins>Tema 3: Instalación de Selenium JAVA Cliente Driver + Webdriver + IDE</ins>
@@ -57,9 +56,9 @@ En esta tema realizaremos la instalacion de Selenium JAVA Cliente Driver + Selen
   > Selenium IDE es una extensión de navegador fácil de usar que registra las acciones de un usuario en el navegador utilizando los comandos existentes de Selenium, con parámetros definidos por el contexto de cada elemento, también proporciona una excelente manera de aprender la sintaxis de Selenium. 
   
   ><img src="./seleniumIDE.png" width="360">  
-  
-[Ejemplo Selenium JAVA Cliente Driver + Webdriver + IDE](./Ejemplo-03)
 
+  [`Ejemplo-03` Configuración Selenium JAVA Cliente Driver + Webdriver + IDE](./Ejemplo-03)
+  
 ---
 
 
@@ -71,15 +70,16 @@ Pero para poder integrarse correctamente con Selenium requiere de la importació
 
 En esta tema realizaremos la configuración de Selenium Webdriver en Eclipse IDE.
 
-  [Ejemplo de configuración de Eclipse IDE con Selenium WebDriver](./Ejemplo-04)
 
+  [`Ejemplo-04` Configuración de Eclipse IDE con Selenium WebDriver](./Ejemplo-04)
+  
 ---
 #### <ins>Tema 5: Instalación y Configuración de Selenium Browser Drivers</ins>
 Un browser driver es un componente que necesita tener nuestro proyecto de pruebas automatizadas sobre selenium para ejecutar los scripts en el explorador mientras se ejecuta la prueba. Es necesario tener configurado cada driver dependiendo del explorador en el que queramos ejecutar nuestros scripts.
 
 En esta tema realizaremos la instalación y configuración de Selenium Webdriver.
 
-  [Ejemplo de Configuración Selenium browser Drivers](./Ejemplo-05)
+  [`Ejemplo-05` Configuración Selenium browser Drivers](./Ejemplo-05)
 
 ---
 
