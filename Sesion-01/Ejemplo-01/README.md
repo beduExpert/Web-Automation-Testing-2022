@@ -1,4 +1,4 @@
-# Manual Instalación de Java Software Development Kit (JDK)
+# Ejemplo-01: Instalación de Java Software Development Kit (JDK)
 
 ## Objetivo
 
