@@ -21,7 +21,7 @@ Un software development kit (SDK) es un conjunto de herramientas que ayudan a de
   ><img src="./JDK.png" width="360">    
 En esta tema realizaremos la instalacion del Java (SE) Development Kit
 
-  [Manual Instalación de Java Software Development Kit (JDK)](./Ejemplo-01)
+  [Ejemplo Instalación de Java Software Development Kit (JDK)](./Ejemplo-01)
 
 ---
 
@@ -33,7 +33,7 @@ Eclipse es un proyecto de código abierto cuyo principal objetivo es proporciona
    ><img src="./eclipse.png" width="360">     
 En esta tema realizaremos la instalacion de Eclipse IDE.
 
-  [Manual Instalación de de Eclipse IDE](./Ejemplo-02)
+  [Ejemplo Instalación de de Eclipse IDE](./Ejemplo-02)
   
 ---
 
@@ -58,7 +58,7 @@ En esta tema realizaremos la instalacion de Selenium JAVA Cliente Driver + Selen
   
   ><img src="./seleniumIDE.png" width="360">  
   
-[Manual Selenium JAVA Cliente Driver + Webdriver + IDE](./Ejemplo-03)
+[Ejemplo Selenium JAVA Cliente Driver + Webdriver + IDE](./Ejemplo-03)
 
 ---
 
@@ -71,7 +71,7 @@ Pero para poder integrarse correctamente con Selenium requiere de la importació
 
 En esta tema realizaremos la configuración de Selenium Webdriver en Eclipse IDE.
 
-  [Manual de configuración de Eclipse IDE con Selenium WebDriver](./Ejemplo-04)
+  [Ejemplo de configuración de Eclipse IDE con Selenium WebDriver](./Ejemplo-04)
 
 ---
 #### <ins>Tema 5: Instalación y Configuración de Selenium Browser Drivers</ins>
@@ -79,7 +79,7 @@ Un browser driver es un componente que necesita tener nuestro proyecto de prueba
 
 En esta tema realizaremos la instalación y configuración de Selenium Webdriver.
 
-  [Manual de Configuración Selenium browser Drivers](./Ejemplo-05)
+  [Ejemplo de Configuración Selenium browser Drivers](./Ejemplo-05)
 
 ---
 ### 3. Postwork :memo:
