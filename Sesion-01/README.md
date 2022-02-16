@@ -89,7 +89,7 @@ Realizar estos retos que te ayudaran a practicar lo que has aprendido del conten
   - [`Reto 01:` Dependencias Selenium](./Reto-01)
   - [`Reto 02:` Chromedriver](./Reto-02)
 ---  
-### 3. Postwork :memo:
+### 4. Postwork :memo:
 
 Este postwork te servira para iniciar con tu proyecto, que poco a poco iremos construyendo en el trasncurso de las sesiones, este es el primer paso:
 
