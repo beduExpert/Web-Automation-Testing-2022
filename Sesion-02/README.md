@@ -25,6 +25,7 @@ TestNG facilita el desarrollo de pruebas de software en Java, ya que ejecuta las
 <img src="images/testng.png" width="50%"> 
 
 - [**`EJEMPLO 1 - TestNG`**](./Ejemplo-01)
+- [**`RETO 1`**](./Reto-01)
 
 ---
 
@@ -34,31 +35,29 @@ Para entrar en el mundo de los localizadores de Selenium tenemos que explicar el
 
 Para poder encontrar WebElements en la página web, Selenium utiliza los localizadores que le permite al encontrarlo, ejecutar alguna acción sobre el cómo extraer su contenido, hacer un click, revisar si se encuentra disponible, etc..
 
-<img src="images/webelement.jpg" awidth="50%"> 
+<img src="images/webelement.png" width="50%"> 
 
 - [**`EJEMPLO 2 - Localización de elementos con Selenium IDE`**](./Ejemplo-02)
-- [**`RETO 1`**](./Reto-01)
+- [**`RETO 2`**](./Reto-02)
 ---
 
 
 
 #### <ins>Tema 3: Trabajando con Esperas, Condiciones y Manejo de excepciones</ins>
 
+¿Recuerdas en algún momento haber ingresado en alguna página web y que la misma se tarde en cargar, o que en vez de eso, se cargue pero observamos que faltan elementos por cargarse?. O que por el contrario la pagina se cierra abruptamente sin tener idea de que sucedio?
 
-
-<img src="images/emulator.jpg" align="right" height="90"> 
+En este tema veremos como trabajar con esperas, condiciones para la espera y manejo de excepciones.
 
 - [**`EJEMPLO 3 - Trabajando con Esperas, Condiciones y Manejo de excepciones`**](./Ejemplo-03)
-- [**`RETO 2`**](./Reto-02)
----
 
-<img src="images/chaomi.png" align="right" height="110"> 
+---
 
 #### <ins>Tema 4: Find element Vs Find elements</ins>
 
+Para que selenium pueda interactuar con la página web requiere que un controlador ubique un elemento web y active un evento de JavaScript como por ejemplo hacer un clic, ingresar información a un campo de texto, seleccionar un elemento o tomar el valor de un campo. Por lo general, uno comienza la prueba automatizada de cualquier aplicación web al encontrar elementos web relevantes en la página web.
 
-
-<img src="images/emulator.jpg" align="right" height="90"> 
+Selenium webdriver nos proporciona dos métodos para encontrar elementos web en una página web: driver.findElement() y driver.findElements(). 
 
 - [**`EJEMPLO 4 - Find element Vs Find elements`**](./Ejemplo-04)
 
@@ -66,8 +65,7 @@ Para poder encontrar WebElements en la página web, Selenium utiliza los localiz
 
 #### <ins>Tema 5: Clase Webdriver y WebElement</ins>
 
-
-<img src="images/emulator.jpg" align="right" height="90"> 
+Entraremos en más detalle con respecto de que podemos hacer con la clase Webdriver y WebElement, ya que serán las más utilizadas para nuestras automatizaciones.
 
 - [**`EJEMPLO 5 - Clase Webdriver y WebElement`**](./Ejemplo-05)
 
@@ -75,8 +73,9 @@ Para poder encontrar WebElements en la página web, Selenium utiliza los localiz
 
 #### <ins>Tema 6: Validaciones o Aserciones</ins>
 
+Como último tema de esta sesión veremos lo referente al último paso de nuestras clases de prueba: las validaciones. Sabemos que todo caso de prueba tiene un comportamiento esperado, y que el mismo debe ser validado para saber si nuestro caso de prueba funciona correctamente o según lo esperado.
 
-<img src="images/emulator.jpg" align="right" height="90"> 
+Para estas validaciones TestNG nos ofrece lo que se llaman “aserciones” que se obtienen de la clase Assert.
 
 - [**`EJEMPLO 6  - Validaciones o Aserciones`**](./Ejemplo-06)
 
