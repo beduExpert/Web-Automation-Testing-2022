@@ -1,4 +1,4 @@
-# Ejemplo # - Nombre del ejemplo
+# Ejemplo-03: Trabajando con Esperas, Condiciones y Manejo de excepciones
 
 ## Objetivo
 

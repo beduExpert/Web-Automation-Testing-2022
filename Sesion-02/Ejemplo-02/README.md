@@ -1,4 +1,4 @@
-# Ejemplo # - Nombre del ejemplo
+# Ejemplo-02: Localización de elementos con Selenium IDE
 
 ## Objetivo
 
