@@ -117,11 +117,17 @@ public class softAssertTest1 {
 > Si ejecutamos ese script de prueba ambos casos fallan ya que no se cumple la condicion del tipo de asercion empleada, al ver en la consola vemos 3 cosas, la primera es que se hace debe hacer uso de la clase `SoftAssert` para hacer las validaciones, la segunda es que se genera el `AssertionError` (por el uso sel metodo `assertAll()`) y la segunda se llega a ejecuatar el codigo que esta antes y despues de la asercion, sin importa si este falla o no, esto se debe a que son `Soft Assert`
 
 
--- 
+#### En resumen:
 <img src="assets/assertTypes.png" width="50%"> 
 
 Ahora explicaremos como funcionan las aserciones mas usadas en la actualidad:
 
+- assertEquals: este método compara el parámetro “real” con “esperado”. Si son iguales la aserción pasa sin excepción pero si no son los mismos, la afirmación falla con una excepción y la prueba se marca como fallida.
+
+```Java
+Assert.assertEquals (real, esperado);
+```
+<img src="assets/assertEquals.png" width="50%"> 
 
 - assertNotEquals: es lo opuesto a assertEquals, se compara el parámetro “real” con “esperado”. Si NO son iguales la aserción pasa sin excepción pero si son los mismos, la afirmación falla con una excepción y la prueba se marca como fallida.
 
@@ -129,11 +135,8 @@ Ahora explicaremos como funcionan las aserciones mas usadas en la actualidad:
 Assert.assertNotEquals (mensaje real, esperado);
 ```
 
-- assertEquals: este método compara el parámetro “real” con “esperado”. Si son iguales la aserción pasa sin excepción pero si no son los mismos, la afirmación falla con una excepción y la prueba se marca como fallida.
+<img src="assets/assertNotEquals.png" width="50%"> 
 
-```Java
-Assert.assertEquals (real, esperado);
-```
 
 - assertFalse: comprueba si el valor devuelto es falso o no. Siempre que pasa el caso de prueba, aborta el método y da una excepción.
 
@@ -141,14 +144,21 @@ Assert.assertEquals (real, esperado);
 Assert.assertFalse (condición);
 ```
 
+<img src="assets/assertFalse.png" width="50%"> 
+
 - assertNull: esta aserción verifica si el objeto es nulo o no. Anula la prueba si el objeto es nulo y da una excepción.
 
 ```Java
 Assert.assertNull (objeto);
 ```
 
+<img src="assets/assertNull.png" width="50%"> 
+
+
 - assertNotNull: esta aserción verifica si el objeto es nulo o no. Anula la prueba si el objeto no es nulo, es decir, si el objeto tiene algún valor y da una excepción.
 
 ```Java
 Assert.assertNotNull (objeto);
 ```
+
+<img src="assets/assertNotNull.png" width="50%"> 

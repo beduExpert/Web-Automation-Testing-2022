@@ -16,7 +16,7 @@ Es por ello que en esta sesión nos adentraremos en el uso de TesnNG y Selenium 
 
 ---
 
-#### <ins>Tema 1: TestNG</ins>
+#### <ins>Tema 1: TestNG</ins> `PENDIENTE`
 
 TestNG proviene de las siglas de Test Next Generation y es un framework de automatización de pruebas de código abierto inspirado en JUnit y NUnit que terminó siendo una actualización de esos dos framework, es decir, se fusionaron para obtener un framework mucho más completo, que resolviera los problemas a los que los 2 anteriores no les daba solución.
 
@@ -29,7 +29,7 @@ TestNG facilita el desarrollo de pruebas de software en Java, ya que ejecuta las
 
 ---
 
-#### <ins>Tema 2: Localización de elementos con Selenium IDE</ins>
+#### <ins>Tema 2: Localización de elementos con Selenium IDE</ins> `PENDIENTE`
 
 Para entrar en el mundo de los localizadores de Selenium tenemos que explicar el concepto de WebElement, la misma es una clase creada para los elementos que componen la página web. Para Selenium WebDriver todos los elementos de una página web (campos de texto, botones, links, imágenes, entre otros..) son WebElements.
 
@@ -43,7 +43,7 @@ Para poder encontrar WebElements en la página web, Selenium utiliza los localiz
 
 
 
-#### <ins>Tema 3: Trabajando con Esperas, Condiciones y Manejo de excepciones</ins>
+#### <ins>Tema 3: Trabajando con Esperas, Condiciones y Manejo de excepciones</ins> `PENDIENTE`
 
 ¿Recuerdas en algún momento haber ingresado en alguna página web y que la misma se tarde en cargar, o que en vez de eso, se cargue pero observamos que faltan elementos por cargarse?. O que por el contrario la pagina se cierra abruptamente sin tener idea de que sucedio?
 
@@ -53,7 +53,7 @@ En este tema veremos como trabajar con esperas, condiciones para la espera y man
 
 ---
 
-#### <ins>Tema 4: Find element Vs Find elements</ins>
+#### <ins>Tema 4: Find element Vs Find elements</ins> `PENDIENTE`
 
 Para que selenium pueda interactuar con la página web requiere que un controlador ubique un elemento web y active un evento de JavaScript como por ejemplo hacer un clic, ingresar información a un campo de texto, seleccionar un elemento o tomar el valor de un campo. Por lo general, uno comienza la prueba automatizada de cualquier aplicación web al encontrar elementos web relevantes en la página web.
 
@@ -63,7 +63,7 @@ Selenium webdriver nos proporciona dos métodos para encontrar elementos web en 
 
 ---
 
-#### <ins>Tema 5: Clase Webdriver y WebElement</ins>
+#### <ins>Tema 5: Clase Webdriver y WebElement</ins> `PENDIENTE`
 
 Entraremos en más detalle con respecto de que podemos hacer con la clase Webdriver y WebElement, ya que serán las más utilizadas para nuestras automatizaciones.
 
