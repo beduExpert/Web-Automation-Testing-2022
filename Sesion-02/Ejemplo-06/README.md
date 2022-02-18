@@ -127,15 +127,15 @@ Ahora explicaremos como funcionan las aserciones mas usadas en la actualidad:
 ```Java
 Assert.assertEquals (real, esperado);
 ```
-<img src="assets/assertEquals.png" width="50%"> 
+<img src="assets/assertEquals.png" width="80%"> 
 
 - assertNotEquals: es lo opuesto a assertEquals, se compara el parámetro “real” con “esperado”. Si NO son iguales la aserción pasa sin excepción pero si son los mismos, la afirmación falla con una excepción y la prueba se marca como fallida.
 
 ```Java
-Assert.assertNotEquals (mensaje real, esperado);
+Assert.assertNotEquals (real, esperado);
 ```
 
-<img src="assets/assertNotEquals.png" width="50%"> 
+<img src="assets/assertNotEquals.png" width="80%"> 
 
 
 - assertFalse: comprueba si el valor devuelto es falso o no. Siempre que pasa el caso de prueba, aborta el método y da una excepción.
@@ -144,7 +144,7 @@ Assert.assertNotEquals (mensaje real, esperado);
 Assert.assertFalse (condición);
 ```
 
-<img src="assets/assertFalse.png" width="50%"> 
+<img src="assets/assertFalse.png" width="80%"> 
 
 - assertNull: esta aserción verifica si el objeto es nulo o no. Anula la prueba si el objeto es nulo y da una excepción.
 
@@ -152,7 +152,7 @@ Assert.assertFalse (condición);
 Assert.assertNull (objeto);
 ```
 
-<img src="assets/assertNull.png" width="50%"> 
+<img src="assets/assertNull.png" width="80%"> 
 
 
 - assertNotNull: esta aserción verifica si el objeto es nulo o no. Anula la prueba si el objeto no es nulo, es decir, si el objeto tiene algún valor y da una excepción.
@@ -161,4 +161,6 @@ Assert.assertNull (objeto);
 Assert.assertNotNull (objeto);
 ```
 
-<img src="assets/assertNotNull.png" width="50%"> 
+<img src="assets/assertNotNull.png" width="80%"> 
+
+Para mas información: https://www.javadoc.io/doc/org.testng/testng/6.8.17/org/testng/Assert.html
