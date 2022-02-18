@@ -22,7 +22,7 @@ TestNG proviene de las siglas de Test Next Generation y es un framework de autom
 
 TestNG facilita el desarrollo de pruebas de software en Java, ya que ejecuta las pruebas en clases, es decir, hace clases para las pruebas correspondientes y luego las procesa. Una novedad es que proporciona una funcionalidad adicional como anotaciones de prueba, agrupación, priorización, parametrización y técnicas de secuenciación en el código que no era posible antes, además de administrar los casos de prueba, incluso los informes detallados de las pruebas se pueden obtener utilizando TestNG. 
 
-<img src="images/structure.png" align="right" height="90"> 
+<img src="images/testng.png" align="right" height="90"> 
 
 - [**`EJEMPLO 1 - TestNG`**](./Ejemplo-01)
 
