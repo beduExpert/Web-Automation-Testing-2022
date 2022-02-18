@@ -1,8 +1,8 @@
-# Reto # - Nombre del reto
+# Reto 06# - Soft Assert
 
 ## Objetivo
 
-* Identificar la importncia del metodo `assertAll()` en las Afirmación suave (Soft Assert)
+* Identificar la importancia del metodo `assertAll()` en las Afirmación suave (Soft Assert)
 
 ## Desarrollo
 
@@ -27,12 +27,12 @@ public class reto_06 {
 ```
 
 <details>
-  <summary>#### ¿Es correcto el funcionamiento esperado? </summary>
-  > No, las condiciones enviadas a la asercion fallan, pero en la ejecución no marca como fallido el caso de prueba.
+  <summary>¿Es correcto el funcionamiento esperado? </summary>
+  > No, las condiciones enviadas a la asercion son distintas y en el resultado de la ejecución no marca como fallido el caso de prueba.
 </details>
 
 
 <details>
-  <summary>#### ¿Como mejorarias el script?</summary>
+  <summary>¿Como mejorarias el script?</summary>
   > Agregando la llamada al metodo `assertAll()` --> obj_softAssert.assertAll(); 
 </details>
