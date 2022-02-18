@@ -78,7 +78,7 @@ Como último tema de esta sesión veremos lo referente al último paso de nuestr
 Para estas validaciones TestNG nos ofrece lo que se llaman “aserciones” que se obtienen de la clase Assert.
 
 - [**`EJEMPLO 6  - Validaciones o Aserciones`**](./Ejemplo-06)
-
+- [**`RETO 6`**](./Reto-06)
 ---
 
 ### 3. Postwork :memo:
