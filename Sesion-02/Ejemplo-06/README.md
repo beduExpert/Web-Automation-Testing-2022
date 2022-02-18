@@ -114,7 +114,7 @@ public class softAssertTest1 {
 ```
 <img src="assets/softAssert.png" width="90%"> 
 
-> Si ejecutamos ese script de prueba ambos casos fallan ya que no se cumple la condicion del tipo de asercion empleada, al ver en la consola vemos 2 cosas, la primera es que se genera el `AssertionError` (por el uso sel metodo `assertAll()`) y la segunda se llega a ejecuatar el codigo que esta antes y despues de la asercion, sin importa si este falla o no, esto se debe a que son `Soft Assert`
+> Si ejecutamos ese script de prueba ambos casos fallan ya que no se cumple la condicion del tipo de asercion empleada, al ver en la consola vemos 3 cosas, la primera es que se hace debe hacer uso de la clase `SoftAssert` para hacer las validaciones, la segunda es que se genera el `AssertionError` (por el uso sel metodo `assertAll()`) y la segunda se llega a ejecuatar el codigo que esta antes y despues de la asercion, sin importa si este falla o no, esto se debe a que son `Soft Assert`
 
 
 -- 
