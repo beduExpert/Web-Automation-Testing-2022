@@ -27,9 +27,50 @@ Donde los parámetros:
 
   En esta asercion se debe usar `assertAll()` al final de los scripts de prueba porque siempre recopila todos los seguimientos de registro y se muestra en la consola.
 
-- **Afirmación dura (Hard Assert):** es un método estático que cuando el caso de prueba falla lanza una `AssertException` . Cuando esto sucede TestNG genera la excepción del mensaje de error, luego detiene la ejecución del script de prueba actual y continúa la implementación con el script de prueba restante.
+- **Afirmación dura (Hard Assert):** es un método estático que cuando el caso de prueba falla lanza una `AssertException`. Cuando esto sucede TestNG genera la excepción del mensaje de error, luego detiene la ejecución del script de prueba actual y continúa la implementación con el script de prueba siguiente.
 
-<img src="assertTypes.png" width="50%"> 
+Veamos el siguiente ejemplo
+
+
+```Java
+package com.bedu.web_automation_course;
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
+public class hardAssertTest1 {
+	
+	@Test(priority=1)
+    public void testLogin() {
+		
+        System.out.println("Se abre Google Chrome");
+        
+        //Hard Assert
+        Assert.assertEquals(true, false); // Esto retorna error ya que no coincide -> true <> false
+
+        //Esta linea no se ejecutará
+        System.out.println("Se abre la pagina");        
+    }
+    
+    @Test(priority=2)
+    public void register() {
+    	
+    	System.out.println("Se abre el Firefox");
+        
+    	// Esto retorna error ya la condicion es un boolean false
+        Assert.assertTrue(false, "hard assert");  //Nota: en assertTrue los mensajes solo se imprimen cuando la asercion falla
+        
+      //Esta linea tampoco ejecutara
+        System.out.println("Se abre la pagina 2");      
+    }
+
+}
+```
+
+ > Si ejecutamos ese script de prueba ambos casos fallan, al ver en la consola vemos que solo se imprime la primera linea de cada caso, y no lo que sigue despues de la asercion, esto se debe a que son `Hard Assert`
+ 
+<img src="assets/hardAssert.png" width="50%"> 
+
+<img src="assets/assertTypes.png" width="50%"> 
 
 Ahora explicaremos como funcionan las aserciones mas usadas en la actualidad:
 
