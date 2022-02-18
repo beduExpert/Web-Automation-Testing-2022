@@ -29,6 +29,7 @@ Donde los parámetros:
 
 - **Afirmación dura (Hard Assert):** es un método estático que cuando el caso de prueba falla lanza una `AssertException` . Cuando esto sucede TestNG genera la excepción del mensaje de error, luego detiene la ejecución del script de prueba actual y continúa la implementación con el script de prueba restante.
 
+<img src="assertTypes.png" width="50%"> 
 
 Ahora explicaremos como funcionan las aserciones mas usadas en la actualidad:
 
