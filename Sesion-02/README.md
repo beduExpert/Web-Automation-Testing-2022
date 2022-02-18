@@ -22,19 +22,19 @@ TestNG proviene de las siglas de Test Next Generation y es un framework de autom
 
 TestNG facilita el desarrollo de pruebas de software en Java, ya que ejecuta las pruebas en clases, es decir, hace clases para las pruebas correspondientes y luego las procesa. Una novedad es que proporciona una funcionalidad adicional como anotaciones de prueba, agrupación, priorización, parametrización y técnicas de secuenciación en el código que no era posible antes, además de administrar los casos de prueba, incluso los informes detallados de las pruebas se pueden obtener utilizando TestNG. 
 
-<img src="images/testng.png" align="right" height="90"> 
+<img src="images/testng.png" width="50%"> 
 
 - [**`EJEMPLO 1 - TestNG`**](./Ejemplo-01)
 
 ---
 
-
-
 #### <ins>Tema 2: Localización de elementos con Selenium IDE</ins>
 
+Para entrar en el mundo de los localizadores de Selenium tenemos que explicar el concepto de WebElement, la misma es una clase creada para los elementos que componen la página web. Para Selenium WebDriver todos los elementos de una página web (campos de texto, botones, links, imágenes, entre otros..) son WebElements.
 
+Para poder encontrar WebElements en la página web, Selenium utiliza los localizadores que le permite al encontrarlo, ejecutar alguna acción sobre el cómo extraer su contenido, hacer un click, revisar si se encuentra disponible, etc..
 
-<img src="images/emulator.jpg" align="right" height="90"> 
+<img src="images/webelement.jpg" awidth="50%"> 
 
 - [**`EJEMPLO 2 - Localización de elementos con Selenium IDE`**](./Ejemplo-02)
 - [**`RETO 1`**](./Reto-01)
