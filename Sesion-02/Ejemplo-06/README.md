@@ -23,13 +23,9 @@ Donde los parámetros:
 
 #### Existen dos tipos se aserciones:
 
-- **Afirmación suave (Soft Assert):** Es un método no estático que cuando la condición de la aserción no coincide no arroja ningún error, y cuando falla la condición de aserción, continúa con el siguiente paso del caso de prueba generando un mensaje de error junto con una excepción de aserción, luego continúa con la misma ejecución del script de prueba.
+- **Afirmación dura (Hard Assert):** es un método estático que cuando el caso de prueba falla lanza un `AssertException`. Cuando esto sucede TestNG genera la excepción del mensaje de error, luego detiene la ejecución del script de prueba actual y continúa la implementación con el script de prueba siguiente.
 
-  En esta asercion se debe usar `assertAll()` al final de los scripts de prueba porque siempre recopila todos los seguimientos de registro y se muestra en la consola.
-
-- **Afirmación dura (Hard Assert):** es un método estático que cuando el caso de prueba falla lanza una `AssertException`. Cuando esto sucede TestNG genera la excepción del mensaje de error, luego detiene la ejecución del script de prueba actual y continúa la implementación con el script de prueba siguiente.
-
-Veamos el siguiente ejemplo
+**Veamos el siguiente ejemplo:**
 
 
 ```Java
@@ -40,7 +36,7 @@ import org.testng.annotations.Test;
 public class hardAssertTest1 {
 	
 	@Test(priority=1)
-    public void testLogin() {
+    public void test1() {
 		
         System.out.println("Se abre Google Chrome");
         
@@ -52,7 +48,7 @@ public class hardAssertTest1 {
     }
     
     @Test(priority=2)
-    public void register() {
+    public void test2() {
     	
     	System.out.println("Se abre el Firefox");
         
@@ -65,11 +61,63 @@ public class hardAssertTest1 {
 
 }
 ```
+<img src="assets/hardAssert.png" width="90%"> 
 
- > Si ejecutamos ese script de prueba ambos casos fallan, al ver en la consola vemos que solo se imprime la primera linea de cada caso, y no lo que sigue despues de la asercion, esto se debe a que son `Hard Assert`
- 
-<img src="assets/hardAssert.png" width="50%"> 
+> Si ejecutamos ese script de prueba ambos casos fallan ya que no se cumple la condicion del tipo de asercion empleada, al ver en la consola vemos 2 cosas, la primera es que se genera el `AssertionError` y la segunda es que solo se imprime la primera linea de cada caso, y no lo que sigue despues de la asercion, esto se debe a que son `Hard Assert`
 
+
+- **Afirmación suave (Soft Assert):** Es un método no estático que cuando la condición de la aserción no coincide no lanza un `AssertException`. Cuando esto sucede continúa con el siguiente paso del caso de prueba generando un mensaje de error junto con una excepción de aserción, luego continúa con la misma ejecución del script de prueba.
+
+  En esta asercion se debe usar `assertAll()` al final de los scripts de prueba porque siempre recopila todos los seguimientos de registro y se muestra en la consola el `AssertException`.
+
+**Veamos el siguiente ejemplo:**
+
+```Java
+package com.bedu.web_automation_course;
+
+import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
+
+public class softAssertTest1 {
+	//Creación del objecto SoftAssert
+    SoftAssert obj_softAssert = new SoftAssert();
+    
+    @Test(priority=1)
+    public void test1() {
+        System.out.println("Se abre Google Chrome");
+        
+        //soft Assert
+        obj_softAssert.assertEquals(true, false); // Esto retorna error ya que no coincide -> true <> false
+        
+        //Esta linea no se ejecutará
+        System.out.println("Se abre la pagina");   
+        
+      //assertAll en las softAssert se usa para lanzar las excepciones capturadas.
+        obj_softAssert.assertAll();        
+    }
+    
+    @Test(priority=2)
+    public void test2() {
+    	System.out.println("Se abre el Firefox");
+        
+    	// Esto retorna error ya la condicion es un boolean false
+    	obj_softAssert.assertTrue(false, "soft assert");  //Nota: en assertTrue los mensajes solo se imprimen cuando la asercion falla
+        
+      //Esta linea tampoco ejecutara
+        System.out.println("Se abre la pagina 2");   
+        
+        //assertAll en las softAssert se usa para lanzar las excepciones capturadas.
+        obj_softAssert.assertAll();  
+    }
+
+}
+```
+<img src="assets/softAssert.png" width="90%"> 
+
+> Si ejecutamos ese script de prueba ambos casos fallan ya que no se cumple la condicion del tipo de asercion empleada, al ver en la consola vemos 2 cosas, la primera es que se genera el `AssertionError` (por el uso sel metodo `assertAll()`) y la segunda se llega a ejecuatar el codigo que esta antes y despues de la asercion, sin importa si este falla o no, esto se debe a que son `Soft Assert`
+
+
+-- 
 <img src="assets/assertTypes.png" width="50%"> 
 
 Ahora explicaremos como funcionan las aserciones mas usadas en la actualidad:
