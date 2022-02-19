@@ -26,7 +26,6 @@ Estos son los métodos encargados de devolver el/los WebElement recibiendo como 
 >**💡 Conoceremos más sobre estos dos metodos en la sesión [**`Find element Vs Find elements`**](../Ejemplo-04)**
 
 
-
 #### Tipos de localizadores:
 
 - `By.id("xxxxx")`: El id es el identificador único del elemento. Debido a esto se recomienda siempre que el elemento tenga un id, utilizarlo como primera opción de localización.
