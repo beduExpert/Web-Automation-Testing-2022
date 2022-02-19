@@ -63,9 +63,11 @@ Selenium webdriver nos proporciona dos métodos para encontrar elementos web en 
 
 ---
 
-#### <ins>Tema 5: Clase Webdriver y WebElement</ins> `PENDIENTE`
+#### <ins>Tema 5: Clase Webdriver y WebElement</ins> `EN PROCESO`
 
-Entraremos en más detalle con respecto de que podemos hacer con la clase Webdriver y WebElement, ya que serán las más utilizadas para nuestras automatizaciones.
+Selenium WebDriver nos brinda la posibilidad de poder referirnos a estos elementos y ejecutar métodos específicos para realizar las mismas acciones que un humano haría sobre los mismos, gracias a las clases WebDriver y WebElement.
+
+Entraremos en más detalle con respecto de que podemos hacer con estas clases ya que serán las más utilizadas para nuestras automatizaciones.
 
 - [**`EJEMPLO 5 - Clase Webdriver y WebElement`**](./Ejemplo-05)
 
