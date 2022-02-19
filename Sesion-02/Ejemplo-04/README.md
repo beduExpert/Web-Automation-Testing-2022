@@ -23,7 +23,7 @@ WebElement element = driver.findElement(By locator);
 Un comando que es utilizado para la identificación de una lista de elementos web dentro de la página web. En caso de coincidencias múltiples, el método findElements devuelve una lista de webElements por lo que para interactuar con un elemento en particular, tenemos que encontrarlo por su índice, por ejemplo elementos.get(0).click(); realizará la operación de click en el primer elemento de la lista de 'elementos'. Si por el contrario el localizador pasado al método findElements() no lleva a ningún elemento, se devuelve una lista de tamaño 0 en lugar de una excepción.
 
 ```Java
-List<WebElement> elements = driver.findElements(By locator);
+List <WebElement> elements = driver.findElements(By locator);
 ```
 
 #### Ejemplo:
@@ -72,6 +72,9 @@ public class base {
 }
 
 ```
+
+<img src="assets/element.png" width="80%"> 
+
 > como podemos ver en los logs, findElement() retorna solo el primer elemento que consigue con el Xpath indicado, en cambio findElements() retorna todos los objetos con consigue con ese Xpath.
 
 **💡 Pro-tip:**
