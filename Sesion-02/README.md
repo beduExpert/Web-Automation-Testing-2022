@@ -53,7 +53,7 @@ En este tema veremos como trabajar con esperas, condiciones para la espera y man
 
 ---
 
-#### <ins>Tema 4: Find element Vs Find elements</ins> `PENDIENTE`
+#### <ins>Tema 4: Find element Vs Find elements</ins> `EN PROCESO`
 
 Para que selenium pueda interactuar con la página web requiere que un controlador ubique un elemento web y active un evento de JavaScript como por ejemplo hacer un clic, ingresar información a un campo de texto, seleccionar un elemento o tomar el valor de un campo. Por lo general, uno comienza la prueba automatizada de cualquier aplicación web al encontrar elementos web relevantes en la página web.
 
@@ -63,7 +63,7 @@ Selenium webdriver nos proporciona dos métodos para encontrar elementos web en 
 
 ---
 
-#### <ins>Tema 5: Clase Webdriver y WebElement</ins> `EN PROCESO`
+#### <ins>Tema 5: Clase Webdriver y WebElement</ins>
 
 Selenium WebDriver nos brinda la posibilidad de poder referirnos a estos elementos y ejecutar métodos específicos para realizar las mismas acciones que un humano haría sobre los mismos, gracias a las clases WebDriver y WebElement.
 
