@@ -2,11 +2,11 @@
 
 ## Objetivo
 
-* Agregar los objetivos del ejemplo (Mínimo agregar 2 objetivos y Borrar está linea una vez se hay leido)
+* Desarrollar scripts de pruebas automatizados con el uso de TesnNG y sus funcionalidades.
 
 ## Desarrollo
 
-TestNG proviene de las siglas de Test Next Generation y es un framework de automatización de pruebas de código abierto inspirado en JUnit y NUnit que terminó siendo una actualización de esos dos framework, es decir, se fusionaron para obtener un framework mucho más completo, que resolviera los problemas a los que los 2 anteriores no les daba solución.
+TestNG proviene de las siglas de `Test Next Generation` y es un framework de automatización de pruebas de código abierto inspirado en JUnit y NUnit que terminó siendo una actualización de esos dos framework, es decir, se fusionaron para obtener un framework mucho más completo, que resolviera los problemas a los que los 2 anteriores no les daba solución.
 
 TestNG facilita el desarrollo de pruebas de software en Java, ya que ejecuta las pruebas en clases, es decir, hace clases para las pruebas correspondientes y luego las procesa. Una novedad es que proporciona una funcionalidad adicional como anotaciones de prueba, agrupación, priorización, parametrización y técnicas de secuenciación en el código que no era posible antes, además de administrar los casos de prueba, incluso los informes detallados de las pruebas se pueden obtener utilizando TestNG.
 
@@ -44,6 +44,74 @@ Las mismas funcionan con un orden de ejecución basado en la lógica: Pre-condic
 9. `AfterSuite`: El método anotado con @AfterSuite se ejecutará después de que se hayan ejecutado todas las pruebas de la suite.
 
 
+Aca podemos ver y ejecutar un ejemplo de esta lógica:
+
+```Java
+package com.bedu.web_automation_course;
+
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterSuite;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeSuite;
+
+
+public class base {
+	
+	@BeforeSuite
+	public void beforeSuite() {
+		System.out.println("El método anotado con @BeforeSuite se ejecutará antes de que se hayan ejecutado todas las pruebas de la suite.");
+		}
+	
+	@BeforeTest
+	  public void beforeTest(){
+		System.out.println("El método anotado con @BeforeTest se ejecutará antes de que se ejecute cualquier método de prueba que pertenezca a una clase.");
+	  }
+
+	@BeforeClass
+	  public void beforeClass(){
+		System.out.println("El método anotado con @BeforeClass se ejecutará una vez antes de que se invoque el primer método de prueba en la clase actual.");
+	  }
+	
+	@BeforeMethod
+	  public void beforeMethod(){
+		System.out.println("El método anotado con @BeforeMethod se ejecutará antes de que se ejecute cualquier método de prueba dentro de una clase.");
+	  }
+	
+	@Test
+		public void test() {
+		System.out.println("El método anotado con @Test es el método de prueba principal en todo el programa. Se ejecutarán otros métodos anotados en torno a este método.");
+		  }
+
+	@AfterMethod
+	public void afterMethod() {
+		System.out.println("El método anotado con @AfterMethod se ejecutará después de que se ejecute cada método de prueba dentro de una clase.");
+	  }
+	
+	@AfterClass
+	public void afterClass() {
+		System.out.println("El método anotado con @AfterClass se ejecutará una vez después de que se hayan ejecutado todos los métodos de prueba de la clase actual.");
+	  }
+
+	@AfterTest
+	public void afterTest() {
+		System.out.println("El método anotado con @AfterTest se ejecutará después de que se hayan ejecutado todos los métodos de prueba que pertenecen a una clase.");
+	}
+
+	@AfterSuite
+	public void afterSuite() {
+		System.out.println("El método anotado con @AfterSuite se ejecutará después de que se hayan ejecutado todas las pruebas de la suite.");
+	}
+
+}
+```
+
+
+<img src="assets/anotaciones_2.png" width="80%"> 
 
 #### Prioridad de ejecución en las pruebas
 

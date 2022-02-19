@@ -16,7 +16,7 @@ Es por ello que en esta sesión nos adentraremos en el uso de TesnNG y Selenium 
 
 ---
 
-#### <ins>Tema 1: TestNG</ins> `EN PROCESO`
+#### <ins>Tema 1: TestNG</ins>
 
 TestNG proviene de las siglas de Test Next Generation y es un framework de automatización de pruebas de código abierto inspirado en JUnit y NUnit que terminó siendo una actualización de esos dos framework, es decir, se fusionaron para obtener un framework mucho más completo, que resolviera los problemas a los que los 2 anteriores no les daba solución.
 
