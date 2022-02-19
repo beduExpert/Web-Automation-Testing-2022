@@ -23,7 +23,7 @@ driver.findElements();
 
 Este es el métodos encargados de devolver el/los WebElement recibiendo como parámetro un localizador (By). 
 
->**💡 Conoceremos más sobre estos dos metodos en la sesión [**`Find element Vs Find elements`**](./Ejemplo-04)**
+>**💡 Conoceremos más sobre estos dos metodos en la sesión [**`Find element Vs Find elements`**](Sesion-02/Ejemplo-04)**
 
 
 
