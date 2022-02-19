@@ -1,4 +1,4 @@
-# Reto 06# - Soft Assert
+# Reto 04# - Afirmación suave (Soft Assert)
 
 ## Objetivo
 
