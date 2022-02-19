@@ -30,54 +30,54 @@ Estos son los métodos encargados de devolver el/los WebElement recibiendo como 
 
 - `By.id("xxxxx")`: El id es el identificador único del elemento. Debido a esto se recomienda siempre que el elemento tenga un id, utilizarlo como primera opción de localización.
 
-```Java
-driver.findElement(By.id("id"));
-```
+    ```Java
+    driver.findElement(By.id("id"));
+    ```
 
 - `By.name("xxxxx")`:  busca si el elemento tiene un atributo name determinado. En caso que no tengamos un id y es recomendable usar el name (si lo tiene). Usualmente los nombres de los elementos son únicos y nos permiten ubicar un elemento con facilidad.
 
-```Java
-driver.findElement(By.name("name"));
-```
+    ```Java
+    driver.findElement(By.name("name"));
+    ```
 
 - `By.className("xxxxx.class")`: Este localizador se refiere al atributo class del elemento Web.
 
-```Java
-driver.findElement(By.className("className"));
-```
+    ```Java
+    driver.findElement(By.className("className"));
+    ```
 
 - `By.tagName("xxxxx")`:  Este localizador busca por el nombre del tag del elemento dentro del DOM(Document Object Model)
 
-```Java
-driver.findElement(By.tagName("tagName"));
-```
+    ```Java
+    driver.findElement(By.tagName("tagName"));
+    ```
 
 - `By.linkText("xxxxx")`:  Este localizador busca links en la página donde el texto coincida con el parámetro que le pasamos al método linkText().
 
-```Java
-driver.findElement(By.linkText("linkText"));
-```
+    ```Java
+    driver.findElement(By.linkText("linkText"));
+    ```
 
 - `By.partialLinkText("xxxxx")`: Este localizador busca links en la página donde el texto coincida parcialmente con el parámetro que le pasamos al método partialLinkText(“string”).
 
-```Java
-driver.findElement(By.partialLinkText("partialLinkText"));
-```
+    ```Java
+    driver.findElement(By.partialLinkText("partialLinkText"));
+    ```
 
 - `By.cssSelector("input[name=’xxxxx’]")`: Este localizador es una estrategia de localización que utiliza el lenguaje CSS para encontrar el elemento.
 
-```Java
-driver.findElement(By.cssSelector("cssSelector"));
-```
+    ```Java
+    driver.findElement(By.cssSelector("cssSelector"));
+    ```
 
 - `By.xpath("//input[@name='xxxxx']")`: Permite encontrar elementos por su XPATH(es un lenguaje que permite recorrer y procesar los elementos del DOM, por lo que es muy útil para encontrar un WebElement)
 
-```Java
-driver.findElement(By.xpath("//input[@type='submit']"));
-```
+    ```Java
+    driver.findElement(By.xpath("//input[@type='submit']"));
+    ```
 
 
-Codigo de Ejemplo:
+#### Puedes ejecutar este código de Ejemplo:
 
 ```Java
 package com.bedu.web_automation_course;
