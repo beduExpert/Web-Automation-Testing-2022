@@ -73,7 +73,7 @@ public class base {
 
 ```
 
-<img src="assets/element.png" width="80%"> 
+<img src="assets/element.png"> 
 
 > como podemos ver en los logs, findElement() retorna solo el primer elemento que consigue con el Xpath indicado, en cambio findElements() retorna todos los objetos con consigue con ese Xpath.
 
