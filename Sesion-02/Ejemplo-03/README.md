@@ -2,7 +2,9 @@
 
 ## Objetivo
 
-* Agregar los objetivos del ejemplo (Mínimo agregar 2 objetivos y Borrar está linea una vez se hay leido)
+* Examinar los tipos de esperas existentes para poder determinar cual es la que mejor se adhiere a los scripts de pruebas automatizados.
+* Hacer uso de los métodos de condiciones esperadas para la integración de esperas explicitas.
+* Emplear el manejo de exepciones como estrategia de prevención de fallos en los scripts de pruebas automatizados.
 
 ## Desarrollo
 
@@ -14,7 +16,7 @@ Las excepciones no son más que eventos debido a los cuales el programa java fin
 - `ElementNotSelectableException`: un elemento está deshabilitado (no se puede hacer clic / seleccionar) a pesar de estar presente en el DOM
 - `NoSuchElementException`: Webdriver no puede determinar los elementos durante el tiempo de ejecución, es decir, el método FindBy no puede encontrar un componente en particular
 - `NoSuchFrameException`: Webdriver intenta cambiar a un frame no válido, que no está disponible
-- `NoAlertPresentException: Webdriver está intentando cambiar a una alerta no válida, que no está disponible
+- `NoAlertPresentException`: Webdriver está intentando cambiar a una alerta no válida, que no está disponible
 - `NoSuchWindowException`: Webdriver está intentando cambiar a una ventana no válida, que no está disponible
 - `StaleElementReferenceException`: el elemento referenciado ya no está presente en la página DOM (una referencia a un componente ahora es obsoleta). Por ejemplo, el elemento pertenece a un frame diferente al actual o el usuario se ha desplazado a otra página
 - `SessionNotFoundException`: Webdriver está actuando inmediatamente después de «salir» del navegador
@@ -31,7 +33,7 @@ Las excepciones no son más que eventos debido a los cuales el programa java fin
 Esto nos ha pasado muchas veces, ya que la mayoría de las aplicaciones web se desarrollan utilizando Ajax y JavaScript. Cuando una página es cargada por el navegador, los elementos con los que queremos interactuar pueden cargarse a intervalos de tiempo diferentes.
 
 
-No sólo hace que esto sea difícil de identificar el elemento, sino también si el elemento no está situado, se producirá una excepción «ElementNotVisibleException». 
+No sólo hace que esto sea difícil de identificar el elemento, sino también si el elemento no está situado, se producirá una excepción `ElementNotVisibleException`. 
 
 Usando las esperas, podemos resolver este problema. Existen 2 tipos de esperas:
 
@@ -45,6 +47,10 @@ driver.get("http://google.com");
 WebElement googleSearch = driver.findElement(By.name("q"));
 ```
  
+
+ :bangbang: La espera implícita a que aparezcan los elementos está deshabilitada de forma predeterminada y deberá habilitarse manualmente por sesión. Suele usarse la clase Thread.sleep(2000) de java para esperas implicitas.
+
+
 #### __Espera Explícita (Explicit Wait):__
 Este tipo de espera, a diferencia de la espera implícita, se utiliza para decirle al WebDriver que espere ciertas condiciones (Expected Conditions) o el tiempo máximo excedido antes de lanzar una excepción`ElementNotVisibleException`. La condición se llama con cierta frecuencia hasta que transcurre el tiempo de espera. Esto significa que mientras la condición devuelva un valor falso, seguirá intentándolo y esperando. Se podría decir que es un tipo inteligente de espera. Por ejemplo:
 
@@ -100,3 +106,56 @@ Las siguientes son las condiciones esperadas que se pueden utilizar en la espera
 - `visibilityOfAllElements()`
 - `visibilityOfAllElementsLocatedBy()`
 - `visibilityOfElementLocated()`
+
+Veamos un ejemplo:
+
+```Java
+package com.bedu.web_automation_course;
+
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.AfterTest;
+
+import java.time.Duration;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+
+public class base {
+
+	private WebDriver driver;
+
+		  @BeforeTest
+		  public void beforeTest() {
+				System.setProperty("webdriver.chrome.driver", "src/test/resources/webdrivers/chromedriver");
+				driver = new ChromeDriver();
+				driver.manage().window().maximize();
+				driver.get("https://www.google.com/");				
+		  }
+
+		  @Test
+		  public void test() {
+			  
+			  driver.findElement(By.name("q")).sendKeys("bedu" + Keys.ENTER);  //Keys.ENTER simula un enter, proviene de la clase Keys
+
+			  //inicializamos un objeto de tipo WebDriverWait
+			  WebElement firstResult = new WebDriverWait(driver, Duration.ofSeconds(10))
+				        .until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@type='submit']"))); //este elemento no esta en la pantalla asi que generara un TimeoutException
+
+			  //Vemos el resultado
+				System.out.println(firstResult.getText());
+		  }
+
+		  @AfterTest
+		  public void afterTest() {
+			  	driver.close();
+		  }
+
+}
+```

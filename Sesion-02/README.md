@@ -50,7 +50,7 @@ Para poder encontrar WebElements en la página web, Selenium utiliza los localiz
 En este tema veremos como trabajar con esperas, condiciones para la espera y manejo de excepciones.
 
 - [**`EJEMPLO 3 - Trabajando con Esperas, Condiciones y Manejo de excepciones`**](./Ejemplo-03)
-
+- [**`RETO 3`**](./Reto-03)
 ---
 
 #### <ins>Tema 4: Find element Vs Find elements</ins>
@@ -80,7 +80,7 @@ Como último tema de esta sesión veremos lo referente al último paso de nuestr
 Para estas validaciones TestNG nos ofrece lo que se llaman “aserciones” que se obtienen de la clase Assert.
 
 - [**`EJEMPLO 6  - Validaciones o Aserciones`**](./Ejemplo-06)
-- [**`RETO 6`**](./Reto-06)
+- [**`RETO 4`**](./Reto-04)
 ---
 
 ### 3. Postwork :memo:
