@@ -1,8 +1,8 @@
-# Reto # - Nombre del reto
+# Reto 03# - Condiciones esperadas en esperas explicidas
 
 ## Objetivo
 
-* Practicar el uso de esperas explicitas en los scripts.
+* Practicar el uso de las condiciones esperadas en las esperas explicitas.
 
 ## Desarrollo
 

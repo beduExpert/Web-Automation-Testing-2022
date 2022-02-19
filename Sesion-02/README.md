@@ -29,7 +29,7 @@ TestNG facilita el desarrollo de pruebas de software en Java, ya que ejecuta las
 
 ---
 
-#### <ins>Tema 2: Localización de elementos con Selenium IDE</ins> `PENDIENTE`
+#### <ins>Tema 2: Localización de elementos con Selenium IDE</ins> `EN PROCESO`
 
 Para entrar en el mundo de los localizadores de Selenium tenemos que explicar el concepto de WebElement, la misma es una clase creada para los elementos que componen la página web. Para Selenium WebDriver todos los elementos de una página web (campos de texto, botones, links, imágenes, entre otros..) son WebElements.
 
@@ -43,7 +43,7 @@ Para poder encontrar WebElements en la página web, Selenium utiliza los localiz
 
 
 
-#### <ins>Tema 3: Trabajando con Esperas, Condiciones y Manejo de excepciones</ins> `EN PROCESO`
+#### <ins>Tema 3: Trabajando con Esperas, Condiciones y Manejo de excepciones</ins> 
 
 ¿Recuerdas en algún momento haber ingresado en alguna página web y que la misma se tarde en cargar, o que en vez de eso, se cargue pero observamos que faltan elementos por cargarse?. O que por el contrario la pagina se cierra abruptamente sin tener idea de que sucedio?
 
