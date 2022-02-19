@@ -1,8 +1,8 @@
-# Reto 03# - Condiciones esperadas en esperas explicidas
+# Reto 03# - Condiciones esperadas en esperas Explícitas
 
 ## Objetivo
 
-* Practicar el uso de las condiciones esperadas en las esperas explicitas.
+* Practicar el uso de las condiciones esperadas en las esperas Explícitas.
 
 ## Desarrollo
 
