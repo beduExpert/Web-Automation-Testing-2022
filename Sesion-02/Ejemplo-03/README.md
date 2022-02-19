@@ -10,16 +10,16 @@
 
 Las excepciones no son más que eventos debido a los cuales el programa java finaliza abruptamente sin dar el resultado esperado. 
 
-- __ElementNotVisibleException:__ a pesar de que el elemento está presente en el DOM, no es visible. Por ejemplo, elementos definidos en HTML con type = «hidden»
-ElementNotSelectableException: un elemento está deshabilitado (no se puede hacer clic / seleccionar) a pesar de estar presente en el DOM
-- __NoSuchElementException:__ Webdriver no puede determinar los elementos durante el tiempo de ejecución, es decir, el método FindBy no puede encontrar un componente en particular
-- __NoSuchFrameException:__ Webdriver intenta cambiar a un frame no válido, que no está disponible
-- NoAlertPresentException: Webdriver está intentando cambiar a una alerta no válida, que no está disponible
-- __NoSuchWindowException:__ Webdriver está intentando cambiar a una ventana no válida, que no está disponible
-- __StaleElementReferenceException:__ el elemento referenciado ya no está presente en la página DOM (una referencia a un componente ahora es obsoleta). Por ejemplo, el elemento pertenece a un frame diferente al actual o el usuario se ha desplazado a otra página
-- __SessionNotFoundException:__ Webdriver está actuando inmediatamente después de «salir» del navegador
-- __TimeoutException:__ el comando no se completó en el tiempo especificado. Por ejemplo, el elemento no se mostró en el tiempo especificado. Esto se encuentra especialmente cuando se trabaja con esperas de selenium webdriver
-- __WebDriverException:__ Webdriver está actuando inmediatamente después de ‘cerrar’ el navegador
+- `ElementNotVisibleException`: a pesar de que el elemento está presente en el DOM, no es visible. Por ejemplo, elementos definidos en HTML con type = «hidden»
+- `ElementNotSelectableException`: un elemento está deshabilitado (no se puede hacer clic / seleccionar) a pesar de estar presente en el DOM
+- `NoSuchElementException`: Webdriver no puede determinar los elementos durante el tiempo de ejecución, es decir, el método FindBy no puede encontrar un componente en particular
+- `NoSuchFrameException`: Webdriver intenta cambiar a un frame no válido, que no está disponible
+- `NoAlertPresentException: Webdriver está intentando cambiar a una alerta no válida, que no está disponible
+- `NoSuchWindowException`: Webdriver está intentando cambiar a una ventana no válida, que no está disponible
+- `StaleElementReferenceException`: el elemento referenciado ya no está presente en la página DOM (una referencia a un componente ahora es obsoleta). Por ejemplo, el elemento pertenece a un frame diferente al actual o el usuario se ha desplazado a otra página
+- `SessionNotFoundException`: Webdriver está actuando inmediatamente después de «salir» del navegador
+- `TimeoutException`: el comando no se completó en el tiempo especificado. Por ejemplo, el elemento no se mostró en el tiempo especificado. Esto se encuentra especialmente cuando se trabaja con esperas de selenium webdriver
+- `WebDriverException`: Webdriver está actuando inmediatamente después de ‘cerrar’ el navegador
 
 >**💡 Pro-tip**
 >La mejor manera de manejar estas excepciones es usando varias técnicas como Try/catch, Múltiple bloques de catch, Finally y otras dependiendo de los requisitos de los scripts
@@ -36,7 +36,7 @@ No sólo hace que esto sea difícil de identificar el elemento, sino también si
 Usando las esperas, podemos resolver este problema. Existen 2 tipos de esperas:
 
 #### __Espera Implícita (Implicit Wait):__
-Se utiliza para establecer el tiempo de espera predeterminado. Este tipo de espera le dirá al WebDriver que espere cierta cantidad de tiempo (por defecto es 0) antes de que lance una excepción de «No Such Element Exception». Una vez que configuremos el tiempo, el WebDriver esperará ese tiempo antes de lanzar una excepción. Por ejemplo:
+Se utiliza para establecer el tiempo de espera predeterminado. Este tipo de espera le dirá al WebDriver que espere cierta cantidad de tiempo (por defecto es 0) antes de que lance una excepción de `No Such Element Exception`. Una vez que configuremos el tiempo, el WebDriver esperará ese tiempo antes de lanzar una excepción. Por ejemplo:
 
 ```Java
 WebDriver driver = new FirefoxDriver();
@@ -46,7 +46,7 @@ WebElement googleSearch = driver.findElement(By.name("q"));
 ```
  
 #### __Espera Explícita (Explicit Wait):__
-Este tipo de espera, a diferencia de la espera implícita, se utiliza para decirle al WebDriver que espere ciertas condiciones (Expected Conditions) o el tiempo máximo excedido antes de lanzar una excepción «ElementNotVisibleException». La condición se llama con cierta frecuencia hasta que transcurre el tiempo de espera. Esto significa que mientras la condición devuelva un valor falso, seguirá intentándolo y esperando. Se podría decir que es un tipo inteligente de espera. Por ejemplo:
+Este tipo de espera, a diferencia de la espera implícita, se utiliza para decirle al WebDriver que espere ciertas condiciones (Expected Conditions) o el tiempo máximo excedido antes de lanzar una excepción`ElementNotVisibleException`. La condición se llama con cierta frecuencia hasta que transcurre el tiempo de espera. Esto significa que mientras la condición devuelva un valor falso, seguirá intentándolo y esperando. Se podría decir que es un tipo inteligente de espera. Por ejemplo:
 
 ```Java
 WebDriver driver = new ChromeDriver();
@@ -74,7 +74,7 @@ WebElement foo = wait.until(new Function<WebDriver, WebElement>() {
 });
 ```
   
-__ :bangbang: Error:__ no se debe mezclar las esperas implícitas y explícitas. Esto se debe a que puede causar tiempos de espera impredecibles. Por ejemplo, establecer una espera implícita de 10 segundos y una espera explícita de 15 segundos podría causar un tiempo de espera después de 20 segundos.
+:bangbang: __Error:__ no se debe mezclar las esperas implícitas y explícitas. Esto se debe a que puede causar tiempos de espera impredecibles. Por ejemplo, establecer una espera implícita de 10 segundos y una espera explícita de 15 segundos podría causar un tiempo de espera después de 20 segundos.
 
 
 #### ¿Qué son las condiciones o `ExpectedConditions`?
@@ -82,21 +82,21 @@ Las condiciones o condiciones esperadas se utilizan para realizar esperas explí
 
 Las siguientes son las condiciones esperadas que se pueden utilizar en la espera explícita:
 
-- alertIsPresent()
-- elementSelectionStateToBe()
-- elementToBeClickable()
-- elementToBeSelected()
-- frameToBeAvaliableAndSwitchToIt()
-- invisibilityOfTheElementLocated()
-- invisibilityOfElementWithText()
-- presenceOfAllElementsLocatedBy()
-- presenceOfElementLocated()
-- textToBePresentInElement()
-- textToBePresentInElementLocated()
-- textToBePresentInElementValue()
-- titleIs()
-- titleContains()
-- visibilityOf()
-- visibilityOfAllElements()
-- visibilityOfAllElementsLocatedBy()
-- visibilityOfElementLocated()
+- `alertIsPresent()`
+- `elementSelectionStateToBe()`
+- `elementToBeClickable()`
+- `elementToBeSelected()`
+- `frameToBeAvaliableAndSwitchToIt()`
+- `invisibilityOfTheElementLocated()`
+- `invisibilityOfElementWithText()`
+- `presenceOfAllElementsLocatedBy()`
+- `presenceOfElementLocated()`
+- `textToBePresentInElement()`
+- `textToBePresentInElementLocated()`
+- `textToBePresentInElementValue()`
+- `titleIs()`
+- `titleContains()`
+- `visibilityOf()`
+- `visibilityOfAllElements()`
+- `visibilityOfAllElementsLocatedBy()`
+- `visibilityOfElementLocated()`
