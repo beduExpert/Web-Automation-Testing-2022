@@ -34,9 +34,6 @@ package com.bedu.web_automation_course;
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.AfterTest;
-
-import java.time.Duration;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -52,7 +49,7 @@ public class base {
 				driver = new ChromeDriver();
 				driver.manage().window().maximize();
 				driver.get("https://www.google.com/");
-				driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+				Thread.sleep(2000);
 				
 		  }
 
