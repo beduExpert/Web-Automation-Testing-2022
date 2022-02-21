@@ -1,4 +1,4 @@
-## Sesión 2: Selenium Webdriver: First Steps 🤖
+## Sesión 2: Selenium Webdriver: Primeros pasos 🤖
 
 <div style="text-align: justify;">
 

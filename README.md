@@ -33,7 +33,7 @@ Como proyecto desarrollaremos un framework de pruebas automatizadas en el sitio 
 ## :bookmark_tabs: Sesiones
 
 - [`Sesión 01:` Selenium Installation & Setup](./Sesion-01)
-- [`Sesión 02:` Selenium Webdriver: First Steps](./Sesion-02)
+- [`Sesión 02:` Selenium Webdriver: Primeros Pasos](./Sesion-02)
 - [`Sesión 03:` Page Object Model (POM)](./Sesion-03)
 - [`Sesión 04:` Data Capture](./Sesion-04)
 - [`Sesión 05:` Working with Databases](./Sesion-05)
