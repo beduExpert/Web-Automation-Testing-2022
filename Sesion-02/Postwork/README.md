@@ -25,9 +25,18 @@
 
 
 ## Desarrollo
-- Estructura los casos de pruebas en tu proyecto usando las anotaciones TestNG para darles lógica de ejecución.
-- Utiliza selenium IDE para identificar los localizadores de los elementos en la pantalla para que puedan ser automatizados.
-- Debes hacer uso en tu código de algún tipo de espera, puede ser implícita o explícita.
-- Trata de incluir técnicas de manejo de errores como Try/catch.
-- Utiliza propiedades/métodos de las clases WebDriver y WebElement.
-- Incluye aserciones en tu código para validar el resultado esperado.
+- Estructura los casos de pruebas en tu proyecto usando las siguientes anotaciones TestNG para darles lógica de ejecución:
+    - @BeforeTest
+    - @BeforeMethod
+    - @Test
+    - @AfterMethod
+    - @AfterTest
+
+- Agregale prioridad a tus casos de pruebas con el uso de la anotación de TestNG `@Test (Priority)`
+- Utiliza selenium IDE o la herramienta de desarrolladores de google chrome para identificar los localizadores de los elementos en la pantalla para luego incluirlos es los scripts de prueba. __Pro-tip:__ Asegúrate que si tiene id o name usa preferiblemente estos localizadores.
+- Incluye en tu código tipos de esperas explícitas, incluyendo a su vez las condiciones esperadas.
+- Trata de incluir técnicas de manejo de errores como `Try/catch`.
+- Utiliza propiedades/métodos de la clase WebDriver como: `driver.close()`, `driver.manage()`, `driver.get()`.
+- Utiliza propiedades/métodos de la clase WebElement como: `click()`, `sendKeys()`,`clear()`.
+- Incluye aserciones en tu código para validar el resultado esperado del caso de prueba que estás ejecutando. __Pro-tip:__ Si lo requieres puedes incluir varias aserciones en un mismo caso de prueba. 
+
