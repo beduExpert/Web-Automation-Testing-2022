@@ -28,7 +28,7 @@ Conoceremos sobre que son los patrones de diseño de automatizacion de pruebas y
 
 ---
 
-#### <ins>Tema 2: Page Object Model (POM)</ins> `EN PROCESO`
+#### <ins>Tema 2: Page Object Model (POM)</ins> 
 
 `Page Object Model` es un __patrón de diseño__ que se ha vuelto popular en la automatización de pruebas para mejorar el mantenimiento de las pruebas y __reducir la duplicación de código__. Un `objeto de página (page object)` es una clase orientada a objetos que sirve como interfaz para una página, luego, las pruebas usan los métodos de esta clase de objeto de página cada vez que necesitan interactuar con la interfaz de usuario de esa página. 
 
@@ -40,7 +40,7 @@ El beneficio es que __si la interfaz de usuario cambia para la página, las prue
 - [**`RETO 1`**](./Reto-01)
 ---
 
-#### <ins>Tema 3: Implementación de POM en Selenium</ins> `PENDIENTE`
+#### <ins>Tema 3: Implementación de POM en Selenium</ins> `EN PROCESO`
 
 En este tema abordaremos con ejercicios practicos como implementar Page Object Model en nuestros proyectos de automatización de Pruebas.
 
