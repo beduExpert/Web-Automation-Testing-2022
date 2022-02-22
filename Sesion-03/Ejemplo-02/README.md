@@ -7,7 +7,7 @@
 ## Desarrollo
 
 
-Dentro de la interfaz de usuario de una aplicación web, hay áreas con las que interactúan las pruebas. Un objeto de página simplemente los modela como objetos dentro del código de prueba. Esto reduce la cantidad de código duplicado y significa que si la interfaz de usuario cambia, la solución solo debe aplicarse en un lugar.
+Dentro de la interfaz de usuario de una aplicación web, hay áreas con las que interactúan las pruebas. Un `objeto de página (Object Page)` simplemente los modela como objetos dentro del código de prueba. Esto reduce la cantidad de código duplicado y significa que si la interfaz de usuario cambia, la solución solo debe aplicarse en un lugar.
 
 <img src="assets/pom_2.png" width="40%"> 
  
@@ -25,7 +25,7 @@ Al igual que en el tema anterior, explicaremos los tipos de patrones teniendo en
 
 Observa el siguiente ejemplo del diagrama de clase de la implementación del patrón POM:
 
-<img src="assets/diagrama_pom.png" width="40%"> 
+<img src="assets/diagrama_pom.png" width="80%"> 
 
 > Acá se tiene la clase `LoginPage` con los localizadores y acciones de la página de login. Luego se definen los `test`, los cuales invocan el método de `loginPage` enviando los parámetros del escenario de prueba.
 
