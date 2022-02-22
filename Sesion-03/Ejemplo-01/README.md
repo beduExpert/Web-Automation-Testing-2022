@@ -3,7 +3,7 @@
 ## Objetivo
 
 * Demostrar los tipos de patrones de diseño existente y sus usos y beneficios.
-__
+
 
 ## Desarrollo
 
@@ -30,10 +30,10 @@ Explicaremos los tipos de patrones teniendo en cuenta 4 aspectos fundamentales: 
 
 
 #### Patron Screenplay: 
-- __Problema:__ Al implementar el patrón POM, las clases se hacen muy extensas por lo cual no se cumple con principio SOLID de responsabilidad simple por cada clase
-- __Contexto:__ Proyecto de pruebas automatizadas que tenga más de un caso de prueba sobre la misma funcionalidad y de mayor tamaño
-- __Solución:__ Adicional de crear clase independiente con los localizadores de objetos, se crea clase independiente con acciones y otra con tareas.
-- __Resultado:__ Reducción  del tamaño de las clases de tal manera se estructura el proyecto de manera más organizada.
+- `Problema:` Al implementar el patrón POM, las clases se hacen muy extensas por lo cual no se cumple con principio SOLID de responsabilidad simple por cada clase
+- `Contexto:`__` Proyecto de pruebas automatizadas que tenga más de un caso de prueba sobre la misma funcionalidad y de mayor tamaño
+- `Solución:` Adicional de crear clase independiente con los localizadores de objetos, se crea clase independiente con acciones y otra con tareas.
+- `Resultado:` Reducción  del tamaño de las clases de tal manera se estructura el proyecto de manera más organizada.
 
 
 Observa el siguiente ejemplo del diagrama de clases de la implementación del patrón `ScreenPlay`:
@@ -43,10 +43,10 @@ Observa el siguiente ejemplo del diagrama de clases de la implementación del pa
 > En este ejemplo se tiene la clase `LoginScreen` con únicamente los localizadores. Aparte se tiene la clase `Actions` con las acciones de la página de login. Luego se tiene una clase `LoginTask` que invoca a los localizadores junto con las acciones para definir el paso a paso de la prueba. Finalmente se tiene la clase `test`, que hace el llamado a `Logintask` enviando los parámetros del escenario de prueba.
 
 #### Patrón comandos: 
-- __Problema:__ Complejidad en mantenimiento del proyecto de pruebas automatizadas en proyectos donde se ha aplicado el patrón ScreenPlay; o Clases muy extensas al implementar el patrón de PageObject. Por lo cual tampoco se se cumple con principio SOLID de responsabilidad simple por cada clase
-- __Contexto:__ Proyecto de pruebas automatizadas que ya esté usando otros patrones o cualquiera que tenga más de un caso de prueba sobre la misma funcionalidad.
-- __Solución:__ Crear una clase que contenga un comando con el paso a paso de la prueba, adicional a una clase con localizadores de objetos. Cada clase tendría su responsabilidad independiente.
-- __Resultado:__ al cambiar un elemento web se actualiza solo en la clase de localizadores y no en todos los tests. Las clases de comandos o tareas estarían organizadas por funcionalidad dando más sentido de negocio a la estructura del proyecto de pruebas automatizadas
+- `Problema:` Complejidad en mantenimiento del proyecto de pruebas automatizadas en proyectos donde se ha aplicado el patrón ScreenPlay; o Clases muy extensas al implementar el patrón de PageObject. Por lo cual tampoco se se cumple con principio SOLID de responsabilidad simple por cada clase
+- `Contexto:`Proyecto de pruebas automatizadas que ya esté usando otros patrones o cualquiera que tenga más de un caso de prueba sobre la misma funcionalidad.
+- `Solución:` Crear una clase que contenga un comando con el paso a paso de la prueba, adicional a una clase con localizadores de objetos. Cada clase tendría su responsabilidad independiente.
+- `Resultado:` al cambiar un elemento web se actualiza solo en la clase de localizadores y no en todos los tests. Las clases de comandos o tareas estarían organizadas por funcionalidad dando más sentido de negocio a la estructura del proyecto de pruebas automatizadas
 
 Observa el siguiente ejemplo del diagrama de clases de la implementación del `patrón comandos`:
 
