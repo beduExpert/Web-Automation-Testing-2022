@@ -2,19 +2,18 @@
 
 ## Objetivo
 
-* * Demostrar el sus usos y ventajas del patrón Page Object Model como patron de automatización de pruebas.
+* Demostrar el sus usos y ventajas del patrón Page Object Model como patron de automatización de pruebas.
 
 ## Desarrollo
 
 
 Dentro de la interfaz de usuario de una aplicación web, hay áreas con las que interactúan las pruebas. Un objeto de página simplemente los modela como objetos dentro del código de prueba. Esto reduce la cantidad de código duplicado y significa que si la interfaz de usuario cambia, la solución solo debe aplicarse en un lugar.
 
-<img src="assets/pom.png" width="40%"> 
+<img src="assets/pom_2.png" width="40%"> 
  
 `Page Object` es un patrón de diseño que se ha vuelto popular en la automatización de pruebas para mejorar el mantenimiento de las pruebas y reducir la duplicación de código. Un objeto de página (page object) es una clase orientada a objetos que sirve como interfaz para una página, luego, las pruebas usan los métodos de esta clase de objeto de página cada vez que necesitan interactuar con la interfaz de usuario de esa página. El beneficio es que si la interfaz de usuario cambia para la página, las pruebas en sí mismas no necesitan cambiar, solo el código dentro del objeto de la página debe cambiar. Posteriormente, todos los cambios para admitir esa nueva interfaz de usuario se ubican en un solo lugar.
  
-
-<img src="assets/pom_2.png" width="40%"> 
+<img src="assets/pom.png" width="40%"> 
 
 Al igual que en el tema anterior, explicaremos los tipos de patrones teniendo en cuenta 4 aspectos fundamentales: `Origen`, `Contexto`, `Solución` y `Resultado`.
 
