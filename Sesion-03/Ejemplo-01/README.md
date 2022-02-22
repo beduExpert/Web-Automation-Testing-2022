@@ -1,15 +1,60 @@
-# Ejemplo # - Nombre del ejemplo
+# Ejemplo-01# - Patrones de diseño de automatización
 
 ## Objetivo
 
-* Agregar los objetivos del ejemplo (Mínimo agregar 2 objetivos y Borrar está linea una vez se hay leido)
+* Demostrar los tipos de patrones de diseño existente y sus usos y beneficios.
+__
 
 ## Desarrollo
 
->**💡 Nota para experto(a)**
->
-> Este es un ejemplo por si el experto necesita tener en cuenta un punto clave durante el ejemplo.
->Si no es necesario, puedes borrar esta nota.
+#### ¿Que es un patrón de diseño?
+Un patrón de diseño es un «boceto, base o esqueleto de soluciones a problemas comunes o recurrentes en desarrollo de software». En otras palabras, es una solución probada que se ajusta a las necesidades de determinado tipo de sistema o aplicación.
 
-Aquí se debe agregar el desarrollo del ejemplo
+#### Objetivos principales de un patrón de diseño:
 
+- Proporcionar un catálogo de elementos reutilizables.
+- Evitar la reiteración en la búsqueda de soluciones a problemas ya conocidos y solucionados con anterioridad.
+- Estandarizar el modo en el que se realiza el diseño.
+- Facilitar el aprendizaje y organización del código para el ingreso de futuros programadores que vengan a revisar el código.
+
+#### Integración de patrones en el mundo del testing automatizado:
+ 
+Para automatización de pruebas, los patrones son considerados una buena práctica para mejorar la mantenibilidad y que nuestra automatización de pruebas de software sean un éxito en cuanto a:
+
+- Adaptación de nuevas personas en el equipo
+- Código legible y entendible
+- Fácil mantenimiento
+
+#### Tipos de patrones de diseño
+Explicaremos los tipos de patrones teniendo en cuenta 4 aspectos fundamentales: Problema, Contexto, Solución y Resultado.
+
+
+#### Patron Screenplay: 
+- __Problema:__ Al implementar el patrón POM, las clases se hacen muy extensas por lo cual no se cumple con principio SOLID de responsabilidad simple por cada clase
+- __Contexto:__ Proyecto de pruebas automatizadas que tenga más de un caso de prueba sobre la misma funcionalidad y de mayor tamaño
+- __Solución:__ Adicional de crear clase independiente con los localizadores de objetos, se crea clase independiente con acciones y otra con tareas.
+- __Resultado:__ Reducción  del tamaño de las clases de tal manera se estructura el proyecto de manera más organizada.
+
+
+Observa el siguiente ejemplo del diagrama de clases de la implementación del patrón `ScreenPlay`:
+
+<img src="assets/patron_screenplay.png" width="80%"> 
+
+> En este ejemplo se tiene la clase `LoginScreen` con únicamente los localizadores. Aparte se tiene la clase `Actions` con las acciones de la página de login. Luego se tiene una clase `LoginTask` que invoca a los localizadores junto con las acciones para definir el paso a paso de la prueba. Finalmente se tiene la clase `test`, que hace el llamado a `Logintask` enviando los parámetros del escenario de prueba.
+
+#### Patrón comandos: 
+- __Problema:__ Complejidad en mantenimiento del proyecto de pruebas automatizadas en proyectos donde se ha aplicado el patrón ScreenPlay; o Clases muy extensas al implementar el patrón de PageObject. Por lo cual tampoco se se cumple con principio SOLID de responsabilidad simple por cada clase
+- __Contexto:__ Proyecto de pruebas automatizadas que ya esté usando otros patrones o cualquiera que tenga más de un caso de prueba sobre la misma funcionalidad.
+- __Solución:__ Crear una clase que contenga un comando con el paso a paso de la prueba, adicional a una clase con localizadores de objetos. Cada clase tendría su responsabilidad independiente.
+- __Resultado:__ al cambiar un elemento web se actualiza solo en la clase de localizadores y no en todos los tests. Las clases de comandos o tareas estarían organizadas por funcionalidad dando más sentido de negocio a la estructura del proyecto de pruebas automatizadas
+
+Observa el siguiente ejemplo del diagrama de clases de la implementación del `patrón comandos`:
+
+
+<img src="assets/patron_comandos.png" width="80%"> 
+
+
+
+> En este ejemplo se tiene la clase `LocatorsPage` con únicamente los localizadores. Aparte se tiene la clase `LoginCommand` con las acciones de la página de login junto con los paso a paso de la prueba. Finalmente se tiene la clase `test`, que hace el llamado a `LoginCommand` enviando los parámetros del escenario de prueba. Es similar a `Screenplay`, pero las __acciones y tareas__ se unifican en los comandos.
+
+#### Patrón Page Object: [**`Lo veremos en el siguiente tema mas a detalle`**](../Ejemplo-02)
