@@ -22,6 +22,8 @@ En esta sesión analizaremos cómo podemos usar el patrón de diseño `Page Obje
 
 Conoceremos sobre que son los patrones de diseño de automatizacion de pruebas y sus tipos, si bien solo nos enfocaremos en este modulo en el patrón de diseño `Page Object Model` es importante conocer que existen otros patrones y cuales son sus usos y ventajas.
 
+<img src="assets/patrones.png" width="75%"> 
+
 - [**`EJEMPLO 1`**](./Ejemplo-01)
 
 ---
