@@ -57,4 +57,4 @@ Observa el siguiente ejemplo del diagrama de clases de la implementación del `p
 
 > En este ejemplo se tiene la clase `LocatorsPage` con únicamente los localizadores. Aparte se tiene la clase `LoginCommand` con las acciones de la página de login junto con los paso a paso de la prueba. Finalmente se tiene la clase `test`, que hace el llamado a `LoginCommand` enviando los parámetros del escenario de prueba. Es similar a `Screenplay`, pero las __acciones y tareas__ se unifican en los comandos.
 
-#### Patrón Page Object: [**`Lo veremos en el siguiente tema mas a detalle`**](../Ejemplo-02)
+#### Patrón Page Object: [`Lo veremos en el siguiente tema mas a detalle`](../Ejemplo-02)

@@ -18,7 +18,7 @@ En esta sesión analizaremos cómo podemos usar el patrón de diseño `Page Obje
 
 ---
 
-#### <ins>Tema 1: Patrones de diseño de automatización</ins> `EN PROCESO`
+#### <ins>Tema 1: Patrones de diseño de automatización</ins> 
 
 Conoceremos sobre que son los patrones de diseño de automatizacion de pruebas y sus tipos, si bien solo nos enfocaremos en este modulo en el patrón de diseño `Page Object Model` es importante conocer que existen otros patrones y cuales son sus usos y ventajas.
 
@@ -28,9 +28,11 @@ Conoceremos sobre que son los patrones de diseño de automatizacion de pruebas y
 
 ---
 
-#### <ins>Tema 2: Page Object Model (POM)</ins> `PENDIENTE`
+#### <ins>Tema 2: Page Object Model (POM)</ins> `EN PROCESO`
 
 Page Object es un __patrón de diseño__ que se ha vuelto popular en la automatización de pruebas para mejorar el mantenimiento de las pruebas y __reducir la duplicación de código__. Un __objeto de página (page object)__ es una clase orientada a objetos que sirve como interfaz para una página, luego, las pruebas usan los métodos de esta clase de objeto de página cada vez que necesitan interactuar con la interfaz de usuario de esa página. El beneficio es que __si la interfaz de usuario cambia para la página, las pruebas en sí mismas no necesitan cambiar__, solo el código dentro del objeto de la página debe cambiar. Posteriormente, todos los cambios para admitir esa nueva interfaz de usuario se ubican en un solo lugar.
+
+<img src="assets/pom.png" width="60%"> 
 
 - [**`EJEMPLO 2`**](./Ejemplo-02)
 - [**`RETO 1`**](./Reto-01)
