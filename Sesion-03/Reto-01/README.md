@@ -1,15 +1,16 @@
-# Reto # - Nombre del reto
+# Reto 1# - Patrón Page Object Model (POM)
 
 ## Objetivo
 
-* Agregar los objetivos del reto (Mínimo agregar 2 objetivos y Borrar está linea una vez se hay leido)
+* Identificar la lógica del funcionamiento de las clases en el patrón Page Object Model (POM)
 
 ## Desarrollo
 
->**💡 Nota para experto(a)**
->
-> Este es un ejemplo por si el experto necesita tener en cuenta un punto clave durante el reto.
->Si no es necesario, puedes borrar esta nota.
+Observa el siguiente diagrama de clases:
 
-Aquí se debe agregar el desarrollo del reto, **NO** olvides poner el resultado del ejercicio propuesto para el feedback de los alumnos
+<img src="assets/retoq.png" width="40%"> 
 
+<details>
+  <summary> 1. ¿Consideras que este diagrama corresponde al un patrón POM? </summary>
+  > No, ya que los localizadores se encuentran en la misma clase que los test
+</details>
