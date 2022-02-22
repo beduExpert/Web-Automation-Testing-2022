@@ -8,7 +8,7 @@
 
 Observa el siguiente diagrama de clases:
 
-<img src="assets/retoq.png" width="40%"> 
+<img src="assets/reto1.png" width="40%"> 
 
 <details>
   <summary> 1. ¿Consideras que este diagrama corresponde al un patrón POM? </summary>
