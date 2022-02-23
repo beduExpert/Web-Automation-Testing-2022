@@ -44,7 +44,7 @@ El beneficio es que __si la interfaz de usuario cambia para la página, las prue
 
 En este tema abordaremos con ejercicios practicos como implementar Page Object Model en nuestros proyectos de automatización de Pruebas.
 
-- [**`EJEMPLO 3`**](./Ejemplo-03)
+- [**`EJEMPLO 3 - Implementación de POM en Selenium`**](./Ejemplo-03)
 - [**`RETO 2`**](./Reto-02)
 ---
 
