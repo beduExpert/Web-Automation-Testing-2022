@@ -25,11 +25,11 @@
 
 - Modificar el proyecto de automatización en el que estás trabajando para adaptarlo al modelo POM, creando las carpetas en el proyecto en pro de organizar las clases según la estructura del patrón page object model (POM). 
 
-<img src="./clases.png" width="40%"> 
+    <img src="./clases.png" width="40%"> 
 
 - Crear el diagrama de clases para documentar cómo estarán conectadas las clases page object con la clase de prueba. `Pro-tip:` ten en cuenta que el diagramas en este módulo no será evaluado, por el contrario se usará como una guía para conocer como funcionara la comunicación entre las clases.
 
-<img src="./pom.png" width="40%"> 
+    <img src="./pom.png" width="40%"> 
 
 - Crear las clases correspondientes al patrón POM por cada página identificada en la funcionalidad a testear, debes como mínimo incluir 3 páginas de la web de mercado libre, puede ser de una misma funcionalidad o varias funcionalidades.
 - Crear las clases donde se alojarán los casos de prueba. 
