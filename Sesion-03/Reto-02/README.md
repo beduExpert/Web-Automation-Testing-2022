@@ -2,13 +2,16 @@
 
 ## Objetivo
 
-* Crear una clase tipo Object Page que se encarge de manejar el driver
+* Mejorar la clase agendarCitaPage para agregar mas localizadores y metodos.
 
 ## Desarrollo
 
-Agregar mas metodos y localizadores en la clase `agendarCitaPage`, para incluir mas casos de prueba, ten en cuenta que de esta pagina solo se contemplo el botón de "Cancelar"
+Agregar mas metodos y localizadores en la clase `agendarCitaPage`, para incluir mas casos de prueba, ten en cuenta que de esta pagina solo se contemplo el botón de "Cancelar".
 
 <img src="assets/agendar.png" width="80%"> 
+
+
+Utilizar este codigo de base:
 
 ```Java
 package pages;
