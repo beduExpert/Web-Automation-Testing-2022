@@ -2,12 +2,9 @@
 
 ## Objetivo
 
-* 
+* Implementar Page Object Model (POM) como patrón de diseño en el proyecto de automatización web.
 
 ## Desarrollo
-
-
-<img src="assets/pom_2.png" width="40%"> 
 
 Repasemos las principales ventajas de este modelo para empezar a pensar cómo se implementaría este modelo en nuestros proyectos:
 
