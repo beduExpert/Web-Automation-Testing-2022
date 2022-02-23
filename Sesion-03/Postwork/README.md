@@ -7,17 +7,17 @@
 
 ## ⚙ Requisitos
 
-- Software de desarrollo
+- __Software de desarrollo__
     - Java Software Development Kit (JDK)
-- Editor de código
+- __Editor de código__
     - Eclipse IDE
-- Entorno de pruebas de software
+- __Entorno de pruebas de software__
     - Selenium Java Client
     - Selenium Webdriver
     - Selenium IDE
-- Navegador
+- __Navegador__
     - Google Chrome
-- Selenium browserdriver
+- __Selenium browserdriver__
     - Chromium/Chrome
 
 
@@ -40,4 +40,4 @@ public String getMessageText() {
     return driver.findElement(messageBy).getText();
   }
 ```
-:stop_sign: __Cuidado:__ ten en cuenta las reglas para crear POM.
+> :stop_sign: __Cuidado:__ ten en cuenta las reglas para crear POM al momento de crear las Page Object.
