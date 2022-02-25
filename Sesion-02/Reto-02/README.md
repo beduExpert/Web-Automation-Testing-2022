@@ -33,31 +33,29 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-
 public class base {
 
 	private WebDriver driver;
 
+	@BeforeTest
+	public void beforeTest() throws InterruptedException {
+		System.setProperty("webdriver.chrome.driver", "src/test/resources/webdrivers/chromedriver");
+		driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.get("https://google.com");
+		Thread.sleep(2000);
+	}
 
-		@BeforeTest
-		  public void beforeTest() throws InterruptedException {
-				System.setProperty("webdriver.chrome.driver", "src/test/resources/webdrivers/chromedriver");
-				driver = new ChromeDriver();
-				driver.manage().window().maximize();
-				driver.get("https://google.com");	
-				Thread.sleep(2000);
-		  }
+	@Test
+	public void test() {
+		driver.findElement(By.xpath("//input[@type='submit']"));
+		driver.findElement(By.name("q"));
+	}
 
-		  @Test
-		  public void test() {
-			  driver.findElement(By.xpath("//input[@type='submit']"));
-			  driver.findElement(By.name("q"));
-		  }
-
-		  @AfterTest
-		  public void afterTest() {
-			  	driver.close();
-		  }
+	@AfterTest
+	public void afterTest() {
+		driver.close();
+	}
 
 }
 ```
