@@ -71,38 +71,34 @@ package com.bedu.web_automation_course;
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.AfterTest;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-
 
 public class base {
 
 	private WebDriver driver;
 
+	@BeforeTest
+	public void beforeTest() throws InterruptedException {
+		System.setProperty("webdriver.chrome.driver", "src/test/resources/webdrivers/chromedriver");
+		driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.get("https://bedu.org/");
+		Thread.sleep(2000);
+	}
 
-		@BeforeTest
-		  public void beforeTest() throws InterruptedException {
-				System.setProperty("webdriver.chrome.driver", "src/test/resources/webdrivers/chromedriver");
-				driver = new ChromeDriver();
-				driver.manage().window().maximize();
-				driver.get("https://bedu.org/");	
-				Thread.sleep(2000);
-		  }
+	@Test
+	public void test() {
+		driver.findElement(By.xpath("//button[contains(.,'Agendar Asesoría')]"));
+		driver.findElement(By.linkText("Términos y condiciones"));
+		driver.findElement(By.partialLinkText("Términos"));
+	}
 
-		  @Test
-		  public void test() {
-			  driver.findElement(By.xpath("//button[contains(.,'Agendar Asesoría')]"));
-			  driver.findElement(By.linkText("Términos y condiciones"));
-			  driver.findElement(By.partialLinkText("Términos"));
-		  }
-
-		  @AfterTest
-		  public void afterTest() {
-			  	driver.close();
-		  }
-
+	@AfterTest
+	public void afterTest() {
+		driver.close();
+	}
 }
   ```
 
