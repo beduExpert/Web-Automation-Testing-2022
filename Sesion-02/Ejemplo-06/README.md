@@ -1,4 +1,4 @@
-# Ejemplo-05: Validaciones o Aserciones
+# Ejemplo-06: Validaciones o Aserciones
 
 ## Objetivo
 
