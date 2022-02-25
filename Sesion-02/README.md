@@ -53,7 +53,7 @@ En este tema veremos como trabajar con esperas, condiciones para la espera y man
 - [**`RETO 3`**](./Reto-03)
 ---
 
-#### <ins>Tema 4: Find element Vs Find elements</ins>
+#### <ins>Tema 4: Métodos Findelement() y Findelements()</ins>
 
 Para que selenium pueda interactuar con la página web requiere que un controlador ubique un elemento web y active un evento de JavaScript como por ejemplo hacer un clic, ingresar información a un campo de texto, seleccionar un elemento o tomar el valor de un campo. Por lo general, uno comienza la prueba automatizada de cualquier aplicación web al encontrar elementos web relevantes en la página web.
 

@@ -1,4 +1,4 @@
-# Ejemplo-03: Find element Vs Find elements
+# Ejemplo-03: Métodos Findelement() y Findelements()
 
 ## Objetivo
 

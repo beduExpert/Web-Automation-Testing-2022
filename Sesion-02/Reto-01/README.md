@@ -86,3 +86,118 @@ public class base {
 
 ```
 
+
+
+<details>
+  <summary>Solución</summary>
+  
+  ```Java
+  package com.bedu.web_automation_course;
+
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeTest;
+
+import static org.testng.Assert.assertTrue;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterSuite;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeSuite;
+
+
+public class agendar_cita {
+	
+	private WebDriver driver;
+	
+	@BeforeSuite
+	public void beforeSuite() {
+		System.out.println("---------------------------------------------------------------------------------");
+		System.out.println("--------------------     INICIO DE LA EJECUCIÓN   -------------------------------");
+		System.out.println("---------------------------------------------------------------------------------");
+		}
+	
+	@BeforeTest
+	  public void beforeTest(){
+
+
+		}
+
+	@BeforeClass
+	  public void beforeClass(){
+		System.out.println("INICIO DE LAS PRUEBAS SOBRE EL MODULO: AGENDAR ASESORIA");	
+		}
+	
+	@BeforeMethod
+	  public void beforeMethod() throws InterruptedException{
+		System.out.println("INICIO DE LA PRUEBA");
+		
+		System.setProperty("webdriver.chrome.driver", "src/test/resources/webdrivers/chromedriver");
+		driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.get("https://bedu.org/");
+		Thread.sleep(2000);
+		
+		By bnt_asesoria = By.xpath("//button[contains(.,'Agendar Asesoría')]");
+		assertTrue(isButtonDisplayed(bnt_asesoria, driver));
+		driver.findElement(bnt_asesoria).click();
+		Thread.sleep(2000);
+
+		 
+	  }
+	
+	@Test (priority = 1)
+		public void test_cancelar() {
+		
+		System.out.println("Click sobre cancelar..");
+		driver.findElement(By.xpath("//button[contains(.,'Cancelar')]")).click();
+
+			
+		}
+	@Test (priority = 2)
+		public void test_agendar() {
+		System.out.println("prueba de test_agendar");
+
+
+		}
+	
+		//Metodo que recibe el localizador y el driver y retorna true o false si isDisplayed()
+		public boolean isButtonDisplayed(By objeto, WebDriver driver) {
+			System.out.println("Validando si el objeto isDispayed()...");
+			return driver.findElement(objeto).isDisplayed();
+		}
+
+	@AfterMethod
+	public void afterMethod() throws InterruptedException {
+		System.out.println("Cerrando navegador..");	
+		Thread.sleep(2000);
+		driver.close();	
+		}
+	
+	@AfterClass
+	public void afterClass() {
+		System.out.println("FIN DE LAS PRUEBAS SOBRE EL MODULO: AGENDAR ASESORIA");	
+		}
+
+	@AfterTest
+	public void afterTest() {
+		System.out.println("FIN DEL LAS DE PRUEBAS");
+	}
+
+	@AfterSuite
+	public void afterSuite() {
+		System.out.println("---------------------------------------------------------------------------------");
+		System.out.println("--------------------     FIN DE LA EJECUCIÓN     --------------------------------");
+		System.out.println("---------------------------------------------------------------------------------");
+	}
+
+}
+
+  ```
+</details>
+
