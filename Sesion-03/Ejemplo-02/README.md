@@ -30,7 +30,7 @@ Observa el siguiente ejemplo del diagrama de clase de la implementación del pat
 
 
 
-> Acá se tiene la clase `LoginPage` con los localizadores y acciones de la página de login. Luego se definen los `test`, los cuales invocan el método de `loginPage` enviando los parámetros del escenario de prueba.
+> Acá se tiene la clase `agendarCitaPage` con los localizadores y acciones del formulario de agendar la cita. Luego se definen los `test`, los cuales invocan el método de `agendarCitaPage` enviando los parámetros del escenario de prueba.
 
 #### Ventajas Patrón POM
 
