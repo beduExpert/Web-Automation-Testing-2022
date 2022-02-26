@@ -32,11 +32,11 @@ Como proyecto desarrollaremos un framework de pruebas automatizadas en el sitio 
 
 ## :bookmark_tabs: Sesiones
 
-- [`Sesión 01:` Selenium Installation & Setup](./Sesion-01)
+- [`Sesión 01:` Instalación y configuración de Selenium](./Sesion-01)
 - [`Sesión 02:` Selenium Webdriver: Primeros Pasos](./Sesion-02)
 - [`Sesión 03:` Page Object Model (POM)](./Sesion-03)
 - [`Sesión 04:` Data Capture](./Sesion-04)
-- [`Sesión 05:` Working with Databases](./Sesion-05)
+- [`Sesión 05:` Selenium con Bases de Datos](./Sesion-05)
 - [`Sesión 06:` Selenium Grid](./Sesion-06)
-- [`Sesión 07:` Mobile Automation (Appium)](./Sesion-07)
-- [`Sesión 08:` Deep dive in Appium](./Sesion-08)
+- [`Sesión 07:` Appium: Automatización móvil](./Sesion-07)
+- [`Sesión 08:` Appium: Primeros pasos](./Sesion-08)

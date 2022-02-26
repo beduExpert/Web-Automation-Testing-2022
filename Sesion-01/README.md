@@ -1,4 +1,4 @@
-## Sesión 1: Selenium Installation & Setup 🤖
+## Sesión 1: Instalación y configuración de Selenium 🤖
 
 
 <div style="text-align: justify;">
