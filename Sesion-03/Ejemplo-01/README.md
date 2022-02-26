@@ -36,8 +36,9 @@ Explicaremos los tipos de patrones teniendo en cuenta 4 aspectos fundamentales: 
 - `Resultado:` Reducción  del tamaño de las clases de tal manera se estructura el proyecto de manera más organizada.
 
 
-Observa el siguiente ejemplo del diagrama de clases de la implementación del patrón `ScreenPlay` en la funcionalidad de `agendar cita` de la pagina web de BEDU (https://bedu.org/):
+Observa el siguiente ejemplo del diagrama de clases de la implementación del patrón `ScreenPlay` en la funcionalidad de `Agendar Asesoría` de la pagina web de BEDU (https://bedu.org/):
 
+<img src="assets/agendar_cita.png" width="80%"> 
 <img src="assets/patron_screenplay.png" width="80%"> 
 
 > En este ejemplo  se tiene la clase `agendarCita_screen` con únicamente los localizadores. Aparte se tiene la clase `acciones` con las acciones del formulario de agendar la cita. Luego se tiene una clase `agendarCita_Task` que invoca a los localizadores junto con las acciones para definir el paso a paso de la prueba. Finalmente se tiene la clase `agendarCita_Test1 y agendarCita_Test2`, que hace el llamado a `agendarCita_Task` enviando los parámetros del escenario de prueba.
