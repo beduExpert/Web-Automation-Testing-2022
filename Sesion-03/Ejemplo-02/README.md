@@ -2,7 +2,7 @@
 
 ## Objetivo
 
-* Demostrar el sus usos y ventajas del patrón Page Object Model como patron de automatización de pruebas.
+* Demostrar el sus usos y ventajas del patrón `Page Object Model (POM)` como patron de automatización de pruebas.
 
 ## Desarrollo
 

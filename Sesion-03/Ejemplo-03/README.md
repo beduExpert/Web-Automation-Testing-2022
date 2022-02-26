@@ -2,7 +2,7 @@
 
 ## Objetivo
 
-* Implementar Page Object Model (POM) como patrón de diseño en el proyecto de automatización web.
+* Construir el patrón de diseño `Page Object Model (POM)` en el proyecto de automatización web.
 
 ## Desarrollo
 

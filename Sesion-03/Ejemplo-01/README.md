@@ -2,7 +2,7 @@
 
 ## Objetivo
 
-* Demostrar los tipos de patrones de diseño existente y sus usos y beneficios.
+* Emplear los tipos de patrones de diseño existente y sus usos y beneficios.
 
 
 ## Desarrollo
