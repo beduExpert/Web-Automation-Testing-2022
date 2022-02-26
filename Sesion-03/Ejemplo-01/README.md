@@ -49,13 +49,13 @@ Observa el siguiente ejemplo del diagrama de clases de la implementación del pa
 - `Solución:` Crear una clase que contenga un `comando` con el paso a paso de la prueba, adicional a esto, una clase con localizadores de objetos, donde cada clase tendría su responsabilidad independiente.
 - `Resultado:` al cambiar un elemento web se actualiza solo en la clase de localizadores y no en todos los tests. Las clases de `comandos` o `tareas` estarían organizadas por funcionalidad dando más sentido de negocio a la estructura del proyecto de pruebas automatizadas.
 
-Observa el siguiente ejemplo del diagrama de clases de la implementación del `patrón comandos`:
+Observa el siguiente ejemplo del diagrama de clases de la implementación del `patrón comandos` en la funcionalidad de `Agendar Asesoría` de la pagina web de BEDU (https://bedu.org/)::
 
-
+<img src="assets/agendar_cita.png" width="80%"> 
 <img src="assets/patron_comandos.png" width="80%"> 
 
 
 
-> En este ejemplo se tiene la clase `LocatorsPage` con únicamente los localizadores. Aparte se tiene la clase `LoginCommand` con las acciones de la página de login junto con los paso a paso de la prueba. Finalmente se tiene la clase `test`, que hace el llamado a `LoginCommand` enviando los parámetros del escenario de prueba. Es similar a `Screenplay`, pero las __acciones y tareas__ se unifican en los comandos.
+> En este ejemplo se tiene la clase `locatorsPage` con únicamente los localizadores. Aparte se tiene la clase `agendarCita_command` con las acciones del formulario de agendar la cita junto con los paso a paso de la prueba. Finalmente se tiene las clases `agendarCita_Test1 y agendarCita_Test2`, que hace el llamado a `agendarCita_command` enviando los parámetros del escenario de prueba. Es similar a `Screenplay`, pero las __acciones y tareas__ se unifican en los comandos.
 
 #### Patrón Page Object: [`Lo veremos en el siguiente tema mas a detalle`](../Ejemplo-02)
