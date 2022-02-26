@@ -23,9 +23,12 @@ Al igual que en el tema anterior, explicaremos los tipos de patrones teniendo en
 - `Resultado`: al cambiar un elemento web se actualiza solo en la clase de localizadores y no en todos los tests.
 
 
-Observa el siguiente ejemplo del diagrama de clase de la implementación del patrón POM:
+Observa el siguiente ejemplo del diagrama de clase de la implementación del patrón `Page Object Model (POM)` en la funcionalidad de `Agendar Asesoría` de la pagina web de BEDU (https://bedu.org/)::
 
+<img src="assets/agendar_cita.png" width="80%"> :
 <img src="assets/diagrama_pom.png" width="80%"> 
+
+
 
 > Acá se tiene la clase `LoginPage` con los localizadores y acciones de la página de login. Luego se definen los `test`, los cuales invocan el método de `loginPage` enviando los parámetros del escenario de prueba.
 
