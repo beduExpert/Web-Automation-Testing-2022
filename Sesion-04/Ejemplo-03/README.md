@@ -243,4 +243,11 @@ public class DataDrivenTestingUsingParameters {
 
 <img src="assets/run.png" width="80%"> 
 
-Finalmente tendremos el mismo comportamiento, __ten en cuenta que la anotación `@parameters` solo es ideal cuando se van a realizar pruebas con pocos conjuntos de datos.__
+Ahora bien, como vemos en este ejemplo solo enviamos un valor por cada campo, y surge la siguiente pregunta:
+
+#### ¿Que pasa si quiero  probar varios valores del mismo parámetro?
+
+La respuesta a esta pregunta es simple:  es que esto no se puede hacer! Puede tener diferentes parámetros, pero cada parámetro solo puede tener un valor. Esto ayuda a evitar valores codificados en el script. Esto hace que el código sea reutilizable. Piense en ello como archivos de configuración para un script. Si desea utilizar varios valores para los parámetros, utilice DataProviders.
+
+
+ __ten en cuenta que la anotación `@parameters` solo es ideal cuando se van a realizar pruebas con pocos conjuntos de datos.__
