@@ -71,7 +71,7 @@ Estos métodos suelen ser muy útiles para los scripts de pruebas ya que nos sir
 	}
     ```
 
-    <img src="assets/getTagName.png" width="80%"> 
+    <img src="assets/getTagName.png" width="60%"> 
 
 - `getAttribute()`: Se utiliza para capturar cualquier valor de atributo de back-end del elemento web. 
     - __Valor Retornado:__ `String` 
@@ -85,7 +85,7 @@ Estos métodos suelen ser muy útiles para los scripts de pruebas ya que nos sir
 		System.out.println("Resultado metodo getAttribute(): " + driver.findElement(element).getAttribute("class"));
 	}
     ```
-      <img src="assets/getAttribute.png" width="80%">   
+    <img src="assets/getAttribute.png" width="60%">   
 
 - `getDomAttribute()`: Se utiliza para capturar cualquier valor de DOM atributo de back-end del elemento web. 
     - __Valor Retornado:__ `String` 
@@ -99,7 +99,7 @@ Estos métodos suelen ser muy útiles para los scripts de pruebas ya que nos sir
 		System.out.println("Resultado metodo getDomAttribute(): " + driver.findElement(element).getDomAttribute("class"));
 	}
     ``` 
-    <img src="assets/getDomAttribute.png" width="80%"> 
+    <img src="assets/getDomAttribute.png" width="60%"> 
 
 - `getDomProperty()`: Se utiliza para capturar el valor de la propiedad del elemento web.
     - __Valor Retornado:__ `String` 
@@ -107,8 +107,13 @@ Estos métodos suelen ser muy útiles para los scripts de pruebas ya que nos sir
     - __Ejemplo:__ `element.getDomProperty();` 
 
     ```Java
-
+	@Test
+	public void test() {
+		By element = By.xpath("//div[@id='headlessui-tabs-panel-5']/div/div[2]/h3");
+		System.out.println("Resultado metodo getDomProperty(): " + driver.findElement(element).getDomProperty("class"));
+	}
     ``` 
+    <img src="assets/getDomProperty.png" width="60%"> 
 
 - `getCssValue()`: Se utiliza para capturar cualquier estilo relacionado atribuido al elemento como color, color de fondo, estilo de fuente, etc.
     - __Valor retornado:__ `String` 
@@ -116,8 +121,13 @@ Estos métodos suelen ser muy útiles para los scripts de pruebas ya que nos sir
     - __Ejemplo:__ `element.getCssValue();` 
 
     ```Java
-
+    @Test
+	public void test() {
+		By element = By.xpath("//div[@id='headlessui-tabs-panel-5']/div/div[2]/h3");
+		System.out.println("Resultado metodo getCssValue(): " + driver.findElement(element).getCssValue("background-color"));
+	}
     ``` 
+    <img src="assets/getCssValue.png" width="60%"> 
 
 - `getSize()`: Se utiliza para capturar la altura y el ancho del elemento web.
     - __Valor retornado:__ `Dimension` 
@@ -125,8 +135,13 @@ Estos métodos suelen ser muy útiles para los scripts de pruebas ya que nos sir
     - __Ejemplo:__ `element.getSize();` 
 
     ```Java
-
+    @Test
+	public void test() {
+		By element = By.xpath("//div[@id='headlessui-tabs-panel-5']/div/div[2]/h3");
+		System.out.println("Resultado metodo getSize(): " + driver.findElement(element).getSize());
+	}
     ``` 
+    <img src="assets/getSize.png" width="60%"> 
 
 - `getLocation()`: Se utiliza para capturar las coordenadas X e Y de los elementos web.
     - __Valor retornado:__ `Point` 
@@ -134,5 +149,10 @@ Estos métodos suelen ser muy útiles para los scripts de pruebas ya que nos sir
     - __Ejemplo:__ `element.getLocation();` 
 
     ```Java
-
+    @Test
+	public void test() {
+		By element = By.xpath("//div[@id='headlessui-tabs-panel-5']/div/div[2]/h3");
+		System.out.println("Resultado metodo getLocation(): " + driver.findElement(element).getLocation());
+	}
     ``` 
+    <img src="assets/getLocation.png" width="60%"> 
