@@ -2,7 +2,7 @@
 
 ## Objetivo
 
-* Agregar los objetivos del reto (Mínimo agregar 2 objetivos y Borrar está linea una vez se hay leido)
+* Demostrar el comportamiento del @DataProvider durante la ejecución de los scripts de pruebas automatizados.
 
 ## Desarrollo
 
@@ -74,7 +74,6 @@ public class DataDrivenTestingUsingDataProvider {
 	public void afterTest() {
 		driver.close();
 	}
-
 }
 
 ```
