@@ -1,60 +1,72 @@
-## Sesión 4: Nombre de sesión 🤖
+## Sesión 4: Captura de Datos 🤖
 
-<img src="../images/android-kotlin.png" align="right" height="120" hspace="10">
+
 <div style="text-align: justify;">
 
 ### 1. Objetivos :dart: 
 
-- Reconocer el IDE Android Studio con el que desarrollan aplicaciones móviles.
-- Conocer la estructura de un proyecto android y todos los archivos generados por el IDE
+- Aplicar Selenium para la captura de atributos de los objetos en aplicaciones WEB. 
+- Hacer uso de parametrias de datos  como insumos de entrada de datos para los scripts de pruebas automatizados.  
+- Emplear fuentes de datos externas como insumos de entrada de datos para los scripts de pruebas automatizados. 
+
 
 ### 2. Contenido :blue_book:
 
-Android Studio te ayudará a desarrollar tu app más productivamente a escala. Android Studio ofrece las herramientas más rápidas para crear apps de Android. Codifica más rápido. Codifica con seguridad. Crea el mejor código. Elimina tareas tediosas. Compila sin límites.
+Ya hemos visto cómo es posible con Selenium generar nuestros scripts de pruebas automatizados con el uso de TestNG, ahora bien, hasta ahora todos los datos de las pruebas están fijos en nuestro código, lo que nos impide que los scripts sean reutilizables, es por ello que en esta sesión vamos a introducirnos en el mundo de la captura de datos de los objetos que tenemos en las pantallas de la página web y captura de datos como origen de datos de pruebas.
 
 ---
 
-<img src="images/tools.png" align="right" height="90"> 
+#### <ins>Tema 1: Métodos de control de captura de datos de objetos.</ins>
 
-#### <ins>Tema 1</ins>
+Los Métodos de control de captura de selenium son aquellos métodos utilizados para obtener información sobre atributos del WebElement, como pueden ser: el tamaño, contenido, clase, localización, css value, entre otros.
 
-Se detalla como crear un proyecto android desde nuestra IDE __Android Studio__, viendo el significado de los distintos campos y opciones para su configuración.
+Estos métodos suelen ser muy útiles para los scripts de pruebas ya que nos sirven como herramienta para sumar aserciones a los casos de pruebas.
+
+<img src="assets/gets.png" width="80%"> 
 
 - [**`EJEMPLO 1`**](./Ejemplo-01)
 
 ---
 
-<img src="images/structure.png" align="right" height="90"> 
+#### <ins>Tema 2: Archivos csv como origen de Datos.</ins>
 
-#### <ins>Tema 2</ins>
+La lectura de datos de prueba de archivos con extensiones `.CSV` es una de las formas más comunes en los frameworks híbridos. Es por ello que en este tema vamos a realizar una `Prueba basada en datos utilizando un archivo CSV en Selenium WebDriver`, lo cual  es un requisito importante para cualquier organización el utilizar algún tipo de enfoque basado en datos. 
 
-Una vez que el proyecto está creado, la estructura o forma en la que se organiza es de suma importancia. No sólo nos ayuda a mantener nuestro código organizado, sino que también es importante para el funcionamiento de nuestra nueva app.
+<img src="assets/data.png" width="80%"> 
 
 - [**`EJEMPLO 2`**](./Ejemplo-02)
 - [**`RETO 1`**](./Reto-01)
 ---
 
-<img src="images/emulator.jpg" align="right" height="90"> 
+#### <ins>Tema 3: Parametrización de Datos: TestNG XML.</ins>
 
-#### <ins>Tema 3</ins>
+La parametrización en Selenium es un proceso para parametrizar los scripts de prueba para pasar múltiples datos a la aplicación en tiempo de ejecución. Es una estrategia de ejecución que automáticamente ejecuta casos de prueba varias veces usando diferentes valores. El concepto que se logra mediante la parametrización de los scripts de prueba se denomina `Data Driven Testing`.
 
-Ahora que tenemos mayor conocimiento de nuestro proyecto, vamos a configurar un emulador de algún dispositivo móvil para poder correr nuestra aplicación! :iphone:. Es decir, vamos a correr un dispositivo móvil virtual en nuestra computadora para simular la funcionalidad de nuestra app.
+Para que la parametrización sea más clara, revisaremos las opciones de parametrización en uno de los frameworks más populares para Selenium Webdriver: TestNG.
 
-**Nota al Experto:**
-  
- + Recuerda que cada subtema puede contener un ejemplo, un reto, o más de un ejemplo y más de un reto. Recuerda borrar esta línea después de haberla leído.
+Hay dos formas en las que podemos lograr la parametrización en TestNG
+
+1. `Con la ayuda de la anotación de parámetros y el archivo XML TestNG.`
+2. Con la ayuda de la anotación @DataProvider de TestNG.
+
+En este tema veremos 1 primera forma: `Con la ayuda de la anotación de parámetros y el archivo XML TestNG.`
+
+<img src="assets/provider.png" width="80%"> 
+
 - [**`RETO 2`**](./Reto-02)
 ---
 
-<img src="images/chaomi.png" align="right" height="110"> 
+#### <ins>Tema 4: TestNG como proveedor de origen de Datos.</ins>
 
-#### <ins>Tema 4</ins>
+Como se había mencionado el el tema anterior, hay dos formas en las que podemos lograr la parametrización en `TestNG`;
 
-Basta de emulaciones, ahora veamos como funciona en el mundo real. Nuestra app, por muy sencilla que sea ya está lista para ser instalada en un dispositivo móvil y para verla en acción.
+1. Con la ayuda de la anotación de parámetros y el archivo XML TestNG: esto fue visto en el tema 3.
+2. `Con la ayuda de la anotación @DataProvider de TestNG.`
 
-**Nota al Experto:**
-  
- + Recuerda que cada subtema puede contener un ejemplo, un reto, o más de un ejemplo y más de un reto. Recuerda borrar esta línea después de haberla leído.
+En este tema revisaremos cómo funciona  la anotación `@DataProvider` de TestNG.
+
+<img src="assets/dataprovider.png" width="80%"> 
+
 - [**`RETO 3`**](./Reto-03)
 ---
 
