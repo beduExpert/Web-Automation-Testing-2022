@@ -1,8 +1,8 @@
-# Ejemplo # - Parametrización de Datos: TestNG XML.
+# Ejemplo-03# - Parametrización de Datos: TestNG XML.
 
 ## Objetivo
 
-* Agregar los objetivos del ejemplo (Mínimo agregar 2 objetivos y Borrar está linea una vez se hay leido)
+* Hacer uso de la configuración del archivo testng.xml para emplear la anotación @parameters en los scripts de pruebas automatizados.
 
 ## Desarrollo
 
@@ -247,7 +247,7 @@ Ahora bien, como vemos en este ejemplo solo enviamos un valor por cada campo, y 
 
 #### ¿Que pasa si quiero  probar varios valores del mismo parámetro?
 
-La respuesta a esta pregunta es simple:  es que esto no se puede hacer! Puede tener diferentes parámetros, pero cada parámetro solo puede tener un valor. Esto ayuda a evitar valores codificados en el script. Esto hace que el código sea reutilizable. Piense en ello como archivos de configuración para un script. Si desea utilizar varios valores para los parámetros, utilice DataProviders.
+La respuesta a esta pregunta es simple:  es que esto no se puede hacer! Puede tener diferentes parámetros, pero cada parámetro solo puede tener un valor. Esto ayuda a evitar valores codificados en el script. Esto hace que el código sea reutilizable. Piense en ello como archivos de configuración para un script. Si desea utilizar varios valores para los parámetros es preferible utilizar `DataProviders`.
 
 
- __ten en cuenta que la anotación `@parameters` solo es ideal cuando se van a realizar pruebas con pocos conjuntos de datos.__
+ > __Ten en cuenta que la anotación `@parameters` solo es ideal cuando se van a realizar pruebas con pocos conjuntos de datos.__
