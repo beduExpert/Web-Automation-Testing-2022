@@ -2,7 +2,7 @@
 
 ## Objetivo
 
-* Identificar el comportamiento de los niveles `<Suite>` y `<Test>` para el uso de la anotación @parameters
+* Identificar el comportamiento de los niveles `<Suite>` y `<Test>` para el uso de la anotación `@Parameters` en los scripts de pruebas automatizados.
 
 ## Desarrollo
 
@@ -45,5 +45,5 @@ Copia el contenido de este archivo `testng.xml`y ejecutalo en tu pc:
 
 <details>
   <summary>¿Que fue lo que sucedio y porque?</summary>
-> Se ejecutaron los parametros que estaban dentro de la etiqueta `<Test>` y no los que se encuentran dentro de la etiqueta `<Suite>`, esto se debe a que  el parámetro del nivel de prueba tendrá preferencia sobre el nivel de la suite. 
+> Se ejecutaron los parametros que estaban dentro de la etiqueta `Test` y no los que se encuentran dentro de la etiqueta `Suite`, esto se debe a que  el parámetro del nivel de prueba tendrá preferencia sobre el nivel de la suite. 
 </details>
