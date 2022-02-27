@@ -37,7 +37,7 @@ La lectura de datos de prueba de archivos con extensiones `.csv` es una de las f
 - [**`EJEMPLO 2`**](./Ejemplo-02)
 ---
 
-#### <ins>Tema 3: Parametrización de Datos: TestNG XML.</ins> `EN PROCESO`
+#### <ins>Tema 3: Parametrización de Datos: TestNG XML.</ins> 
 
 La parametrización en Selenium es un proceso para parametrizar los scripts de prueba para pasar múltiples datos a la aplicación en tiempo de ejecución. Es una estrategia de ejecución que automáticamente ejecuta casos de prueba varias veces usando diferentes valores. El concepto que se logra mediante la parametrización de los scripts de prueba se denomina `Data Driven Testing`.
 
@@ -56,7 +56,7 @@ En este tema veremos 1 primera forma: `Con la ayuda de la anotación de parámet
 - [**`RETO 1`**](./Reto-01)
 ---
 
-#### <ins>Tema 4: TestNG como proveedor de origen de Datos.</ins> `PENDIENTE`
+#### <ins>Tema 4: TestNG como proveedor de origen de Datos.</ins> `EN PROCESO`
 
 Como se había mencionado el el tema anterior, hay dos formas en las que podemos lograr la parametrización en `TestNG`;
 
