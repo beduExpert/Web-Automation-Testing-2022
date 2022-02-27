@@ -53,6 +53,7 @@ En este tema veremos 1 primera forma: `Con la ayuda de la anotación de parámet
 
 <img src="assets/parameter.png" width="60%"> 
 
+- [**`EJEMPLO 3`**](./Ejemplo-03)
 - [**`RETO 2`**](./Reto-02)
 ---
 
@@ -67,6 +68,7 @@ En este tema revisaremos cómo funciona  la anotación `@DataProvider` de TestNG
 
 <img src="assets/dataprovider.png" width="60%"> 
 
+- [**`EJEMPLO 4`**](./Ejemplo-04)
 - [**`RETO 3`**](./Reto-03)
 ---
 
