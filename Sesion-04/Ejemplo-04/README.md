@@ -254,4 +254,4 @@ Como puede ver, al ejecutar la clases con las pruebas se verá el mismo resultad
 <img src="assets/dataprovider2.png" width="80%"> 
 
 
-Para manejar la herencia, todo lo que hicimos fue agregar un atributo al método de prueba que especifica la clase que tiene el método DataProvider, de esta manera podriamos generar multiples metodos que sean dataproviders para distintas pruebas, y solo invocarlas en nuestra clase de pruebas usando los atributos de na anotación `@Test`
+Para manejar la herencia, todo lo que hicimos fue agregar un atributo al método de prueba que especifica la clase que tiene el método DataProvider, de esta manera podriamos generar multiples metodos que sean dataproviders para distintas pruebas, y solo invocarlas en nuestra clase de pruebas usando los atributos de la anotación `@Test`
