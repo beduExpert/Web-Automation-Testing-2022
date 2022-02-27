@@ -34,7 +34,7 @@ La lectura de datos de prueba de archivos con extensiones `.csv` es una de las f
 
 <img src="assets/data.png" width="40%"> 
 
-- [**`RETO 1`**](./Reto-01)
+- [**`EJEMPLO 2`**](./Ejemplo-02)
 ---
 
 #### <ins>Tema 3: Parametrización de Datos: TestNG XML.</ins> `EN PROCESO`
