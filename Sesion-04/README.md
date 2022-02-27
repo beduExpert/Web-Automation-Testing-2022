@@ -16,7 +16,7 @@ Ya hemos visto cómo es posible con Selenium generar nuestros scripts de pruebas
 
 ---
 
-#### <ins>Tema 1: Métodos de control de captura de datos de objetos.</ins>
+#### <ins>Tema 1: Métodos de control de captura de datos de objetos.</ins> `PENDIENTE`
 
 Los Métodos de control de captura de selenium son aquellos métodos utilizados para obtener información sobre atributos del WebElement, como pueden ser: el tamaño, contenido, clase, localización, css value, entre otros.
 
@@ -28,7 +28,7 @@ Estos métodos suelen ser muy útiles para los scripts de pruebas ya que nos sir
 
 ---
 
-#### <ins>Tema 2: Archivos csv como origen de Datos.</ins>
+#### <ins>Tema 2: Archivos csv como origen de Datos.</ins> `PENDIENTE`
 
 La lectura de datos de prueba de archivos con extensiones `.csv` es una de las formas más comunes en los frameworks híbridos. Es por ello que en este tema vamos a realizar una `Prueba basada en datos utilizando un archivo CSV en Selenium WebDriver`, lo cual  es un requisito importante para cualquier organización el utilizar algún tipo de enfoque basado en datos. 
 
@@ -38,7 +38,7 @@ La lectura de datos de prueba de archivos con extensiones `.csv` es una de las f
 - [**`RETO 1`**](./Reto-01)
 ---
 
-#### <ins>Tema 3: Parametrización de Datos: TestNG XML.</ins>
+#### <ins>Tema 3: Parametrización de Datos: TestNG XML.</ins> `PENDIENTE`
 
 La parametrización en Selenium es un proceso para parametrizar los scripts de prueba para pasar múltiples datos a la aplicación en tiempo de ejecución. Es una estrategia de ejecución que automáticamente ejecuta casos de prueba varias veces usando diferentes valores. El concepto que se logra mediante la parametrización de los scripts de prueba se denomina `Data Driven Testing`.
 
@@ -57,11 +57,11 @@ En este tema veremos 1 primera forma: `Con la ayuda de la anotación de parámet
 - [**`RETO 2`**](./Reto-02)
 ---
 
-#### <ins>Tema 4: TestNG como proveedor de origen de Datos.</ins>
+#### <ins>Tema 4: TestNG como proveedor de origen de Datos.</ins> `PENDIENTE`
 
 Como se había mencionado el el tema anterior, hay dos formas en las que podemos lograr la parametrización en `TestNG`;
 
-1. Con la ayuda de la anotación de parámetros y el archivo XML TestNG: esto fue visto en el tema 3.
+1. Con la ayuda de la anotación de parámetros y el archivo XML TestNG: esto fue visto en el [**`EJEMPLO 3`**](./Ejemplo-03).
 2. `Con la ayuda de la anotación @DataProvider de TestNG.`
 
 En este tema revisaremos cómo funciona  la anotación `@DataProvider` de TestNG.
@@ -72,7 +72,7 @@ En este tema revisaremos cómo funciona  la anotación `@DataProvider` de TestNG
 - [**`RETO 3`**](./Reto-03)
 ---
 
-### 3. Postwork :memo:
+### 3. Postwork :memo: `EN PROCESO`
 
 Encuentra las indicaciones y consejos para reflejar los avances de tu proyecto de este módulo.
 
