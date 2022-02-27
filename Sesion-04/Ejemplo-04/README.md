@@ -175,7 +175,7 @@ public class data_provider {
 Ahora la importamos en la clase `DataDrivenTestingUsingDataProvider` por medio de la anotación `dataProviderClass`:
 
 ```Java
-@Test(dataProvider = "dataprovider", dataProviderClass = dataprovider.class)
+@Test(dataProvider = "dataprovider", dataProviderClass = data_provider.class)
 ```
 
 Quedando el codigo de la clase de prueba de la siguiente manera:
@@ -249,4 +249,9 @@ public class DataDrivenTestingUsingDataProvider {
 
 ```
 
-Para manejar la herencia, todo lo que hicimos fue agregar un atributo al método de prueba (resaltado arriba), que especifica la clase que tiene el método DataProvider. Como puede ver, al ejecutar la clases con las pruebas se verá el mismo resultados a los que vimos en la ejecución anterior.
+Como puede ver, al ejecutar la clases con las pruebas se verá el mismo resultados a los que vimos en la ejecución anterior.
+
+<img src="assets/dataprovider2.png" width="80%"> 
+
+
+Para manejar la herencia, todo lo que hicimos fue agregar un atributo al método de prueba que especifica la clase que tiene el método DataProvider, de esta manera podriamos generar multiples metodos que sean dataproviders para distintas pruebas, y solo invocarlas en nuestra clase de pruebas usando los atributos de na anotación `@Test`
