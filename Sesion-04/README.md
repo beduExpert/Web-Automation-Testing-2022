@@ -22,7 +22,7 @@ Los Métodos de control de captura de selenium son aquellos métodos utilizados 
 
 Estos métodos suelen ser muy útiles para los scripts de pruebas ya que nos sirven como herramienta para sumar aserciones a los casos de pruebas.
 
-<img src="assets/gets.png" width="80%"> 
+<img src="assets/gets.png" width="60%"> 
 
 - [**`EJEMPLO 1`**](./Ejemplo-01)
 
@@ -30,9 +30,9 @@ Estos métodos suelen ser muy útiles para los scripts de pruebas ya que nos sir
 
 #### <ins>Tema 2: Archivos csv como origen de Datos.</ins>
 
-La lectura de datos de prueba de archivos con extensiones `.CSV` es una de las formas más comunes en los frameworks híbridos. Es por ello que en este tema vamos a realizar una `Prueba basada en datos utilizando un archivo CSV en Selenium WebDriver`, lo cual  es un requisito importante para cualquier organización el utilizar algún tipo de enfoque basado en datos. 
+La lectura de datos de prueba de archivos con extensiones `.csv` es una de las formas más comunes en los frameworks híbridos. Es por ello que en este tema vamos a realizar una `Prueba basada en datos utilizando un archivo CSV en Selenium WebDriver`, lo cual  es un requisito importante para cualquier organización el utilizar algún tipo de enfoque basado en datos. 
 
-<img src="assets/data.png" width="80%"> 
+<img src="assets/data.png" width="40%"> 
 
 - [**`EJEMPLO 2`**](./Ejemplo-02)
 - [**`RETO 1`**](./Reto-01)
@@ -51,7 +51,7 @@ Hay dos formas en las que podemos lograr la parametrización en TestNG
 
 En este tema veremos 1 primera forma: `Con la ayuda de la anotación de parámetros y el archivo XML TestNG.`
 
-<img src="assets/provider.png" width="80%"> 
+<img src="assets/parameter.png" width="60%"> 
 
 - [**`RETO 2`**](./Reto-02)
 ---
@@ -65,7 +65,7 @@ Como se había mencionado el el tema anterior, hay dos formas en las que podemos
 
 En este tema revisaremos cómo funciona  la anotación `@DataProvider` de TestNG.
 
-<img src="assets/dataprovider.png" width="80%"> 
+<img src="assets/dataprovider.png" width="60%"> 
 
 - [**`RETO 3`**](./Reto-03)
 ---
