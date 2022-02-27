@@ -65,112 +65,115 @@ public class agendarCitaPage {
   ```Java
 package pages;
 
-import java.time.Duration;
+
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class agendarCitaPage {
 
-	/**
-	 * Page Object Model (POM) para página de Agendar cita bedu
-	 */
+/**
+ * Page Object Model (POM) para página de Agendar cita bedu
+ */
+
+public class AgendarCitaPage {
+
 
 	protected WebDriver driver;
-
-	// Definimos objetos de tipo locator y le asignamos la localización By.
-	private By bnt_cancelar = By.xpath("//button[contains(.,'Cancelar')]");
-	private By bnt_agendar = By.xpath("//button[contains(.,'Agendar')]");
-
 	// Método que recibirá el driver en esta clase
-	public agendarCitaPage(WebDriver driver) {
+	public AgendarCitaPage(WebDriver driver) {
 		this.driver = driver;
 	}
 
-	// Método que realizara un click en bnt_cancelar
-	public HomePage cancelarAsesoria() {
-		driver.findElement(bnt_cancelar).click();
-		return new HomePage(driver);
-	}
+	
+	// Definimos objetos de tipo locator y le asignamos la localización By.
+	private By bnt_cancelar = By.xpath("//button[contains(.,'Cancelar')]");
+	private By bnt_agendar = By.xpath("//button[contains(.,'Agendar')]");
+	private By name = By.id("name");
+	private By lastname = By.id("lastname");
+	private By phone = By.id("phone");
+	private By email = By.id("email");
+	private By company = By.id("company");
+	private By jobTitle = By.id("jobTitle");
+	private By program = By.id("program");
+	private By sector = By.name("sector");
+	private By companySize = By.name("companySize");
+	
 
+
+	// Método que realizara un click en bnt_cancelar
+	public void cancelarAsesoria() {
+		driver.findElement(bnt_cancelar).click();
+	}
 	// Método que realizara un click en bnt_agendar
-	public HomePage agendarAsesoria() {
+	public void agendarAsesoria() {
 		driver.findElement(bnt_agendar).click();
-		return new HomePage(driver);
+	}
+	public boolean btn_CancelIsDispayed() {
+		System.out.println("btn_CancelIsDispayed : " + driver.findElement(bnt_cancelar).isDisplayed());
+		return driver.findElement(bnt_cancelar).isDisplayed();
 	}
 
 	// Método que realizara recibira un localizador e ingresara un texto
-	public HomePage fillText(By locator, String text) {
+	public void fillText(By locator, String text) {
+		driver.findElement(locator).clear();
 		driver.findElement(locator).sendKeys(text);
-		return new HomePage(driver);
 	}
 
 	// Métodos que realizara recibiran un texto a llenar en cada campo
-	public HomePage fillName(String text) {
-		By name = By.id("name");
+	public void fillName(String text) {
+		driver.findElement(name).clear();
 		driver.findElement(name).sendKeys(text);
-		return new HomePage(driver);
 	}
 
-	public HomePage fillLastname(String text) {
-		By lastname = By.id("lastname");
+	public void fillLastname(String text) {
+		driver.findElement(lastname).clear();
 		driver.findElement(lastname).sendKeys(text);
-		return new HomePage(driver);
 	}
 
-	public HomePage fillPhone(String text) {
-		By phone = By.id("phone");
+	public void fillPhone(String text) {
+		driver.findElement(phone).clear();
 		driver.findElement(phone).sendKeys(text);
-		return new HomePage(driver);
 	}
 
-	public HomePage fillEmail(String text) {
-		By email = By.id("email");
+	public void fillEmail(String text) {
+		driver.findElement(email).clear();
 		driver.findElement(email).sendKeys(text);
-		return new HomePage(driver);
 	}
 
-	public HomePage fillCompany(String text) {
-		By company = By.id("company");
+	public void fillCompany(String text) {
+		driver.findElement(company).clear();
 		driver.findElement(company).sendKeys(text);
-		return new HomePage(driver);
 	}
 
-	public HomePage fillJobTitle(String text) {
-		By jobTitle = By.id("jobTitle");
+	public void fillJobTitle(String text) {
+		driver.findElement(jobTitle).clear();
 		driver.findElement(jobTitle).sendKeys(text);
-		return new HomePage(driver);
 	}
 
-	public HomePage fillSector(String text) {
-		Select sector = new Select(driver.findElement(By.id("sector")));
-		sector.selectByVisibleText(text);
-		return new HomePage(driver);
+	public void fillSector(String text) {
+		System.out.println("Seleccionando Sector = "+text+" de la lista desplegable");
+		Select l_sector = new Select(driver.findElement(sector));
+		l_sector.selectByValue(text);
+		l_sector.selectByVisibleText(text);
 	}
 
-	public HomePage fillCompanySize(String text) {
-		Select companySize = new Select(driver.findElement(By.id("companySize")));
-		companySize.selectByVisibleText(text);
-		return new HomePage(driver);
+	public void fillCompanySize(String text) {
+		System.out.println("Seleccionando CompanySize = "+text+" de la lista desplegable");
+		Select l_companySize = new Select(driver.findElement(companySize));
+		l_companySize.selectByValue(text);
+		l_companySize.selectByVisibleText(text);
 	}
 
-	public HomePage fillProgram(String text) {
-		By program = By.id("program");
+	public void fillProgram(String text) {
+		driver.findElement(program).clear();
 		driver.findElement(program).sendKeys(text);
-		return new HomePage(driver);
 	}
 
-	public String btnIsDispayed() {
-		WebElement bnt_cancelar = new WebDriverWait(driver, Duration.ofSeconds(10))
-				.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[contains(.,'Cancelar')]")));
-		return bnt_cancelar.getText();
-	}
+
 
 }
+
   ```
 </details>
 
