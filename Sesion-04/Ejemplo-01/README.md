@@ -2,7 +2,7 @@
 
 ## Objetivo
 
-* Agregar los objetivos del ejemplo (Mínimo agregar 2 objetivos y Borrar está linea una vez se hay leido)
+* Identificar el comportamiento de los métodos de control de captura de datos de objetos en los scripts de pruebas automatizados.
 
 ## Desarrollo
 
@@ -55,7 +55,8 @@ Estos métodos suelen ser muy útiles para los scripts de pruebas ya que nos sir
 
 
     ```
-<img src="assets/get_text.png" width="60%"> 
+
+    <img src="assets/get_text.png" width="80%"> 
 
 - `getTagName()`: Se utiliza para capturar el TagName del elemento identificado. 
     - __Valor Retornado:__ `String`
@@ -63,8 +64,14 @@ Estos métodos suelen ser muy útiles para los scripts de pruebas ya que nos sir
     - __Ejemplo:__ `element.getTagName();` 
 
     ```Java
-
+    @Test
+	public void test() {
+		By element = By.xpath("//div[@id='headlessui-tabs-panel-5']/div/div[2]/h3");
+		System.out.println("Resultado metodo getTagName(): " + driver.findElement(element).getTagName());
+	}
     ```
+
+    <img src="assets/getTagName.png" width="80%"> 
 
 - `getAttribute()`: Se utiliza para capturar cualquier valor de atributo de back-end del elemento web. 
     - __Valor Retornado:__ `String` 
@@ -72,8 +79,13 @@ Estos métodos suelen ser muy útiles para los scripts de pruebas ya que nos sir
     - __Ejemplo:__ `element.getAttribute();` 
 
     ```Java
-
+    @Test
+	public void test() {
+		By element = By.xpath("//div[@id='headlessui-tabs-panel-5']/div/div[2]/h3");
+		System.out.println("Resultado metodo getAttribute(): " + driver.findElement(element).getAttribute("class"));
+	}
     ```
+      <img src="assets/getAttribute.png" width="80%">   
 
 - `getDomAttribute()`: Se utiliza para capturar cualquier valor de DOM atributo de back-end del elemento web. 
     - __Valor Retornado:__ `String` 
@@ -81,8 +93,13 @@ Estos métodos suelen ser muy útiles para los scripts de pruebas ya que nos sir
     - __Ejemplo:__ `element.getDomAttribute();`
 
     ```Java
-
+	@Test
+	public void test() {
+		By element = By.xpath("//div[@id='headlessui-tabs-panel-5']/div/div[2]/h3");
+		System.out.println("Resultado metodo getDomAttribute(): " + driver.findElement(element).getDomAttribute("class"));
+	}
     ``` 
+    <img src="assets/getDomAttribute.png" width="80%"> 
 
 - `getDomProperty()`: Se utiliza para capturar el valor de la propiedad del elemento web.
     - __Valor Retornado:__ `String` 
