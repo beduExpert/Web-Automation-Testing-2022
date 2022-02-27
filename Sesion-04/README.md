@@ -16,7 +16,7 @@ Ya hemos visto cómo es posible con Selenium generar nuestros scripts de pruebas
 
 ---
 
-#### <ins>Tema 1: Métodos de control de captura de datos de objetos.</ins> `EN PROCESO`
+#### <ins>Tema 1: Métodos de control de captura de datos de objetos.</ins> 
 
 Los Métodos de control de captura de selenium son aquellos métodos utilizados para obtener información sobre atributos del WebElement, como pueden ser: el tamaño, contenido, clase, localización, css value, entre otros.
 
@@ -28,7 +28,7 @@ Estos métodos suelen ser muy útiles para los scripts de pruebas ya que nos sir
 
 ---
 
-#### <ins>Tema 2: Archivos csv como origen de Datos.</ins> `PENDIENTE`
+#### <ins>Tema 2: Archivos csv como origen de Datos.</ins> `EN PROCESO`
 
 La lectura de datos de prueba de archivos con extensiones `.csv` es una de las formas más comunes en los frameworks híbridos. Es por ello que en este tema vamos a realizar una `Prueba basada en datos utilizando un archivo CSV en Selenium WebDriver`, lo cual  es un requisito importante para cualquier organización el utilizar algún tipo de enfoque basado en datos. 
 
