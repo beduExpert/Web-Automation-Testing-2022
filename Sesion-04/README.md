@@ -28,17 +28,16 @@ Estos métodos suelen ser muy útiles para los scripts de pruebas ya que nos sir
 
 ---
 
-#### <ins>Tema 2: Archivos csv como origen de Datos.</ins> `EN PROCESO`
+#### <ins>Tema 2: Archivos csv como origen de Datos.</ins> 
 
 La lectura de datos de prueba de archivos con extensiones `.csv` es una de las formas más comunes en los frameworks híbridos. Es por ello que en este tema vamos a realizar una `Prueba basada en datos utilizando un archivo CSV en Selenium WebDriver`, lo cual  es un requisito importante para cualquier organización el utilizar algún tipo de enfoque basado en datos. 
 
 <img src="assets/data.png" width="40%"> 
 
-- [**`EJEMPLO 2`**](./Ejemplo-02)
 - [**`RETO 1`**](./Reto-01)
 ---
 
-#### <ins>Tema 3: Parametrización de Datos: TestNG XML.</ins> `PENDIENTE`
+#### <ins>Tema 3: Parametrización de Datos: TestNG XML.</ins> `EN PROCESO`
 
 La parametrización en Selenium es un proceso para parametrizar los scripts de prueba para pasar múltiples datos a la aplicación en tiempo de ejecución. Es una estrategia de ejecución que automáticamente ejecuta casos de prueba varias veces usando diferentes valores. El concepto que se logra mediante la parametrización de los scripts de prueba se denomina `Data Driven Testing`.
 
@@ -54,7 +53,7 @@ En este tema veremos 1 primera forma: `Con la ayuda de la anotación de parámet
 <img src="assets/parameter.png" width="60%"> 
 
 - [**`EJEMPLO 3`**](./Ejemplo-03)
-- [**`RETO 2`**](./Reto-02)
+- [**`RETO 1`**](./Reto-01)
 ---
 
 #### <ins>Tema 4: TestNG como proveedor de origen de Datos.</ins> `PENDIENTE`
@@ -69,7 +68,7 @@ En este tema revisaremos cómo funciona  la anotación `@DataProvider` de TestNG
 <img src="assets/dataprovider.png" width="60%"> 
 
 - [**`EJEMPLO 4`**](./Ejemplo-04)
-- [**`RETO 3`**](./Reto-03)
+- [**`RETO 2`**](./Reto-02)
 ---
 
 ### 3. Postwork :memo: 
