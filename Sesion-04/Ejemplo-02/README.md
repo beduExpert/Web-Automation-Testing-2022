@@ -320,8 +320,7 @@ public class AgendarCitaPage {
 	}
 }
 
-``
+```
 
 
-
-Al ejecutar esta clase obtendremos que los datos del csv fueron tomados correctamente, por lo que con esta integración podremos usar este tipo de archivos en nuestros scripts de pruebas.
+Al ejecutar esta clase obtendremos que los datos del csv fueron tomados correctamente dentro del framework, por lo que con esta integración podremos usar este tipo de archivos en nuestros scripts de pruebas.
