@@ -81,6 +81,6 @@ public class DataDrivenTestingUsingDataProvider {
 
 <details>
   <summary>¿Que fue lo que sucedio y porque?</summary>
-> Genero error en la ejecución, esto se debe a que el dataprovider se ejecutara bajo la anotación @Test tantas veces como casos de prueba contenga el objeto retornado por el metodo ``, por lo que el uso de la anotación @BeforeTest y @AfterTest no es la apropiada para la prueba. Es por ello que por si no lo notaste, en la explicación del tema se utilizo la anotación @AfterMethod y @BeforeMethod.
+> Genero error en la ejecución, esto se debe a que el dataprovider se ejecutara bajo la anotación @Test tantas veces como casos de prueba contenga el objeto retornado por el  `metodoDataProvider`, por lo que el uso de la anotación @BeforeTest y @AfterTest no es la apropiada para la prueba. Es por ello que por si no lo notaste, en la explicación del tema se utilizo la anotación @AfterMethod y @BeforeMethod.
 </details>
 
