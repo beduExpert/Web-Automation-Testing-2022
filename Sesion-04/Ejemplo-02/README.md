@@ -68,7 +68,7 @@ Ejemplo del archivo `pom.xml`:
 
 Ahora debemos generar nuestro archivo csv, para esto usamos el programa Sublime Text, colocando en la primera línea el nombre del campo separados por coma “,” y el las filas los valores de los campos, separados igualmente por coma.
 
-    <img src="assets/csv.png" width="60%"> 
+<img src="assets/csv.png" width="60%"> 
 
 > __Cuidado:__ El formato de los archivos csv es .csv, sin este formato no reconocerá el archivo.
 
