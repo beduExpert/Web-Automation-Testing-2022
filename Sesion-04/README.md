@@ -16,7 +16,7 @@ Ya hemos visto cómo es posible con Selenium generar nuestros scripts de pruebas
 
 ---
 
-#### <ins>Tema 1: Métodos de control de captura de datos de objetos.</ins> `PENDIENTE`
+#### <ins>Tema 1: Métodos de control de captura de datos de objetos.</ins> `EN PROCESO`
 
 Los Métodos de control de captura de selenium son aquellos métodos utilizados para obtener información sobre atributos del WebElement, como pueden ser: el tamaño, contenido, clase, localización, css value, entre otros.
 
@@ -72,7 +72,7 @@ En este tema revisaremos cómo funciona  la anotación `@DataProvider` de TestNG
 - [**`RETO 3`**](./Reto-03)
 ---
 
-### 3. Postwork :memo: `EN PROCESO`
+### 3. Postwork :memo: 
 
 Encuentra las indicaciones y consejos para reflejar los avances de tu proyecto de este módulo.
 
