@@ -78,13 +78,13 @@ Los parámetros dentro de la etiqueta `<Test>` del archivo TestNG XML serán un 
 
 > `Pro-tip:` En caso de que el nombre del parámetro sea el mismo en el nivel de la suite y en el nivel de prueba, `el parámetro del nivel de prueba tendrá preferencia sobre el nivel de la suite.` Entonces, en ese caso, todas las clases dentro de ese nivel de prueba compartirán el parámetro anulado, y otras clases que están fuera del nivel de prueba compartirán el parámetro de nivel de suite.
 
-Para esto se requiere que se pasen los valores a los métodos de prueba durante el tiempo de ejecución, es por ello que el método de anotación @Parameters se puede utilizar en cualquier método que tenga anotación @Test, @Before o @After.
+Para esto se requiere que se pasen los valores a los métodos de prueba durante el tiempo de ejecución, es por ello que el método de anotación `@Parameters` se puede utilizar en cualquier método que tenga anotación `@Test`, `@Before` o `@After`.
 
 ```Java
-@Parameters({"name","lastname"})
+@Parameters({"param1","param2"})
 ```
 
-¡Cuidado!: Los parámetros de TestNG se ejecutan a través del archivo XML de TestNG y no directamente desde los archivos de casos de prueba.
+> __¡Cuidado!__ Los parámetros de TestNG se ejecutan a través del archivo XML de TestNG y no directamente desde los archivos de casos de prueba.
 
 
 Ahora bien, vamos a casos practicos, retomando nuevamente la funcionalidad de agendar cita de la pagina web de bedu (https://bedu.org/)
@@ -109,7 +109,7 @@ Primero Crearemos nuestros datos de entrada (usaremos los mismos datos del archi
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="tests.DataDrivenTestingUsingParameters"/>
+      <class name="com.bedu.web_automation_course.DataDrivenTestingUsingParameters"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
@@ -120,9 +120,9 @@ Primero Crearemos nuestros datos de entrada (usaremos los mismos datos del archi
 
 5. Debemos configurar en eclipse el template del xml que acabamos de crear, para ellos nos vamos al meni `Project` -> `Properties` -> `TestNG` -> `Template XML File` y seleccionamos el archivo `testng.xml`
 
-<img src="assets/conf_xml_template1.png" width="80%"> 
-<img src="assets/conf_xml_template2.png" width="80%"> 
-<img src="assets/conf_xml_template3.png" width="80%"> 
+<img src="assets/conf_xml_template1.png" width="40%"> 
+<img src="assets/conf_xml_template2.png" width="60%"> 
+<img src="assets/conf_xml_template3.png" width="60%"> 
 
 6. Configuramos los datos de prueba en el xml. Para este caso usaremos  parametros a nivel de `<Test>`.
 
@@ -242,3 +242,5 @@ public class DataDrivenTestingUsingParameters {
 8. Para ejecutar la Suite solo hacemos click derecho en el archivo `testng.xml` -> `Run as`-> `TestNG Suite`
 
 <img src="assets/run.png" width="80%"> 
+
+Finalmente tendremos el mismo comportamiento, __ten en cuenta que la anotación `@parameters` solo es ideal cuando se van a realizar pruebas con pocos conjuntos de datos.__
