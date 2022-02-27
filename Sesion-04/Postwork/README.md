@@ -102,4 +102,8 @@ public class base
 ```
 
 
- - Crea una clase de prueba, al igual que el ejemplo anterior, que contenga casos de prueba asociados a cualquier funcionalidad de mercado libre. 
+ - Crea una clase de prueba, al igual que el ejemplo anterior, que contenga casos de prueba asociados a cualquier funcionalidad de mercado libre y que la misma haga el llamado a la clase dataprovider por medio del atributo:
+ ```Java
+ @Test(dataProvider = "dataprovider", dataProviderClass = data_provider.class)
+
+ ```
