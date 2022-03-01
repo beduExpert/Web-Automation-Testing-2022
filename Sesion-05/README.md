@@ -43,7 +43,7 @@ Una vez creada y conectada la base de datos MySQL, veremos qué es un query o co
 
 Luego de creada las consultas en nuestro proyecto, veremos como se procesan los resultados, y los metodos utilizados.
 
-<img src="assets/resultset.png" width="60%"> 
+<img src="assets/resultset.jpeg" width="60%"> 
 
 - [**`EJEMPLO 3`**](./Ejemplo-03)
 - [**`RETO 2`**](./Reto-02)
