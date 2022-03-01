@@ -31,7 +31,7 @@ En este tema veremos que es una base de datos, por qué necesitamos la automatiz
 - [**`EJEMPLO 1`**](./Ejemplo-01)
 
 ---
-#### <ins>Tema 2: Envío de Querys</ins> `EN PROCESO`
+#### <ins>Tema 2: Envío de Querys</ins> 
 
 Una vez creada y conectada la base de datos MySQL, veremos qué es un query o consulta a una base de datos, cuales son los tipos de Consulta a base de datos e implementación de Querys con Selenium.
 
@@ -41,7 +41,7 @@ Una vez creada y conectada la base de datos MySQL, veremos qué es un query o co
 - [**`RETO 1`**](./Reto-01)
 
 ---
-#### <ins>Tema 3: Procesamiento de Resultados. </ins> `PENDIENTE`
+#### <ins>Tema 3: Procesamiento de Resultados. </ins> `EN PROCESO`
 
 Luego de creada las consultas en nuestro proyecto, veremos como se procesan los resultados, y los metodos utilizados.
 

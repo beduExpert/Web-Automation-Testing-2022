@@ -1,15 +1,108 @@
-# Reto # - Nombre del reto
+# Reto 2 # - Métodos para procesar los resultados
 
 ## Objetivo
 
-* Agregar los objetivos del reto (Mínimo agregar 2 objetivos y Borrar está linea una vez se hay leido)
+* Explicar los métodos avanzados utilizados para procesar los resultados en la clase `DataDrivenTestingUsingDataBase`
 
 ## Desarrollo
 
->**💡 Nota para experto(a)**
->
-> Este es un ejemplo por si el experto necesita tener en cuenta un punto clave durante el reto.
->Si no es necesario, puedes borrar esta nota.
+Siguiendo con métodos explicado en el [**`EJEMPLO 3`**](./Ejemplo-03), explica cuales son los métodos utilizados para procesar los resultados en esta clase:
 
-Aquí se debe agregar eal desarrollo del reto, **NO** olvides poner el resultado del ejercicio propuesto para el feedback de los alumnos
 
+```Java
+package tests;
+
+
+import static org.testng.Assert.assertTrue;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.ResultSetMetaData;
+import java.sql.Statement;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
+
+public class DataDrivenTestingUsingDataBase {
+	int total = 0;
+	// Creación del object de conexión
+	static Connection con = null;
+
+	// Creación del object Statement
+	private static Statement stmt;
+
+	// Creación de Constantes para la conexión a la Base de Datos
+	public static String DB_URL = "jdbc:mysql://localhost:3306/WebAutomationTesting";
+	public static String DB_USER = "root";
+	public static String DB_PASSWORD = "root_password";
+
+	@BeforeTest
+	public void setUp() throws Exception {
+		try {
+			// Conexión a la Base de Datos
+			String dbClass = "com.mysql.cj.jdbc.Driver";
+			Class.forName(dbClass);
+			Connection con = DriverManager.getConnection(DB_URL, DB_USER, DB_PASSWORD);
+
+			// Statement object para enviar la declaración SQL a la base de datos
+			stmt = con.createStatement();
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+	@Test
+	public void test() {
+
+		try {
+
+			// Definir y ejecutar la consulta a la base de datos
+			String query = "SELECT * FROM Agendar_Cita";
+			ResultSet res = stmt.executeQuery(query);
+
+			// objeto ResultSetMetaData para obtener el numero de columnas de la tabla
+			ResultSetMetaData rsmd = res.getMetaData();
+			int columnsNumber = rsmd.getColumnCount();
+
+			System.out.println(query);
+			while (res.next()) {
+
+				total++;
+
+				for (int i = 1; i <= columnsNumber; i++) {
+					System.out.print(" | " + res.getString(i));
+					if (i == columnsNumber) {
+						System.out.println(" | " + res.getString(i));
+					}
+				}
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+		// asersiones
+		assertTrue(total >= 1, "No se obtuvieron resultados de la consulta");
+
+	}
+
+	@AfterTest
+	public void tearDown() throws Exception {
+		// Cerrar la conexión a la base de datos
+		if (con != null) {
+			con.close();
+		}
+	}
+
+}
+
+```
+
+
+<details>
+  <summary>Resultado</summary>
+> res.next(): usado junto el ciclo while para recorrer todos los registros de la colsulta ejecutada.
+> res.getString(i): usado para obtener el string del resultado segun la columna indicada con el valor `i`
+
+</details>

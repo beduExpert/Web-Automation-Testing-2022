@@ -2,8 +2,8 @@
 
 ## Objetivo
 
+- Utilizar el metodo `executeQuery()` para realizar consultas a las bases de datos.
 - Adaptar los scripts de pruebas para que consuman los datos provenientes de la ejecución de Querys en la Base de datos.
-- `PENDIENTE`
 
 ## Desarrollo
 
