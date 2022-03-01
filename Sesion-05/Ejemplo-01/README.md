@@ -79,11 +79,20 @@ MySQL es el DBMS que se encuentra detrás de algunos de los sitios web y aplicac
 ```SQL
 CREATE SCHEMA schema_name;
 ```
+> Para este tema crearemos la siguiente:
+
+```SQL
+CREATE SCHEMA WebAutomationTesting;
+```
 
 4. Creación de la base de datos por medio de query con la siguiente Syntax
 
 ```SQL
 CREATE DATABASE databasename;
+```
+> Para este tema crearemos la siguiente:
+```SQL
+CREATE DATABASE WebAutomationTesting;
 ```
 
 5. Salir a la pantalla home de Mysql Workbench y hacer click en el botón `+` en la sección de `Mysql Connections.`
@@ -106,17 +115,22 @@ CREATE TABLE table_name (
 );
 ```
 
-> Ejemplo:
+> Para este tema crearemos la siguiente:
 
 ```SQL
-CREATE TABLE Persons (
-	PersonID int,
-	LastName varchar(255),
-	FirstName varchar(255),
-	Address varchar(255),
-	City varchar(255)
-);
+CREATE TABLE Agendar_Cita (
+	name varchar(255),
+	lastname varchar(255),
+	phone varchar(255),
+	email varchar(255),
+	company varchar(255),
+    jobTitle varchar(255),
+    program varchar(255),
+    sector varchar(255),
+    companySize varchar(255)
+)
 ```
+`Pro-Tip`: Si no vos la tabla recientemente creada, en MySQL workbench posicionate sobre la base de datos, haz click derecho y click en `refresh`
 
 9. Creación de registros en la tabla por medio de query con la siguiente Syntax:
 
@@ -125,12 +139,18 @@ INSERT INTO table_name (column1, column2, column3, ...)
 VALUES (value1, value2, value3, ...);
 ```
 
-> Ejemplo:
+> Insertaremos algunos registros en nuestra base de datos:
 
 ```SQL
-INSERT INTO Persons (PersonID, LastName, FirstName, Address, City)
-VALUES ('1', 'Gomez', 'Alejandro', 'Buenos Aires 3456', 'Argentina')
+INSERT INTO Agendar_Cita (name, lastname, phone, email, company,jobTitle,program,sector,companySize)
+VALUES 
+('Juan', 'Gomez', '11111111', 'Juan.Gomez@gmail.com', 'bedu','QA','Internet','1 a 50 empleados','Web Automation Testing'),
+('David', 'Diaz', '22222222', 'David.Diaz@gmail.com', 'bedu','DEV','Seguros','1 a 50 empleados','Web Automation Testing'),
+('Jesus', 'Mora', '33333333', 'Jesus.Mora@gmail.com', 'bedu','QA','Educación','1 a 50 empleados','Web Automation Testing'),
+('Maria', 'Fernandez', '44444444', 'Maria.Fernandez@gmail.com', 'bedu','QA','Servicios Financieros','1 a 50 empleados','Web Automation Testing'),
+('Veronica', 'Salas', '55555555', 'Veronica.Salas@gmail.com', 'bedu','QA','Consultoría','1 a 50 empleados','Web Automation Testing')
 ```
+<img src="assets/agendar_cita.png" width="60%"> 
 
 #### Conexión a la base de datos con Selenium
 
@@ -145,9 +165,57 @@ VALUES ('1', 'Gomez', 'Alejandro', 'Buenos Aires 3456', 'Argentina')
 </dependency>
 ```
 
-2. Crea una clase llamada DataDrivenTestingUsingDataBase
+2. Crea una clase llamada `DataDrivenTestingUsingDataBase`
 
 ```Java
+package tests;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.Statement;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
+
+public class DataDrivenTestingUsingDataBase {
+	// Creación del object de conexión
+	static Connection con = null;
+
+	// Creación del object Statement
+	private static Statement stmt;
+
+	// Creación de Constantes para la conexión a la Base de Datos
+	public static String DB_URL = "jdbc:mysql://localhost:3306/WebAutomationTesting";
+	public static String DB_USER = "root";
+	public static String DB_PASSWORD = "pass_root";
+
+	@BeforeTest
+	public void setUp() throws Exception {
+		try {
+			// Conexión a la Base de Datos
+			String dbClass = "com.mysql.cj.jdbc.Driver";
+			Class.forName(dbClass);
+			Connection con = DriverManager.getConnection(DB_URL, DB_USER, DB_PASSWORD);
+
+			// Statement object para enviar la declaración SQL a la base de datos
+			stmt = con.createStatement();
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+	@Test
+	public void test() {
+
+	}
+
+	@AfterTest
+	public void tearDown() {
+
+	}
+
+}
 
 ```
 
