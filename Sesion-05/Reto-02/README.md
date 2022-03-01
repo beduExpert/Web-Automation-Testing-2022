@@ -36,7 +36,7 @@ public class DataDrivenTestingUsingDataBase {
 	// Creación de Constantes para la conexión a la Base de Datos
 	public static String DB_URL = "jdbc:mysql://localhost:3306/WebAutomationTesting";
 	public static String DB_USER = "root";
-	public static String DB_PASSWORD = "cmora142";
+	public static String DB_PASSWORD = "root_pass";
 
 	@BeforeTest
 	public void setUp() throws Exception {
