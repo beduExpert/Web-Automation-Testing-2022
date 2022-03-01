@@ -87,13 +87,13 @@ CREATE DATABASE databasename;
 ```
 
 5. Salir a la pantalla home de Mysql Workbench y hacer click en el botón `+` en la sección de `Mysql Connections.`
-<img src="assets/workbench_5.png" width="60%"> 
+<img src="assets/workbench_4.png" width="60%"> 
 
 6. Ingresar los datos del schema y colocarle un nombre a la conexión en la siguiente pantalla:
-<img src="assets/workbench_6.png" width="60%"> 
+<img src="assets/workbench_5.png" width="60%"> 
 
 7. Finalmente nos solicitara nuevamente la contraseña `root`
-<img src="assets/workbench_7.png" width="60%"> 
+<img src="assets/workbench_6.png" width="30%"> 
 
 8. Creación de una tabla por medio de query con la siguiente Syntax:
 
