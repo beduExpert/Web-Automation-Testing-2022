@@ -31,11 +31,12 @@ public class DataDrivenTestingUsingDataBase {
 
 	// Creación del object Statement
 	private static Statement stmt;
+	private ResultSet res;
 
 	// Creación de Constantes para la conexión a la Base de Datos
 	public static String DB_URL = "jdbc:mysql://localhost:3306/WebAutomationTesting";
 	public static String DB_USER = "root";
-	public static String DB_PASSWORD = "root_password";
+	public static String DB_PASSWORD = "cmora142";
 
 	@BeforeTest
 	public void setUp() throws Exception {
@@ -60,7 +61,7 @@ public class DataDrivenTestingUsingDataBase {
 
 			// Definir y ejecutar la consulta a la base de datos
 			String query = "SELECT * FROM Agendar_Cita";
-			ResultSet res = stmt.executeQuery(query);
+			res = stmt.executeQuery(query);
 
 			// objeto ResultSetMetaData para obtener el numero de columnas de la tabla
 			ResultSetMetaData rsmd = res.getMetaData();
@@ -89,10 +90,14 @@ public class DataDrivenTestingUsingDataBase {
 
 	@AfterTest
 	public void tearDown() throws Exception {
+		if (res != null){
+            res.close();
+        }
 		// Cerrar la conexión a la base de datos
 		if (con != null) {
 			con.close();
 		}
+		
 	}
 
 }
@@ -104,5 +109,5 @@ public class DataDrivenTestingUsingDataBase {
   <summary>Resultado</summary>
 > res.next(): usado junto el ciclo while para recorrer todos los registros de la colsulta ejecutada.
 > res.getString(i): usado para obtener el string del resultado segun la columna indicada con el valor `i`
-
+>  res.close(): cierra el ResultSet object.
 </details>

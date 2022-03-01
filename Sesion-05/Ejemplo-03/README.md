@@ -70,7 +70,7 @@ res.last()
 res.absolute(1)
 ```
 
-> Pro-tip: puedes consultar mas metodos de esta clase
+> Pro-tip: puedes consultar mas metodos de esta clase en este link-> https://docs.oracle.com/javase/7/docs/api/java/sql/ResultSet.html
 
 Veamos un ejemplo con la tabla `Agendar_Cita` desarrollando el siguiente código:
 
@@ -156,10 +156,13 @@ public class DataDrivenTestingUsingDataBase {
 
 	@AfterTest
 	public void tearDown() throws Exception {
+		if (res != null){
+            res.close();
+        }
 		// Cerrar la conexión a la base de datos
 		if (con != null) {
 			con.close();
-		}
+		}	
 	}
 
 }
