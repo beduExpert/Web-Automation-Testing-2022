@@ -1,4 +1,4 @@
-## Sesión 5: Nombre de sesión 🤖
+## Sesión 5: Selenium con Bases de Datos 🤖
 
 
 <div style="text-align: justify;">
@@ -8,6 +8,8 @@
 - Enseñar el procedimiento para instalación y configuración de MySQL y MySQL Workbench.
 - Desarrollar los comandos MySQL para la creación de: esquemas, bases de datos, tablas y registros de bases de datos.
 - Construir mediante el uso de la librería JDBC para Mysql la conexión entre las bases de datos y los scripts de pruebas de Selenium.
+- Demostrar el funcionamiento de los metodos asociados a la clase ResultSet encargada del procesamiento de resultados de las consultas a las bases de datos.
+ 
 
 
 ### 2. Contenido :blue_book:
