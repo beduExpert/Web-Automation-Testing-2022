@@ -106,8 +106,10 @@ public class DataDrivenTestingUsingDataBase {
 
 
 <details>
-  <summary>Resultado</summary>
-> res.next(): usado junto el ciclo while para recorrer todos los registros de la colsulta ejecutada.
-> res.getString(i): usado para obtener el string del resultado segun la columna indicada con el valor `i`
->  res.close(): cierra el ResultSet object.
+  <summary> Solución </summary>
+
+- `res.next()`: usado junto el ciclo while para recorrer todos los registros de la colsulta ejecutada.
+- `res.getString(i)`: usado para obtener el string del resultado segun la columna indicada con el valor `i`
+- `res.close()`: cierra el ResultSet object.
+
 </details>
