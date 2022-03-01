@@ -16,14 +16,14 @@ Como sabemos, cada aplicación web debe mantener una base de datos como MySQL, O
 
 En los scripts de Selenium, cuando es necesario obtener los datos de la base de datos, es posible que tengamos que usar API que ayudan a interactuar con la base de datos como JDBC. Es por ello que en esta sesión nos enfocaremos en la implementación y uso de esta librería para conectarnos a nuestra base de datos en los scripts de pruebas y poder usarla.
 
-<img src="assets/java_mysql.png" width="60%"> 
+<img src="assets/java_mysql.png" width="40%"> 
 
 ---
 #### <ins>Tema 1: Creación y conexión de Base de Datos</ins>
 
 En este tema veremos que es una base de datos, por qué necesitamos la automatización de la base de datos, qué es el lenguaje de consulta estructurada (SQL), qué es una base de datos MySQL, el proceso de instalación de MySQL y MySQL WorkBench y la creación de bases de datos, tablas y registro de datos.
 
-<img src="assets/workbench.png" width="60%"> 
+<img src="assets/workbench.png" width="40%"> 
 
 
 - [**`EJEMPLO 1`**](./Ejemplo-01)
@@ -33,7 +33,7 @@ En este tema veremos que es una base de datos, por qué necesitamos la automatiz
 
 Una vez creada y conectada la base de datos MySQL, veremos qué es un query o consulta a una base de datos, cuales son los tipos de Consulta a base de datos e implementación de Querys con Selenium.
 
-
+<img src="assets/query.png" width="40%"> 
 - [**`EJEMPLO 2`**](./Ejemplo-02)
 - [**`RETO 1`**](./Reto-01)
 
