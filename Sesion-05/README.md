@@ -1,68 +1,66 @@
 ## Sesión 5: Nombre de sesión 🤖
 
-<img src="../images/android-kotlin.png" align="right" height="120" hspace="10">
+
 <div style="text-align: justify;">
 
 ### 1. Objetivos :dart: 
 
-- Reconocer el IDE Android Studio con el que desarrollan aplicaciones móviles.
-- Conocer la estructura de un proyecto android y todos los archivos generados por el IDE
+- Enseñar el procedimiento para instalación y configuración de MySQL y MySQL Workbench.
+- Desarrollar los comandos MySQL para la creación de: esquemas, bases de datos, tablas y registros de bases de datos.
+- Construir mediante el uso de la librería JDBC para Mysql la conexión entre las bases de datos y los scripts de pruebas de Selenium.
+
 
 ### 2. Contenido :blue_book:
 
-Android Studio te ayudará a desarrollar tu app más productivamente a escala. Android Studio ofrece las herramientas más rápidas para crear apps de Android. Codifica más rápido. Codifica con seguridad. Crea el mejor código. Elimina tareas tediosas. Compila sin límites.
+Como sabemos, cada aplicación web debe mantener una base de datos como MySQL, Oracle o cualquier otra base de datos para almacenar todos sus datos. Y como Selenium Webdriver se usa para probar aplicaciones web, por lo general necesitaremos realizar muchas operaciones, como enviar información y, en ocasiones, recuperar información y validarlas.
+
+En los scripts de Selenium, cuando es necesario obtener los datos de la base de datos, es posible que tengamos que usar API que ayudan a interactuar con la base de datos como JDBC. Es por ello que en esta sesión nos enfocaremos en la implementación y uso de esta librería para conectarnos a nuestra base de datos en los scripts de pruebas y poder usarla.
+
+<img src="assets/java_mysql.png" width="60%"> 
 
 ---
+#### <ins>Tema 1: Creación y conexión de Base de Datos</ins>
 
-<img src="images/tools.png" align="right" height="90"> 
+En este tema veremos que es una base de datos, por qué necesitamos la automatización de la base de datos, qué es el lenguaje de consulta estructurada (SQL), qué es una base de datos MySQL, el proceso de instalación de MySQL y MySQL WorkBench y la creación de bases de datos, tablas y registro de datos.
 
-#### <ins>Tema 1</ins>
+<img src="assets/workbench.png" width="60%"> 
 
-Se detalla como crear un proyecto android desde nuestra IDE __Android Studio__, viendo el significado de los distintos campos y opciones para su configuración.
 
 - [**`EJEMPLO 1`**](./Ejemplo-01)
 
 ---
+#### <ins>Tema 2: Envío de Querys</ins>
 
-<img src="images/structure.png" align="right" height="90"> 
+Una vez creada y conectada la base de datos MySQL, veremos qué es un query o consulta a una base de datos, cuales son los tipos de Consulta a base de datos e implementación de Querys con Selenium.
 
-#### <ins>Tema 2</ins>
-
-Una vez que el proyecto está creado, la estructura o forma en la que se organiza es de suma importancia. No sólo nos ayuda a mantener nuestro código organizado, sino que también es importante para el funcionamiento de nuestra nueva app.
 
 - [**`EJEMPLO 2`**](./Ejemplo-02)
 - [**`RETO 1`**](./Reto-01)
+
 ---
+#### <ins>Tema 3: Procesamiento de Resultados. </ins>
 
-<img src="images/emulator.jpg" align="right" height="90"> 
+Luego de creada las consultas en nuestro proyecto, veremos como se procesan los resultados, y los metodos utilizados.
 
-#### <ins>Tema 3</ins>
+<img src="assets/resulset.png" width="60%"> 
 
-Ahora que tenemos mayor conocimiento de nuestro proyecto, vamos a configurar un emulador de algún dispositivo móvil para poder correr nuestra aplicación! :iphone:. Es decir, vamos a correr un dispositivo móvil virtual en nuestra computadora para simular la funcionalidad de nuestra app.
-
-**Nota al Experto:**
-  
- + Recuerda que cada subtema puede contener un ejemplo, un reto, o más de un ejemplo y más de un reto. Recuerda borrar esta línea después de haberla leído.
+- [**`EJEMPLO 3`**](./Ejemplo-03)
 - [**`RETO 2`**](./Reto-02)
+
 ---
+#### <ins>Tema 4: Ejemplo de prueba de base de datos con Selenium</ins>
 
-<img src="images/chaomi.png" align="right" height="110"> 
+En este tema veremos un ejemplo practico de pruebas con bases de datos y selenium.
 
-#### <ins>Tema 4</ins>
-
-Basta de emulaciones, ahora veamos como funciona en el mundo real. Nuestra app, por muy sencilla que sea ya está lista para ser instalada en un dispositivo móvil y para verla en acción.
-
-**Nota al Experto:**
-  
- + Recuerda que cada subtema puede contener un ejemplo, un reto, o más de un ejemplo y más de un reto. Recuerda borrar esta línea después de haberla leído.
+- [**`EJEMPLO 4`**](./Ejemplo-04)
 - [**`RETO 3`**](./Reto-03)
----
 
+---
 ### 3. Postwork :memo:
 
 Encuentra las indicaciones y consejos para reflejar los avances de tu proyecto de este módulo.
 
-- [**`POSTWORK SESIÓN 1`**](./Postwork/)
+- [**`POSTWORK SESIÓN 5`**](./Postwork/)
 
 <br/>
 

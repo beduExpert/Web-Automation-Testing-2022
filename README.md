@@ -2,7 +2,7 @@
 
 ## :wave: Bienvenid@s
 
-Bienvenidos al modulo de Web Automation Testing!!! donde aprenderemos a construir casos de pruebas automatizadas para aplicaciones WEB utilizando selenium webdriver, y aprenderemos un poco sobre el proceso a automatización de pruebas en aplicaciones mobile con Appium.
+Bienvenidos al modulo de Web Automation Testing!!! donde aprenderemos a construir casos de pruebas automatizadas para aplicaciones WEB utilizando el framework de Selenium Bebdriver, y aprenderemos un poco sobre el proceso a automatización de pruebas en aplicaciones mobile con Appium.
 
 ## :dart: Objetivo
 
@@ -12,23 +12,27 @@ Este modulo tiene como objetivo la automatización de casos de prueba de cualqui
 
 - Editor de código
   - Eclipse IDE
+
 - Control de versiones.
   - Git
   - Tener una cuenta de GitHub
+
 - Entorno de pruebas de software (Web)
   - Selenium Java Client
   - Selenium Webdriver
   - Selenium Grid
-- Entorno de pruebas de software (Mobile)
-  - Appium
-  - Android SDK
+
 - Bases de Datos
   - MySQL Server 
   - MySQL Workbench
 
+- Entorno de pruebas de software (Mobile)
+  - Appium
+  - Android SDK
+
 ## 💻 Proyecto
 
-Como proyecto desarrollaremos un framework de pruebas automatizadas en el sitio web de Mercado Libre y en su aplicación móvil. Utilizando Selenium Webdriver +  Appium.		
+Como proyecto desarrollaremos un framework de pruebas automatizadas sobre funcionalidades del sitio web de Mercado Libre (https://www.mercadolibre.com.mx/) y en su aplicación móvil. Utilizando Selenium Webdriver + TesnNG  + Appium.		
 
 ## :bookmark_tabs: Sesiones
 
