@@ -34,6 +34,7 @@ En este tema veremos que es una base de datos, por qué necesitamos la automatiz
 Una vez creada y conectada la base de datos MySQL, veremos qué es un query o consulta a una base de datos, cuales son los tipos de Consulta a base de datos e implementación de Querys con Selenium.
 
 <img src="assets/query.png" width="40%"> 
+
 - [**`EJEMPLO 2`**](./Ejemplo-02)
 - [**`RETO 1`**](./Reto-01)
 
@@ -42,7 +43,7 @@ Una vez creada y conectada la base de datos MySQL, veremos qué es un query o co
 
 Luego de creada las consultas en nuestro proyecto, veremos como se procesan los resultados, y los metodos utilizados.
 
-<img src="assets/resulset.png" width="60%"> 
+<img src="assets/resultset.png" width="60%"> 
 
 - [**`EJEMPLO 3`**](./Ejemplo-03)
 - [**`RETO 2`**](./Reto-02)
