@@ -53,6 +53,8 @@ Luego de creada las consultas en nuestro proyecto, veremos como se procesan los 
 
 En este tema veremos un ejemplo practico de pruebas con bases de datos y selenium.
 
+<img src="assets/example.png" width="60%"> 
+
 - [**`EJEMPLO 4`**](./Ejemplo-04)
 - [**`RETO 3`**](./Reto-03)
 
