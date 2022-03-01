@@ -130,7 +130,7 @@ CREATE TABLE Agendar_Cita (
     companySize varchar(255)
 )
 ```
-`Pro-Tip`: Si no vos la tabla recientemente creada, en MySQL workbench posicionate sobre la base de datos, haz click derecho y click en `refresh`
+`Pro-Tip`: Si no puedes ver la tabla recientemente creada, en MySQL workbench posicionate sobre la base de datos, haz click derecho y click en `refresh`
 
 9. Creación de registros en la tabla por medio de query con la siguiente Syntax:
 
@@ -238,10 +238,28 @@ Class.forName(dbClass);
 Connection con = DriverManager.getConnection(DB_URL, DB_USER, DB_PASSWORD);
 ```
 
-> DB_PASSWORD debe contener la contraseña del usuario root configurado en la instalación de MySQL.
+Donde:
 
-2. Consulta a la base de datos utilizando el objeto de Statement.
+```Java
+String dbClass = "com.mysql.cj.jdbc.Driver";
+Class.forName(dbClass);
+```
+> El rol de `Class.forName()` es requerir que la `Java Virtual Machine` encuentre y cargue la clase especificada.
+
+
+```Java
+public static String DB_URL = "jdbc:mysql://localhost:3306/db_name";
+public static String DB_USER = "root";
+public static String DB_PASSWORD = "root_pass";
+Connection con = DriverManager.getConnection(DB_URL, DB_USER, DB_PASSWORD);
+```
+> El método de la clase Java DriverManager se encarga de establecer una conexión con la base de datos utilizando la URL de la base de datos dada, usuario y password.
+
+> ¡Cuidado!: DB_PASSWORD debe contener la contraseña del usuario root configurado en la instalación de MySQL.
+
+2. Finalmente la consulta a la base de datos utilizando el objeto de Statement.
 
 ```Java
 stmt = con.createStatement();
 ```
+> El método `createStatement()` se utiliza para crear un objeto que modela una sentencia SQL. Es un objeto del tipo de una clase que implementa la interfaz `Statement`, y provee la infraestructura para ejecutar sentencias SQL sobre una conexión con una base de datos.
