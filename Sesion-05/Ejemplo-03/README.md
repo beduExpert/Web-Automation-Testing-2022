@@ -169,7 +169,7 @@ public class DataDrivenTestingUsingDataBase {
 
 ```
 
-<img src="assets/query.jpeg" width="60%"> 
+<img src="assets/query.png" width="60%"> 
 
 Como se ve en el código tambien podemos agregar aserciones:
 
