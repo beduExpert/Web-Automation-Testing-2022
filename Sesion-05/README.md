@@ -61,7 +61,7 @@ En este tema veremos un ejemplo práctico de pruebas automatizadas utilizando un
 - [**`RETO 3`**](./Reto-03)
 
 ---
-### 3. Postwork :memo: `EN PROCESO`
+### 3. Postwork :memo:
 
 Encuentra las indicaciones y consejos para reflejar los avances de tu proyecto de este módulo.
 
