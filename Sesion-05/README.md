@@ -41,7 +41,7 @@ Una vez creada y conectada la base de datos MySQL, veremos qué es un query o co
 - [**`RETO 1`**](./Reto-01)
 
 ---
-#### <ins>Tema 3: Procesamiento de Resultados. </ins> `EN PROCESO`
+#### <ins>Tema 3: Procesamiento de Resultados. </ins> 
 
 Luego de creada las consultas en nuestro proyecto, veremos como se procesan los resultados, y los metodos utilizados.
 
@@ -51,7 +51,7 @@ Luego de creada las consultas en nuestro proyecto, veremos como se procesan los 
 - [**`RETO 2`**](./Reto-02)
 
 ---
-#### <ins>Tema 4: Ejemplo de prueba de base de datos con Selenium</ins> `PENDIENTE`
+#### <ins>Tema 4: Ejemplo de prueba de base de datos con Selenium</ins> `EN PROCESO`
 
 En este tema veremos un ejemplo práctico de pruebas automatizadas utilizando una bases de datos y Selenium.
 
