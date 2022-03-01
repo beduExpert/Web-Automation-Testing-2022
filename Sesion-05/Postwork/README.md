@@ -1,4 +1,4 @@
-# Sesión 5 - Postwork #: 
+# Sesión 5 # Postwork: 
 
 ## :dart: Objetivos
 
