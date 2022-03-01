@@ -51,7 +51,7 @@ Luego de creada las consultas en nuestro proyecto, veremos como se procesan los 
 ---
 #### <ins>Tema 4: Ejemplo de prueba de base de datos con Selenium</ins>
 
-En este tema veremos un ejemplo practico de pruebas con bases de datos y selenium.
+En este tema veremos un ejemplo práctico de pruebas automatizadas utilizando una bases de datos y Selenium.
 
 <img src="assets/example.png" width="60%"> 
 
