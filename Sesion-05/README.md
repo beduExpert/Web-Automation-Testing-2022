@@ -51,14 +51,13 @@ Luego de creada las consultas en nuestro proyecto, veremos como se procesan los 
 - [**`RETO 2`**](./Reto-02)
 
 ---
-#### <ins>Tema 4: Ejemplo de prueba de base de datos con Selenium</ins> `EN PROCESO`
+#### <ins>Tema 4: Ejemplo de prueba de base de datos con Selenium</ins>
 
 En este tema veremos un ejemplo práctico de pruebas automatizadas utilizando una bases de datos y Selenium.
 
 <img src="assets/example.png" width="60%"> 
 
 - [**`EJEMPLO 4`**](./Ejemplo-04)
-- [**`RETO 3`**](./Reto-03)
 
 ---
 ### 3. Postwork :memo:
