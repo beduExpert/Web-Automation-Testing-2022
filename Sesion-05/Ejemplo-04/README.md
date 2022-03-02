@@ -29,7 +29,7 @@ public class connection_database {
 		try {
 			String DB_URL = "jdbc:mysql://localhost:3306/WebAutomationTesting";
 			String DB_USER = "root";
-			String DB_PASSWORD = "pass_root";
+			String DB_PASSWORD = "cmora142";
 
 			con = DriverManager.getConnection(DB_URL, DB_USER, DB_PASSWORD);
 			String dbClass = "com.mysql.cj.jdbc.Driver";
@@ -53,7 +53,10 @@ public class connection_database {
 
 	public ResultSet executeQuery(String query) throws SQLException {
 		Statement stmt = con.createStatement();
+		System.out.println(query);
+		printResult(stmt.executeQuery(query));
 		res = stmt.executeQuery(query);
+		
 		return res;
 
 	}
@@ -67,13 +70,28 @@ public class connection_database {
 			con.close();
 		}
 	}
-	
-	public int getColumnNumber(ResultSet res) throws SQLException{
+
+	public int getColumnNumber(ResultSet res) throws SQLException {
 		ResultSetMetaData rsmd = res.getMetaData();
 		return rsmd.getColumnCount();
-		
+
 	}
-	
+
+	public void printResult(ResultSet res) throws SQLException {
+		
+
+		while (res.next()) {
+
+			for (int i = 1; i <= getColumnNumber(res); i++) {
+				System.out.print(" | " + res.getString(i));
+				if (i == getColumnNumber(res)) {
+					System.out.println(" | " + res.getString(i));
+				}
+			}
+		}
+
+	}
+
 }
 
 ```
