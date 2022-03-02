@@ -29,7 +29,7 @@ public class connection_database {
 		try {
 			String DB_URL = "jdbc:mysql://localhost:3306/WebAutomationTesting";
 			String DB_USER = "root";
-			String DB_PASSWORD = "cmora142";
+			String DB_PASSWORD = "root_pass";
 
 			con = DriverManager.getConnection(DB_URL, DB_USER, DB_PASSWORD);
 			String dbClass = "com.mysql.cj.jdbc.Driver";
