@@ -46,9 +46,9 @@ CREATE SCHEMA schema_name;
 ```
 > Para este tema crearemos la siguiente:
 
-	```SQL
-	CREATE SCHEMA WebAutomationTesting;
-	```
+```SQL
+CREATE SCHEMA WebAutomationTesting;
+```
 
 2. Creación de la base de datos por medio de query con la siguiente Syntax
 
@@ -57,9 +57,9 @@ CREATE DATABASE databasename;
 ```
 > Para este tema crearemos la siguiente:
 
-	```SQL
-	CREATE DATABASE WebAutomationTesting;
-	```
+```SQL
+CREATE DATABASE WebAutomationTesting;
+```
 
 #### Sentencias MySQL para la Creación de tablas y registros de tablas en la base de datos
 1. Creación de una tabla por medio de query con la siguiente Syntax:
@@ -75,19 +75,19 @@ CREATE TABLE table_name (
 
 > Para este tema crearemos la siguiente:
 
-	```SQL
-	CREATE TABLE Agendar_Cita (
-		name varchar(255),
-		lastname varchar(255),
-		phone varchar(255),
-		email varchar(255),
-		company varchar(255),
-		jobTitle varchar(255),
-		program varchar(255),
-		sector varchar(255),
-		companySize varchar(255)
-	)
-	```
+```SQL
+CREATE TABLE Agendar_Cita (
+	name varchar(255),
+	lastname varchar(255),
+	phone varchar(255),
+	email varchar(255),
+	company varchar(255),
+    jobTitle varchar(255),
+    program varchar(255),
+    sector varchar(255),
+    companySize varchar(255)
+)
+```
 
 2. Creación de registros en la tabla por medio de query con la siguiente Syntax:
 
@@ -98,15 +98,15 @@ VALUES (value1, value2, value3, ...);
 
 > Insertaremos algunos registros en nuestra base de datos:
 
-	```SQL
-	INSERT INTO Agendar_Cita (name, lastname, phone, email, company,jobTitle,program,sector,companySize)
-	VALUES 
-	('Juan', 'Gomez', '11111111', 'Juan.Gomez@gmail.com', 'bedu','QA','Internet','1 a 50 empleados','Web Automation Testing'),
-	('David', 'Diaz', '22222222', 'David.Diaz@gmail.com', 'bedu','DEV','Seguros','1 a 50 empleados','Web Automation Testing'),
-	('Jesus', 'Mora', '33333333', 'Jesus.Mora@gmail.com', 'bedu','QA','Educación','1 a 50 empleados','Web Automation Testing'),
-	('Maria', 'Fernandez', '44444444', 'Maria.Fernandez@gmail.com', 'bedu','QA','Servicios Financieros','1 a 50 empleados','Web Automation Testing'),
-	('Veronica', 'Salas', '55555555', 'Veronica.Salas@gmail.com', 'bedu','QA','Consultoría','1 a 50 empleados','Web Automation Testing')
-	```
+```SQL
+INSERT INTO Agendar_Cita (name, lastname, phone, email, company,jobTitle,program,sector,companySize)
+VALUES 
+('Juan', 'Gomez', '11111111', 'Juan.Gomez@gmail.com', 'bedu','QA','Internet','1 a 50 empleados','Web Automation Testing'),
+('David', 'Diaz', '22222222', 'David.Diaz@gmail.com', 'bedu','DEV','Seguros','1 a 50 empleados','Web Automation Testing'),
+('Jesus', 'Mora', '33333333', 'Jesus.Mora@gmail.com', 'bedu','QA','Educación','1 a 50 empleados','Web Automation Testing'),
+('Maria', 'Fernandez', '44444444', 'Maria.Fernandez@gmail.com', 'bedu','QA','Servicios Financieros','1 a 50 empleados','Web Automation Testing'),
+('Veronica', 'Salas', '55555555', 'Veronica.Salas@gmail.com', 'bedu','QA','Consultoría','1 a 50 empleados','Web Automation Testing')
+```
 <img src="assets/agendar_cita.png" width="60%"> 
 
 
