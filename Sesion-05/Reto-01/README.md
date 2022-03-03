@@ -2,37 +2,97 @@
 
 ## Objetivo
 
-* Probar la clase `DataDrivenTestingUsingDataBase`para deducir el comportamiento del método `executeQuery()`
+* Desarrollar clase java donde se implemente el método `executeQuery()` para realizar consultas a la base de datos MySQL.
 
 ## Desarrollo
 
-Copia el contenido de la siguiente clase en tu proyecto, y ejecutala:
-> ¡Cuidado!: recuerda actualizar el codigo con la contraseña del user root.
+Desarrolla una clase java donde se implemente el método `executeQuery()` para realizar consultas a la base de datos MySQL. Incluye la ejecución de varias sentencias MySQL para obtener información de la base de datos.
+
+__Pro-Tip__: Puedes utilizar el archivo `testng.xml` para parametrizar los querys que quieras ejecutar en la etiqueta `<Test>`, por ejemplo
+
+```Xml
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<test name="Test1">
+		<parameter name="query" value="SELECT * FROM Agendar_Cita" />
+		<classes>
+			<!-- Las clases que se informen en esta sección seran ejecutadas en la Suite -->
+			<class name="tests.demo" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
+```
+
+
+<details>
+  <summary> Solución </summary>
+
+
+`testng.xml`
+
+```Xml
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+	<test name="Test1">
+		<parameter name="query" value="SELECT * FROM Agendar_Cita" />
+		<classes>
+			<!-- Las clases que se informen en esta sección seran ejecutadas en la Suite -->
+			<class name="tests.demo" />
+		</classes>
+	</test> <!-- Test -->
+	<test name="Test2">
+		<parameter name="query" value="SELECT * FROM Agendar_Cita where jobTitle = 'QA'" />
+		<classes>
+			<!-- Las clases que se informen en esta sección seran ejecutadas en la Suite -->
+			<class name="tests.demo" />
+		</classes>
+	</test> <!-- Test -->
+	<test name="Test3">
+		<parameter name="query" value="SELECT * FROM Agendar_Cita where email = null" />
+		<classes>
+			<!-- Las clases que se informen en esta sección seran ejecutadas en la Suite -->
+			<class name="tests.demo" />
+		</classes>
+	</test> <!-- Test -->
+
+</suite> <!-- Suite -->
+```
+
+`demo.java`
 
 ```Java
+
 package tests;
+
+
+import static org.testng.Assert.assertTrue;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
-import java.sql.SQLException;
+import java.sql.ResultSetMetaData;
 import java.sql.Statement;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 public class demo {
+	int total = 0;
 	// Creación del object de conexión
 	static Connection con = null;
-	private ResultSet res;
 
 	// Creación del object Statement
 	private static Statement stmt;
+	private ResultSet res;
 
 	// Creación de Constantes para la conexión a la Base de Datos
 	public static String DB_URL = "jdbc:mysql://localhost:3306/WebAutomationTesting";
 	public static String DB_USER = "root";
-	public static String DB_PASSWORD = "cmora142";
+	public static String DB_PASSWORD = "root_pass";
 
 	@BeforeTest
 	public void setUp() throws Exception {
@@ -51,18 +111,37 @@ public class demo {
 	}
 
 	@Test
-	public void test() {
-
-		// Definir y ejecutar la consulta a la base de datos
-		String query = "SELECT * FROM Agendar_Cita WHERE name ='BEDU'";
+	@Parameters({"query"})
+	public void test(String query) {
 
 		try {
+
+			// Definir y ejecutar la consulta a la base de datos
 			res = stmt.executeQuery(query);
-			System.out.println(res.getString(1));
-		} catch (SQLException e) {
-			// TODO Auto-generated catch block
+
+			// objeto ResultSetMetaData para obtener el numero de columnas de la tabla
+			ResultSetMetaData rsmd = res.getMetaData();
+			int columnsNumber = rsmd.getColumnCount();
+
+			System.out.println(query);
+			
+			while (res.next()) {
+
+				total++;
+
+				for (int i = 1; i <= columnsNumber; i++) {
+					System.out.print(" | " + res.getString(i));
+					if (i == columnsNumber) {
+						System.out.println(" | " + res.getString(i));
+					}
+				}
+			}
+		} catch (Exception e) {
 			e.printStackTrace();
 		}
+
+		// asersiones
+		assertTrue(total >= 1, "No se obtuvieron resultados de la consulta");
 
 	}
 
@@ -81,15 +160,6 @@ public class demo {
 }
 
 ```
-
-¿Puedes identificar el error?
-
-<details>
-  <summary> Solución </summary>
-
-> El resultado de la ejecución del Query no arroja resultado, es por ello que cuando intenta ejecutar el metodo `getString` genera una `java.sql.SQLException`
-
-<img src="assets/error.png" width="60%"> 
 
 </details>
 
