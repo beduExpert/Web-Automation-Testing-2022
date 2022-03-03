@@ -6,7 +6,9 @@
 
 ## Desarrollo
 
-Escoge alguna funcionalidad y desarrolla el archivo `testng.xml` que contenga la parametrización de casos de prueba a nivel de `<Suite>` y `<Test>`. 
+Escoge alguna funcionalidad y desarrolla el archivo `testng.xml` que contenga la parametrización de datos para el/los casos de prueba. Incluye parametrias a nivel de `<Suite>` y `<Test>`. 
+
+__Pro-tip:__  Los parametros de `<Suite>` y `<Test>` tambien pueden ser utilizados para parametrias generales, no solo de casos de prueba.
 
 
 <details>
