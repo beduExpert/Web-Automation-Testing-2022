@@ -11,58 +11,14 @@ Siguiendo con métodos explicado en el [**`EJEMPLO 3 - Procesamiento de Resultad
 Recuerda que java proporciona muchos métodos avanzados para procesar los resultados, entre ellos se encuentran los siguientes:
 
 - `String getString()`: Se utiliza para extraer un valor  String del conjunto de resultado.
-
-```Java
-res.getString(1)
-```
-
 - `int getInt()`: Se utiliza para extraer un valor Int del conjunto de resultado.
-
-```Java
-res.getInt(1)
-```
-
 - `double getDouble()`: Se utiliza para extraer un valor Double del conjunto de resultado.
-
-```Java
-res.getDouble(1)
-```
-
 - `Date getDate()`: Se utiliza para extraer un valor Date del conjunto de resultado.
-
-```Java
-res.getDate(1)
-```
-
 - `boolean next()`: Se utiliza para moverse al siguiente registro del conjunto de resultado.
-
-```Java
-res.next()
-```
-
 - `boolean previous()`: Se utiliza para moverse al registro anterior del conjunto de resultado.
-
-```Java
-res.previous()
-```
-
 - `boolean first()`: Se utiliza para moverse al primer registro del conjunto de resultado.
-
-```Java
-res.first()
-```
-
 - `boolean last()`: Se utiliza para moverse al último registro del conjunto de resultado.
-
-```Java
-res.last()
-```
-
 - `boolean absolute(int rowNumber)`: Se utiliza para moverse a un registro específico del conjunto de resultados.
-
-```Java
-res.absolute(1)
-```
 
 > Pro-tip: puedes consultar mas metodos de esta clase en este link-> https://docs.oracle.com/javase/7/docs/api/java/sql/ResultSet.html
 
