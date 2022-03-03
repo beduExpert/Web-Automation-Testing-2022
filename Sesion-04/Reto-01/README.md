@@ -17,33 +17,44 @@ Desarrollar el archivo `testng.xml` que contenga la parametrización de casos de
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
+	<!-- Los parametros de <suite> tambien pueden ser utilizados para parametrias generales-->
+	<parameter name="funcionalidad" value="AGENDAR ASESORIA" />
 
-	<parameter name="name" value="Juan"/>
-	<parameter name="lastname" value="Gomez"/>
-	<parameter name="phone" value="11111111"/>
-	<parameter name="email" value="Juan.Gomez@gmail.com"/>
-	<parameter name="company" value="bedu"/>
-	<parameter name="jobtitle" value="QA"/>
-	<parameter name="sector" value="Internet"/>
-	<parameter name="company_size" value="1 a 50 empleados"/>
-	<parameter name="program" value="Web Automation Testing"/>
+	<test name="Test">
+		<parameter name="name" value="Juan" />
+		<parameter name="lastname" value="Gomez" />
+		<parameter name="phone" value="11111111" />
+		<parameter name="email" value="Juan.Gomez@gmail.com" />
+		<parameter name="company" value="bedu" />
+		<parameter name="jobtitle" value="QA" />
+		<parameter name="sector" value="Internet" />
+		<parameter name="company_size" value="1 a 50 empleados" />
+		<parameter name="program" value="Web Automation Testing" />
 
-  <test name="Test">
+		<classes>
+			<!-- Las clases que se informen en esta sección seran ejecutadas en la Suite -->
+			<class name="com.bedu.web_automation_course.DataDrivenTestingUsingParameters" />
+		</classes>
+	</test> <!-- Test -->
+	<!-- Recuerda que puedes tener varios test en la misma Suite-->
+	<test name="Test2">
 
-	<parameter name="name" value="----"/>
-	<parameter name="lastname" value="----"/>
-	<parameter name="phone" value="----"/>
-	<parameter name="email" value="----"/>
-	<parameter name="company" value="----"/>
-	<parameter name="jobtitle" value="----"/>
-	<parameter name="sector" value="Internet"/>
-	<parameter name="company_size" value="1 a 50 empleados"/>
-	<parameter name="program" value="----"/>
+		<parameter name="name" value="Jesus" />
+		<parameter name="lastname" value="Marin" />
+		<parameter name="phone" value="22222222" />
+		<parameter name="email" value="jesus.marin@gmail.com" />
+		<parameter name="company" value="BEDU" />
+		<parameter name="jobtitle" value="DEV" />
+		<parameter name="sector" value="Internet" />
+		<parameter name="company_size" value="1 a 50 empleados" />
+		<parameter name="program" value="Web Automation Testing" />
 
-    <classes>
-      <class name="com.bedu.web_automation_course.DataDrivenTestingUsingParameters"/>
-    </classes>
-  </test> <!-- Test -->
+		<classes>
+			<!-- Las clases que se informen en esta sección seran ejecutadas en la Suite -->
+			<class name="com.bedu.web_automation_course.DataDrivenTestingUsingParameters" />
+		</classes>
+	</test> <!-- Test -->
+
 </suite> <!-- Suite -->
 ```
 
