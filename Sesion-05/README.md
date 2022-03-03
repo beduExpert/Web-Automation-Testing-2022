@@ -28,7 +28,7 @@ En este tema veremos que es una base de datos, por qué necesitamos la automatiz
 <img src="assets/workbench.png" width="40%"> 
 
 
-- [**`EJEMPLO 1`**](./Ejemplo-01)
+- [**`EJEMPLO 1 - Creación y conexión de Base de Datos`**](./Ejemplo-01)
 
 ---
 #### <ins>Tema 2: Envío de Querys</ins> 
@@ -37,7 +37,7 @@ Una vez creada y conectada la base de datos MySQL, veremos qué es un query o co
 
 <img src="assets/query.png" width="80%"> 
 
-- [**`EJEMPLO 2`**](./Ejemplo-02)
+- [**`EJEMPLO 2 - Envío de Querys`**](./Ejemplo-02)
 - [**`RETO 1`**](./Reto-01)
 
 ---
@@ -47,7 +47,7 @@ Luego de creada las consultas en nuestro proyecto, veremos como se procesan los 
 
 <img src="assets/resultset.jpeg" width="60%"> 
 
-- [**`EJEMPLO 3`**](./Ejemplo-03)
+- [**`EJEMPLO 3 - Procesamiento de Resultados.`**](./Ejemplo-03)
 - [**`RETO 2`**](./Reto-02)
 
 ---
@@ -57,7 +57,7 @@ En este tema veremos un ejemplo práctico de pruebas automatizadas utilizando un
 
 <img src="assets/example.png" width="60%"> 
 
-- [**`EJEMPLO 4`**](./Ejemplo-04)
+- [**`EJEMPLO 4 - Ejemplo de prueba de base de datos con Selenium`**](./Ejemplo-04)
 
 ---
 ### 3. Postwork :memo:

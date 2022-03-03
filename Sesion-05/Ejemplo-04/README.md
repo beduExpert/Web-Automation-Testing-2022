@@ -2,7 +2,7 @@
 
 ## Objetivo
 
-* Adaptar los exemplos entregados en todos los temas de esta sesión a un caso practico con Selenium y una funcionalidad de BEDU (agendar asesoria)
+* Adaptar los ejemplos entregados en todos los temas de esta sesión a un caso practico con Selenium y una funcionalidad de BEDU (agendar asesoria)
 
 ## Desarrollo
 

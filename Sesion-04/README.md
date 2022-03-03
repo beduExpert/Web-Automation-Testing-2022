@@ -24,7 +24,7 @@ Estos métodos suelen ser muy útiles para los scripts de pruebas ya que nos sir
 
 <img src="assets/gets.png" width="60%"> 
 
-- [**`EJEMPLO 1`**](./Ejemplo-01)
+- [**`EJEMPLO 1 - Métodos de control de captura de datos de objetos.`**](./Ejemplo-01)
 
 ---
 
@@ -34,7 +34,7 @@ La lectura de datos de prueba de archivos con extensiones `.csv` es una de las f
 
 <img src="assets/data.png" width="40%"> 
 
-- [**`EJEMPLO 2`**](./Ejemplo-02)
+- [**`EJEMPLO 2 - Archivos csv como origen de Datos.`**](./Ejemplo-02)
 ---
 
 #### <ins>Tema 3: Parametrización de Datos: TestNG XML.</ins> 
@@ -52,7 +52,7 @@ En este tema veremos 1 primera forma: `Con la ayuda de la anotación de parámet
 
 <img src="assets/parameter.png" width="60%"> 
 
-- [**`EJEMPLO 3`**](./Ejemplo-03)
+- [**`EJEMPLO 3 - Parametrización de Datos: TestNG XML.`**](./Ejemplo-03)
 - [**`RETO 1`**](./Reto-01)
 ---
 
@@ -60,14 +60,14 @@ En este tema veremos 1 primera forma: `Con la ayuda de la anotación de parámet
 
 Como se había mencionado el el tema anterior, hay dos formas en las que podemos lograr la parametrización en `TestNG`;
 
-1. Con la ayuda de la anotación de parámetros y el archivo XML TestNG: esto fue visto en el [**`EJEMPLO 3`**](./Ejemplo-03).
+1. Con la ayuda de la anotación de parámetros y el archivo XML TestNG: esto fue visto en el [**`EJEMPLO 3 - Parametrización de Datos: TestNG XML.`**](./Ejemplo-03).
 2. `Con la ayuda de la anotación @DataProvider de TestNG.`
 
 En este tema revisaremos cómo funciona  la anotación `@DataProvider` de TestNG.
 
 <img src="assets/dataprovider.png" width="60%"> 
 
-- [**`EJEMPLO 4`**](./Ejemplo-04)
+- [**`EJEMPLO 4 - TestNG como proveedor de origen de Datos.`**](./Ejemplo-04)
 - [**`RETO 2`**](./Reto-02)
 ---
 
