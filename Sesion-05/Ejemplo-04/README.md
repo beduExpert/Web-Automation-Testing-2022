@@ -108,7 +108,7 @@ public class connection_database {
 
 > ¡Cuidado!: Recuerda cambiar el valor de la variable DB_PASSWORD.
 
-2. Creamos nuestra clase dataprovider para llenar el `objeto provider [][]`con el resultado de la consulta MySQL
+2. Anadimos a nuestra clase `data_provider` el método `@DataProvider(name = "MySQL_dataprovider")` a nuestra clase para llenar el `objeto provider [][]`con el resultado de la consulta MySQL
 
 ```Java
 package tests;
@@ -258,7 +258,7 @@ public class DataDrivenTestingUsingDataBase {
 
 En este ejemplo vemos que se obtuvieron datos de la base de datos para usarlos para completar la información de la funcionalidad `Agendar Asesoría`de la página: https://bedu.org/
 
-
+<img src="assets/mysql_provider.png" width="40%"> 
 
 De esta manera podemos obtener información de la base de datos y realizar aserciones para validar por ejemplo si la información del registro de un usuario se guardó correctamente a la base de datos, si la actualización de información de una dirección se guardó correctamente, o si se eliminó un usuario correctamente cuando se dio de baja por la página web.
 
