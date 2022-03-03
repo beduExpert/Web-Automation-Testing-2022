@@ -41,7 +41,7 @@ public class connection_database {
 			}
 
 			if (con != null) {
-				System.out.println("Conectado a MYSQL");
+				System.out.println("Conectado a MySQL");
 			}
 
 		} catch (SQLException ex) {
@@ -53,10 +53,9 @@ public class connection_database {
 
 	public ResultSet executeQuery(String query) throws SQLException {
 		Statement stmt = con.createStatement();
-		System.out.println(query);
-		printResult(stmt.executeQuery(query));
+		//System.out.println(query);
+		//printResult(stmt.executeQuery(query));
 		res = stmt.executeQuery(query);
-		
 		return res;
 
 	}
@@ -64,10 +63,12 @@ public class connection_database {
 	public void closeConnexion() throws SQLException {
 		if (res != null) {
 			res.close();
+			System.out.println("ResultSet cerrado exitosamente...");
 		}
 
 		if (con != null) {
 			con.close();
+			System.out.println("Conexión cerrada exitosamente...");
 		}
 	}
 
@@ -76,10 +77,18 @@ public class connection_database {
 		return rsmd.getColumnCount();
 
 	}
+	
+	
+	public int getRowsNumber(ResultSet res) throws SQLException {
+		int filas = 0;
+		while (res.next()){
+		   filas++;
+		}
+		return filas;
+	}
 
 	public void printResult(ResultSet res) throws SQLException {
 		
-
 		while (res.next()) {
 
 			for (int i = 1; i <= getColumnNumber(res); i++) {
@@ -94,58 +103,125 @@ public class connection_database {
 
 }
 
+
 ```
 
 > ¡Cuidado!: Recuerda cambiar el valor de la variable DB_PASSWORD.
-2. Creamos nuestra clase de prueba 
+
+2. Creamos nuestra clase dataprovider para llenar el `objeto provider [][]`con el resultado de la consulta MySQL
 
 ```Java
 package tests;
 
 import java.sql.ResultSet;
 
+import org.testng.annotations.DataProvider;
+
+public class data_provider {
+
+	@DataProvider(name = "dataprovider")
+	public Object[][] metodoDataProvider() {
+		return new Object[][] {
+				{ "Juan", "Gomez", "11111111", "Juan.Gomez@gmail.com", "bedu", "QA", "Internet", "1 a 50 empleados",
+						"Web Automation Testing" },
+				{ "David", "Diaz", "22222222", "David.Diaz@gmail.com", "bedu", "DEV", "Seguros", "1 a 50 empleados",
+						"Web Automation Testing" },
+				{ "Jesus", "Mora", "33333333", "Jesus.Mora@gmail.com", "bedu", "QA", "Educación", "1 a 50 empleados",
+						"Web Automation Testing" },
+				{ "Maria", "Fernandez", "44444444", ",Maria.Fernandez@gmail.com", "bedu", "QA", "Servicios Financieros",
+						"1 a 50 empleados", "Web Automation Testing" },
+				{ "Veronica", "Salas", "55555555", "Veronica.Salas@gmail.com", "bedu", "QA", "Consultoría",
+						"1 a 50 empleados", "Web Automation Testing" } };
+	}
+
+	@DataProvider(name = "MySQL_dataprovider")
+	public String[][] mySQL_Data() {
+
+		int rowCount = 0;
+		int columnCount = 0;
+		String myData[][] = null;
+		connection_database conect = new connection_database();
+		ResultSet res;
+
+		try {
+			conect.Conector();
+
+			// Ejecutar consulta (query) a la BD
+			String query = "SELECT * FROM Agendar_Cita";
+			res = conect.executeQuery(query);
+
+			// Obtener nro de filas y columnas
+			columnCount = conect.getColumnNumber(res);
+			rowCount = conect.getRowsNumber(res);
+
+			System.out.println("Columnas : " + columnCount);
+			System.out.println("Filas : " + rowCount);
+
+			// Inicializar la matriz
+			myData = new String[rowCount][columnCount];
+			res = conect.executeQuery(query);
+			
+			// Llenar la matriz con el resultado de la consulta MySQL
+            for(int row=0; row<rowCount; row++)
+            {
+                res.next();
+               
+                for(int col=1; col<=columnCount; col++)
+                    myData[row][col-1] = res.getString(col);
+            }
+			
+            //Cerrar la conexión
+			conect.closeConnexion();
+
+		}
+
+		catch (Exception e) {
+			e.printStackTrace();
+		}
+
+		return myData;
+
+	}
+
+}
+
+```
+
+3. Creamos nuestra clase de prueba 
+
+```Java
+package tests;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterMethod;
-import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import pages.AgendarCitaPage;
 import pages.HomePage;
 
 public class DataDrivenTestingUsingDataBase {
-	ResultSet res;
-
-	connection_database conect = new connection_database();
 
 	private WebDriver driver;
 	private HomePage homePage;
 	private AgendarCitaPage agendarCitaPage;
 
-	@BeforeTest
-	public void setUp() throws Exception {
-		try {
-			conect.Conector();
-			System.setProperty("webdriver.chrome.driver", "src/test/resources/webdrivers/chromedriver");
-			driver = new ChromeDriver();
-			driver.manage().window().maximize();
-			driver.get("https://bedu.org/");
-
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-
+	@BeforeMethod
+	public void beforeTest() throws InterruptedException {
+		System.setProperty("webdriver.chrome.driver", "src/test/resources/webdrivers/chromedriver");
+		driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.get("https://bedu.org/");
 	}
 
-	@BeforeMethod
-	public void beforeMethod() {
-		homePage = new HomePage(driver);
-		agendarCitaPage = new AgendarCitaPage(driver);
+	@Test(dataProvider = "MySQL_dataprovider", dataProviderClass = data_provider.class)
+	public void agendarAsesoria(String name, String lastname, String phone, String email, String company,
+			String jobtitle, String sector, String company_size, String program) throws InterruptedException {
 
+		homePage = new HomePage(driver);
 		// Validamos que el boton de agendar asesoria este disponible
 		if (homePage.isButtonDisplayed()) {
-			// Click en boton de agendar asesoria
+			// Clck en boton de agendar asesoria
 			try {
 				homePage.clickButton();
 			} catch (InterruptedException e) {
@@ -153,61 +229,35 @@ public class DataDrivenTestingUsingDataBase {
 			}
 		}
 
-	}
-
-	@Test
-
-	public void agendarAsesoria() {
+		agendarCitaPage = new AgendarCitaPage(driver);
 
 		if (agendarCitaPage.btn_CancelIsDispayed()) {
 
-			try {
-
-				// Ejecutar consulta (query) a la BD
-				String query = "SELECT * FROM Agendar_Cita";
-				res = conect.executeQuery(query);
-				System.out.println("res = " + res);
-				System.out.println("res.next() = " + res.next());
-
-				while (res.next()) {
-
-					agendarCitaPage.fillName(res.getString(1));
-					agendarCitaPage.fillLastname(res.getString(2));
-					agendarCitaPage.fillPhone(res.getString(3));
-					// agendarCitaPage.fillEmail(res.getString(4));
-					agendarCitaPage.fillCompany(res.getString(5));
-					agendarCitaPage.fillJobTitle(res.getString(6));
-					agendarCitaPage.fillSector(res.getString(7));
-					agendarCitaPage.fillCompanySize(res.getString(8));
-					agendarCitaPage.fillProgram(res.getString(9));
-					Thread.sleep(2000);
-
-				}
-			} catch (Exception e) {
-				e.printStackTrace();
-			}
-
+			agendarCitaPage.fillName(name);
+			agendarCitaPage.fillLastname(lastname);
+			agendarCitaPage.fillPhone(phone);
+			// agendarCitaPage.fillEmail(email);
+			agendarCitaPage.fillCompany(company);
+			agendarCitaPage.fillJobTitle(jobtitle);
+			agendarCitaPage.fillSector(sector);
+			agendarCitaPage.fillCompanySize(company_size);
+			agendarCitaPage.fillProgram(program);
+			Thread.sleep(2000);
 		}
 
 	}
 
 	@AfterMethod
-	public void afterMethod() throws Exception {
+	public void afterTest() {
 		driver.close();
-	}
-
-	@AfterTest
-	public void tearDown() throws Exception {
-		conect.closeConnexion();
-
 	}
 
 }
 
-
 ```
 
 En este ejemplo vemos que se obtuvieron datos de la base de datos para usarlos para completar la información de la funcionalidad `Agendar Asesoría`de la página: https://bedu.org/
+
 
 
 De esta manera podemos obtener información de la base de datos y realizar aserciones para validar por ejemplo si la información del registro de un usuario se guardó correctamente a la base de datos, si la actualización de información de una dirección se guardó correctamente, o si se eliminó un usuario correctamente cuando se dio de baja por la página web.
