@@ -6,12 +6,13 @@
 
 ## Desarrollo
 
-Desarrollar el archivo `testng.xml` que contenga la parametrización de casos de prueba a nivel de `<Suite>` y `<Test>`.
+Escoge alguna funcionalidad y desarrolla el archivo `testng.xml` que contenga la parametrización de casos de prueba a nivel de `<Suite>` y `<Test>`. 
 
 
 <details>
   <summary> Solución </summary>
-> testng.xml
+
+`testng.xml`
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -58,7 +59,7 @@ Desarrollar el archivo `testng.xml` que contenga la parametrización de casos de
 </suite> <!-- Suite -->
 ```
 
-> testng.xml
+`DataDrivenTestingUsingParameters.java`
 
 ```Java
 package com.bedu.web_automation_course;
