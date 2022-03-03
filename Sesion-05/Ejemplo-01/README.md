@@ -2,9 +2,8 @@
 
 ## Objetivo
 
-- Enseñar el procedimiento para instalación y configuración de MySQL y MySQL Workbench.
-- Desarrollar los comandos MySQL para la creación de: esquemas, bases de datos, tablas y registros de bases de datos.
-- Construir mediante el uso de la librería JDBC para Mysql la conexión entre las bases de datos y los scripts de pruebas de Selenium.
+- Ejecutar las sentencias MySQL requeridas para la creación de: esquemas, bases de datos, tablas y registros de bases de datos.
+- Construir la conexión a la base de datos MySQL mediante el uso de la librería JDBC y los scripts de pruebas de Selenium.
 
 ## Desarrollo
 
@@ -37,44 +36,10 @@ El `SQL es un lenguaje de programación` que utilizan casi todas las bases de da
 
 MySQL es el DBMS que se encuentra detrás de algunos de los sitios web y aplicaciones basadas en web más importantes del mundo, como `Airbnb`, `Uber`, `LinkedIn`, `Facebook`, `Twitter` y `YouTube`.
 
-#### Mysql Community Server Instalación
 
-1. Ingresar a la url: https://dev.mysql.com/downloads/mysql/
-2. Selecciona tu sistema operativo
-<img src="assets/mysql_1.png" width="60%"> 
+#### Sentencias MySQL para la Creación de base de datos
 
-3. Haz clic en descargar.
-<img src="assets/mysql_2.png" width="60%"> 
-
-4. En la siguiente pantalla haz clic en: `No thanks, just start my download.`
-5. Sigue los pasos de la instalación
-<img src="assets/mysql_3.png" width="60%"> 
-
-6. En la siguiente pantalla te solicitará ingresar una contraseña para el usuario root. `Pro-tip`: usa una contraseña que no olvides ya que en algunos casos se te solicitara.
-<img src="assets/mysql_4.png" width="60%"> 
-
-7. Haz clic en finalizar
-<img src="assets/mysql_5.png" width="60%"> 
-
-
-#### Mysql Workbench instalación
-1. Ingresar en la url: https://dev.mysql.com/downloads/workbench/
-2. Selecciona tu sistema operativo.
-3. Haz clic en descargar.
-4. En la siguiente pantalla haz clic en: `No thanks, just start my download.`
-5. Sigue los pasos de la instalación de Mysql Workbench
-
-
-#### Creación de base de datos
-
-1. Abrir Mysql Workbench y hacer click en la instancia local
-<img src="assets/workbench_1.png" width="60%"> 
-
-2. Ingresar la contraseña del usuario root (fue definida en el proceso de instalación de mysql)
-<img src="assets/workbench_2.png" width="60%"> 
-<img src="assets/workbench_3.png" width="60%"> 
-
-3. Creación del Schema  por medio de query con la siguiente Syntax
+1.  Creación del Schema  por medio de query con la siguiente Syntax
 
 ```SQL
 CREATE SCHEMA schema_name;
@@ -85,26 +50,19 @@ CREATE SCHEMA schema_name;
 CREATE SCHEMA WebAutomationTesting;
 ```
 
-4. Creación de la base de datos por medio de query con la siguiente Syntax
+2. Creación de la base de datos por medio de query con la siguiente Syntax
 
 ```SQL
 CREATE DATABASE databasename;
 ```
 > Para este tema crearemos la siguiente:
+
 ```SQL
 CREATE DATABASE WebAutomationTesting;
 ```
 
-5. Salir a la pantalla home de Mysql Workbench y hacer click en el botón `+` en la sección de `Mysql Connections.`
-<img src="assets/workbench_4.png" width="60%"> 
-
-6. Ingresar los datos del schema y colocarle un nombre a la conexión en la siguiente pantalla:
-<img src="assets/workbench_5.png" width="60%"> 
-
-7. Finalmente nos solicitara nuevamente la contraseña `root`
-<img src="assets/workbench_6.png" width="30%"> 
-
-8. Creación de una tabla por medio de query con la siguiente Syntax:
+#### Sentencias MySQL para la Creación de tablas y registros de tablas en la base de datos
+1. Creación de una tabla por medio de query con la siguiente Syntax:
 
 ```SQL
 CREATE TABLE table_name (
@@ -130,9 +88,8 @@ CREATE TABLE Agendar_Cita (
     companySize varchar(255)
 )
 ```
-`Pro-Tip`: Si no puedes ver la tabla recientemente creada, en MySQL workbench posicionate sobre la base de datos, haz click derecho y click en `refresh`
 
-9. Creación de registros en la tabla por medio de query con la siguiente Syntax:
+2. Creación de registros en la tabla por medio de query con la siguiente Syntax:
 
 ```SQL
 INSERT INTO table_name (column1, column2, column3, ...)
@@ -152,6 +109,7 @@ VALUES
 ```
 <img src="assets/agendar_cita.png" width="60%"> 
 
+
 #### Conexión a la base de datos con Selenium
 
 1. Ingresar la dependencia al archivo POM.xml https://mvnrepository.com/artifact/mysql/mysql-connector-java
@@ -164,6 +122,7 @@ VALUES
     <version>8.0.28</version>
 </dependency>
 ```
+> La dependencia `mysql-connector-java` funciona como puente entre el servidor MySQL y los programas escritos en diferentes lenguajes de programación como Java, C#, Python, Node JS, etc. Es decir, este conector ofrece una interfaz para ejecutar una consulta MySQL en el servidor.
 
 2. Crea una clase llamada `DataDrivenTestingUsingDataBase`
 
@@ -227,7 +186,7 @@ En conclusión la conexión a la base de datos se hace mediante la librería JDB
 
 Haciendo posible que la clase java se conecte a la base de datos, recupere datos de la base de datos o, de hecho, realice cualquiera de las operaciones `CRUD (Create, Read, Update, Delete)` , manipule los datos resultantes y cierre la conexión. Mediante los siguientes pasos:
 
-1. Conexión a la base de datos utilizando el método.
+1. Conexión a la base de datos utilizando el método `getConnection()`.
 
 ```Java
 public static String DB_URL = "jdbc:mysql://localhost:3306/db_name";
