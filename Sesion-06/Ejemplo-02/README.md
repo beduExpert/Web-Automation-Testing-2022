@@ -55,7 +55,7 @@ Una configuración como esta proporciona una ejecución paralela para completar 
 
 #### Arquitectura de Selenium Grid 4
 
-Selenium Grid 2  constaba de dos procesos: `Hub y Nodes`. Pero actualmente la versión de Selenium 4 admite más procesos distintos, aca explicaremos cada uno:
+Selenium Grid 2  constaba de dos procesos: `Hub y Nodes`. Pero actualmente la versión de Selenium 4 admite más procesos distintos, aca explicaremos cada uno de ellos:
 
 <img src="assets/arquitectura_selenium_grid.png" >
 
@@ -63,10 +63,10 @@ Selenium Grid 2  constaba de dos procesos: `Hub y Nodes`. Pero actualmente la ve
 
     Se comporta de manera diferente según la solicitud: 
 
-        1. Si se trata de una solicitud de sesión nueva, el enrutador la agregará a la cola de sesión nueva. 
-        2. El Distribuidor comprueba regularmente si hay un espacio libre. Si es así, la primera solicitud coincidente se elimina de la cola de nueva sesión. recibirá el evento y sondeará la Cola de Nueva Sesión para obtener la nueva solicitud de sesión. 
-        3. Si la solicitud pertenece a una sesión existente, el enrutador enviará la identificación de la sesión al mapa de sesión, y el mapa de sesión devolverá el nodo donde se está ejecutando la sesión. 
-        4. Después de esto, el enrutador reenviará la solicitud al nodo.
+    1. Si se trata de una solicitud de sesión nueva, el enrutador la agregará a la cola de sesión nueva. 
+    2. El Distribuidor comprueba regularmente si hay un espacio libre. Si es así, la primera solicitud coincidente se elimina de la cola de nueva sesión. recibirá el evento y sondeará la Cola de Nueva Sesión para obtener la nueva solicitud de sesión. 
+    3. Si la solicitud pertenece a una sesión existente, el enrutador enviará la identificación de la sesión al mapa de sesión, y el mapa de sesión devolverá el nodo donde se está ejecutando la sesión. 
+    4. Después de esto, el enrutador reenviará la solicitud al nodo.
 
     El Router tiene como objetivo `equilibrar la carga` en el Grid enviando las solicitudes al componente que puede manejarlas mejor, sin sobrecargar ningún componente que no sea necesario en el proceso.
 
