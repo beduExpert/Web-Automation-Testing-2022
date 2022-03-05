@@ -1,4 +1,4 @@
-# Reto 1# - Cross Browser Testing
+# Reto 1# - Parametria para pruebas en Multiples Navegadores
 
 ## Objetivo
 
@@ -29,6 +29,14 @@ Incluir en el archivo `testng.xml` una caso de prueba adicional para incorporar 
 		<parameter name="browser" value="Firefox" />
 		<parameter name="driver_name" value="webdriver.gecko.driver" />
 		<parameter name="driver_path" value="src/test/resources/webdrivers/geckodriver" />
+		<classes>
+			<class name="tests.CrossBrowserTestingScript"></class>
+		</classes>
+	</test>
+	<test name="EdgeTest">
+		<parameter name="browser" value="Edge" />
+		<parameter name="driver_name" value="webdriver.edge.driver" />
+		<parameter name="driver_path" value="src/test/resources/webdrivers/EdgeDriver" />
 		<classes>
 			<class name="tests.CrossBrowserTestingScript"></class>
 		</classes>
