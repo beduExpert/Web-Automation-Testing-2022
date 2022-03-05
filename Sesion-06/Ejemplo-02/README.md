@@ -85,15 +85,12 @@ De forma predeterminada, el Nodo `registra automáticamente todos los controlado
 
 + `Cola de nueva sesión (Session Queue)`: contiene todas las solicitudes de nueva sesión en un orden `FIFO (First In, First Out = Primero en entrar, primero en salir)`. Tiene parámetros configurables para establecer el `tiempo de espera de la solicitud` y el intervalo de reintento de la solicitud.
 
-1. El enrutador agrega la solicitud de nueva sesión a la cola de nueva sesión y espera la respuesta. 
-2. La Cola de Nueva Sesión verifica regularmente si alguna solicitud en la cola ha expirado, si es así, la solicitud es rechazada y eliminada inmediatamente.
-
-3. El Distribuidor verifica regularmente si hay un espacio disponible. Si es así, el distribuidor solicita la cola de nueva sesión para la primera solicitud coincidente. 
-4. A continuación, el distribuidor intenta crear una nueva sesión.
-
-5. Una vez que las capacidades solicitadas coinciden con las capacidades de cualquiera de los espacios de Nodo libres, el Distribuidor intenta obtener el espacio disponible. 
-    - Si todos los espacios están ocupados, el Distribuidor le pedirá a la cola que agregue la solicitud al frente de la cola. 
-    - Si la solicitud se agota mientras se vuelve a intentar o se agrega al principio de la cola, se rechaza.
-
-6. Una vez que se crea una sesión correctamente, el distribuidor envía la información de la sesión a la cola de nueva sesión. 
-7. La Cola de Nueva Sesión devuelve la respuesta al cliente.
+        1. El enrutador agrega la solicitud de nueva sesión a la cola de nueva sesión y espera la respuesta. 
+        2. La Cola de Nueva Sesión verifica regularmente si alguna solicitud en la cola ha expirado, si es así, la solicitud es rechazada y eliminada inmediatamente.
+        3. El Distribuidor verifica regularmente si hay un espacio disponible. Si es así, el distribuidor solicita la cola de nueva sesión para la primera solicitud coincidente. 
+        4. A continuación, el distribuidor intenta crear una nueva sesión.
+        5. Una vez que las capacidades solicitadas coinciden con las capacidades de cualquiera de los espacios de Nodo libres, el Distribuidor intenta obtener el espacio disponible. 
+            - Si todos los espacios están ocupados, el Distribuidor le pedirá a la cola que agregue la solicitud al frente de la cola. 
+            - Si la solicitud se agota mientras se vuelve a intentar o se agrega al principio de la cola, se rechaza.
+        6. Una vez que se crea una sesión correctamente, el distribuidor envía la información de la sesión a la cola de nueva sesión. 
+        7. La Cola de Nueva Sesión devuelve la respuesta al cliente.
