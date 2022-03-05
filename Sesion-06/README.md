@@ -43,9 +43,9 @@ Selenium Grid es un aherramienta que forma parte de la suite de Selenium, y perm
 ---
 #### <ins>Tema 3: Instalación y configuración de Selenium Grid 4 </ins> `PENDIENTE`
 
+En este tema veremos el proceso de instalación, configuración y ejecución de `Selenium Grid 4` con el uso del rol `standalone`.
 
-
-<img src="images/emulator.jpg" align="right" height="90"> 
+<img src="assets/selenium_grid2.png" width="50%">
 
 - [**`EJEMPLO 3 - Instalación y configuración de Selenium Grid 4`**](./Ejemplo-03)
 - [**`RETO 2`**](./Reto-02)
