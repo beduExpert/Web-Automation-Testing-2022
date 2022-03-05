@@ -1,4 +1,4 @@
-# Ejemplo 1 # - Ejecución de pruebas en Múltiples Navegadores (cross browser testing)
+# Ejemplo-01 # - Ejecución de pruebas en Múltiples Navegadores (cross browser testing)
 
 ## Objetivo
 
@@ -10,16 +10,20 @@
 
 Como ya sabemos, el probar manualmente un sitio web en varios navegadores es excepcionalmente tedioso. Considera una situación en la que 100 casos de prueba deben ejecutarse manualmente. Ahora imagina que las mismas pruebas deben ejecutarse en cinco navegadores diferentes. El tiempo necesario se vuelve exponencialmente más largo. Sin embargo, si estas pruebas se automatizan con Selenium, se pueden ejecutar simultáneamente y en mucho menos tiempo. Es por esto que se introducen los siguientes conceptos:
 
-- `Pruebas de navegadores cruzados (Cross browser testing)`: se refiere a probar un sitio web en múltiples navegadores como IE, Chrome, Firefox para verificar su eficacia en cada uno.
+- `Pruebas de navegadores cruzados (Cross browser testing)`: se refiere a probar un sitio web en múltiples navegadores como IE, Chrome, Firefox, entre otros; para verificar su eficacia en cada uno.
 
 - `Compatibilidad entre navegadores (Cross-browser compatibility)`: es la capacidad del sitio web o la aplicación web para funcionar en diferentes navegadores y sistemas operativos.
 
 
 #### ¿Por qué hacer pruebas de navegadores cruzados?
 
-Uno de los puntos principales de las pruebas entre navegadores es realizar pruebas en `diferentes navegadores y combinaciones de versiones`. El uso de Selenium para las pruebas entre navegadores ayuda a realizar pruebas rigurosas del código en varios exploradores; ayudando así a lograr una `mejor cobertura` y esto, a su vez, ayuda a mejorar la experiencia del usuario.. La `matriz de compatibilidad de navegadores` puede ser fundamental para priorizar los navegadores web que utiliza el público objetivo, utilizando herramientas como __google analytics__, buscando información sobre sitios similares para conocer cuántas visitas tiene la web y desde cuáles exploradores se hace, podremos definir con cuantos exploradores cubrimos la mayor cantidad de pruebas.
+Uno de los puntos principales de las pruebas entre navegadores es realizar pruebas en `diferentes navegadores y combinaciones de versiones`. El uso de Selenium para las pruebas entre navegadores ayuda a realizar pruebas rigurosas del código en varios exploradores; ayudando así a lograr una `mejor cobertura` y esto, a su vez, ayuda a mejorar la experiencia del usuario.
+
+La `matriz de compatibilidad de navegadores` puede ser fundamental para priorizar los navegadores web que utiliza el público objetivo, utilizando herramientas como __google analytics__, buscando información sobre sitios similares para conocer cuántas visitas tiene la web y desde cuáles exploradores se hace, podremos definir con cuantos exploradores cubrimos la mayor cantidad de pruebas.
 
 <img src="assets/google_analytics.png" width="50%">
+
+> En este ejemplo si ejecutamos en Chrome, Firefox e Internet explores, abarcariamos casi el 90% de los usuarios que ingresan.
 
 #### ¿Cómo realizar pruebas de navegador cruzado usando Selenium?
 
@@ -48,9 +52,13 @@ Para realizar las pruebas en múltiples navegadores utilizaremos nuevamente la o
 > Pro-Tip: puedes incluir más información en este archivo sobre el navegador que necesites posteriormente en la clase de prueba, como por ejemplo: nombre del explorador, versión, la ruta donde se encuentra el driver, etc.
 
 
+Antes de comenzar veamos esta imagen:
+
 <img src="assets/navegadores.png" width="50%">
 
 > Articulo sobre los navegadores web mas usados en el 2021: https://www.cristianmonroy.com/2021/07/top-de-navegadores-mas-utilizados-en-ordenadores-y-laptops-a-nivel-mundial.html
+
+Es posible que nos encontremos en la posicion de no tener alguna herramienta que nos permita ver el comportamiento de los usuarios en la web, lo que nos dificultara saber cuáles son los navegadores con los que más se ingresa a la web que deseamos probar. En este caso puedes investigar en internet cuales son los exploradores más utilizados generalmente, eso te ayudará a saber cuáles priorizar.
 
 
 Actualicemos el ejemplo anterior incorporando mas detalles de las caracteristicas del navegador:
@@ -92,11 +100,10 @@ private WebDriver driver;
 2. Realizamos la implementación de la anotación `@Parameters` haciendo la invocación de los `parameter name`configurados.
 
 ```Java
-	@BeforeTest
-	@Parameters({ "browser", "driver_name", "driver_path" })
-	public void beforeTest(String browser, String driver_name, String driver_path){
-
-	}
+@BeforeTest
+@Parameters({ "browser", "driver_name", "driver_path" })
+public void beforeTest(String browser, String driver_name, String driver_path){
+}
 ```
 
 > __¡Cuidado!:__ Recuerda que hay reglas sobre donde debe estar ubicada la anotación `@Parameters`. En este caso sobre cualquier `método` que ya tenga una anotación `@Test`, `@Before` o `@After`.
@@ -115,14 +122,14 @@ System.setProperty(driver_name, driver_path);
 4. Ahora solo agregamos un condicional que evalue el nombre del `browser` y segun su nombre se cree el driver que corresponda:
 
 ```Java
-		if (browser.equalsIgnoreCase("Firefox")) {
-			driver = new FirefoxDriver();
-		} else if (browser.equalsIgnoreCase("Chrome")) {
-			driver = new ChromeDriver();
-		} else {
-			//lanzamos una exepción
-			throw new Exception("Navegador no parametrizado...");
-		}
+if (browser.equalsIgnoreCase("Firefox")) {
+	driver = new FirefoxDriver();
+} else if (browser.equalsIgnoreCase("Chrome")) {
+	driver = new ChromeDriver();
+} else {
+	//lanzamos una exepción
+	throw new Exception("Navegador no parametrizado...");
+}
 ```
 
 5. Finalmente el método `@BeforeTest` quedara de la siguiente manera:
@@ -252,7 +259,7 @@ public class CrossBrowserTestingScript {
 
 }
 ```
-<img src="assets/ejecucion.png" width="50%">
+<img src="assets/ejecucion.png" width="80%">
 
 __¡Cuidado!__: Recuerda que al usar la parametria desde el archivo `testng.xml` la ejecución se hace desde el archivo xml y no desde la clase `CrossBrowserTestingScript`
 
