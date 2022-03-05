@@ -23,8 +23,9 @@ En esta sesión veremos todo lo relacionado a la `ejecución de pruebas en múlt
 ---
 #### <ins>Tema 1: Ejecución de pruebas en Múltiples Navegadores (cross browser testing)</ins> `EN PROCESO`
 
+Como ya sabemos, el probar manualmente un sitio web en varios navegadores es excepcionalmente tedioso. Considera una situación en la que 100 casos de prueba deben ejecutarse manualmente. Ahora imagina que las mismas pruebas deben ejecutarse en cinco navegadores diferentes. El tiempo necesario se vuelve exponencialmente más largo. Sin embargo, si estas pruebas se automatizan con Selenium, se pueden ejecutar simultáneamente y en mucho menos tiempo. 
 
-<img src="images/tools.png" align="right" height="90"> 
+<img src="assets/test_secuencial.png" width="60%">
 
 - [**`EJEMPLO 1 - Ejecución de pruebas en Múltiples Navegadores (cross browser testing)`**](./Ejemplo-01)
 
