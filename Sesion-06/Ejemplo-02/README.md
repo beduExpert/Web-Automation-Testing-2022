@@ -79,7 +79,7 @@ Selenium Grid 2  constaba de dos procesos: `Hub y Nodes`. Pero actualmente la ve
 
     De forma predeterminada, el Nodo `registra automáticamente todos los controladores` de navegador disponibles en la ruta de la máquina donde se ejecuta. También crea una ranura por CPU disponible para navegadores basados ​​en Chromium y Firefox. Para Safari e Internet Explorer, solo se crea una ranura. A través de una configuración específica, puede ejecutar sesiones en contenedores Docker o transmitir comandos. 
 
-> __¡Cuidado!:__ Un Nodo solo ejecuta los comandos recibidos, no evalúa, juzga ni controla nada. Las máquinas en las que se ejecuta el Nodo no necesitan tener el mismo sistema operativo que los demás componentes. Por ejemplo, un nodo de Windows podría tener la capacidad de ofrecer Internet Explorer como una opción de navegador, mientras que esto no sería posible en Linux o Mac.
+    > __¡Cuidado!:__ Un Nodo solo ejecuta los comandos recibidos, no evalúa, juzga ni controla nada. Las máquinas en las que se ejecuta el Nodo no necesitan tener el mismo sistema operativo que los demás componentes. Por ejemplo, un nodo de Windows podría tener la capacidad de ofrecer Internet Explorer como una opción de navegador, mientras que esto no sería posible en Linux o Mac.
 
 + `Bus de eventos (Event Bus)`: sirve como `ruta de comunicación entre los nodos`, el distribuidor, la cola de nueva sesión y el mapa de sesión. Grid realiza la mayor parte de su `comunicación interna a través de mensajes`, evitando costosas llamadas HTTP. Al iniciar Grid en su modo totalmente distribuido, `es el primer componente que debe iniciarse`.
 
