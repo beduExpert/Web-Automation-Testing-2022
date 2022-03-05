@@ -28,6 +28,7 @@ Como ya sabemos, el probar manualmente un sitio web en varios navegadores es exc
 <img src="assets/test_secuencial.png" width="50%">
 
 - [**`EJEMPLO 1 - Ejecución de pruebas en Múltiples Navegadores (cross browser testing)`**](./Ejemplo-01)
+- [**`RETO 1`**](./Reto-01)
 
 ---
 #### <ins>Tema 2: Qué es Selenium Grid y su Arquitectura</ins> `PENDIENTE`
@@ -38,7 +39,7 @@ Selenium Grid es un aherramienta que forma parte de la suite de Selenium, y perm
 <img src="assets/selenium_grid.png" width="50%">
 
 - [**`EJEMPLO 2 - Qué es Selenium Grid y su Arquitectura`**](./Ejemplo-02)
-- [**`RETO 1`**](./Reto-01)
+
 
 ---
 #### <ins>Tema 3: Instalación y configuración de Selenium Grid 4 </ins> `PENDIENTE`
