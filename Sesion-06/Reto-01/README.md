@@ -1,8 +1,8 @@
-# Reto 1# - Parametria para pruebas en Multiples Navegadores
+# Reto 1# - Parametría para Pruebas en Múltiples Navegadores.
 
 ## Objetivo
 
-* Implementar la parametria de los webdrivers en en archivo `testng.xml`.
+* Implementar la parametría de los webdrivers en en archivo `testng.xml`.
 
 ## Desarrollo
 

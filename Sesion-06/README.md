@@ -21,7 +21,7 @@ En esta sesión veremos todo lo relacionado a la `ejecución de pruebas en múlt
 
 
 ---
-#### <ins>Tema 1: Ejecución de pruebas en Múltiples Navegadores (cross browser testing)</ins> `EN PROCESO`
+#### <ins>Tema 1: Ejecución de pruebas en Múltiples Navegadores (cross browser testing)</ins> 
 
 Como ya sabemos, el probar manualmente un sitio web en varios navegadores es excepcionalmente tedioso. Considera una situación en la que 100 casos de prueba deben ejecutarse manualmente. Ahora imagina que las mismas pruebas deben ejecutarse en cinco navegadores diferentes. El tiempo necesario se vuelve exponencialmente más largo. Sin embargo, si estas pruebas se automatizan con Selenium, se pueden ejecutar simultáneamente y en mucho menos tiempo. 
 
@@ -31,7 +31,7 @@ Como ya sabemos, el probar manualmente un sitio web en varios navegadores es exc
 - [**`RETO 1`**](./Reto-01)
 
 ---
-#### <ins>Tema 2: Qué es Selenium Grid y su Arquitectura</ins> `PENDIENTE`
+#### <ins>Tema 2: Qué es Selenium Grid y su Arquitectura</ins> `EN PROCESO`
 
 Selenium Grid es un aherramienta que forma parte de la suite de Selenium, y permite la ejecución de scripts de WebDriver en `máquinas remotas (virtuales o reales)` mediante el enrutamiento de comandos enviados por el cliente a instancias de navegador remotas. Su objetivo es proporcionar una manera fácil de ejecutar pruebas en paralelo en varias máquinas.
 
@@ -39,7 +39,6 @@ Selenium Grid es un aherramienta que forma parte de la suite de Selenium, y perm
 <img src="assets/selenium_grid.png" width="50%">
 
 - [**`EJEMPLO 2 - Qué es Selenium Grid y su Arquitectura`**](./Ejemplo-02)
-
 
 ---
 #### <ins>Tema 3: Instalación y configuración de Selenium Grid 4 </ins> `PENDIENTE`
