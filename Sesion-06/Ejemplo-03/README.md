@@ -96,7 +96,10 @@ Al ir a la pagina: http://localhost:4444/ui/index.html#/ veremos lo siguiente:
 
 <img src="assets/grid.png" width="80%">
 
-3. Gestión de Nodos: Por defecto Selenium crea una cantidad limitada de navegadores dependiendo del Sistema operativo:
+
+#### Información de nodos
+
+Por defecto Selenium crea una cantidad limitada de navegadores dependiendo del Sistema operativo:
 
 <img src="assets/standalone.png" width="80%">
 
