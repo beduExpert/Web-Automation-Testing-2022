@@ -1,60 +1,62 @@
-## Sesión 6: Nombre de sesión 🤖
+## Sesión 6: Selenium Grid 🤖
 
-<img src="../images/android-kotlin.png" align="right" height="120" hspace="10">
+
 <div style="text-align: justify;">
 
 ### 1. Objetivos :dart: 
 
-- Reconocer el IDE Android Studio con el que desarrollan aplicaciones móviles.
-- Conocer la estructura de un proyecto android y todos los archivos generados por el IDE
+- Implementar scripts de pruebas automatizados que puedan ser ejecutados en múltiples navegadores como una solución de amplitud de cobertura de pruebas automatizadas.
+- Demostrar el proceso de instalación y configuración de Selenium Grid.
+- Hacer uso de scripts de pruebas automatizados donde se implemente la ejecución en máquinas remotas con Selenium Grid 4.
+
 
 ### 2. Contenido :blue_book:
 
-Android Studio te ayudará a desarrollar tu app más productivamente a escala. Android Studio ofrece las herramientas más rápidas para crear apps de Android. Codifica más rápido. Codifica con seguridad. Crea el mejor código. Elimina tareas tediosas. Compila sin límites.
+En los tiempos de ahora para nadie es un secreto que la presencia de la tecnología es tal que se consume cada día más, y muchas veces nos percatamos de que se encuentra en un bucle infinito de renovación; en el que hardware y software van de la mano en este cambio. 
+
+Los teléfonos se renuevan prácticamente todos los años, lo mismo pasa con los sistemas operativos, aplicaciones, medios digitales y más. Es por esto que desde el punto de vista de un ingeniero de pruebas, vemos aún con más impacto ese constante este cambio. Surgiendo así la necesidad de actualizarnos día a día para que lo que funcionaba antes siga funcionando.                               			
+
+En esta sesión veremos todo lo relacionado a la `ejecución de pruebas en múltiples navegadores y plataformas con Selenium Grid`, lo que se convertirá en un aliado excelente para mitigar el impacto de estos cambios constantes.
+
+
 
 ---
+#### <ins>Tema 1: Ejecución de pruebas en Múltiples Navegadores (cross browser testing)</ins>
+
 
 <img src="images/tools.png" align="right" height="90"> 
 
-#### <ins>Tema 1</ins>
-
-Se detalla como crear un proyecto android desde nuestra IDE __Android Studio__, viendo el significado de los distintos campos y opciones para su configuración.
-
-- [**`EJEMPLO 1`**](./Ejemplo-01)
+- [**`EJEMPLO 1 - Ejecución de pruebas en Múltiples Navegadores (cross browser testing)`**](./Ejemplo-01)
 
 ---
+#### <ins>Tema 2: Qué es Selenium Grid y su Arquitectura</ins>
+
+
 
 <img src="images/structure.png" align="right" height="90"> 
 
-#### <ins>Tema 2</ins>
-
-Una vez que el proyecto está creado, la estructura o forma en la que se organiza es de suma importancia. No sólo nos ayuda a mantener nuestro código organizado, sino que también es importante para el funcionamiento de nuestra nueva app.
-
-- [**`EJEMPLO 2`**](./Ejemplo-02)
+- [**`EJEMPLO 2 - Qué es Selenium Grid y su Arquitectura`**](./Ejemplo-02)
 - [**`RETO 1`**](./Reto-01)
+
 ---
+#### <ins>Tema 3: Instalación y configuración de Selenium Grid 4 </ins>
+
+
 
 <img src="images/emulator.jpg" align="right" height="90"> 
 
-#### <ins>Tema 3</ins>
-
-Ahora que tenemos mayor conocimiento de nuestro proyecto, vamos a configurar un emulador de algún dispositivo móvil para poder correr nuestra aplicación! :iphone:. Es decir, vamos a correr un dispositivo móvil virtual en nuestra computadora para simular la funcionalidad de nuestra app.
-
-**Nota al Experto:**
-  
- + Recuerda que cada subtema puede contener un ejemplo, un reto, o más de un ejemplo y más de un reto. Recuerda borrar esta línea después de haberla leído.
+- [**`EJEMPLO 3 - Instalación y configuración de Selenium Grid 4`**](./Ejemplo-03)
 - [**`RETO 2`**](./Reto-02)
+
 ---
+#### <ins>Tema 4: Diseño y ejecución de scripts con selenium Grid 4</ins>
+
+
+
 
 <img src="images/chaomi.png" align="right" height="110"> 
 
-#### <ins>Tema 4</ins>
-
-Basta de emulaciones, ahora veamos como funciona en el mundo real. Nuestra app, por muy sencilla que sea ya está lista para ser instalada en un dispositivo móvil y para verla en acción.
-
-**Nota al Experto:**
-  
- + Recuerda que cada subtema puede contener un ejemplo, un reto, o más de un ejemplo y más de un reto. Recuerda borrar esta línea después de haberla leído.
+- [**`EJEMPLO 4 - Diseño y ejecución de scripts con selenium Grid 4`**](./Ejemplo-04)
 - [**`RETO 3`**](./Reto-03)
 ---
 
@@ -62,7 +64,7 @@ Basta de emulaciones, ahora veamos como funciona en el mundo real. Nuestra app, 
 
 Encuentra las indicaciones y consejos para reflejar los avances de tu proyecto de este módulo.
 
-- [**`POSTWORK SESIÓN 1`**](./Postwork/)
+- [**`POSTWORK SESIÓN 6`**](./Postwork/)
 
 <br/>
 
