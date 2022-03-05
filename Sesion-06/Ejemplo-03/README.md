@@ -73,3 +73,75 @@ Aca estan todos los componentes que deben iniciarse en el rol de distribuido:
 
 
 > El orden de inicio de los componentes no es importante, siempre que se inicien todos correctamente.
+
+
+Para efectos de esta sesión utilizaremos el rol de  `STANDALONE`
+
+
+
+#### Proceso de Instalación y configuración
+
+1. Descarga de Selenium Grid 4: La descarga de Selenium Grid se realiza desde el siguiente enlace:
+https://github.com/SeleniumHQ/selenium/releases/download/selenium-4.1.0/selenium-server-4.1.2.jar
+
+> `Pro-Tip:` crea una nueva carpeta en el escritorio o en una ruta de tu maquina que sea de fácil ubicación, y traslada el archivo selenium-server-4.1.2.jar
+
+> `Pro-tip:` pueden enviar el comando --help al final para obtener información de configuración específica del componente. Ejemplo: `java -jar selenium-server-4.1.2.jar standalone --help`
+
+2. Iniciar Standalone: Para iniciar el `standalone` se utilizar el siguiente comando en la terminal de la maquina: `java -jar selenium-server-<version>.jar standalone` ejemplo: `java -jar selenium-server-4.1.2.jar standalone`
+
+<img src="assets/standalone.png" width="80%">
+
+Al ir a la pagina: http://localhost:4444/ui/index.html#/ veremos lo siguiente:
+
+<img src="assets/grid.png" width="80%">
+
+3. Gestión de Nodos: Por defecto Selenium crea una cantidad limitada de navegadores dependiendo del Sistema operativo:
+
+<img src="assets/standalone.png" width="80%">
+
+Es posible cambiar esta y otras configuraciones del navegador configurando nodos por medio del envío de parámetros a cada uno de los modificadores del navegador que representan un nodo. Para esto utilizaremos un archivo .JSON para parametrizar cuandos nodos queremos y de que navegadores.
+
+Copia este contenido y guardalo con el siguiente nombre y extensión en la misma ruta donde esta  el selenium-server -> `nodeConfig.json`
+
+```Json
+{
+  "capabilities":
+  [
+    {
+      "browserName": "chrome",
+      "platform": "MAC",
+      "maxInstances": 5,
+      "seleniumProtocol": "WebDriver",
+      "webdriver.chrome.driver": "/Users/eclipse-workspace-bedu/BeduWebAutomationCourse/src/test/resources/webdrivers/chromedriver",
+      "binary":"/Applications/chrome.exe"
+    },
+    {
+      "browserName": "firefox",
+      "platform": "MAC",
+      "maxInstances": 5,
+      "seleniumProtocol": "WebDriver",
+      "webdriver.gecko.driver": "/Users/eclipse-workspace-bedu/BeduWebAutomationCourse/src/test/resources/webdrivers/geckodriver",
+      "binary":"/Applications/firefox.exe"
+    }
+  ],
+  "proxy": "org.openqa.grid.selenium.proxy.DefaultRemoteProxy",
+  "maxSession": 5,
+  "port": 5555,
+  "register": true,
+  "registerCycle": 5000,
+  "hub": "http://localhost:4444",
+  "nodeStatusCheckTimeout": 5000,
+  "nodePolling": 5000,
+  "role": "node",
+  "unregisterIfStillDownAfter": 60000,
+  "downPollingLimit": 2,
+  "debug": false,
+  "servlets" : [],
+  "withoutServlets": [],
+  "custom": {}
+}
+```
+__¡Cuidado!:__ el campo `webdriver.gecko.driver`debe conetner la ruta donde se encuentra el driver del navegador, y el campo `binary` la ruta donde se encuentra el ejecutable del navegador.
+
+Ahora iniciamos el standalone con el siguiente comando: `java -jar selenium-server-4.1.2.jar standalone --config nodeConfig.json`
