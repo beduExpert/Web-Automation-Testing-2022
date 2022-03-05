@@ -21,7 +21,7 @@ En esta sesión veremos todo lo relacionado a la `ejecución de pruebas en múlt
 
 
 ---
-#### <ins>Tema 1: Ejecución de pruebas en Múltiples Navegadores (cross browser testing)</ins>
+#### <ins>Tema 1: Ejecución de pruebas en Múltiples Navegadores (cross browser testing)</ins> `EN PROCESO`
 
 
 <img src="images/tools.png" align="right" height="90"> 
@@ -29,7 +29,7 @@ En esta sesión veremos todo lo relacionado a la `ejecución de pruebas en múlt
 - [**`EJEMPLO 1 - Ejecución de pruebas en Múltiples Navegadores (cross browser testing)`**](./Ejemplo-01)
 
 ---
-#### <ins>Tema 2: Qué es Selenium Grid y su Arquitectura</ins>
+#### <ins>Tema 2: Qué es Selenium Grid y su Arquitectura</ins> `PENDIENTE`
 
 
 
@@ -39,7 +39,7 @@ En esta sesión veremos todo lo relacionado a la `ejecución de pruebas en múlt
 - [**`RETO 1`**](./Reto-01)
 
 ---
-#### <ins>Tema 3: Instalación y configuración de Selenium Grid 4 </ins>
+#### <ins>Tema 3: Instalación y configuración de Selenium Grid 4 </ins> `PENDIENTE`
 
 
 
@@ -49,7 +49,7 @@ En esta sesión veremos todo lo relacionado a la `ejecución de pruebas en múlt
 - [**`RETO 2`**](./Reto-02)
 
 ---
-#### <ins>Tema 4: Diseño y ejecución de scripts con selenium Grid 4</ins>
+#### <ins>Tema 4: Diseño y ejecución de scripts con selenium Grid 4</ins> `PENDIENTE`
 
 
 
