@@ -31,7 +31,7 @@ Como ya sabemos, el probar manualmente un sitio web en varios navegadores es exc
 - [**`RETO 1`**](./Reto-01)
 
 ---
-#### <ins>Tema 2: Qué es Selenium Grid y su Arquitectura</ins> `EN PROCESO`
+#### <ins>Tema 2: Qué es Selenium Grid y su Arquitectura</ins>
 
 Selenium Grid es un aherramienta que forma parte de la suite de Selenium, y permite la ejecución de scripts de WebDriver en `máquinas remotas (virtuales o reales)` mediante el enrutamiento de comandos enviados por el cliente a instancias de navegador remotas. Su objetivo es proporcionar una manera fácil de ejecutar pruebas en paralelo en varias máquinas.
 
@@ -41,14 +41,14 @@ Selenium Grid es un aherramienta que forma parte de la suite de Selenium, y perm
 - [**`EJEMPLO 2 - Qué es Selenium Grid y su Arquitectura`**](./Ejemplo-02)
 
 ---
-#### <ins>Tema 3: Instalación y configuración de Selenium Grid 4 </ins> `PENDIENTE`
+#### <ins>Tema 3: Instalación y configuración de Selenium Grid 4 </ins>  `EN PROCESO`
 
 En este tema veremos el proceso de instalación, configuración y ejecución de `Selenium Grid 4` con el uso del rol `standalone`.
 
 <img src="assets/selenium_grid2.png" width="50%">
 
 - [**`EJEMPLO 3 - Instalación y configuración de Selenium Grid 4`**](./Ejemplo-03)
-- [**`RETO 2`**](./Reto-02)
+
 
 ---
 #### <ins>Tema 4: Diseño y ejecución de scripts con selenium Grid 4</ins> `PENDIENTE`
@@ -61,7 +61,7 @@ Esto permitira que un script de pruebas automatizados de pruebas que se ha cread
 <img src="assets/selenium_grid3.png" width="50%">
 
 - [**`EJEMPLO 4 - Diseño y ejecución de scripts con selenium Grid 4`**](./Ejemplo-04)
-- [**`RETO 3`**](./Reto-03)
+- [**`RETO 2`**](./Reto-02)
 ---
 
 ### 3. Postwork :memo:
