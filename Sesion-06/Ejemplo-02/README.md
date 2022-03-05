@@ -3,7 +3,7 @@
 ## Objetivo
 
 * Identificar el uso de Selenium Grid y cuando es requerida su implementación.
-* Hacer uso de la arquitectura de Selenium Grid para elaborar estrategias de ejecución de pruebas.
+* Identificar la arquitectura de Selenium Grid.
 
 ## Desarrollo
 
@@ -61,14 +61,14 @@ Selenium Grid 2  constaba de dos procesos: `Hub y Nodes`. Pero actualmente la ve
 
 + `Enrutador (Router)`: El enrutador se encarga de `reenviar la solicitud` al componente correcto. Es el punto de entrada del Grid, todas las solicitudes externas serán recibidas por él. 
 
-    Se comporta de manera diferente según la solicitud: 
+Se comporta de manera diferente según la solicitud: 
 
-    1. Si se trata de una solicitud de sesión nueva, el enrutador la agregará a la cola de sesión nueva. 
-    2. El Distribuidor comprueba regularmente si hay un espacio libre. Si es así, la primera solicitud coincidente se elimina de la cola de nueva sesión. recibirá el evento y sondeará la Cola de Nueva Sesión para obtener la nueva solicitud de sesión. 
-    3. Si la solicitud pertenece a una sesión existente, el enrutador enviará la identificación de la sesión al mapa de sesión, y el mapa de sesión devolverá el nodo donde se está ejecutando la sesión. 
-    4. Después de esto, el enrutador reenviará la solicitud al nodo.
+1. Si se trata de una solicitud de sesión nueva, el enrutador la agregará a la `cola de sesión nueva`. 
+2. El Distribuidor comprueba regularmente si hay un espacio libre. Si es así, la primera solicitud coincidente se elimina de la `cola de sesión nueva`. recibirá el evento y sondeará la `cola de sesión nueva` para obtener la nueva solicitud de sesión. 
+3. Si la solicitud pertenece a una `sesión existente`, el enrutador enviará la identificación de la sesión al `mapa de sesión`, y el mapa de sesión devolverá el nodo donde se está ejecutando la sesión. 
+4. Después de esto, el enrutador reenviará la solicitud al nodo.
 
-    El Router tiene como objetivo `equilibrar la carga` en el Grid enviando las solicitudes al componente que puede manejarlas mejor, sin sobrecargar ningún componente que no sea necesario en el proceso.
+El Router tiene como objetivo `equilibrar la carga` en el Grid enviando las solicitudes al componente que puede manejarlas mejor, sin sobrecargar ningún componente que no sea necesario en el proceso.
 
 
 + `Distribuidor (Distributor)`: El Distribuidor conoce todos los Nodos y sus capacidades. Su función principal es `recibir una nueva solicitud de sesión y encontrar un Nodo adecuado donde se pueda crear la sesión`. Luego de creada la sesión, el Distribuidor almacena en el Mapa de Sesión la relación entre el id de la sesión y el Nodo donde se está ejecutando la sesión.
