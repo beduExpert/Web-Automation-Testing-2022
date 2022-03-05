@@ -63,10 +63,10 @@ Selenium Grid 2  constaba de dos procesos: `Hub y Nodes`. Pero actualmente la ve
 
     Se comporta de manera diferente según la solicitud: 
 
-    1. Si se trata de una solicitud de sesión nueva, el enrutador la agregará a la `cola de sesión nueva`. 
-    2. El Distribuidor comprueba regularmente si hay un espacio libre. Si es así, la primera solicitud coincidente se elimina de la `cola de sesión nueva`. recibirá el evento y sondeará la `cola de sesión nueva` para obtener la nueva solicitud de sesión. 
-    3. Si la solicitud pertenece a una `sesión existente`, el enrutador enviará la identificación de la sesión al `mapa de sesión`, y el mapa de sesión devolverá el nodo donde se está ejecutando la sesión. 
-    4. Después de esto, el enrutador reenviará la solicitud al nodo.
+    1) Si se trata de una solicitud de sesión nueva, el enrutador la agregará a la `cola de sesión nueva`. 
+    2) El Distribuidor comprueba regularmente si hay un espacio libre. Si es así, la primera solicitud coincidente se elimina de la `cola de sesión nueva`. recibirá el evento y sondeará la `cola de sesión nueva` para obtener la nueva solicitud de sesión. 
+    3) Si la solicitud pertenece a una `sesión existente`, el enrutador enviará la identificación de la sesión al `mapa de sesión`, y el mapa de sesión devolverá el nodo donde se está ejecutando la sesión. 
+    4) Después de esto, el enrutador reenviará la solicitud al nodo.
 
     El Router tiene como objetivo `equilibrar la carga` en el Grid enviando las solicitudes al componente que puede manejarlas mejor, sin sobrecargar ningún componente que no sea necesario en el proceso.
 
