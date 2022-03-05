@@ -23,14 +23,14 @@ Los roles de Selenium Grid depende de las necesidades que se tengan de los compo
         - Cola de nueva sesión
         - Autobús de eventos
 
-    Para iniciar el Hub se utilizar el siguiente comando en la terminal de la maquina: `java -jar selenium-server-<version>.jar hub` ejemplo: `java -jar selenium-server-4.1.2.jar hub`
+        Para iniciar el Hub se utilizar el siguiente comando en la terminal de la maquina: `java -jar selenium-server-<version>.jar hub` ejemplo: `java -jar selenium-server-4.1.2.jar hub`
+
+<img src="assets/hub.png" width="80%">
 
 
     + Se pueden iniciar `uno o más nodos` en esta configuración, y el servidor detectará los controladores disponibles que puede usar desde la ruta del sistema.
 
-```Java
-java -jar selenium-server-<version>.jar hub
-```
+
 
 - `Distributed:` En el modo Distribuido, cada componente debe iniciarse por sí solo. Esta configuración es más adecuada para Grids grandes.
 
