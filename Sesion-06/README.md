@@ -53,10 +53,12 @@ En este tema veremos el proceso de instalación, configuración y ejecución de 
 ---
 #### <ins>Tema 4: Diseño y ejecución de scripts con selenium Grid 4</ins> `PENDIENTE`
 
+Para diseñar scripts de prueba que se ejecutarán, necesitamos usar los objetos DesiredCapabilites y RemoteWebDriver.
+
+Esto permitira que un script de pruebas automatizados de pruebas que se ha creado en la `Máquina A` ejecutado en la `Máquina B`.
 
 
-
-<img src="images/chaomi.png" align="right" height="110"> 
+<img src="assets/selenium_grid3.png" width="50%">
 
 - [**`EJEMPLO 4 - Diseño y ejecución de scripts con selenium Grid 4`**](./Ejemplo-04)
 - [**`RETO 3`**](./Reto-03)
