@@ -77,7 +77,7 @@ Selenium Grid 2  constaba de dos procesos: `Hub y Nodes`. Pero actualmente la ve
 
 + `Nodo (Node)`: Un nodo puede estar presente varias veces en un Grid. Cada Nodo se encarga de `gestionar los slots para los navegadores disponibles` de la máquina donde se está ejecutando. El Nodo se registra en el Distribuidor a través del `Event Bus`, y su configuración se envía como parte del mensaje de registro.
 
-De forma predeterminada, el Nodo `registra automáticamente todos los controladores` de navegador disponibles en la ruta de la máquina donde se ejecuta. También crea una ranura por CPU disponible para navegadores basados ​​en Chromium y Firefox. Para Safari e Internet Explorer, solo se crea una ranura. A través de una configuración específica, puede ejecutar sesiones en contenedores Docker o transmitir comandos. 
+    De forma predeterminada, el Nodo `registra automáticamente todos los controladores` de navegador disponibles en la ruta de la máquina donde se ejecuta. También crea una ranura por CPU disponible para navegadores basados ​​en Chromium y Firefox. Para Safari e Internet Explorer, solo se crea una ranura. A través de una configuración específica, puede ejecutar sesiones en contenedores Docker o transmitir comandos. 
 
 > __¡Cuidado!:__ Un Nodo solo ejecuta los comandos recibidos, no evalúa, juzga ni controla nada. Las máquinas en las que se ejecuta el Nodo no necesitan tener el mismo sistema operativo que los demás componentes. Por ejemplo, un nodo de Windows podría tener la capacidad de ofrecer Internet Explorer como una opción de navegador, mientras que esto no sería posible en Linux o Mac.
 
