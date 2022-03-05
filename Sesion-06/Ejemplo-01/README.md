@@ -259,7 +259,7 @@ public class CrossBrowserTestingScript {
 
 }
 ```
-<img src="assets/ejecucion.png" width="80%">
+<img src="assets/ejecucion.png">
 
 __¡Cuidado!__: Recuerda que al usar la parametria desde el archivo `testng.xml` la ejecución se hace desde el archivo xml y no desde la clase `CrossBrowserTestingScript`
 
