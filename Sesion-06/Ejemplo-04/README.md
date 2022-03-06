@@ -16,7 +16,7 @@ Una vez iniciado el `standalone`, para diseñar scripts de prueba que se ejecuta
 > Documentación Oficial de la clase RemoteWebDriver: https://www.selenium.dev/selenium/docs/api/java/org/openqa/selenium/remote/RemoteWebDriver.html
 
 
-Vamos a un ejemplo práctico de la implemetación de Selenium Grid en la funcionalidad de agendar asesoria de la web de BEDU:
+Vamos a un ejemplo práctico de ejecución en el navegador firefox de forma remota con Selenium Grid en la funcionalidad de agendar asesoria de la web de BEDU
 
 
 1. Creamos la clase `SeleniumGrid.java`
@@ -179,8 +179,8 @@ public class SeleniumGrid {
 ```
 
 6. Ejecutamos la clase con las pruebas:
-<img src="assets/ejecucion.png" width="50%">
+<img src="assets/ejecucion.png" width="80%">
 
 7. Si vemos en la terminal podemos visualizar los logs que dejo la ejecución:
 
-<img src="assets/logs.png" width="50%">
+<img src="assets/logs.png" width="80%">
