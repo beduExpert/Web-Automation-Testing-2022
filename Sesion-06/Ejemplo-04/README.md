@@ -181,6 +181,10 @@ public class SeleniumGrid {
 6. Ejecutamos la clase con las pruebas:
 <img src="assets/ejecucion.png" width="80%">
 
-7. Si vemos en la terminal podemos visualizar los logs que dejo la ejecución:
+7. Si visualizamos la siguiente url mientras se ejecuta el script: http://localhost:4444/ui/index.html#/sessions podremos ver el estado de la sesion.
+
+<img src="assets/sesion.png" width="80%">
+
+8. Si vemos en la terminal podemos visualizar los logs que dejo la ejecución:
 
 <img src="assets/logs.png" width="80%">
