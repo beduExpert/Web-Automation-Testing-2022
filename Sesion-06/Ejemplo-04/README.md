@@ -18,31 +18,6 @@ Una vez iniciado el `standalone`, para diseñar scripts de prueba que se ejecuta
 
 Vamos a un ejemplo práctico de la implemetación de Selenium Grid en la funcionalidad de agendar asesoria de la web de BEDU:
 
-0. Configuramos el testng.xml con la clase `SeleniumGrid`:
-
-```xml
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="TestSuite">
-	<test name="ChromeTest">
-		<parameter name="browser" value="Chrome" />
-		<parameter name="driver_name" value="webdriver.chrome.driver" />
-		<parameter name="driver_path" value="src/test/resources/webdrivers/chromedriver" />
-		<classes>
-			<class name="tests.SeleniumGrid"></class>
-		</classes>
-	</test>
-	<test name="FirefoxTest">
-		<parameter name="browser" value="Firefox" />
-		<parameter name="driver_name" value="webdriver.gecko.driver" />
-		<parameter name="driver_path" value="src/test/resources/webdrivers/geckodriver" />
-		<classes>
-			<class name="tests.SeleniumGrid"></class>
-		</classes>
-	</test>
-
-</suite>
-```
 
 1. Creamos la clase `SeleniumGrid.java`
 
