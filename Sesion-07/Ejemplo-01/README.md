@@ -58,7 +58,7 @@ Aca se presnetan distintos tipos de pruebas de aplicaciones para celular que pue
 
 - `Pruebas de servicios`: se utiliza para garantizar que el software proporcione todos los servicios necesarios tanto en línea como fuera de línea.
 
-<img src="assets/prueba_servicio.jpeg" width="50%"> 
+<img src="assets/prueba_servicio.png" width="50%"> 
 
 - `Prueba de rendimiento`: se utiliza para garantizar que el software funcione bien en diferentes condiciones: baja conectividad, durante llamadas entrantes, batería baja, etc.
 
