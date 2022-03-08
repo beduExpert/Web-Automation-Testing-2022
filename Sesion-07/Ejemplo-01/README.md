@@ -87,13 +87,13 @@ Las herramientas de prueba móviles que se enumeran a continuación se pueden us
     - Densidad de la red
     - Características localizadas
 
-<img src="assets/emuladores.png" width="50%"> 
+    <img src="assets/emuladores.png" width="50%"> 
 
 - `Dispositivos reales`: no importa el sitio web o la aplicación, debe probarse en dispositivos reales. Dado que la fragmentación del dispositivo es una preocupación importante para todos los desarrolladores y testers, no se puede dejar el rendimiento del software al azar. Cada sitio web o aplicación tiene que funcionar a la perfección en múltiples combinaciones de dispositivos, navegadores y sistemas operativos. Con miles de dispositivos que se utilizan para acceder a Internet en todo el mundo, cada sitio web o aplicación debe optimizarse para diferentes configuraciones, ventanas gráficas y resoluciones de pantalla.
 
     Cuando se trata de pruebas móviles, los `dispositivos reales son insustituibles`. En caso de que los probadores no puedan acceder a un laboratorio interno de dispositivos reales, pueden elegir servicios de prueba basados ​​en la nube que ofrecen dispositivos, navegadores y sistemas operativos reales.
 
-<img src="assets/dispositivos.png" width="50%"> 
+    <img src="assets/dispositivos.png" width="50%"> 
 
 #### Tipos de aplicaciones móviles
 
