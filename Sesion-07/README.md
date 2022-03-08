@@ -1,60 +1,56 @@
-## Sesión 7: Nombre de sesión 🤖
+## Sesión 7: Appium - Automatización móvil 🤖
 
-<img src="../images/android-kotlin.png" align="right" height="120" hspace="10">
 <div style="text-align: justify;">
 
 ### 1. Objetivos :dart: 
 
-- Reconocer el IDE Android Studio con el que desarrollan aplicaciones móviles.
-- Conocer la estructura de un proyecto android y todos los archivos generados por el IDE
+- Comparar el funcionamiento de las pruebas automatizadas sobre dispositivos móviles contra las pruebas automatizadas web. 
+- Explicar el proceso de instalación de Appium, Emuladores y variables en entornos requeridas paras las pruebas en plataformas moviles.
+- Adaptar los scripts de pruebas de automatizaciones Web a script de pruebas que puedan ser ejecutados en plataformas móviles.
+
 
 ### 2. Contenido :blue_book:
 
-Android Studio te ayudará a desarrollar tu app más productivamente a escala. Android Studio ofrece las herramientas más rápidas para crear apps de Android. Codifica más rápido. Codifica con seguridad. Crea el mejor código. Elimina tareas tediosas. Compila sin límites.
+En la última década, ha habido una proliferación de usuarios de teléfonos inteligentes. Hoy en día, las personas pasan más tiempo en los dispositivos móviles que en la televisión. Por lo tanto, desarrollar una excelente experiencia de aplicación móvil es esencial. Para garantizar que las aplicaciones funcionen sin problemas en Android e iOS, deben probarse exhaustivamente antes de lanzarse a las respectivas tiendas de aplicaciones.
+
+`Appium` es el framework más popular que se utiliza para la prueba automatizada de aplicaciones móviles , permitiéndole a los desarrolladores `automatizar las pruebas de aplicaciones iOS y Android nativas o híbridas`. Sin embargo Appium no funciona solo, tiene que ejecutar los casos de prueba utilizando la `interfaz WebDriver`. Al igual que Selenium, Appium permite a los QA crear scripts de prueba en múltiples lenguajes de programación.
+
+Appium es especialmente favorecido por ser un marco flexible y multiplataforma que los testers pueden usar para crear scripts de prueba `aplicables a múltiples plataformas (Windows, iOS y Android)`, usando la misma API. Esencialmente, los usuarios de Appium pueden reutilizar su código fuente tanto para Android como para iOS, lo que reduce el tiempo y el esfuerzo. entrando en pruebas de construcción.
+
 
 ---
+#### <ins>Tema 1: Introducción al Mobile Automation Testing</ins>
 
-<img src="images/tools.png" align="right" height="90"> 
+Los `dispositivos móviles` se han apoderado del mundo. Las personas no solo pasan cada vez más tiempo en sus teléfonos, esperan que todo sea accesible para ellos a través de sus teléfonos. Esto significa que cualquier persona (individuo u organización) que busque tener presencia en línea debe optimizar sus sitios web y aplicaciones para dispositivos móviles. En otras palabras, `todos los sitios web y aplicaciones deben someterse a pruebas móviles`.
 
-#### <ins>Tema 1</ins>
+Sin embargo, la explosión en el uso de dispositivos móviles significa que un sitio web debe adaptarse para mostrarse y funcionar perfectamente en miles de dispositivos: más de 9000 dispositivos distintos, para ser exactos. Para los desarrolladores y evaluadores, esto puede ser un gran desafío.
 
-Se detalla como crear un proyecto android desde nuestra IDE __Android Studio__, viendo el significado de los distintos campos y opciones para su configuración.
+Para hacer frente a este desafío, es absolutamente necesario un conocimiento profundo de las `pruebas móviles`. 
 
-- [**`EJEMPLO 1`**](./Ejemplo-01)
+En esta tema veremos los conceptos básicos de las pruebas móviles para sitios web y aplicaciones. 
+
+<img src="assets/phone.png" width="50%"> 
+
+- [**`EJEMPLO 1 - Introducción al Mobile Automation Testing`**](./Ejemplo-01)
 
 ---
+#### <ins>Tema 2: Appium</ins>
 
-<img src="images/structure.png" align="right" height="90"> 
 
-#### <ins>Tema 2</ins>
-
-Una vez que el proyecto está creado, la estructura o forma en la que se organiza es de suma importancia. No sólo nos ayuda a mantener nuestro código organizado, sino que también es importante para el funcionamiento de nuestra nueva app.
-
-- [**`EJEMPLO 2`**](./Ejemplo-02)
+- [**`EJEMPLO 2 - Appium`**](./Ejemplo-02)
 - [**`RETO 1`**](./Reto-01)
+
 ---
+#### <ins>Tema 3: Instalación de Appium & Emuladores.</ins>
 
-<img src="images/emulator.jpg" align="right" height="90"> 
 
-#### <ins>Tema 3</ins>
-
-Ahora que tenemos mayor conocimiento de nuestro proyecto, vamos a configurar un emulador de algún dispositivo móvil para poder correr nuestra aplicación! :iphone:. Es decir, vamos a correr un dispositivo móvil virtual en nuestra computadora para simular la funcionalidad de nuestra app.
-
-**Nota al Experto:**
-  
- + Recuerda que cada subtema puede contener un ejemplo, un reto, o más de un ejemplo y más de un reto. Recuerda borrar esta línea después de haberla leído.
+- [**`EJEMPLO 3 - Instalación de Appium & Emuladores.`**](./Ejemplo-03)
 - [**`RETO 2`**](./Reto-02)
+
 ---
+#### <ins>Tema 4: Ejecución del primer tests automatizado sobre el emulador de android</ins>
 
-<img src="images/chaomi.png" align="right" height="110"> 
-
-#### <ins>Tema 4</ins>
-
-Basta de emulaciones, ahora veamos como funciona en el mundo real. Nuestra app, por muy sencilla que sea ya está lista para ser instalada en un dispositivo móvil y para verla en acción.
-
-**Nota al Experto:**
-  
- + Recuerda que cada subtema puede contener un ejemplo, un reto, o más de un ejemplo y más de un reto. Recuerda borrar esta línea después de haberla leído.
+- [**`EJEMPLO 4 - Ejecución del primer tests automatizado sobre el emulador de android`**](./Ejemplo-04)
 - [**`RETO 3`**](./Reto-03)
 ---
 
@@ -62,7 +58,7 @@ Basta de emulaciones, ahora veamos como funciona en el mundo real. Nuestra app, 
 
 Encuentra las indicaciones y consejos para reflejar los avances de tu proyecto de este módulo.
 
-- [**`POSTWORK SESIÓN 1`**](./Postwork/)
+- [**`POSTWORK SESIÓN 7`**](./Postwork/)
 
 <br/>
 
