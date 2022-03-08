@@ -41,7 +41,7 @@ Selenium Grid es un aherramienta que forma parte de la suite de Selenium, y perm
 - [**`EJEMPLO 2 - Qué es Selenium Grid y su Arquitectura`**](./Ejemplo-02)
 
 ---
-#### <ins>Tema 3: Instalación y configuración de Selenium Grid 4 </ins>  `EN PROCESO`
+#### <ins>Tema 3: Instalación y configuración de Selenium Grid 4 </ins>  
 
 En este tema veremos el proceso de instalación, configuración y ejecución de `Selenium Grid 4` con el uso del rol `standalone`.
 
@@ -51,7 +51,7 @@ En este tema veremos el proceso de instalación, configuración y ejecución de 
 
 
 ---
-#### <ins>Tema 4: Diseño y ejecución de scripts con selenium Grid 4</ins> `PENDIENTE`
+#### <ins>Tema 4: Diseño y ejecución de scripts con selenium Grid 4</ins> 
 
 Para diseñar scripts de prueba que se ejecutarán, necesitamos usar los objetos `DesiredCapabilites` y `RemoteWebDriver`.
 
