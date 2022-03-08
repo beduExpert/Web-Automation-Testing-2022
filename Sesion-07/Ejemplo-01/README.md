@@ -99,10 +99,21 @@ Las herramientas de prueba móviles que se enumeran a continuación se pueden us
 
 Existen tres tipos de aplicaciones: 
 
-    1. Nativas
-    2. Híbridas 
-    3. Web
+1. `Nativas`: se crean específicamente para plataformas como tabletas y dispositivos móviles. 
+
+`Ejemplo`: `whatsapp`: esta aplicación esta desarrollada dependiendo del sistema operativo.
+
+2. `Híbridas`: esta es una mezcla de aplicaciones nativas y aplicaciones web. Las aplicaciones híbridas se ejecutan sin conexión o en dispositivos. Por lo general, se escriben con la ayuda de tecnologías CSS y HTML5. 
+
+`Ejemplo`: `instagram`: Esta aplicación funciona con HTML5, la aplicación viene con la capacidad de mantener tanto datos fuera de línea como medios enriquecidos adicionales; el mejor ejemplo son sus videos rápidos característicos.
+
+3. `Web`: son aplicaciones del lado del servidor diseñadas para usarse en dispositivos móviles para permitirle obtener acceso a sitios web con el uso de navegadores como Firefox, Chrome, Explorer, etc. a través de la conexión a una red inalámbrica (como WIFI) o red móvil. 
+
+`Ejemplo`: accesos directos a Safari en iOS o Google Chrome en Android.
     
+
+    <img src="assets/tipo_apps.png" width="50%"> 
+
 A diferencia de las aplicaciones web (basadas en el navegador), `las aplicaciones nativas e híbridas están instaladas físicamente en el dispositivo` y, por lo tanto, siempre están disponibles para el usuario.
 
 Dependiendo del tipo de aplicación, el tester establece qué tipos de casos debe incorporar. 
