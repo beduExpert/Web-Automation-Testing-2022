@@ -72,8 +72,28 @@ Aca se presnetan distintos tipos de pruebas de aplicaciones para celular que pue
 
 <img src="assets/prueba_instalacion.png" width="50%"> 
 
-
 #### Herramientas de prueba móviles
+
+Las herramientas de prueba móviles que se enumeran a continuación se pueden usar para probar el comportamiento de los sitios web y las aplicaciones móviles.
+
+- `Emuladores o simuladores`: un `emulador` es un software que imita el hardware y el software del dispositivo de destino en la computadora del tester. Un `simulador` es un software que ayuda a una computadora a ejecutar ciertos programas creados para un sistema operativo diferente. En su mayoría, están destinados a dispositivos iPhone y iPad, a diferencia de los dispositivos Android que se pueden emular fácilmente. Sin embargo, los emuladores y simuladores no son adecuados para probar aplicaciones móviles. Solo para enfatizar el punto, aquí hay una lista de cosas que uno puede probar en dispositivos reales pero no en emuladores y simuladores:
+
+    - Batería baja, drenaje de la batería, apagado abrupto
+    - Rendimiento de la aplicación durante las interrupciones entrantes, como llamadas o SMS
+    - Calentamiento excesivo
+    - Conflictos con otras aplicaciones preinstaladas
+    - Geolocalización
+    - Múltiples redes: Wifi, 3G, 4G, etc.
+    - Densidad de la red
+    - Características localizadas
+
+<img src="assets/emuladores.png" width="50%"> 
+
+- `Dispositivos reales`: no importa el sitio web o la aplicación, debe probarse en dispositivos reales. Dado que la fragmentación del dispositivo es una preocupación importante para todos los desarrolladores y testers, no se puede dejar el rendimiento del software al azar. Cada sitio web o aplicación tiene que funcionar a la perfección en múltiples combinaciones de dispositivos, navegadores y sistemas operativos. Con miles de dispositivos que se utilizan para acceder a Internet en todo el mundo, cada sitio web o aplicación debe optimizarse para diferentes configuraciones, ventanas gráficas y resoluciones de pantalla.
+
+    Cuando se trata de pruebas móviles, los `dispositivos reales son insustituibles`. En caso de que los probadores no puedan acceder a un laboratorio interno de dispositivos reales, pueden elegir servicios de prueba basados ​​en la nube que ofrecen dispositivos, navegadores y sistemas operativos reales.
+
+<img src="assets/dispositivos.png" width="50%"> 
 
 #### Tipos de aplicaciones móviles
 
