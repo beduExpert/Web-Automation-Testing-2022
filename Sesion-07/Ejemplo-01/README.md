@@ -46,31 +46,31 @@ Aca se presnetan distintos tipos de pruebas de aplicaciones para celular que pue
 
 - `Pruebas de usabilidad`: se utilizan para garantizar que el sitio web o la aplicación sean fáciles de usar desde la perspectiva de los usuarios finales en un dispositivo móvil.
 
-<img src="assets/prueba_usabilidad.png" width="50%"> 
+    <img src="assets/prueba_usabilidad.png" width="50%"> 
 
 - `Pruebas de compatibilidad`: se utilizan para garantizar que un sitio web o una aplicación funcionen perfectamente en diferentes dispositivos, navegadores, tamaños de pantalla y versiones del sistema operativo.
 
-<img src="assets/prueba_compatibilidad.jpeg" width="50%"> 
+    <img src="assets/prueba_compatibilidad.jpeg" width="50%"> 
 
 - `Prueba de interfaz`: se utiliza para garantizar que los elementos de la interfaz (opciones de menú, botones, configuraciones, elementos de navegación) funcionen exactamente como se esperaba
 
-<img src="assets/prueba_interfaz.jpeg" width="50%"> 
+    <img src="assets/prueba_interfaz.jpeg" width="50%"> 
 
 - `Pruebas de servicios`: se utiliza para garantizar que el software proporcione todos los servicios necesarios tanto en línea como fuera de línea.
 
-<img src="assets/prueba_servicio.png" width="50%"> 
+    <img src="assets/prueba_servicio.png" width="50%"> 
 
 - `Prueba de rendimiento`: se utiliza para garantizar que el software funcione bien en diferentes condiciones: baja conectividad, durante llamadas entrantes, batería baja, etc.
 
-<img src="assets/prueba_rendimiento.jpeg" width="50%"> 
+    <img src="assets/prueba_rendimiento.jpeg" width="50%"> 
 
 - `Pruebas de seguridad`: se utiliza para garantizar que el software protege la información del usuario en todas las circunstancias.
 
-<img src="assets/prueba_seguridad.png" width="50%"> 
+    <img src="assets/prueba_seguridad.png" width="50%"> 
 
 - `Pruebas de instalación`: esto se aplica principalmente a aplicaciones móviles, no a sitios web. Se utiliza para garantizar que la aplicación se instale correctamente en un dispositivo.
 
-<img src="assets/prueba_instalacion.png" width="50%"> 
+    <img src="assets/prueba_instalacion.png" width="50%"> 
 
 #### Herramientas de prueba móviles
 
