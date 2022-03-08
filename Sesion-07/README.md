@@ -29,7 +29,7 @@ Para hacer frente a este desafío, es absolutamente necesario un conocimiento pr
 
 En esta tema veremos los conceptos básicos de las pruebas móviles para sitios web y aplicaciones. 
 
-<img src="assets/phone.png" width="50%"> 
+<img src="assets/tema1.png" width="50%"> 
 
 - [**`EJEMPLO 1 - Introducción al Mobile Automation Testing`**](./Ejemplo-01)
 
@@ -41,7 +41,7 @@ Appium es una herramienta de `código abierto` para automatizar aplicaciones nat
 Es importante destacar que Appium es `"multiplataforma"`, es decir, permite escribir pruebas contra múltiples plataformas (iOS, Android, Windows), utilizando la misma API. Esto permite la reutilización de código entre conjuntos de pruebas de iOS, Android y Windows.
 
 
-<img src="assets/appium.jpeg" width="50%"> 
+<img src="assets/tema2.jpeg" width="50%"> 
 
 - [**`EJEMPLO 2 - Appium`**](./Ejemplo-02)
 - [**`RETO 1`**](./Reto-01)
@@ -49,12 +49,23 @@ Es importante destacar que Appium es `"multiplataforma"`, es decir, permite escr
 ---
 #### <ins>Tema 3: Instalación de Appium & Emuladores.</ins>
 
+Sabiendo que es appium, procederemos a realizar su instalación. Adicionalmente Appium requiere de configuraciones de herramientas adicionales como:
+
+    - Variables de entorno (JAVA_HOME y ANDROID_HOME)
+    - Dispositivo Virtual de Android
+
+Asi que en este tema veremos como configurar todos estas herramientas para poder hacer andar nuestro primer script automatizado de pruebas en plataformas moviles.
+
 
 - [**`EJEMPLO 3 - Instalación de Appium & Emuladores.`**](./Ejemplo-03)
 - [**`RETO 2`**](./Reto-02)
 
 ---
 #### <ins>Tema 4: Ejecución del primer tests automatizado sobre el emulador de android</ins>
+
+En este tema veremos como construir nuestro primer script de prueba automatizado utilizando appium y dispositivos virtuales con android studio.
+
+<img src="assets/tema4.jpeg" width="50%"> 
 
 - [**`EJEMPLO 4 - Ejecución del primer tests automatizado sobre el emulador de android`**](./Ejemplo-04)
 - [**`RETO 3`**](./Reto-03)
