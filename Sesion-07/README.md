@@ -19,7 +19,7 @@ Appium es especialmente favorecido por ser un marco flexible y multiplataforma q
 
 
 ---
-#### <ins>Tema 1: Introducción al Mobile Automation Testing</ins>
+#### <ins>Tema 1: Introducción al Mobile Automation Testing</ins> `EN PROCESO`
 
 Los `dispositivos móviles` se han apoderado del mundo. Las personas no solo pasan cada vez más tiempo en sus teléfonos, esperan que todo sea accesible para ellos a través de sus teléfonos. Esto significa que cualquier persona (individuo u organización) que busque tener presencia en línea debe optimizar sus sitios web y aplicaciones para dispositivos móviles. En otras palabras, `todos los sitios web y aplicaciones deben someterse a pruebas móviles`.
 
@@ -34,7 +34,7 @@ En esta tema veremos los conceptos básicos de las pruebas móviles para sitios 
 - [**`EJEMPLO 1 - Introducción al Mobile Automation Testing`**](./Ejemplo-01)
 
 ---
-#### <ins>Tema 2: Appium</ins>
+#### <ins>Tema 2: Appium</ins> `PENDIENTE`
 
 Appium es una herramienta de `código abierto` para automatizar aplicaciones nativas, web móviles e híbridas en plataformas móviles iOS, móviles Android y de escritorio Windows. 
 
@@ -47,7 +47,7 @@ Es importante destacar que Appium es `"multiplataforma"`, es decir, permite escr
 - [**`RETO 1`**](./Reto-01)
 
 ---
-#### <ins>Tema 3: Instalación de Appium & Emuladores.</ins>
+#### <ins>Tema 3: Instalación de Appium & Emuladores.</ins> `PENDIENTE`
 
 Sabiendo que es appium, procederemos a realizar su instalación. Adicionalmente Appium requiere de configuraciones de herramientas adicionales como:
 
@@ -61,7 +61,7 @@ Asi que en este tema veremos como configurar todos estas herramientas para poder
 - [**`RETO 2`**](./Reto-02)
 
 ---
-#### <ins>Tema 4: Ejecución del primer tests automatizado sobre el emulador de android</ins>
+#### <ins>Tema 4: Ejecución del primer tests automatizado sobre el emulador de android</ins> `PENDIENTE`
 
 En este tema veremos como construir nuestro primer script de prueba automatizado utilizando appium y dispositivos virtuales con android studio.
 
