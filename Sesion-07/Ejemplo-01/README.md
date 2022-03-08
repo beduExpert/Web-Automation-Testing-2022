@@ -119,7 +119,6 @@ A diferencia de las aplicaciones web (basadas en el navegador), `las aplicacione
 Dependiendo del tipo de aplicación, el tester establece qué tipos de casos debe incorporar. 
 > Por ejemplo, para las aplicaciones nativas e híbridas es indispensable adicionar casos para revisar la instalación y desinstalación de la aplicación en el dispositivo.
 
-Para el caso de una aplicación web, el tester debe considerar la arquitectura de la solución. Es decir, si es una arquitectura de una `sola capa` o `multi-capa`. Dependiendo de esto y del volumen de usuarios esperado para la aplicación, se pueden incluir casos de prueba de desempeño.
 
 #### Niveles de prueba de aplicaciones móviles
 
