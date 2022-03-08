@@ -65,7 +65,7 @@ Asi que en este tema veremos como configurar todos estas herramientas para poder
 
 En este tema veremos como construir nuestro primer script de prueba automatizado utilizando appium y dispositivos virtuales con android studio.
 
-<img src="assets/tema4.jpeg" width="50%"> 
+<img src="assets/tema4.png" width="50%"> 
 
 - [**`EJEMPLO 4 - Ejecución del primer tests automatizado sobre el emulador de android`**](./Ejemplo-04)
 - [**`RETO 3`**](./Reto-03)
