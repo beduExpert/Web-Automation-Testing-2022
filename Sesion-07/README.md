@@ -36,6 +36,12 @@ En esta tema veremos los conceptos básicos de las pruebas móviles para sitios 
 ---
 #### <ins>Tema 2: Appium</ins>
 
+Appium es una herramienta de `código abierto` para automatizar aplicaciones nativas, web móviles e híbridas en plataformas móviles iOS, móviles Android y de escritorio Windows. 
+
+Es importante destacar que Appium es `"multiplataforma"`, es decir, permite escribir pruebas contra múltiples plataformas (iOS, Android, Windows), utilizando la misma API. Esto permite la reutilización de código entre conjuntos de pruebas de iOS, Android y Windows.
+
+
+<img src="assets/appium.jpeg" width="50%"> 
 
 - [**`EJEMPLO 2 - Appium`**](./Ejemplo-02)
 - [**`RETO 1`**](./Reto-01)
