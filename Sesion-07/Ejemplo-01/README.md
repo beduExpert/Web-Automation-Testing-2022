@@ -24,7 +24,7 @@ Las pruebas en aplicaciones móviles, como cualquier otro tipo de pruebas de sof
 
 Para la ejecución, el probador puede utilizar herramientas de automatización, como `Appium`, para lograr mayor cobertura y velocidad de la prueba. Durante esta etapa debe evaluar los resultados, así como reportar las situaciones que no están acordes con lo esperado. Finalmente debe realizar la gestión de su prueba, con el objeto de no incurrir en pérdidas por la no ejecución de casos, la no inclusión de características prioritarias o el desplazamiento de las fechas de entrega por las desviaciones encontradas.
 
-#### ¿Por qué son necesarias las pruebas móviles?
+#### :round_pushpin: ¿Por qué son necesarias las pruebas móviles?
 
 Básicamente, se requieren pruebas móviles para garantizar que un sitio web o una aplicación funcionen perfectamente, sin importar las circunstancias. Cuando se trata de dispositivos móviles, estas circunstancias pueden referirse a:
 
@@ -36,7 +36,7 @@ Básicamente, se requieren pruebas móviles para garantizar que un sitio web o u
 - Actualizaciones frecuentes del sistema operativo, así como del sitio web o la aplicación en sí. Ambos tienen que ser navegados para que no haya interrupción en la funcionalidad.
 
 
-#### Tipos de pruebas móviles
+#### :round_pushpin: Tipos de pruebas móviles
 
 Al momento de definir la `estrategia` y `plan de pruebas` de aplicaciones para celular, es importante considerar el medio en el que se están ejecutando estas pruebas, la red de telecomunicaciones móviles.
 
@@ -72,7 +72,7 @@ Aca se presnetan distintos tipos de pruebas de aplicaciones para celular que pue
 
     <img src="assets/prueba_instalacion.png" width="50%"> 
 
-#### Herramientas de prueba móviles
+#### :round_pushpin: Herramientas de prueba móviles
 
 Las herramientas de prueba móviles que se enumeran a continuación se pueden usar para probar el comportamiento de los sitios web y las aplicaciones móviles.
 
@@ -95,7 +95,7 @@ Las herramientas de prueba móviles que se enumeran a continuación se pueden us
 
     <img src="assets/dispositivos.png" width="50%"> 
 
-#### Tipos de aplicaciones móviles
+#### :round_pushpin: Tipos de aplicaciones móviles
 
 Existen tres tipos de aplicaciones: 
 
@@ -119,12 +119,21 @@ A diferencia de las aplicaciones web (basadas en el navegador), `las aplicacione
 Dependiendo del tipo de aplicación, el tester establece qué tipos de casos debe incorporar. 
 > Por ejemplo, para las aplicaciones nativas e híbridas es indispensable adicionar casos para revisar la instalación y desinstalación de la aplicación en el dispositivo.
 
+#### :round_pushpin: Niveles de prueba de aplicaciones móviles
 
-#### Niveles de prueba de aplicaciones móviles
+Para producir la más alta calidad, es importante realizar pruebas durante todo el proceso de desarrollo, comenzando con la fase de diseño y continuando con la entrega a la tienda de aplicaciones.
+
++ `Pruebas de diseño`: se prueba el diseño de la aplicación móvil para asegurarse de que la aplicación tenga la funcionalidad adecuada y la facilidad de uso para mantener a los usuarios interesados. Por ejemplo, el contenido debe responder al tamaño y la orientación del dispositivo para que los usuarios no tengan que desplazarse, y la aplicación debe responder adecuadamente a los controles táctiles. 
+
++ `Pruebas unitarias`: Los desarrolladores realizan pruebas unitarias en unidades individuales de código, antes de fusionar el nuevo código en la aplicación. El fundamento de las pruebas unitarias es reducir el costo de encontrar y corregir defectos, un costo que aumenta cuanto más tarde en el proceso de desarrollo se identifica un defecto. 
+
++ `Pruebas de integración`: en las pruebas de integración verifican que el nuevo código funcione correctamente cuando se integra en una aplicación. 
+
++ `Pruebas de aceptación`: Las pruebas de aceptación verifican que una aplicación móvil proporciona la funcionalidad, la facilidad de uso y el rendimiento para satisfacer las necesidades del usuario y que ofrezca una experiencia de usuario (UX) uniforme en todas las plataformas. Una parte importante de las pruebas de aceptación son las pruebas beta en dispositivos reales realizadas por usuarios finales reales. El Programa para desarrolladores de Apple ofrece la herramienta gratuita TestFlight para administrar las pruebas beta. Asimismo, Google Play Store cuenta con una consola para desarrolladores para pruebas beta con distribución a los probadores a través de Grupos de Google o comunidades de Google+. 
 
 
 
-#### Casos propios de la tecnología móvil
+#### :round_pushpin: Casos propios de la tecnología móvil
 
 Debido a las características de la `tecnología móvil`, se deben contemplar otras situaciones que pueden afectar el comportamiento funcional o transaccional de la aplicación. El tester, de acuerdo con la estrategia de prueba diseñada, puede evaluar las siguientes características para una aplicación:
 
