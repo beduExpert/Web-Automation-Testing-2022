@@ -1,15 +1,116 @@
-# Ejemplo # - Nombre del ejemplo
+# Ejemplo-01 # - Introducción al Mobile Automation Testing
 
 ## Objetivo
 
-* Agregar los objetivos del ejemplo (Mínimo agregar 2 objetivos y Borrar está linea una vez se hay leido)
+- Razonar sobre los conceptos basicos Mobile Automation Testing y como es su implemetación en la actualidad.
 
 ## Desarrollo
 
->**💡 Nota para experto(a)**
->
-> Este es un ejemplo por si el experto necesita tener en cuenta un punto clave durante el ejemplo.
->Si no es necesario, puedes borrar esta nota.
+Cada día las personas utilizan más `teléfonos inteligentes de alta gama` basados en sistemas operativos móviles modernos que ofrecen una excelente conectividad y una computación avanzada gracias a sus procesadores, altas resoluciones en sus pantallas táctiles, sus avanzados sensores, GPS, acceso por medio de Wi-Fi, datos de alta velocidad, entre otras características; todo ello se ha visto reflejado en el `aumento del uso de las aplicaciones móviles`. Estas pueden considerarse como `software desarrollado para ser ejecutado en dispositivos como tabletas, teléfonos o relojes inteligentes que poseen un sistema operativo apto para ello`.
 
-Aquí se debe agregar el desarrollo del ejemplo
+En los últimos años, la tecnología de internet móvil ha penetrado todos los mercados de las industrias, lo cual ha ocasionado que la seguridad de las aplicaciones se está volviendo cada vez más importante, por lo tanto, los `testers deben encontrar nuevas formas de revisar y probar los contenidos`, de manera que se puedan depurar las aplicaciones antes de salir al mercado, con el fin de evitar errores. 
 
+Sin embargo, aprender a realizar pruebas a software no es tan simple como parece,a veces, el  éxito de la realización de las pruebas de software obedece a las `habilidades`, `conocimientos`, `intuición` y `experiencia` de las personas que conforman el equipo de pruebas.
+
+Ahora bien, para un probador o ingeniero de pruebas de software siempre existirán unas actividades primordiales y esenciales que no cambiarán, como lo son: 
+
+    - Planear la estrategia, 
+    - Diseñar casos de prueba
+    - Ejecutar los casos de prueba diseñados, observar y analizar los resultados. 
+    
+A estas se suman otras actividades: `métodos modernos`, las `pruebas exploratorias`, la `verificación en tiempo de ejecución`, lo cual incluye el conocimiento en temas como la `automatización` y la administración del tiempo de prueba, en la lista de tareas del probador.
+
+Las pruebas en aplicaciones móviles, como cualquier otro tipo de pruebas de software, `se basan en la verificación y validación de las métricas priorizadas de acuerdo con la experiencia del usuario, la población a la cual va dirigida, el tipo de aplicación móvil, el tipo de dispositivo, la plataforma tecnológica empleada para su desarrollo y ejecución`; que el probador establece a través del plan de pruebas y el diseño de casos de prueba, para los cuales debe aplicar técnicas de estimación y diseños (caja negra y caja blanca). 
+
+Para la ejecución, el probador puede utilizar herramientas de automatización, como `Appium`, para lograr mayor cobertura y velocidad de la prueba. Durante esta etapa debe evaluar los resultados, así como reportar las situaciones que no están acordes con lo esperado. Finalmente debe realizar la gestión de su prueba, con el objeto de no incurrir en pérdidas por la no ejecución de casos, la no inclusión de características prioritarias o el desplazamiento de las fechas de entrega por las desviaciones encontradas.
+
+#### ¿Por qué son necesarias las pruebas móviles?
+
+Básicamente, se requieren pruebas móviles para garantizar que un sitio web o una aplicación funcionen perfectamente, sin importar las circunstancias. Cuando se trata de dispositivos móviles, estas circunstancias pueden referirse a:
+
+- Amplia gama de diferentes dispositivos móviles con diferentes tamaños de pantalla, resoluciones y - configuraciones de hardware
+- Diferentes sistemas operativos móviles como iOS, Android y Windows
+- Diferentes versiones de cada sistema operativo como iOS 5.x, iOS 6.x, etc.
+- Diferentes operadores de redes móviles, así como niveles de conectividad de red.
+- Eventos como llamadas entrantes, mensajes, batería baja, etc.
+- Actualizaciones frecuentes del sistema operativo, así como del sitio web o la aplicación en sí. Ambos tienen que ser navegados para que no haya interrupción en la funcionalidad.
+
+
+#### Tipos de pruebas móviles
+
+Al momento de definir la `estrategia` y `plan de pruebas` de aplicaciones para celular, es importante considerar el medio en el que se están ejecutando estas pruebas, la red de telecomunicaciones móviles.
+
+Tanto los dispositivos móviles como la red por donde viajan los datos presentan particularidades en su funcionamiento que pueden afectar la ejecución de la nueva aplicación, por lo cual deben considerarse pruebas especiales para dicho medio.
+
+Aca se presnetan distintos tipos de pruebas de aplicaciones para celular que puedes considerar en tu estrategia de pruebas:
+
+- `Pruebas de usabilidad`: se utilizan para garantizar que el sitio web o la aplicación sean fáciles de usar desde la perspectiva de los usuarios finales en un dispositivo móvil.
+
+<img src="assets/prueba_usabilidad.png" width="50%"> 
+
+- `Pruebas de compatibilidad`: se utilizan para garantizar que un sitio web o una aplicación funcionen perfectamente en diferentes dispositivos, navegadores, tamaños de pantalla y versiones del sistema operativo.
+
+<img src="assets/prueba_compatibilidad.jpeg" width="50%"> 
+
+- `Prueba de interfaz`: se utiliza para garantizar que los elementos de la interfaz (opciones de menú, botones, configuraciones, elementos de navegación) funcionen exactamente como se esperaba
+
+<img src="assets/prueba_interfaz.jpeg" width="50%"> 
+
+- `Pruebas de servicios`: se utiliza para garantizar que el software proporcione todos los servicios necesarios tanto en línea como fuera de línea.
+
+<img src="assets/prueba_servicio.jpeg" width="50%"> 
+
+- `Prueba de rendimiento`: se utiliza para garantizar que el software funcione bien en diferentes condiciones: baja conectividad, durante llamadas entrantes, batería baja, etc.
+
+<img src="assets/prueba_rendimiento.jpeg" width="50%"> 
+
+- `Pruebas de seguridad`: se utiliza para garantizar que el software protege la información del usuario en todas las circunstancias.
+
+<img src="assets/prueba_seguridad.png" width="50%"> 
+
+- `Pruebas de instalación`: esto se aplica principalmente a aplicaciones móviles, no a sitios web. Se utiliza para garantizar que la aplicación se instale correctamente en un dispositivo.
+
+<img src="assets/prueba_instalacion.png" width="50%"> 
+
+
+#### Herramientas de prueba móviles
+
+#### Tipos de aplicaciones móviles
+
+Existen tres tipos de aplicaciones: 
+
+    1. Nativas
+    2. Híbridas 
+    3. Web
+    
+A diferencia de las aplicaciones web (basadas en el navegador), `las aplicaciones nativas e híbridas están instaladas físicamente en el dispositivo` y, por lo tanto, siempre están disponibles para el usuario.
+
+Dependiendo del tipo de aplicación, el tester establece qué tipos de casos debe incorporar. 
+> Por ejemplo, para las aplicaciones nativas e híbridas es indispensable adicionar casos para revisar la instalación y desinstalación de la aplicación en el dispositivo.
+
+Para el caso de una aplicación web, el tester debe considerar la arquitectura de la solución. Es decir, si es una arquitectura de una `sola capa` o `multi-capa`. Dependiendo de esto y del volumen de usuarios esperado para la aplicación, se pueden incluir casos de prueba de desempeño.
+
+#### Niveles de prueba de aplicaciones móviles
+
+
+
+#### Casos propios de la tecnología móvil
+
+Debido a las características de la `tecnología móvil`, se deben contemplar otras situaciones que pueden afectar el comportamiento funcional o transaccional de la aplicación. El tester, de acuerdo con la estrategia de prueba diseñada, puede evaluar las siguientes características para una aplicación:
+
+
+- El proceso de instalación y desinstalación
+- El control de errores que posee
+- Cambios de red
+- El comportamiento en escenarios multitarea
+- Las visualizaciones en modo horizontal y vertical
+- Pruebas en diferentes tipos de resoluciones y tamaños de pantalla
+- Si se presenta integración con servidor, tener presente los diferentes escenarios de intercambio de información
+- Comprobar si la aplicación afecta o es afectada por otras aplicaciones
+- El comportamiento frente al uso de los controles propios del dispositivo
+- Adicionar escenarios asociados a características propias de estos dispositivos como girar, agitar, realizar diferentes tipos de gestos táctiles sobre la pantalla
+- Pruebas de interrupciones por mensajes, llamadas, conexión y desconexión de cables
+- Comportamiento frente a los diferentes métodos de entrada incluyendo los sensores
+- Pruebas de consumo de energía.
+
+Estas son algunas de las situaciones que pueden ser contempladas desde el punto de vista del comportamiento móvil de la aplicación y que pueden afectar el funcionamiento de la misma en el dispositivo móvil.

@@ -4,7 +4,7 @@
 
 ### 1. Objetivos :dart: 
 
-- Comparar el funcionamiento de las pruebas automatizadas sobre dispositivos móviles contra las pruebas automatizadas web. 
+- Razonar sobre los conceptos basicos Mobile Automation Testing y como es su implemetación en la actualidad.
 - Explicar el proceso de instalación de Appium, Emuladores y variables en entornos requeridas paras las pruebas en plataformas moviles.
 - Adaptar los scripts de pruebas de automatizaciones Web a script de pruebas que puedan ser ejecutados en plataformas móviles.
 
