@@ -101,15 +101,15 @@ Existen tres tipos de aplicaciones:
 
 1. `Nativas`: se crean específicamente para plataformas como tabletas y dispositivos móviles. 
 
-    > `Ejemplo`: `whatsapp`: esta aplicación esta desarrollada dependiendo del sistema operativo.
+    > Ejemplo: whatsapp, esta aplicación esta desarrollada dependiendo del sistema operativo.
 
 2. `Híbridas`: esta es una mezcla de aplicaciones nativas y aplicaciones web. Las aplicaciones híbridas se ejecutan sin conexión o en dispositivos. Por lo general, se escriben con la ayuda de tecnologías CSS y HTML5. 
 
-    > `Ejemplo`: `instagram`: Esta aplicación funciona con HTML5, la aplicación viene con la capacidad de mantener tanto datos fuera de línea como medios enriquecidos adicionales; el mejor ejemplo son sus videos rápidos característicos.
+    > Ejemplo: instagram, esta aplicación funciona con HTML5, la aplicación viene con la capacidad de mantener tanto datos fuera de línea como medios enriquecidos adicionales; el mejor ejemplo son sus videos rápidos característicos.
 
 3. `Web`: son aplicaciones del lado del servidor diseñadas para usarse en dispositivos móviles para permitirle obtener acceso a sitios web con el uso de navegadores como Firefox, Chrome, Explorer, etc. a través de la conexión a una red inalámbrica (como WIFI) o red móvil. 
 
-    > `Ejemplo`: accesos directos a Safari en iOS o Google Chrome en Android.
+    > Ejemplo: accesos directos a Safari en iOS o Google Chrome en Android.
     
 
     <img src="assets/tipo_apps.png" width="50%"> 
