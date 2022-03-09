@@ -156,15 +156,32 @@ __¿Como configurar las variables de entorno?__
 
 #### :round_pushpin: Instalación APPIUM
 
-
-
-#### :round_pushpin: Configuración de Entorno APPIUM
-
-En la configuración de Appum debemos ingresar los valores de las variables `JAVA_HOME` y `ANDROID_HOME` en la siguiente pantalla:
+1. Descargar Appium Desktop del siguiente enlace:  https://github.com/appium/appium-desktop/releases/tag/v1.22.2
+2. Abrir la Appium.
+3. Seleccionar la opción de “Edit Configurations”
 
 <img src="assets/conf_appium1.png" width="50%"> 
+
+4. En la configuración de Appum debemos ingresar los valores de las variables `JAVA_HOME` y `ANDROID_HOME` en la siguiente pantalla:
+
 <img src="assets/conf_appium2.png" width="50%"> 
 
+5. Haz click en Save and Restart para que se guarden los cambios.
+6. Ahora puedes hacer click en la opción de “Start Server” de la home de appium desktop
+
+
+#### :round_pushpin: Instalación APPIUM
+
+Es un Un inspector de GUI para aplicaciones móviles y más, impulsado por un servidor Appium (instalado por separado). Appium Inspector es básicamente un cliente de Appium (como WebdriverIO, el cliente Java de Appium, el cliente Python de Appium, etc.) con una interfaz de usuario. 
+
+<img src="assets/inspector.png" width="50%"> 
+
+Hay una interfaz para especificar qué servidor de Appium usar, qué capacidades configurar y luego interactuar con elementos y otros comandos de Appium una vez que haya iniciado una sesión.
+
+1. Descargar el inspector de aplicaciones de appium desde la siguiente url: https://github.com/appium/appium-inspector/releases
+
+
+> En el siguiente tema veremos cómo configurar los desired capabilities para android.
 
 #### :round_pushpin: Formato de Aplicaciones Moviles (.ipa vs .apk)
 
