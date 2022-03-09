@@ -46,11 +46,11 @@ Pero ¿como se cumple con esta filosofia? miremos el diseño de appium para sabe
 
 
 
-#### :round_pushpin: Funcionamiento de Appium en Android
+#### + Funcionamiento de Appium en Android
 
 Para dispositivos Android, Appium utiliza la API de `UI Automator` para interactuar con los componentes de UI de la aplicación a probar.
 
-<img src="assets/appium_android.jpeg" width="50%"> 
+<img src="assets/appium_android.png" width="50%"> 
 
 1. Las bibliotecas de cliente convierten los comandos escritos por el usuario en solicitudes de `API REST`.
 2. Estas solicitudes se envían al servidor de `Appium` mediante el `protocolo de conexión móvil JSON`.
@@ -60,11 +60,11 @@ Para dispositivos Android, Appium utiliza la API de `UI Automator` para interact
 6. El `dispositivo/emulador` luego revierte el resultado del comando ejecutado al servidor de Appium a través de `bootstrap.jar`.
 7. El servidor de Appium reenvía esta respuesta al cliente.
 
-#### :round_pushpin: Funcionamiento de Appium en iOS
+#### + Funcionamiento de Appium en iOS
 
 Para dispositivos iOS, Appium utiliza la `API XCUITest` nativa de Apple para interactuar con los componentes de la interfaz de usuario de la aplicación a probar. `XCUITest` es un marco de prueba de interfaz de usuario construido sobre el marco de prueba de unidad de Apple, `XCTest`.
 
-<img src="assets/appium_ios.jpeg" width="50%"> 
+<img src="assets/appium_ios.png" width="50%"> 
 
 1. Las bibliotecas de cliente convierten los comandos escritos por el usuario en solicitudes de `API REST`.
 2. Estas solicitudes se envían al servidor de `Appium` mediante el `protocolo de conexión móvil JSON`.
