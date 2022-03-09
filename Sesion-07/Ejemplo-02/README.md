@@ -49,7 +49,7 @@ Appium es, en esencia, un `servidor web` que expone una API REST. Recibe conexio
 
 + `Capacidades Deseadas (desired capabilities)`: son un conjunto de claves y valores (es decir, un mapa o hash) que se envían al servidor de Appium para indicarle qué tipo de sesión de automatización nos interesa iniciar. También hay varias capacidades que pueden modificar el comportamiento del servidor durante la automatización. Por ejemplo, podríamos establecer la capacidad de platformName en iOS para decirle a Appium que queremos una sesión de iOS, en lugar de una de Android o Windows. O podríamos establecer la capacidad safariAllowPopups en verdadero para garantizar que, durante una sesión de automatización de Safari, podamos usar JavaScript para abrir nuevas ventanas. 
 
-<img src="assets/capabilities.png" width="50%"> 
+    <img src="assets/capabilities.png" width="50%"> 
 
 + `Servidor Appium`: es un servidor escrito en Node.js.
 
@@ -66,8 +66,6 @@ Appium es, en esencia, un `servidor web` que expone una API REST. Recibe conexio
 Para dispositivos Android, Appium utiliza la API de `UI Automator` para interactuar con los componentes de UI de la aplicación a probar.
 
 <img src="assets/appium_android.png" width="50%"> 
-
-
 
 1. Las bibliotecas de cliente convierten los comandos escritos por el usuario en solicitudes de `API REST`.
 2. Estas solicitudes se envían al servidor de `Appium` mediante el `protocolo de conexión móvil JSON`.
