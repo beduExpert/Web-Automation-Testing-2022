@@ -5,6 +5,7 @@
 ### 1. Objetivos :dart: 
 
 - Razonar sobre los conceptos basicos Mobile Automation Testing y como es su implemetación en la actualidad.
+- Razonar sobre herramienta para automatización mobile Appium y su arquitectura.
 - Explicar el proceso de instalación de Appium, Emuladores y variables en entornos requeridas paras las pruebas en plataformas moviles.
 - Adaptar los scripts de pruebas de automatizaciones Web a script de pruebas que puedan ser ejecutados en plataformas móviles.
 
@@ -19,7 +20,7 @@ Appium es especialmente favorecido por ser un marco flexible y multiplataforma q
 
 
 ---
-#### <ins>Tema 1: Introducción al Mobile Automation Testing</ins> `EN PROCESO`
+#### <ins>Tema 1: Introducción al Mobile Automation Testing</ins> 
 
 Los `dispositivos móviles` se han apoderado del mundo. Las personas no solo pasan cada vez más tiempo en sus teléfonos, esperan que todo sea accesible para ellos a través de sus teléfonos. Esto significa que cualquier persona (individuo u organización) que busque tener presencia en línea debe optimizar sus sitios web y aplicaciones para dispositivos móviles. En otras palabras, `todos los sitios web y aplicaciones deben someterse a pruebas móviles`.
 
@@ -34,7 +35,7 @@ En esta tema veremos los conceptos básicos de las pruebas móviles para sitios 
 - [**`EJEMPLO 1 - Introducción al Mobile Automation Testing`**](./Ejemplo-01)
 
 ---
-#### <ins>Tema 2: Appium</ins> `PENDIENTE`
+#### <ins>Tema 2: Appium</ins> `EN PROCESO`
 
 Appium es una herramienta de `código abierto` para automatizar aplicaciones nativas, web móviles e híbridas en plataformas móviles iOS, móviles Android y de escritorio Windows. 
 
