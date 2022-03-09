@@ -69,20 +69,6 @@ Para crear un dispositivo virtual se debe realizar lo siguiente:
     <img src="assets/android9.png" width="50%"> 
 
 
-#### :round_pushpin: VARIABLES DE ENTORNO (`JAVA_HOME` y `ANDROID_HOME`)
-
-¿Què son variables de entorno?
-
-
-`Appium necesitará consumir las variables de entorno JAVA_HOME y ANDROID_HOME` por lo que siguiendo estos pasos podrás configurarlas
-
-
-
-ANDROID_HOME: android sdk location
-
-El nombre de la variable va a ser “ANDROID_HOME” y el valor va a ser la ruta donde fue instalado nuestras versiones de Andriod, se puede visualizar en el “Android SDK Manager”
-
-
 #### :round_pushpin: Android Debug Bridge (adb)
 
 `Android Debug Bridge (adb)` es una herramienta de línea de comandos versátil que te permite comunicarte con un dispositivo. El comando adb permite realizar una variedad de acciones en el dispositivo, como instalar y depurar apps, y proporciona acceso a un shell de Unix que puedes usar para ejecutar distintos comandos en un dispositivo. Es un programa cliente-servidor que incluye tres componentes:
@@ -94,12 +80,79 @@ El nombre de la variable va a ser “ANDROID_HOME” y el valor va a ser la ruta
 
 `adb` está incluido en el paquete de herramientas de la plataforma de Android SDK. 
 
-<img src="assets/adb.png" width="50%"> 
+<img src="assets/adb.png"> 
 
 > para mas información visitar: https://developer.android.com/studio/command-line/adb?hl=es-419
 
+
+#### :round_pushpin: VARIABLES DE ENTORNO (`JAVA_HOME` y `ANDROID_HOME`)
+
+__¿Que son variables de entorno?__
+
+Una variable de entorno es `un valor dinámico` que el sistema operativo y otros programas pueden utilizar para determinar la información específica de su ordenador.
+
+En otras palabras, una variable de entorno es algo que representa otra cosa, como una ubicación en el equipo, un número de versión, una lista de objetos, etc.
+
+Las variables de entorno están rodeadas por el signo de porcentaje (%), como en %temp%, para distinguirlas del texto normal.
+
+Existen dos tipos de variables de entorno, variables de entorno del usuario y variables de entorno del sistema:
+
+- `Variables de entorno de usuario`:son variables de entorno específicas para cada cuenta de usuario. Esto significa que el valor de una variable de entorno cuando se inicia sesión como un usuario puede ser diferente al valor de la misma variable de entorno cuando se inicia sesión como un usuario diferente en el mismo equipo.
+
+- `Variables de entorno del sistema`: Las variables de entorno del sistema se extienden más allá de un solo usuario, aplicándose a cualquier usuario que pueda existir o que se cree en el futuro. La mayoría de las variables de entorno del sistema apuntan a ubicaciones importantes como la carpeta Windows.
+
+Algunas de las variables de entorno más comunes en los sistemas Windows incluyen %path%, %programfiles%, %temp%, y %systemroot%, aunque hay muchas otras.
+
+
+`Appium` necesitará consumir las `variables de entorno JAVA_HOME y ANDROID_HOME` por lo que siguiendo estos pasos podrás configurarlas:
+
+- `JAVA_HOME`: dirige al directorio donde está instalado Java Runtime Environment o Java Development Kit en el sistema. Por ejemplo: `JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-12.0.1.jdk/Contents/Home/bin`
+
+- `ANDROID_HOME`: el valor va a ser la ruta donde fue instalado nuestras versiones de Android, se puede visualizar en el “Android SDK Manager” (Para abrir SDK Manager desde Android Studio, haz clic en Tools > SDK Manager) . Por Ejemplo: `ANDROID_HOME=/Users/Library/Android/sdk`
+
+> La ubicacion variara dependiendo de la ruta seleccionada al momento de instalar android y java.
+
+__¿Como configurar las variables de entorno?__
+ 
+ `WINDOWS`
+1. Ir al menú Inicio y escriba Configuración avanzada del sistema.
+2. Haga clic en Ver la configuración avanzada del sistema de la lista para abrir Propiedades del sistema.
+3. Vaya a la pestaña Avanzado y haga clic en el botón Variable de entornos.
+
+4. En la ventana Variable de entorno, haga clic en el botón Nuevo debajo de la variable Sistema.
+5. En la variable de sistema Editar , indique el nombre de la variable como JAVA_HOME y el valor de la variable como la ruta al directorio JDK.
+
+6. Haga clic en OK 
+7. Ahora vuelva a la ventana Variable de entorno y seleccione Ruta en la variable Sistema.
+
+8. Haga clic en el botón Editar para abrir la ventana Editar variable de entorno.
+
+9. Haga clic en el botón Nuevo y escriba %JAVA_HOME%\bin
+
+10. Haga clic en Aceptar para aplicar los cambios.
+11. Para probar la configuración, abra Símbolo del sistema escriba echo %JAVA_HOME% y presione Enter. Esto debería imprimir el directorio del JDK al que apunta el JAVA_HOME. En cambio, si ve un espacio, significa que ha fallado en la configuración de la variable de entorno.
+
+12. Realice los mismos pasos para configurar la variable de entorno ANDROID_HOME
+
+
+ `MAC`
+
+1. Abre la terminal de mac y escribe: Open ~/.bash_profile 
+2. Escribe export JAVA_HOME=$(/usr/libexec/java_home) y guarda los cambios.
+3. Escribe nuevamente en la terminal source ~/.bash_profile
+4. Ahora en la terminal escribe echo $JAVA_HOME para ver el valor, deberias ver lo siguiente dependiendo de la versión de java que tengas instalada: /Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home
+5. Repite los mismos pasos para la variable de entorno ANDROID_HOME
+
+#### :round_pushpin: Instalación APPIUM
+
+
+
 #### :round_pushpin: Configuración de Entorno APPIUM
 
+En la configuración de Appum debemos ingresar los valores de las variables `JAVA_HOME` y `ANDROID_HOME` en la siguiente pantalla:
+
+<img src="assets/conf_appium1.png" width="50%"> 
+<img src="assets/conf_appium2.png" width="50%"> 
 
 
 #### :round_pushpin: Formato de Aplicaciones Moviles (.ipa vs .apk)
