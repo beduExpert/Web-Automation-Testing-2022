@@ -21,15 +21,12 @@
     ```
 __Buena Practica:__ utiliza la aplicación `apk info`para obtener el `appPackage`y `appActivity`
 
-3. Utiliza `Appium Inspector`para probar el `json`del `Desired Capabilities`. 
-    - Guarda el `json`del `Desired Capabilities`
+3. Utiliza `Appium Inspector` para probar el `json` del `Desired Capabilities`. 
+
+- Guarda el `json` en la seccion `Desired Capabilities`
 
     <img src="assets/appium_inspector1.png" width="50%"> 
 
-    - Haz click en `start session`para ver si funciona correctamente.
+- Haz click en `start session`para ver si funciona correctamente.
 
-    <img src="assets/appium_inspector2.png" width="5'%"> 
-
-
-
-
+    <img src="assets/appium_inspector2.png" width="50%"> 
