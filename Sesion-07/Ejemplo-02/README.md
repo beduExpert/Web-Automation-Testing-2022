@@ -43,10 +43,25 @@ Pero ¿como se cumple con esta filosofia? miremos el diseño de appium para sabe
 
 #### :round_pushpin: Conceptos de Appium
 
+Appium es, en esencia, un `servidor web` que expone una API REST. Recibe conexiones de un cliente, escucha comandos, ejecuta estos comandos en un dispositivo móvil y responde con una respuesta HTTP que representa el resultado de la ejecución del comando.
 
++ `Sesión`: la automatización siempre se realiza en el contexto de una sesión. Los clientes inician una sesión con un servidor de formas específicas para cada biblioteca, pero todos terminan enviando una solicitud POST/sesión al servidor, con un objeto JSON llamado objeto de "capacidades deseadas" (desired capabilities). En este punto, el servidor iniciará la sesión de automatización y responderá con una ID de sesión que se utiliza para enviar más comandos.
 
++ `Capacidades Deseadas (desired capabilities)`: son un conjunto de claves y valores (es decir, un mapa o hash) que se envían al servidor de Appium para indicarle qué tipo de sesión de automatización nos interesa iniciar. También hay varias capacidades que pueden modificar el comportamiento del servidor durante la automatización. Por ejemplo, podríamos establecer la capacidad de platformName en iOS para decirle a Appium que queremos una sesión de iOS, en lugar de una de Android o Windows. O podríamos establecer la capacidad safariAllowPopups en verdadero para garantizar que, durante una sesión de automatización de Safari, podamos usar JavaScript para abrir nuevas ventanas. 
 
-#### + Funcionamiento de Appium en Android
+<img src="assets/capabilities.png" width="50%"> 
+
++ `Servidor Appium`: es un servidor escrito en Node.js.
+
+<img src="assets/server.png" width="50%"> 
+
++ `Clientes de Appium`: Hay bibliotecas cliente (en Java, Ruby, Python, PHP, JavaScript y C# ) que admiten las extensiones de Appium para el protocolo WebDriver. 
+
++ `Escritorio Appium`: Hay un wrapper de GUI alrededor del servidor de Appium que se puede descargar para cualquier plataforma. Viene incluido con todo lo necesario para ejecutar el servidor Appium, por lo que no necesita preocuparse por Node. También viene con un Inspector, que le permite verificar la jerarquía de su aplicación. Esto puede ser útil al escribir pruebas.
+
+<img src="assets/escritorio.png" width="50%"> 
+
+#### :round_pushpin: Funcionamiento de Appium en Android
 
 Para dispositivos Android, Appium utiliza la API de `UI Automator` para interactuar con los componentes de UI de la aplicación a probar.
 
@@ -60,7 +75,7 @@ Para dispositivos Android, Appium utiliza la API de `UI Automator` para interact
 6. El `dispositivo/emulador` luego revierte el resultado del comando ejecutado al servidor de Appium a través de `bootstrap.jar`.
 7. El servidor de Appium reenvía esta respuesta al cliente.
 
-#### + Funcionamiento de Appium en iOS
+#### :round_pushpin: Funcionamiento de Appium en iOS
 
 Para dispositivos iOS, Appium utiliza la `API XCUITest` nativa de Apple para interactuar con los componentes de la interfaz de usuario de la aplicación a probar. `XCUITest` es un marco de prueba de interfaz de usuario construido sobre el marco de prueba de unidad de Apple, `XCTest`.
 
