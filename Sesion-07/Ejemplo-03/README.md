@@ -176,12 +176,8 @@ Es un Un inspector de GUI para aplicaciones móviles y más, impulsado por un se
 
 <img src="assets/inspector.png" width="30%"> 
 
-Hay una interfaz para especificar qué servidor de Appium usar, qué capacidades configurar y luego interactuar con elementos y otros comandos de Appium una vez que haya iniciado una sesión.
+Hay una interfaz para especificar qué servidor de Appium usar, qué capacidades configurar y luego interactuar con elementos y otros comandos de Appium una vez que haya iniciado una sesión. Puedes descargar el inspector de aplicaciones de appium desde la siguiente url: https://github.com/appium/appium-inspector/releases
 
-1. Descargar el inspector de aplicaciones de appium desde la siguiente url: https://github.com/appium/appium-inspector/releases
-
-
-> En el siguiente tema veremos cómo configurar los desired capabilities para android.
 
 #### :round_pushpin: Formato de Aplicaciones Moviles (.ipa vs .apk)
 
