@@ -101,8 +101,7 @@ Existen dos tipos de variables de entorno, variables de entorno del usuario y va
 
 - `Variables de entorno del sistema`: Las variables de entorno del sistema se extienden más allá de un solo usuario, aplicándose a cualquier usuario que pueda existir o que se cree en el futuro. La mayoría de las variables de entorno del sistema apuntan a ubicaciones importantes como la carpeta Windows.
 
-Algunas de las variables de entorno más comunes en los sistemas Windows incluyen %path%, %programfiles%, %temp%, y %systemroot%, aunque hay muchas otras.
-
+Algunas de las variables de entorno más comunes en los sistemas Windows incluyen `%path%`, `%programfiles%`, `%temp%`, y `%systemroot%`, aunque hay muchas otras.
 
 `Appium` necesitará consumir las `variables de entorno JAVA_HOME y ANDROID_HOME` por lo que siguiendo estos pasos podrás configurarlas:
 
@@ -118,20 +117,20 @@ __¿Como configurar las variables de entorno?__
 1. Ir al menú Inicio y escriba Configuración avanzada del sistema.
 2. Haga clic en Ver la configuración avanzada del sistema de la lista para abrir Propiedades del sistema.
 3. Vaya a la pestaña Avanzado y haga clic en el botón Variable de entornos.
-
+    <img src="assets/appium1.png" width="50%"> 
 4. En la ventana Variable de entorno, haga clic en el botón Nuevo debajo de la variable Sistema.
 5. En la variable de sistema Editar , indique el nombre de la variable como JAVA_HOME y el valor de la variable como la ruta al directorio JDK.
-
+    <img src="assets/appium2.png" width="50%"> 
 6. Haga clic en OK 
 7. Ahora vuelva a la ventana Variable de entorno y seleccione Ruta en la variable Sistema.
-
+    <img src="assets/appium3.png" width="50%"> 
 8. Haga clic en el botón Editar para abrir la ventana Editar variable de entorno.
-
+    <img src="assets/appium4.png" width="50%"> 
 9. Haga clic en el botón Nuevo y escriba %JAVA_HOME%\bin
-
+    <img src="assets/appium5.png" width="50%"> 
 10. Haga clic en Aceptar para aplicar los cambios.
 11. Para probar la configuración, abra Símbolo del sistema escriba echo %JAVA_HOME% y presione Enter. Esto debería imprimir el directorio del JDK al que apunta el JAVA_HOME. En cambio, si ve un espacio, significa que ha fallado en la configuración de la variable de entorno.
-
+    <img src="assets/appium6.png" width="50%"> 
 12. Realice los mismos pasos para configurar la variable de entorno ANDROID_HOME
 
 
