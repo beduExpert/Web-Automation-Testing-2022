@@ -53,19 +53,21 @@ Appium es, en esencia, un `servidor web` que expone una API REST. Recibe conexio
 
 + `Servidor Appium`: es un servidor escrito en Node.js.
 
-<img src="assets/server.png" width="50%"> 
+    <img src="assets/server.png" width="50%"> 
 
 + `Clientes de Appium`: Hay bibliotecas cliente (en Java, Ruby, Python, PHP, JavaScript y C# ) que admiten las extensiones de Appium para el protocolo WebDriver. 
 
 + `Escritorio Appium`: Hay un wrapper de GUI alrededor del servidor de Appium que se puede descargar para cualquier plataforma. Viene incluido con todo lo necesario para ejecutar el servidor Appium, por lo que no necesita preocuparse por Node. También viene con un Inspector, que le permite verificar la jerarquía de su aplicación. Esto puede ser útil al escribir pruebas.
 
-<img src="assets/escritorio.png" width="50%"> 
+    <img src="assets/escritorio.png" width="50%"> 
 
 #### :round_pushpin: Funcionamiento de Appium en Android
 
 Para dispositivos Android, Appium utiliza la API de `UI Automator` para interactuar con los componentes de UI de la aplicación a probar.
 
 <img src="assets/appium_android.png" width="50%"> 
+
+
 
 1. Las bibliotecas de cliente convierten los comandos escritos por el usuario en solicitudes de `API REST`.
 2. Estas solicitudes se envían al servidor de `Appium` mediante el `protocolo de conexión móvil JSON`.
