@@ -74,3 +74,55 @@ Para dispositivos iOS, Appium utiliza la `API XCUITest` nativa de Apple para int
 6. El `dispositivo/simulador` luego revierte el resultado del comando ejecutado al servidor de Appium a través de `WebDriverAgent.app`.
 7. El servidor de Appium reenvía esta respuesta al cliente.
 
+
+#### :round_pushpin: Protocolo JSON
+
+__¿Qué es el protocolo JSON Wire?__ 
+
+La comunicación entre el cliente y el servidor a través de la API REST tiene lugar en forma de intercambio de JSON (notaciones de objetos de JavaScript). JSON es un formato de intercambio de datos ligero e independiente del idioma.
+
+Ejemplo de JSON básico:
+
+```JSON
+{
+"Student":{
+"FirstName":"Appium",
+"LastName":"Selenium",
+"IdNumber":"12345",
+"City" : "New Delhi",
+"EmailID" : "email@gmail.com" }
+}
+```
+
+`JSON Wire Protocol` es un conjunto predefinido de especificaciones que asigna acciones como hacer clic, escribir, desplazarse, etc. con la solicitud/respuesta HTTP. En términos simples, `son un conjunto de reglas que definen qué datos deben enviarse, en qué orden y en qué formato entre el cliente y el servidor`.
+
+`Appium` utiliza `Mobile JSON Wire Protocol`, que amplía el `JSON Wire Protoco`l. Permite que Appium Server gestione la comunicación con dispositivos móviles.
+
+__Flujo de comunicación entre Cliente y Servidor__
+
+    1. Un cliente quiere realizar una acción en el dispositivo. Entonces convierte la acción, como objeto, en objeto JSON y lo envía al servidor. 
+    2. El servidor analiza el objeto JSON y lo convierte en objeto. 
+    4. Ahora el servidor procesa este objeto y convierte el objeto de respuesta en un objeto JSON y lo envía de vuelta al cliente. 
+    5. Luego, el cliente convierte el objeto JSON en el objeto.
+
+
+#### :round_pushpin: ¿Qué es Bootstrap.jar?
+
+El servidor de Appium interactúa con los dispositivos Android a través de `bootstrap.jar`. 
+
+    1. Cuando el servidor inicia una sesión de controlador de Android, envía el archivo bootstrap.jar al dispositivo. 
+    2. El dispositivo ejecuta este archivo usando el comando `uiautomator` integrado del dispositivo. 
+    3. Cuando el dispositivo ejecuta `bootstrap.jar`, inicia un servidor que escucha en el puerto `4724`. Este servidor escucha las solicitudes que provienen del servidor Appium.
+    4. Al recibir el comando, los convierte en comandos de `UIAutomator`, entendibles por Android API 17 o superior. 
+    5. Este `UIAutomator` luego realiza la acción deseada en el dispositivo.
+
+
+#### :round_pushpin: ¿Qué es WebDriverAgent.app?
+
+`WebDriverAgent` es una implementación de servidor WebDriver para iOS que se puede usar para controlar dispositivos iOS de forma remota. Permite realizar acciones como iniciar y cerrar aplicaciones, tocar, desplazar vistas, etc. 
+
+Funciona vinculando `XCUITest.framework` y llamando a la API de Apple para ejecutar comandos directamente en un dispositivo/simulador. 
+
+`WebDriverAgent` es desarrollado y utilizado en Facebook para pruebas `end-to-end` y se ha adoptado e integrado con éxito con Appium para el marco XCUITest respaldado por iOS.
+
+Cuando Appium interactúa por primera vez con un `dispositivo/simulador` iOS, busca `WebDriverAgent.app`. Si la aplicación no está presente en el dispositivo, instala `WebDriverAgent.app` como paso principal.
