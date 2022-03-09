@@ -11,7 +11,7 @@
 
 Lo primero que debemos realizar para poder iniciar con las automatizaciones en dispositivos moviles es obtener la informacion de los `Desired Capabilities` que debemos configurar en los scripts de pruebas.
 
-Antes de ver cuales son las `capabilities` minimas que requerimos para hacer funcionar nuestros script de pruebas es necesario saber lo que existen 2 formas de comenzar:
+Antes de ver cuales son las `capabilities` minimas que requerimos para hacer funcionar nuestros script de pruebas es necesario saber lo que existen 2 formas de localizar una app:
 
 1. `Teniendo una aplicacion (.apk)`: si vamos el `prework`veremos un ejemplo de este caso, donde se explico como descargar la apk de la calculadora de android. Para este caso basta con configurar las siguientes `Desired Capabilities`:
 
@@ -33,7 +33,7 @@ Antes de ver cuales son las `capabilities` minimas que requerimos para hacer fun
     - `app`: ubicacion donde se encuentra la `.apk`
 
 
-2. Bajando una aplicacion desde el play store de los dispositivos moviles
+2. `Bajando una aplicacion desde el play store` de los dispositivos moviles: abres el play store del dispositivo fisico o virtual y buscas y decargas la aplicación.
 
     ```Json
     {
@@ -51,7 +51,7 @@ Antes de ver cuales son las `capabilities` minimas que requerimos para hacer fun
     - `appActivity`: Nombre de actividad para la actividad de Android que desea iniciar desde su paquete.
     - `appPackage`: Paquete Java de la aplicación de Android que desea ejecutar.
 
-#### Como obtener la información del `appActivity`y `appPackage` de una aplicación
+#### Pero ... ¿Como obtener la información del `appActivity`y `appPackage` de una aplicación?
 
 1. Descargar en el dispositivo fisico o virtual la palicación `apk info` del play store.
 2. Abrir la aplicación y buscar en la lista de aplicación la que queremos probar.
