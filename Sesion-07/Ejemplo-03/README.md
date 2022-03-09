@@ -174,7 +174,7 @@ __¿Como configurar las variables de entorno?__
 
 Es un Un inspector de GUI para aplicaciones móviles y más, impulsado por un servidor Appium (instalado por separado). Appium Inspector es básicamente un cliente de Appium (como WebdriverIO, el cliente Java de Appium, el cliente Python de Appium, etc.) con una interfaz de usuario. 
 
-<img src="assets/inspector.png" width="50%"> 
+<img src="assets/inspector.png" width="30%"> 
 
 Hay una interfaz para especificar qué servidor de Appium usar, qué capacidades configurar y luego interactuar con elementos y otros comandos de Appium una vez que haya iniciado una sesión.
 
