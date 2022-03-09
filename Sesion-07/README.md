@@ -58,7 +58,7 @@ Asi que en este tema veremos como configurar todos estas herramientas para poder
 
 
 - [**`EJEMPLO 3 - Instalación de Appium & Emuladores.`**](./Ejemplo-03)
-- [**`RETO 1`**](./Reto-01)
+
 
 ---
 #### <ins>Tema 4: Ejecución del primer tests automatizado sobre el emulador de android</ins> `EN PROCESO`
@@ -68,6 +68,7 @@ En este tema veremos como construir nuestro primer script de prueba automatizado
 <img src="assets/tema4.png" width="50%"> 
 
 - [**`EJEMPLO 4 - Ejecución del primer tests automatizado sobre el emulador de android`**](./Ejemplo-04)
+- [**`RETO 1`**](./Reto-01)
 - [**`RETO 2`**](./Reto-02)
 ---
 

@@ -1,15 +1,35 @@
-# Reto # - Nombre del reto
+# Reto 1# - Desired Capabilities
 
 ## Objetivo
 
-* Agregar los objetivos del reto (Mínimo agregar 2 objetivos y Borrar está linea una vez se hay leido)
+* Evaluar el conocimiento sobre los atributos requeridos para armar el objeto `Desired Capabilities` con la información de aplicaciones instaladas en los dispositivos virtuales.
 
 ## Desarrollo
 
->**💡 Nota para experto(a)**
->
-> Este es un ejemplo por si el experto necesita tener en cuenta un punto clave durante el reto.
->Si no es necesario, puedes borrar esta nota.
+1. Selecciona 3 aplicaciones móviles que se encuentren instaladas en el dispositivo virtual de android (AVD).
+2. Diseña el objeto `Desired Capabilities` para las 3 aplicaciones. Por ejemplo:
 
-Aquí se debe agregar el desarrollo del reto, **NO** olvides poner el resultado del ejercicio propuesto para el feedback de los alumnos
+    ```Json
+    {
+    "appium:deviceName": "emulator-5554",
+    "platformName": "android",
+    "appium:platformVersion": "12",
+    "appium:automationName": "uiautomator2",
+    "appium:appPackage": "com.google.android.calculator",
+    "appium:appActivity": "com.android.calculator2.Calculator"
+    }
+    ```
+__Buena Practica:__ utiliza la aplicación `apk info`para obtener el `appPackage`y `appActivity`
+
+3. Utiliza `Appium Inspector`para probar el `json`del `Desired Capabilities`. 
+    - Guarda el `json`del `Desired Capabilities`
+
+    <img src="assets/appium_inspector1.png" width="50%"> 
+
+    - Haz click en `start session`para ver si funciona correctamente.
+
+    <img src="assets/appium_inspector2.png" width="5'%"> 
+
+
+
 

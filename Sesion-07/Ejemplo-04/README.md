@@ -57,17 +57,16 @@ Antes de ver cuales son las `capabilities` minimas que requerimos para hacer fun
 2. Abrir la aplicación y buscar en la lista de aplicación la que queremos probar.
 3. En la pantalla principal veremos el `appPackage`
 
-    <img src="assets/apk_info1.png" width="50%"> 
+    <img src="assets/apk_info1.png" width="30%"> 
 
 4. Ir a la seccion de `activities` y veremos el nombre de la actividad.
 
-    <img src="assets/apk_info2.png" width="50%"> 
+    <img src="assets/apk_info2.png" width="30%"> 
 
 
+__Pro-tip:__ En la [`Sesión 08:` Appium: Primeros pasos](./Sesion-08) veremos con mayor profundidad sobre los `Desired Capabilities`
 
-En la [`Sesión 08:` Appium: Primeros pasos](./Sesion-08) veremos con mayor profundidad sobre los `Desired Capabilities`
-
-
+#### :round_pushpin: Configurar Capabilities
 
 
 
