@@ -47,7 +47,7 @@ Es importante destacar que Appium es `"multiplataforma"`, es decir, permite escr
 - [**`EJEMPLO 2 - Appium`**](./Ejemplo-02)
 
 ---
-#### <ins>Tema 3: Instalación de Appium & Emuladores.</ins> `EN PROCESO`
+#### <ins>Tema 3: Instalación de Appium & Emuladores.</ins> 
 
 Sabiendo que es appium, procederemos a realizar su instalación. Adicionalmente Appium requiere de configuraciones de herramientas adicionales como:
 
@@ -61,7 +61,7 @@ Asi que en este tema veremos como configurar todos estas herramientas para poder
 - [**`RETO 1`**](./Reto-01)
 
 ---
-#### <ins>Tema 4: Ejecución del primer tests automatizado sobre el emulador de android</ins> `PENDIENTE`
+#### <ins>Tema 4: Ejecución del primer tests automatizado sobre el emulador de android</ins> `EN PROCESO`
 
 En este tema veremos como construir nuestro primer script de prueba automatizado utilizando appium y dispositivos virtuales con android studio.
 

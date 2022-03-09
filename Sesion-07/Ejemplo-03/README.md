@@ -78,7 +78,7 @@ Para crear un dispositivo virtual se debe realizar lo siguiente:
 - `Un servidor`, que administra la comunicación entre el cliente y el daemon. El servidor se ejecuta en tu máquina de desarrollo como un proceso en segundo plano.
 
 
-`adb` está incluido en el paquete de herramientas de la plataforma de Android SDK. 
+`adb` está incluido en el paquete de herramientas de la plataforma de Android SDK. Para su uso debes abrir la terminal, posicionarte en la ruta de ANDROID_HOME e ingresar `adb devices`
 
 <img src="assets/adb.png"> 
 
