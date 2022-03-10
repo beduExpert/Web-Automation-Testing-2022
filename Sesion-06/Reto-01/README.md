@@ -8,6 +8,8 @@
 
 Incluir en el archivo `testng.xml` una caso de prueba adicional para incorporar otro navegador. Recuerda que en la página oficial de Selenium podras conseguir los links de los drivers para los distintos navegadores web: https://www.selenium.dev/documentation/webdriver/getting_started/install_drivers/
 
+Una vez agregado el otro explorador, ejecuta los casos de prueba desarrollados en el [**`EJEMPLO 1 - Ejecución de pruebas en Múltiples Navegadores (cross browser testing)`**](./Ejemplo-01) y valida que funcionen correctamente en los 3 exploradores.
+
 <img src="assets/selenium_drivers.png">
 
 <details>

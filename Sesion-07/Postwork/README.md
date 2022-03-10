@@ -32,11 +32,11 @@
 + Realiza una nueva clase java donde:
 
     - Configures el Android Driver
-    - Configures los DesiredCapabilities() con los atributos requeridos para abrir el Google Chrome en el dispositivo. Si tienes dudas sobre este punto puedes revisar la documentacion oficial de appium: https://appium.io/docs/en/writing-running-appium/caps/
+    - Configures los DesiredCapabilities() con los atributos requeridos para abrir la aplicación de mercadolibre en el dispositivo. Si tienes dudas sobre este punto puedes revisar la documentacion oficial de appium: https://appium.io/docs/en/writing-running-appium/caps/. `Pro-tip`: utiliza la aplicación `apk info` para obtener los valores del appPackage y appActivity.
 
-+ Adaptes al menos 10 test de pruebas que utilicen los localizadores de google chrome en el dispositivo virtual de android.
++ Adaptar al menos 10 test de pruebas que utilicen los localizadores de la aplicación de mercadolibre en el dispositivo virtual de android.
 
-+ Utiliza Appium Inspector para poder encontrar los localizadores que necesitas de la página web de mercadolibre en el dispositivo virtual.
++ Utiliza Appium Inspector para poder encontrar los localizadores que necesitas de la app de mercadolibre en el dispositivo virtual.
 
 + Recuerda utilizar las anotaciones de TestNG.
 

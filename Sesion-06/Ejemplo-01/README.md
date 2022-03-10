@@ -23,7 +23,7 @@ La `matriz de compatibilidad de navegadores` puede ser fundamental para prioriza
 
 <img src="assets/google_analytics.png" width="50%">
 
-> En este ejemplo si ejecutamos en Chrome, Firefox e Internet explores, abarcariamos casi el 90% de los usuarios que ingresan.
+> En este ejemplo si ejecutamos en Chrome, Firefox e Internet explorer, abarcariamos casi el 90% de los usuarios que ingresan.
 
 #### ¿Cómo realizar pruebas de navegador cruzado usando Selenium?
 
