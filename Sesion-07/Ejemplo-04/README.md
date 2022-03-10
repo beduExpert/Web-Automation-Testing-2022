@@ -71,7 +71,7 @@ __Pro-tip:__ En la [`Sesión 08:` Appium: Primeros pasos](./Sesion-08) veremos c
 Para nuestro primer script de prueba utilizaremos la aplicación de la `calculadora` nativa de google (se instalo manualmente en el prework), pero esta vez en que de instalarla, la descargaremos desde el play store y la utilizaremos por medio de los valores de `appActivity`y `appPackage`
 
 
-    ```Json
+```Json
     {
     "appium:deviceName": "emulator-5554",
     "platformName": "android",
