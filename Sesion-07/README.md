@@ -61,7 +61,7 @@ Asi que en este tema veremos como configurar todos estas herramientas para poder
 
 
 ---
-#### <ins>Tema 4: Ejecución del primer tests automatizado sobre el emulador de android</ins> `EN PROCESO`
+#### <ins>Tema 4: Ejecución del primer tests automatizado sobre el emulador de android</ins>
 
 En este tema veremos como construir nuestro primer script de prueba automatizado utilizando appium y dispositivos virtuales con android studio.
 
