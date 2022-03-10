@@ -84,7 +84,7 @@ Para nuestro primer script de prueba utilizaremos la aplicación de la `calculad
 
 1. Lo primero que debemos realizar cada vez que vamos a desarrollar y ejecutar scripts de pruebas automatizados con appium, es levantar el servidor, abriendo appium y seleccionando la opción de `start server`:
 
-<img src="assets/server.png" width="50%"> 
+    <img src="assets/server.png" width="50%"> 
 
 
 2. Posteriormente a esto vamos a crear una clase `mobiletesting`
@@ -98,7 +98,7 @@ public class mobiletesting {
 
 ```
 
-3. Agregamos la dependencia de appium en el archivo `pom.xml``
+3. Agregamos la dependencia de appium en el archivo `pom.xml`
 
 ```xml
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
