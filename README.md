@@ -28,7 +28,8 @@ Este modulo tiene como objetivo la automatización de casos de prueba de cualqui
 
 - Entorno de pruebas de software (Mobile)
   - Appium
-  - Android SDK
+  - Appium Inspector
+  - Android Virtual Device (Android Studio)
 
 ## 💻 Proyecto
 

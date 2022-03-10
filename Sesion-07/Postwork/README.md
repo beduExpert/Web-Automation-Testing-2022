@@ -16,13 +16,12 @@
 - Entorno de pruebas de software
     - Selenium Java Client
     - Selenium Webdriver
-    - Selenium Server GRID
     - Appium
     - Appium Inspector
 - Navegador App
     - Google Chrome
 - Emulador
-    - Android Studio
+  - Android Virtual Device (Android Studio)
 
 
 ## Desarrollo
