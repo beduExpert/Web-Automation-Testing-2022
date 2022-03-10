@@ -10,7 +10,7 @@ En el desarrollo del [**`EJEMPLO 4 - Ejecución del primer tests automatizado so
 
 1. Agrega en el archivo del patrón Page Object Model -> `CalculatorPage` los metodos restantes para al menos 2 operaciones mas.
 2. Agregar en el Script de Prueba los test correspondiente al resto de las operaciones de la calculadora.
-3. Ejecuta los casos de pruebas con appium en em emulador y valida el comportamiento de la funcionalidad.
+3. Ejecuta los casos de pruebas con appium en el emulador y valida el comportamiento en la calculadora.
 
 
 <details>
