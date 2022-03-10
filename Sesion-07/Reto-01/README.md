@@ -7,18 +7,8 @@
 ## Desarrollo
 
 1. Selecciona 3 aplicaciones móviles que se encuentren instaladas en el dispositivo virtual de android (AVD).
-2. Diseña el objeto `Desired Capabilities` para las 3 aplicaciones. Por ejemplo:
+2. Diseña el objeto `Desired Capabilities` para las 3 aplicaciones. 
 
-    ```Json
-    {
-    "appium:deviceName": "emulator-5554",
-    "platformName": "android",
-    "appium:platformVersion": "12",
-    "appium:automationName": "uiautomator2",
-    "appium:appPackage": "com.google.android.calculator",
-    "appium:appActivity": "com.android.calculator2.Calculator"
-    }
-    ```
 __Buena Practica:__ utiliza la aplicación `apk info`para obtener el `appPackage`y `appActivity`
 
 3. Utiliza `Appium Inspector` para probar el `json` del `Desired Capabilities`. 
@@ -30,3 +20,20 @@ __Buena Practica:__ utiliza la aplicación `apk info`para obtener el `appPackage
 - Haz click en `start session`para ver si funciona correctamente.
 
     <img src="assets/appium_inspector2.png" width="50%"> 
+
+
+
+<details>
+  <summary> Solución </summary>
+
+```Json
+    {
+    "appium:deviceName": "emulator-5554",
+    "platformName": "android",
+    "appium:platformVersion": "12",
+    "appium:automationName": "uiautomator2",
+    "appium:appPackage": "com.google.android.calculator",
+    "appium:appActivity": "com.android.calculator2.Calculator"
+    }
+```
+</details>
