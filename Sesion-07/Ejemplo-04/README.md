@@ -84,7 +84,7 @@ Para nuestro primer script de prueba utilizaremos la aplicación de la `calculad
 
 1. Lo primero que debemos realizar cada vez que vamos a desarrollar y ejecutar scripts de pruebas automatizados con appium, es levantar el servidor, abriendo appium y seleccionando la opción de `start server`:
 
-<img src="assets/server.png" width="30%"> 
+<img src="assets/server.png" width="50%"> 
 
 
 2. Posteriormente a esto vamos a crear una clase `mobiletesting`
