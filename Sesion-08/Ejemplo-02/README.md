@@ -36,20 +36,20 @@ En este tema veremos las capacidades deseadas más utilizadas  `generales (comun
 #### Capacidades Deseadas Generales para todos los drivers
 
 | Capacidad Deseada | Descripción | Ejemplo de Implementación
-| -------- | ------------- |------------- |
+| -------- | ---------- |------------- |
 | `automationName` | Qué motor de automatización usar ||
 | `platformName` | Qué plataforma de sistema operativo móvil usar ||
 | `platformVersion` | Versión del sistema operativo móvil ||
-| `deviceName` | El tipo de dispositivo móvil o emulador a usar ||
-| `app` | La ruta local absoluta o la URL http remota a un archivo .ipa (IOS), o un archivo .apk (Android).  Appium intentará instalar primero este binario de la aplicación en el dispositivo adecuado. ||
-| `browserName` | Nombre del navegador web móvil para automatizar. Debería ser una cadena vacía si se automatiza una aplicación en su lugar. ||
+| `deviceName` | El tipo de `dispositivo móvil` o `emulador` a usar ||
+| `app` | La ruta local absoluta o la URL http remota a un archivo `.ipa` (IOS), o un archivo `.apk` (Android).  Appium intentará instalar primero este binario de la aplicación en el dispositivo adecuado ||
+| `browserName` | Nombre del navegador web móvil para automatizar. Debería ser una cadena vacía si se automatiza una aplicación en su lugar ||
 | `newCommandTimeout` | Cuánto tiempo (en segundos) Appium esperará un nuevo comando del cliente antes de asumir que el cliente salió y finalizó la sesión ||
-| `language` | Idioma a configurar para iOS (solo controlador XCUITest) y Android. ||
-| `locale` | Configuración regional para iOS (solo controlador XCUITest) y Android. formato fr_CA para iOS. Formato CA (abreviatura del nombre del país) para Android ||
+| `language` | Idioma a configurar para iOS (solo controlador `XCUITest`) y Android. ||
+| `locale` | Configuración regional para iOS (solo controlador `XCUITest`) y Android. Formato `fr_CA` para iOS. Formato `CA` (abreviatura del nombre del país) para Android ||
 | `udid` | Identificador de dispositivo único del dispositivo físico conectado ||
-| `orientation` | (Solo Simuladores/Emuladores) orientación ||
-| `noReset` | No restablezca el estado de la aplicación antes de esta sesión. en iOS no destruye ni apaga el sim después de la prueba. En ANDROID no detiene la aplicación, no borra los datos de la aplicación y no desinstala la aplicación ||
-| `fullReset`| Realizar un reinicio completo, en iOS desinstala la aplicación antes y después de la prueba del dispositivo real, y destruye el simulador antes y después de la prueba de simulación. En Android detiene la aplicación, borra los datos de la aplicación y desistala la aplicación antes de que comience la sesión y después de la prueba ||
+| `orientation` | Orientación del Dispositivo (Solo Simuladores/Emuladores) ||
+| `noReset` | No reestablece el estado de la aplicación antes de iniciar la sesión. En iOS no destruye ni apaga el `sim` después de la prueba. En ANDROID no detiene la aplicación, no borra los datos de la aplicación y no desinstala la aplicación ||
+| `fullReset`| Realiza un reinicio completo, en iOS desinstala la aplicación antes y después de la prueba del dispositivo real, y destruye el simulador antes y después de la prueba de simulación. En Android detiene la aplicación, borra los datos de la aplicación y desistala la aplicación antes de que comience la sesión y después de la prueba ||
 
 
 
