@@ -31,12 +31,12 @@ Las capacidades deseadas se pueden programar:
 
 Existen muchas capacidades compatibles con Appium, las capacidades también `difieren según el driver`, aunque hay un conjunto estándar al que la mayoría de los drivers prestan atención. 
 
-En este tema veremos las capacidades deseadas más utilizadas  `generales` (comunes para todos los drivers) y para `Android versiones de OS mayores 5 (UIAutomator2)`:
+En este tema veremos las capacidades deseadas más utilizadas  `generales (comunes para todos los drivers)` y para `Android versiones de OS mayores 5 (UIAutomator2)`:
 
 #### Capacidades Deseadas Generales para todos los drivers
 
 | Capacidad Deseada | Descripción | Ejemplo de Implementación
-| ------------- | ------------- |------------- |
+| -------- | ------------- |------------- |
 | `automationName` | Qué motor de automatización usar ||
 | `platformName` | Qué plataforma de sistema operativo móvil usar ||
 | `platformVersion` | Versión del sistema operativo móvil ||
@@ -49,8 +49,7 @@ En este tema veremos las capacidades deseadas más utilizadas  `generales` (comu
 | `udid` | Identificador de dispositivo único del dispositivo físico conectado ||
 | `orientation` | (Solo Simuladores/Emuladores) orientación ||
 | `noReset` | No restablezca el estado de la aplicación antes de esta sesión. en iOS no destruye ni apaga el sim después de la prueba. En ANDROID no detiene la aplicación, no borra los datos de la aplicación y no desinstala la aplicación ||
-| `fullReset`| 
-Realizar un reinicio completo, en iOS desinstala la aplicación antes y después de la prueba del dispositivo real, y destruye el simulador antes y después de la prueba de simulación. En Android detiene la aplicación, borra los datos de la aplicación y desistala la aplicación antes de que comience la sesión y después de la prueba ||
+| `fullReset`| Realizar un reinicio completo, en iOS desinstala la aplicación antes y después de la prueba del dispositivo real, y destruye el simulador antes y después de la prueba de simulación. En Android detiene la aplicación, borra los datos de la aplicación y desistala la aplicación antes de que comience la sesión y después de la prueba ||
 
 
 
