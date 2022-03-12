@@ -1,4 +1,4 @@
-# Sesión 8 # Postwork: 
+# Sesión 8 # Postwork
 
 ## :dart: Objetivos
 

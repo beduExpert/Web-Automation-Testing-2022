@@ -1,4 +1,4 @@
-## Sesión 8: Appium: Primeros pasos 🤖
+## Sesión 8 - Appium: Primeros pasos 🤖
 
 
 <div style="text-align: justify;">
@@ -17,9 +17,9 @@
 En la sesión anterior aprendimos que es Appium, cual es su arquitectura y todas las configuraciones necesarias para ejecutar con éxito nuestro primer script de prueba automatizado en dispositivos móviles virtuales bajo la plataforma android. En esta sesión profundizaremos más sobre todas las herramientas que appium nos ofrece para poder interactuar con los dispositivos bien sea físicos o virtuales, veremos como están confirmados los drivers, profundizaremos sobre el objeto desired capabilities, veremos comandos y cómo utilizar los localizadores para finalmente aprender sobre uso de los objetos TouchAction/MultiAction utilizados para la automatización de gestos móviles.
 
 ---
-#### <ins>Tema 1: Automatizaciones Web Móviles con Android </ins>
+#### <ins>Tema 1: Automatizaciones Web Móviles con Android </ins> `EN PROCESO`
 
-En sesiones anteriores hemos realizado automatizaciones de casos de pruebas que son ejecutados en navegadores web, ahora `¿Es posible ejecutar estos mismos casos de prueba en las páginas web pero en los dispositivos móviles?` La respuesta es SÍ! :mechanical_arm:
+En sesiones anteriores hemos realizado automatizaciones de casos de pruebas que son ejecutados en navegadores web, ahora `¿Es posible ejecutar estos mismos casos de prueba en las páginas web pero en los dispositivos móviles?` La respuesta es __SÍ!__ :mechanical_arm:
 
 Appium es la herramienta para esto.. Básicamente, puedes escribir una prueba normal de WebDriver y usar Appium como el servidor Selenium con un conjunto especial de capacidades deseadas. (Desired Capabilities)
 
@@ -30,7 +30,7 @@ En este tema veremos cómo es posible ejecutar los scripts de pruebas que ya ten
 - [**`EJEMPLO 1 - Automatizaciones Web Móviles con Android`**](./Ejemplo-01)
 - [**`RETO 1`**](./Reto-01)
 ---
-#### <ins>Tema 2: Desired Capabilities</ins>
+#### <ins>Tema 2: Desired Capabilities</ins> `PENDIENTE`
 
 Como vimos en la sesión anterior las capacidades deseadas son claves y valores codificados en un objeto JSON, enviados por los clientes de Appium al servidor cuando se solicita una nueva sesión de automatización.
 
@@ -51,7 +51,7 @@ En este tema  profundizaremos sobre el objeto desired capabilities.
 - [**`RETO 2`**](./Reto-02)
 
 ---
-#### <ins>Tema 3: Comandos</ins>
+#### <ins>Tema 3: Comandos</ins> `PENDIENTE`
 
 Appium ofrece múltiples comandos para interactuar con los dispositivos móviles, en este tema veremos los más importantes.
 
@@ -60,7 +60,7 @@ Appium ofrece múltiples comandos para interactuar con los dispositivos móviles
 - [**`RETO 3`**](./Reto-03)
 
 ---
-#### <ins>Tema 4: Localizadores</ins>
+#### <ins>Tema 4: Localizadores</ins> `PENDIENTE`
 
 En este tema veremos las estrategias de localización de Appium.
 
@@ -69,9 +69,9 @@ En este tema veremos las estrategias de localización de Appium.
 - [**`EJEMPLO 4 - Localizadores`**](./Ejemplo-04)
 
 ---
-#### <ins>Tema 5: Automatización de Gestos Móviles</ins>
+#### <ins>Tema 5: Automatización de Gestos Móviles</ins> `PENDIENTE`
 
-En cuanto a la automatización de gestos móviles, si bien la especificación Selenium WebDriver es compatible con ciertos tipos de interacción móvil, sus parámetros no siempre se pueden asignar fácilmente a la funcionalidad que proporciona la automatización del dispositivo, con ese fin, Appium implementa la nueva API `TouchAction/MultiAction` que veremos en este tema.
+En cuanto a la automatización de gestos móviles, si bien la especificación `Selenium WebDriver` es compatible con ciertos tipos de interacción móvil, sus parámetros no siempre se pueden asignar fácilmente a la funcionalidad que proporciona la automatización del dispositivo, con ese fin, Appium implementa la nueva API `TouchAction/MultiAction` que veremos en este tema.
 
 <img src="assets/gestos.png" width="50%"> 
 
