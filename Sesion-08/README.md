@@ -69,7 +69,7 @@ En este tema veremos las estrategias de localización de Appium.
 - [**`EJEMPLO 4 - Localizadores`**](./Ejemplo-04)
 
 ---
-#### <ins>Tema 5: Automatización de Gestos Móviles</ins> `EN PROCESO`
+#### <ins>Tema 5: Automatización de Gestos Móviles</ins> 
 
 En cuanto a la automatización de gestos móviles, si bien la especificación `Selenium WebDriver` es compatible con ciertos tipos de interacción móvil, sus parámetros no siempre se pueden asignar fácilmente a la funcionalidad que proporciona la automatización del dispositivo, con ese fin, Appium implementa la nueva API `TouchAction/MultiAction` que veremos en este tema.
 
