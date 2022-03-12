@@ -27,7 +27,7 @@ Las capacidades deseadas se pueden programar:
 
 - Dentro de la `GUI del servidor Appium (a través de una sesión de Inspector)`
 
-<img src="assets/appium_inspector.png" width="50%"> 
+    <img src="assets/appium_inspector.png" width="50%"> 
 
 Hay muchas, muchas capacidades compatibles con Appium, las capacidades también `difieren según el driver`, aunque hay un conjunto estándar al que la mayoría de los drivers prestan atención. 
 
