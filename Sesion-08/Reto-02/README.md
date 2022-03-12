@@ -2,11 +2,11 @@
 
 ## Objetivo
 
-- Desarrollar script de prueba donde se configuren más propiedades del objeto Desired Capabilities.
+- Desarrollar script donde se configuren más propiedades del objeto Desired Capabilities.
 
 ## Desarrollo
 
-Desarrolla un script de prueba que realice las siguientes acciones:
+Desarrolla un script que realice las siguientes acciones:
 
 - Abra google chrome
 - Posicione la aplicación de forma vertical (`LANDSCAPE`)

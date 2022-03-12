@@ -30,7 +30,7 @@ En este tema veremos cómo es posible ejecutar los scripts de pruebas que ya ten
 - [**`EJEMPLO 1 - Automatizaciones Web Móviles con Android`**](./Ejemplo-01)
 - [**`RETO 1`**](./Reto-01)
 ---
-#### <ins>Tema 2: Desired Capabilities</ins> `EN PROCESO`
+#### <ins>Tema 2: Desired Capabilities</ins> 
 
 Como vimos en la sesión anterior las capacidades deseadas son claves y valores codificados en un objeto JSON, enviados por los clientes de Appium al servidor cuando se solicita una nueva sesión de automatización.
 
@@ -60,7 +60,7 @@ Appium ofrece múltiples comandos para interactuar con los dispositivos móviles
 - [**`RETO 3`**](./Reto-03)
 
 ---
-#### <ins>Tema 4: Localizadores</ins> `PENDIENTE`
+#### <ins>Tema 4: Localizadores</ins> `EN PROCESO`
 
 En este tema veremos las estrategias de localización de Appium.
 
