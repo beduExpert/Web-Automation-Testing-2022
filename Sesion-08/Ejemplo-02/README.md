@@ -29,7 +29,7 @@ Las capacidades deseadas se pueden programar:
 
     <img src="assets/appium_inspector.png" width="50%"> 
 
-Hay muchas, muchas capacidades compatibles con Appium, las capacidades también `difieren según el driver`, aunque hay un conjunto estándar al que la mayoría de los drivers prestan atención. 
+Existen muchas capacidades compatibles con Appium, las capacidades también `difieren según el driver`, aunque hay un conjunto estándar al que la mayoría de los drivers prestan atención. 
 
 En este tema veremos las capacidades deseadas más utilizadas  `generales` (comunes para todos los drivers) y para `Android versiones de OS mayores 5 (UIAutomator2)`:
 
