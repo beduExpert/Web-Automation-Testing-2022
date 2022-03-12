@@ -36,8 +36,13 @@ En este tema veremos las capacidades deseadas más utilizadas  `generales (comun
 #### Capacidades Deseadas Generales para todos los drivers
 
 | Capacidad Deseada | Descripción | Ejemplo de Implementación
-| -------- | ---------- |------------- |
-| `automationName` | Qué motor de automatización usar ||
+| -------- | -------- |------------- |
+| `automationName` | Qué motor de automatización usar | 
+```Java 
+DesiredCapabilities dCapabilities = new DesiredCapabilities();
+dCapabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME, "uiautomator2"); 
+``` 
+        |
 | `platformName` | Qué plataforma de sistema operativo móvil usar ||
 | `platformVersion` | Versión del sistema operativo móvil ||
 | `deviceName` | El tipo de `dispositivo móvil` o `emulador` a usar ||
