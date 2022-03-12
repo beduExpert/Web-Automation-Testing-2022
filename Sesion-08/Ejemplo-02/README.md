@@ -79,7 +79,7 @@ public class Desired_Capabilities {
 		//Configuramos los DesiredCapabilities
 		
 		DesiredCapabilities dc = new DesiredCapabilities();
-
+        // DesiredCapabilities Generales
 		dc.setCapability(MobileCapabilityType.AUTOMATION_NAME, "uiautomator2");
 		dc.setCapability(MobileCapabilityType.DEVICE_NAME, "emulator-5554");
 		dc.setCapability(MobileCapabilityType.PLATFORM_NAME, "android");
@@ -114,6 +114,104 @@ public class Desired_Capabilities {
 ```
 
 <img src="assets/capabilities1.png"> 
+
+
+
+#### Capacidades Deseadas para Android en versiones de OS mayores 5 (UIAutomator2)
+
+| Capacidad Deseada | Descripción | Ejemplo de Implementación
+| -------- | -------- |------------- |
+| `appium:appPackage` | Paquete Java de la aplicación de Android que desea ejecutar | `dc.setCapability("appium:appPackage", "com.google.android.calculator");` |
+| `appium:appActivity` | Nombre de actividad para la actividad de Android que desea iniciar desde su paquete | `dc.setCapability("appium:appActivity", "com.android.calculator2.Calculator");`|
+| `appium:appWaitActivity` | Identificador de actividad de la aplicación principal. Si no se proporciona, UiAutomator2 intentará detectarlo automáticamente desde el paquete proporcionado por el capability app | `dc.setCapability("appium:appWaitActivity", "SplashActivity");`|
+| `appium:appWaitPackage` | Identificador del paquete de aplicación que se va a iniciar. Si no se proporciona, UiAutomator2 intentará detectarlo automáticamente desde el paquete proporcionado por el capability app | `dc.setCapability("appium:appWaitPackage", "com.google.android.calculator");` |
+| `appium:appWaitDuration` | Identificador del primer paquete que se invoca primero | `dc.setCapability("appium:appWaitDuration", "2000");` |
+| `appium:autoGrantPermissions` | Si otorgar todos los permisos de aplicación solicitados automáticamente cuando se inicia una prueba (`true`). Por defecto es `false` | `dc.setCapability("appium:autoGrantPermissions", "false");` |
+| `appium:enforceAppInstall` | Si se establece en `true`, la aplicación bajo prueba siempre se reinstala incluso si ya existe una versión más nueva en el dispositivo bajo prueba. Por defecto es `false` | `dc.setCapability("appium:enforceAppInstall", "false");` |
+| `appium:skipUnlock` | Omitir la verificación de presencia en la pantalla de bloqueo (`true`). De forma predeterminada, el controlador `UiAutomator2` intenta detectar si la pantalla del dispositivo está bloqueada antes de iniciar la prueba y desbloquearla (que a veces puede ser inestable) | `dc.setCapability("appium:skipUnlock", "true");` |
+| `appium:unlockType` | Posibles tipos de pantallas de bloqueo de Android para desbloquear | `dc.setCapability("appium:unlockType", "pin");` |
+
+Ahora veamos un ejemplo de la configuración en un script de prueba con la mayoria de estas capacidades deseadas:
+
+```Java
+
+package tests;
+
+import java.net.MalformedURLException;
+import java.net.URL;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
+import io.appium.java_client.android.AndroidDriver;
+import io.appium.java_client.remote.MobileCapabilityType;
+
+
+
+public class Desired_Capabilities {
+	
+	//Inicializamos el AndroidDriver
+	AndroidDriver driver;
+	
+	@BeforeTest
+	public void beforeTest() throws MalformedURLException {
+		
+		//Configuramos los DesiredCapabilities
+		
+		DesiredCapabilities dc = new DesiredCapabilities();
+
+		// DesiredCapabilities Generales
+		dc.setCapability(MobileCapabilityType.AUTOMATION_NAME, "uiautomator2");
+		dc.setCapability(MobileCapabilityType.DEVICE_NAME, "emulator-5554");
+		dc.setCapability(MobileCapabilityType.PLATFORM_NAME, "android");
+		dc.setCapability(MobileCapabilityType.PLATFORM_VERSION, "12");
+		dc.setCapability(MobileCapabilityType.LANGUAGE, "en");
+		dc.setCapability(MobileCapabilityType.LOCALE, "US");
+		dc.setCapability(MobileCapabilityType.ORIENTATION, "PORTRAIT");
+		dc.setCapability(MobileCapabilityType.NO_RESET, "true");
+		dc.setCapability(MobileCapabilityType.FULL_RESET, "false");
+		
+		
+		// DesiredCapabilities ANDROID
+		dc.setCapability("appium:appPackage", "com.google.android.calculator");
+		dc.setCapability("appium:appActivity", "com.android.calculator2.Calculator");
+		dc.setCapability("autoGrantPermissions", "false");
+		dc.setCapability("enforceAppInstall", "false");
+		dc.setCapability("skipUnlock", "true");
+		dc.setCapability("unlockType", "pin");
+		
+
+
+		//Establecemos la conexion con el server de Appium
+		driver = new AndroidDriver (new URL("http://127.0.0.1:4723/wd/hub"), dc);
+		System.out.println("Application started");
+	}
+	
+	@Test ()
+	public void test() {
+	}
+	
+	
+	@AfterTest
+	public void afterTest() {
+	}
+
+}
+```
+
+
+<img src="assets/capabilities2.png"> 
+
+
+
+
+
+
+
+
+
+
+
 
 
 
