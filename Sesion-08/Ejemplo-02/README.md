@@ -113,7 +113,7 @@ public class Desired_Capabilities {
 
 ```
 
-<img src="assets/capabilities1.png" width="80%"> 
+<img src="assets/capabilities1.png"> 
 
 
 
