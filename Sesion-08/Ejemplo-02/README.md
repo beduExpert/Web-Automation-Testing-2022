@@ -41,17 +41,79 @@ En este tema veremos las capacidades deseadas más utilizadas  `generales (comun
 | `platformName` | Qué plataforma de sistema operativo móvil usar | `dc.setCapability(MobileCapabilityType.PLATFORM_NAME, "android");` |
 | `platformVersion` | Versión del sistema operativo móvil | `dc.setCapability(MobileCapabilityType.PLATFORM_VERSION, "12");` |
 | `deviceName` | El tipo de `dispositivo móvil` o `emulador` a usar (es el que se muestra al ejecuta el comando `adb devices` en la terminal) | `dc.setCapability(MobileCapabilityType.DEVICE_NAME, "emulator-5554");` |
-| `app` | La ruta local absoluta o la URL http remota a un archivo `.ipa` (IOS), o un archivo `.apk` (Android).  Appium intentará instalar primero este binario de la aplicación en el dispositivo adecuado | `dc.setCapability(MobileCapabilityType.APP, "/abs/path/to/my.apk");` |
+| `app` | La ruta local absoluta o la URL http remota a un archivo `.ipa` (IOS), o un archivo `.apk` (Android).  Appium intentará instalar primero este binario de la aplicación en el dispositivo adecuado. `Pro-tip:` esta capacidad  no es necesaria `para Android` si especifica las capacidades `appPackage` y `appActivity` | `dc.setCapability(MobileCapabilityType.APP, "/abs/path/to/my.apk");` |
 | `browserName` | Nombre del navegador web móvil para automatizar. Debería ser una cadena vacía si se automatiza una aplicación en su lugar | `dc.setCapability(MobileCapabilityType.BROWSER_NAME, "Chrome");`|
-| `newCommandTimeout` | Cuánto tiempo (en segundos) Appium esperará un nuevo comando del cliente antes de asumir que el cliente salió y finalizó la sesión ||
-| `language` | Idioma a configurar para iOS (solo controlador `XCUITest`) y Android. ||
-| `locale` | Configuración regional para iOS (solo controlador `XCUITest`) y Android. Formato `fr_CA` para iOS. Formato `CA` (abreviatura del nombre del país) para Android ||
-| `udid` | Identificador de dispositivo único del dispositivo físico conectado ||
-| `orientation` | Orientación del Dispositivo (Solo Simuladores/Emuladores) ||
-| `noReset` | No reestablece el estado de la aplicación antes de iniciar la sesión. En iOS no destruye ni apaga el `sim` después de la prueba. En ANDROID no detiene la aplicación, no borra los datos de la aplicación y no desinstala la aplicación ||
-| `fullReset`| Realiza un reinicio completo, en iOS desinstala la aplicación antes y después de la prueba del dispositivo real, y destruye el simulador antes y después de la prueba de simulación. En Android detiene la aplicación, borra los datos de la aplicación y desistala la aplicación antes de que comience la sesión y después de la prueba ||
+| `newCommandTimeout` | Cuánto tiempo (en segundos) Appium esperará un nuevo comando del cliente antes de asumir que el cliente salió y finalizó la sesión | `dc.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 60);` |
+| `language` | Idioma a configurar para iOS (solo controlador `XCUITest`) y Android. | `dc.setCapability(MobileCapabilityType.LANGUAGE, "en");` |
+| `locale` | Configuración regional para iOS (solo controlador `XCUITest`) y Android. Formato `fr_CA` para iOS. Formato `CA` (abreviatura del nombre del país) para Android (https://developer.android.com/reference/java/util/Locale) | `dc.setCapability(MobileCapabilityType.LOCALE, "en_US");` |
+| `udid` | Identificador de dispositivo único del dispositivo físico conectado | `dc.setCapability(MobileCapabilityType.UDID, "1ae203187fc012g");` |
+| `orientation` | Orientación del Dispositivo (Solo Simuladores/Emuladores) | `dc.setCapability(MobileCapabilityType.ORIENTATION, "PORTRAIT");`|
+| `noReset` | No reestablece el estado de la aplicación antes de iniciar la sesión. En iOS no destruye ni apaga el `sim` después de la prueba. En ANDROID no detiene la aplicación, no borra los datos de la aplicación y no desinstala la aplicación | `dc.setCapability(MobileCapabilityType.NO_RESET, "true");` |
+| `fullReset`| Realiza un reinicio completo, en iOS desinstala la aplicación antes y después de la prueba del dispositivo real, y destruye el simulador antes y después de la prueba de simulación. En Android detiene la aplicación, borra los datos de la aplicación y desistala la aplicación antes de que comience la sesión y después de la prueba | `dc.setCapability(MobileCapabilityType.FULL_RESET, "false");`|
 
 
+Ahora veamos un ejemplo de la configuración en un script de prueba con la mayoria de estas capacidades deseadas:
+
+```Java
+package tests;
+
+import java.net.MalformedURLException;
+import java.net.URL;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
+import io.appium.java_client.android.AndroidDriver;
+import io.appium.java_client.remote.MobileCapabilityType;
+
+
+
+public class Desired_Capabilities {
+	
+	//Inicializamos el AndroidDriver
+	AndroidDriver driver;
+	
+	@BeforeTest
+	public void beforeTest() throws MalformedURLException {
+		
+		//Configuramos los DesiredCapabilities
+		
+		DesiredCapabilities dc = new DesiredCapabilities();
+
+		dc.setCapability(MobileCapabilityType.AUTOMATION_NAME, "uiautomator2");
+		dc.setCapability(MobileCapabilityType.DEVICE_NAME, "emulator-5554");
+		dc.setCapability(MobileCapabilityType.PLATFORM_NAME, "android");
+		dc.setCapability(MobileCapabilityType.PLATFORM_VERSION, "12");
+		dc.setCapability(MobileCapabilityType.BROWSER_NAME, "Chrome");
+		//dc.setCapability(MobileCapabilityType.APP, "/abs/path/to/my.apk"); 
+		dc.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 60);
+		dc.setCapability(MobileCapabilityType.LANGUAGE, "en");
+		dc.setCapability(MobileCapabilityType.LOCALE, "US");
+		//dc.setCapability(MobileCapabilityType.UDID, "1ae203187fc012g");
+		dc.setCapability(MobileCapabilityType.ORIENTATION, "LANDSCAPE");
+		dc.setCapability(MobileCapabilityType.NO_RESET, "true");
+		dc.setCapability(MobileCapabilityType.FULL_RESET, "false");
+
+		//Establecemos la conexion con el server de Appium
+		driver = new AndroidDriver (new URL("http://127.0.0.1:4723/wd/hub"), dc);
+		System.out.println("Application started");
+		driver.get("https://www.bedu.org/");
+	}
+	
+	@Test ()
+	public void test() {
+	}
+	
+	
+	@AfterTest
+	public void afterTest() {
+	}
+
+}
+
+```
+
+<img src="assets/capabilities1.png" width="50%"> 
 
 
 
