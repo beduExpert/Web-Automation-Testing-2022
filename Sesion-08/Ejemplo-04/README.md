@@ -59,3 +59,6 @@ driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widge
 
 ```
 
+
+En conclusion la localización de elementos para mobile es muy parecida a la localizacion en plataformas web, ya que ambas comparten el uso de `Selenium`
+
