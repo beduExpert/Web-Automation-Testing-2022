@@ -131,20 +131,214 @@ driver.executeScript("mobile: scroll", ImmutableMap.of("direction", "down"));
     ```
 
     - __Elementos__:
-    
+
         - `Encontrar elemento`: encuentra el elemento en la pantalla del dispositivo. Es decir, obtiene el primer elemento que coincida con una estrategia de localización
 
         ```Java
         MobileElement elementOne = (MobileElement) driver.findElementByAccessibilityId("SomeAccessibilityID");
         MobileElement elementTwo = (MobileElement) driver.findElementByClassName("SomeClassName");
         ```
- 
+
         - `Encontrar elementos`: encuentra los elementos en la pantalla del dispositivo. Es decir, obtiene los elementos que coincidan con una estrategia de localización.
 
         ```Java
         List<MobileElement> elementsOne = (List<MobileElement>) driver.findElementsByAccessibilityId("SomeAccessibilityID");
         List<MobileElement> elementsTwo = (List<MobileElement>) driver.findElementsByClassName("SomeClassName");
         ```
+    - __Acciones sobre elementos__:
+        - `Click`: hace click sobre un elemento en el dispositivo.
+        ```Java
+        MobileElement el = driver.findElementByAccessibilityId("SomeId");
+        el.click();
+        ```
+
+        - `Enviar claves`: envía una secuencia de pulsaciones de teclas a un elemento.
+
+        ```Java
+        MobileElement element = (MobileElement) driver.findElementByAccessibilityId("SomeAccessibilityID");
+        element.sendKeys("Hello world!");
+        ```
+
+        - `Limpiar elemento`: borra el valor de un elemento.
+
+        ```Java
+        MobileElement element = (MobileElement) driver.findElementByAccessibilityId("SomeAccessibilityID");
+        element.clear();
+        ```
+    - __Atributos de Elementos__: 
+        - `Obtener texto del elemento`: devuelve texto visible para el elemento.
+
+        ```Java
+        MobileElement element = (MobileElement) driver.findElementByClassName("SomeClassName");
+        String elText = element.getText();
+        ```
+
+        - `Elemento seleccionado` : determina si un formulario o elemento similar a un formulario (casilla de verificación, selección, etc.) está seleccionado.
+
+        ```Java
+        MobileElement element = (MobileElement) driver.findElementByAccessibilityId("SomeAccessibilityID");
+        boolean isSelected = element.isSelected();
+        ```
+
+        - `Elemento habilitado`: determina si un elemento está actualmente habilitado.
+
+        ```Java
+        MobileElement element = (MobileElement) driver.findElementByAccessibilityId("SomeAccessibilityID");
+        boolean isEnabled = element.isEnabled();
+        ```
+
+        - `Elemento mostrado`: determina si un elemento se muestra actualmente.
+
+        ```Java
+        MobileElement element = (MobileElement) driver.findElementByAccessibilityId("SomeAccessibilityID");
+        boolean isDisplayed = element.isDisplayed();
+        ````
+
+    - `Enviar formulario`: envía un elemento FORM.
+
+    ```Java
+        MobileElement element = (MobileElement) driver.findElementByClassName("SomeClassName");
+        element.submit();
+    ```
+
+    - `Elementos iguales`: prueba si dos ID de elementos se refieren al mismo elemento.
+
+    ```Java
+    MobileElement elementOne = (MobileElement) driver.findElementByClassName("SomeClassName");
+    MobileElement elementTwo = (MobileElement) driver.findElementByClassName("SomeOtherClassName");
+    boolean isEqual = elementOne.equals(elementTwo);
+    ```
+
+    - __Comandos web__:
+        - `Ir a URL`: navega a una nueva URL (contexto web) o abre un enlace profundo (Deeplink) de Appium (nativo).
+        ```Java
+        driver.get("http://bedu.org");
+        ```
+
+        - `Regresa`: navega hacia atrás en el historial del navegador, si es posible (solo contexto web).
+
+        ```Java
+        
+        driver.navigate().back();
+        ```
+
+        - `Avanzar`: navega hacia adelante en el historial del navegador, si es posible (solo contexto web).
+
+        ```Java
+        driver.navigate().forward();
+        ```
+
+        - `Actualizar`: actualiza la página actual. (Solo contexto web).
+
+        ```Java
+       driver.navigate().refresh();
+        ```
+
+
+`Ejemplo de Comandos con Appium`
+
+```Java
+ package tests;
+
+import java.net.MalformedURLException;
+import java.net.URL;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.ScreenOrientation;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
+import io.appium.java_client.android.AndroidDriver;
+import io.appium.java_client.remote.MobileCapabilityType;
+
+
+public class bedu {
+	
+	//Inicializamos el AndroidDriver
+		AndroidDriver driver;
+		
+		@BeforeTest
+		public void beforeTest() throws MalformedURLException {
+			
+			//Configuramos los DesiredCapabilities		
+			DesiredCapabilities dc = new DesiredCapabilities();
+
+			// DesiredCapabilities Generales
+			dc.setCapability(MobileCapabilityType.AUTOMATION_NAME, "uiautomator2");
+			dc.setCapability(MobileCapabilityType.DEVICE_NAME, "emulator-5554");
+			dc.setCapability(MobileCapabilityType.PLATFORM_NAME, "android");
+			dc.setCapability(MobileCapabilityType.PLATFORM_VERSION, "12");
+			dc.setCapability(MobileCapabilityType.ORIENTATION, "PORTRAIT");
+			dc.setCapability(MobileCapabilityType.BROWSER_NAME, "Chrome");
+			
+			//Establecemos la conexion con el server de Appium
+			driver = new AndroidDriver (new URL("http://127.0.0.1:4723/wd/hub"), dc);
+			System.out.println("Application started");
+			driver.get("https://bedu.org/");
+		}
+		
+		@Test ()
+		public void test() throws InterruptedException {
+			
+			WebElement element = driver.findElement(By.xpath("//button[contains(.,'Agendar Asesoría')]"));
+			
+	      
+	        if(element.isDisplayed()) {
+	        	System.out.println("Pagina: " + driver.getCurrentUrl() + "desplegada correctamente..."); 
+	        	driver.get("https://www.youtube.com/c/BEDU_Org");
+				System.out.println("Accediendo a la pagina: " + driver.getCurrentUrl()); 
+				driver.navigate().back();
+				
+				if(element.isEnabled()) {
+					driver.navigate().forward();
+					System.out.println("Accediendo a la pagina: " + driver.getCurrentUrl());
+					driver.navigate().refresh();
+					driver.navigate().back();
+				}
+	
+	        }
+	        
+			
+	        System.out.println("Accediendo a la pagina: " + driver.getCurrentUrl());
+			element.click();
+			driver.rotate(ScreenOrientation.LANDSCAPE);
+			
+
+		}
+	
+		@AfterTest
+		public void afterTest() throws InterruptedException {
+			Thread.sleep(2000);
+			driver.quit();
+		}
+
+}
+```
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
 
 
 
