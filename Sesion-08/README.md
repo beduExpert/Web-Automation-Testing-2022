@@ -17,7 +17,7 @@
 En la sesión anterior aprendimos que es Appium, cual es su arquitectura y todas las configuraciones necesarias para ejecutar con éxito nuestro primer script de prueba automatizado en dispositivos móviles virtuales bajo la plataforma android. En esta sesión profundizaremos más sobre todas las herramientas que appium nos ofrece para poder interactuar con los dispositivos bien sea físicos o virtuales, veremos como están confirmados los drivers, profundizaremos sobre el objeto desired capabilities, veremos comandos y cómo utilizar los localizadores para finalmente aprender sobre uso de los objetos TouchAction/MultiAction utilizados para la automatización de gestos móviles.
 
 ---
-#### <ins>Tema 1: Automatizaciones Web Móviles con Android </ins> `EN PROCESO`
+#### <ins>Tema 1: Automatizaciones Web Móviles con Android </ins> `PENDIENTE`
 
 En sesiones anteriores hemos realizado automatizaciones de casos de pruebas que son ejecutados en navegadores web, ahora `¿Es posible ejecutar estos mismos casos de prueba en las páginas web pero en los dispositivos móviles?` La respuesta es __SÍ!__ :mechanical_arm:
 
@@ -30,7 +30,7 @@ En este tema veremos cómo es posible ejecutar los scripts de pruebas que ya ten
 - [**`EJEMPLO 1 - Automatizaciones Web Móviles con Android`**](./Ejemplo-01)
 - [**`RETO 1`**](./Reto-01)
 ---
-#### <ins>Tema 2: Desired Capabilities</ins> `PENDIENTE`
+#### <ins>Tema 2: Desired Capabilities</ins> `EN PROCESO`
 
 Como vimos en la sesión anterior las capacidades deseadas son claves y valores codificados en un objeto JSON, enviados por los clientes de Appium al servidor cuando se solicita una nueva sesión de automatización.
 
