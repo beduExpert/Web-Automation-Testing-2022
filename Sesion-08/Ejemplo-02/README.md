@@ -38,11 +38,11 @@ En este tema veremos las capacidades deseadas más utilizadas  `generales (comun
 | Capacidad Deseada | Descripción | Ejemplo de Implementación
 | -------- | -------- |------------- |
 | `automationName` | Qué motor de automatización usar | `dc.setCapability(MobileCapabilityType.AUTOMATION_NAME, "uiautomator2");` |
-| `platformName` | Qué plataforma de sistema operativo móvil usar ||
-| `platformVersion` | Versión del sistema operativo móvil ||
-| `deviceName` | El tipo de `dispositivo móvil` o `emulador` a usar ||
-| `app` | La ruta local absoluta o la URL http remota a un archivo `.ipa` (IOS), o un archivo `.apk` (Android).  Appium intentará instalar primero este binario de la aplicación en el dispositivo adecuado ||
-| `browserName` | Nombre del navegador web móvil para automatizar. Debería ser una cadena vacía si se automatiza una aplicación en su lugar ||
+| `platformName` | Qué plataforma de sistema operativo móvil usar | `dc.setCapability(MobileCapabilityType.PLATFORM_NAME, "android");` |
+| `platformVersion` | Versión del sistema operativo móvil | `dc.setCapability(MobileCapabilityType.PLATFORM_VERSION, "12");` |
+| `deviceName` | El tipo de `dispositivo móvil` o `emulador` a usar (es el que se muestra al ejecuta el comando `adb devices` en la terminal) | `dc.setCapability(MobileCapabilityType.DEVICE_NAME, "emulator-5554");` |
+| `app` | La ruta local absoluta o la URL http remota a un archivo `.ipa` (IOS), o un archivo `.apk` (Android).  Appium intentará instalar primero este binario de la aplicación en el dispositivo adecuado | `dc.setCapability(MobileCapabilityType.APP, "/abs/path/to/my.apk");` |
+| `browserName` | Nombre del navegador web móvil para automatizar. Debería ser una cadena vacía si se automatiza una aplicación en su lugar | `dc.setCapability(MobileCapabilityType.BROWSER_NAME, "Chrome");`|
 | `newCommandTimeout` | Cuánto tiempo (en segundos) Appium esperará un nuevo comando del cliente antes de asumir que el cliente salió y finalizó la sesión ||
 | `language` | Idioma a configurar para iOS (solo controlador `XCUITest`) y Android. ||
 | `locale` | Configuración regional para iOS (solo controlador `XCUITest`) y Android. Formato `fr_CA` para iOS. Formato `CA` (abreviatura del nombre del país) para Android ||
