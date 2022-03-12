@@ -1,4 +1,4 @@
-# Ejemplo # - Nombre del ejemplo
+# Ejemplo-02 # - Desired Capabilities
 
 ## Objetivo
 
