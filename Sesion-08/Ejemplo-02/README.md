@@ -37,7 +37,7 @@ En este tema veremos las capacidades deseadas más utilizadas  `generales (comun
 
 | Capacidad Deseada | Descripción | Ejemplo de Implementación
 | -------- | -------- |------------- |
-| `automationName` | Qué motor de automatización usar | `dCapabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME, "uiautomator2");` |
+| `automationName` | Qué motor de automatización usar | `dc.setCapability(MobileCapabilityType.AUTOMATION_NAME, "uiautomator2");` |
 | `platformName` | Qué plataforma de sistema operativo móvil usar ||
 | `platformVersion` | Versión del sistema operativo móvil ||
 | `deviceName` | El tipo de `dispositivo móvil` o `emulador` a usar ||
