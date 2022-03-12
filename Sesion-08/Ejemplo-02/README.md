@@ -45,7 +45,7 @@ En este tema veremos las capacidades deseadas más utilizadas  `generales (comun
 | `browserName` | Nombre del navegador web móvil para automatizar. Debería ser una cadena vacía si se automatiza una aplicación en su lugar | `dc.setCapability(MobileCapabilityType.BROWSER_NAME, "Chrome");`|
 | `newCommandTimeout` | Cuánto tiempo (en segundos) Appium esperará un nuevo comando del cliente antes de asumir que el cliente salió y finalizó la sesión | `dc.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 60);` |
 | `language` | Idioma a configurar para iOS (solo controlador `XCUITest`) y Android. | `dc.setCapability(MobileCapabilityType.LANGUAGE, "en");` |
-| `locale` | Configuración regional para iOS (solo controlador `XCUITest`) y Android. Formato `fr_CA` para iOS. Formato `CA` (abreviatura del nombre del país) para Android (https://developer.android.com/reference/java/util/Locale) | `dc.setCapability(MobileCapabilityType.LOCALE, "en_US");` |
+| `locale` | Configuración regional para iOS (solo controlador `XCUITest`) y Android. Formato `fr_CA` para iOS. Formato `CA` (abreviatura del nombre del país) para Android (https://developer.android.com/reference/java/util/Locale) | `dc.setCapability(MobileCapabilityType.LOCALE, "US");` |
 | `udid` | Identificador de dispositivo único del dispositivo físico conectado | `dc.setCapability(MobileCapabilityType.UDID, "1ae203187fc012g");` |
 | `orientation` | Orientación del Dispositivo (Solo Simuladores/Emuladores) | `dc.setCapability(MobileCapabilityType.ORIENTATION, "PORTRAIT");`|
 | `noReset` | No reestablece el estado de la aplicación antes de iniciar la sesión. En iOS no destruye ni apaga el `sim` después de la prueba. En ANDROID no detiene la aplicación, no borra los datos de la aplicación y no desinstala la aplicación | `dc.setCapability(MobileCapabilityType.NO_RESET, "true");` |
@@ -113,7 +113,7 @@ public class Desired_Capabilities {
 
 ```
 
-<img src="assets/capabilities1.png" width="50%"> 
+<img src="assets/capabilities1.png" width="80%"> 
 
 
 
