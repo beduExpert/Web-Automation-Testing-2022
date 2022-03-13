@@ -18,7 +18,7 @@ Requisitos previos:
 
 - Asegúrese de que `Chrome esté instalado en su dispositivo o emulador`, puedes descargarlo desde Play Store pero es muy probable que venga instalado con el Sistema Operativo.
 
-<img src="assets/chrome.png" width="20%"> 
+<img src="assets/chrome.png" width="30%"> 
 
 - `Chromedriver estar instalado` (una versión predeterminada viene con Appium) y estar configurada para automatizar la versión específica de `Chrome` disponible en el dispositivo. Este punto es muy importante, ya que al igual que en las automatizaciones web, para los teléfonos móviles debe ser la misma versión chromedriver que la del navegador en el dispositivo para que pueda reconocerlo.
 
