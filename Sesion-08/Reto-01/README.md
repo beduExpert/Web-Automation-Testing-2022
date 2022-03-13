@@ -1,4 +1,4 @@
-# Reto 1 # - Automatizaciones Web Móviles con Android 
+# Reto 1 # - Automatizacion Web con dispositivo virtual de Android (AVD)
 
 ## Objetivo
 
@@ -6,7 +6,7 @@
 
 ## Desarrollo
 
-Desarrolla un script de prueba automatizado  que puedan ser ejecutados en dispositivos móviles con Android por medio de la aplicación del navegador google chrome.
+Desarrolla un script de prueba automatizado  que puedan ser ejecutado en un dispositivo móvil virtual de Android por medio del navegador `google chrome`.
 
 `Pro-tip`: recuerda que pasa las ejecuciones en navegadores web solo es necesario configurar correctamente los `DesiredCapabilities`
 
