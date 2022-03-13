@@ -17,7 +17,7 @@
 En la sesión anterior aprendimos que es Appium, cual es su arquitectura y todas las configuraciones necesarias para ejecutar con éxito nuestro primer script de prueba automatizado en dispositivos móviles virtuales bajo la plataforma android. En esta sesión profundizaremos más sobre todas las herramientas que appium nos ofrece para poder interactuar con los dispositivos bien sea físicos o virtuales, veremos como están confirmados los drivers, profundizaremos sobre el objeto desired capabilities, veremos comandos y cómo utilizar los localizadores para finalmente aprender sobre uso de los objetos TouchAction/MultiAction utilizados para la automatización de gestos móviles.
 
 ---
-#### <ins>Tema 1: Automatizaciones Web Móviles con Android </ins> `EN PROCESO`
+#### <ins>Tema 1: Automatizaciones Web Móviles con Android </ins>
 
 En sesiones anteriores hemos realizado automatizaciones de casos de pruebas que son ejecutados en navegadores web, ahora `¿Es posible ejecutar estos mismos casos de prueba en las páginas web pero en los dispositivos móviles?` La respuesta es __SÍ!__ :mechanical_arm:
 
