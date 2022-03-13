@@ -18,7 +18,7 @@ Requisitos previos:
 
 - Asegúrese de que `Chrome esté instalado en su dispositivo o emulador`, puedes descargarlo desde Play Store pero es muy probable que venga instalado con el Sistema Operativo.
 
-<img src="assets/chrome.png" width="50%"> 
+<img src="assets/chrome.png" width="20%"> 
 
 - `Chromedriver estar instalado` (una versión predeterminada viene con Appium) y estar configurada para automatizar la versión específica de `Chrome` disponible en el dispositivo. Este punto es muy importante, ya que al igual que en las automatizaciones web, para los teléfonos móviles debe ser la misma versión chromedriver que la del navegador en el dispositivo para que pueda reconocerlo.
 
@@ -40,6 +40,7 @@ Luego, se deben utilizar las capacidades deseadas (desired capabilities) como es
 
 ```
 
+El resto del proceso de automatizacion es reutilizable, es decir, se mantiene el script de prueba de la automatización web.
 
 El siguiente script es un ejemplo de pruebas automatizadas sobre la pagina web de bedu desde el navegador de google chrome ejecutado en el dispositivo virtual: 
 
