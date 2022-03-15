@@ -300,12 +300,9 @@ public class bedu {
 	
 	        }
 	        
-			
 	        System.out.println("Accediendo a la pagina: " + driver.getCurrentUrl());
 			element.click();
 			driver.rotate(ScreenOrientation.LANDSCAPE);
-			
-
 		}
 	
 		@AfterTest
@@ -313,7 +310,6 @@ public class bedu {
 			Thread.sleep(2000);
 			driver.quit();
 		}
-
 }
 ```
 
