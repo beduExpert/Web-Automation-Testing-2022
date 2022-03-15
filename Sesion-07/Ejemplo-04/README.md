@@ -2,7 +2,7 @@
 
 ## Objetivo
 
-- Adaptar los scripts de pruebas de automatizaciones Web a script de pruebas que puedan ser ejecutados en plataformas móviles.
+- Modificar los scripts de pruebas de automatizaciones Web a script de pruebas que puedan ser ejecutados en plataformas móviles.
 
 ## Desarrollo
 

@@ -2,8 +2,9 @@
 
 ## :dart: Objetivos
 
-- Inspeccionar con Appium Inspector los nuevos elementos de la pantalla de una funcionalidad de mercado libre para utilizarlos como insumo en los scripts de pruebas automatizados.
-- Adaptar los scripts de pruebas automatizados para ser ejecutado en el navegador google chrome desde un dispositivo virtual de Android (AVD).
+- Utilizar Appium Inspector en los nuevos elementos de la pantalla de una funcionalidad de Mercadolibre para utilizarlos como insumo en los scripts de pruebas automatizados.
+- Modificar los scripts de pruebas automatizados de una funcionalidad de la Mercadolibre para ser ejecutado en la aplicación desde un Dispositivo Virtual de Android (AVD).
+
 
 
 

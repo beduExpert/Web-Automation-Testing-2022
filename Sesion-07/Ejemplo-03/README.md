@@ -2,7 +2,7 @@
 
 ## Objetivo
 
-- Explicar el proceso de instalación de Appium, Emuladores y variables en entornos requeridas paras las pruebas en plataformas moviles.
+- Realizar el proceso de instalación de Appium paras las pruebas en plataformas móviles.
 
 ## Desarrollo
 

@@ -2,7 +2,7 @@
 
 ## Objetivo
 
-- Razonar sobre los conceptos basicos de la herramienta para automatización mobile Appium y su arquitectura.
+- Hacer uso de los conceptos básicos de la herramienta para automatización mobile Appium y su arquitectura.
 
 ## Desarrollo
 

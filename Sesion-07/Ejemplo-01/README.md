@@ -2,7 +2,7 @@
 
 ## Objetivo
 
-- Razonar sobre los conceptos basicos Mobile Automation Testing y como es su implemetación en la actualidad.
+- Analizar el concepto de Mobile Automation Testing y como es su implementación en la actualidad.
 
 ## Desarrollo
 

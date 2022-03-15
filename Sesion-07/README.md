@@ -4,10 +4,10 @@
 
 ### 1. Objetivos :dart: 
 
-- Razonar sobre los conceptos basicos Mobile Automation Testing y como es su implemetación en la actualidad.
-- Razonar sobre herramienta para automatización mobile Appium y su arquitectura.
-- Explicar el proceso de instalación de Appium, Emuladores y variables en entornos requeridas paras las pruebas en plataformas moviles.
-- Adaptar los scripts de pruebas de automatizaciones Web a script de pruebas que puedan ser ejecutados en plataformas móviles.
+- Analizar el concepto de Mobile Automation Testing y como es su implementación en la actualidad.
+- Hacer uso de los conceptos básicos de la herramienta para automatización mobile Appium y su arquitectura.
+- Realizar el proceso de instalación de Appium paras las pruebas en plataformas móviles.
+- Modificar los scripts de pruebas de automatizaciones Web a script de pruebas que puedan ser ejecutados en plataformas móviles.
 
 
 ### 2. Contenido :blue_book:
