@@ -2,7 +2,7 @@
 
 ## Objetivo
 
-- Demostrar el funcionamiento de más propiedades del objeto Desired Capabilities.
+- Demostrar el funcionamiento de más propiedades del objeto Desired Capabilities
 
 ## Desarrollo
 

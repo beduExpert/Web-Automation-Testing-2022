@@ -2,7 +2,7 @@
 
 ## Objetivo
 
-- Explicar como es el uso de los objetos TouchAction/MultiAction utilizados para la automatización de gestos móviles.
+- Utilizar los objetos TouchAction/MultiAction para la automatización de gestos móviles. 
 
 ## Desarrollo
 

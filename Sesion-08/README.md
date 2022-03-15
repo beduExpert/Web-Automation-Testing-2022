@@ -5,11 +5,11 @@
 
 ### 1. Objetivos :dart: 
 
-- Desarrollar scripts de pruebas automatizados que puedan ser ejecutados en dispositivos móviles con Android por medio de la aplicación del navegador google chrome.
-- Demostrar el funcionamiento de más propiedades del objeto Desired Capabilities.
-- Descubrir los comandos mas utilizados de Appium que pueden ser incorporados en los scripts de pruebas automatizados.
+- Desarrollar scripts de pruebas automatizados que puedan ser ejecutados en dispositivos móviles con Android por medio de la aplicación del navegador Google Chrome. 
+- Demostrar el funcionamiento de más propiedades del objeto Desired Capabilities
+- Aplicar los comandos más utilizados de Appium que pueden ser incorporados en los scripts de pruebas automatizados. 
 - Comparar cómo se obtienen los localizadores en plataformas móviles vs los de plataformas web.
-- Explicar como es el uso de los objetos TouchAction/MultiAction utilizados para la automatización de gestos móviles.
+- Utilizar los objetos TouchAction/MultiAction para la automatización de gestos móviles. 
 
 
 ### 2. Contenido :blue_book:

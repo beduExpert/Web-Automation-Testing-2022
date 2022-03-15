@@ -2,7 +2,7 @@
 
 ## Objetivo
 
-- Descubrir los comandos mas utilizados de Appium que pueden ser incorporados en los scripts de pruebas automatizados.
+- Aplicar los comandos más utilizados de Appium que pueden ser incorporados en los scripts de pruebas automatizados. 
 
 ## Desarrollo
 

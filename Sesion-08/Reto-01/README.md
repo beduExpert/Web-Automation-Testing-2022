@@ -2,7 +2,7 @@
 
 ## Objetivo
 
-- Desarrollar un script de pruebas automatizados que pueda ser ejecutado en el dispositivo móvil de Android por medio de la aplicación del navegador google chrome.
+- Desarrollar scripts de pruebas automatizados que puedan ser ejecutados en dispositivos móviles con Android por medio de la aplicación del navegador Google Chrome. 
 
 ## Desarrollo
 
@@ -12,7 +12,7 @@ Desarrollar un script de prueba automatizado  que puedan ser ejecutado en un dis
 
 
 <details>
-  <summary> Ejemplo </summary>
+  <summary> Solución </summary>
 
   ```Java
 package tests;

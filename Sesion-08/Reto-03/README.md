@@ -2,14 +2,14 @@
 
 ## Objetivo
 
-* Impementar comandos de Appium que pueden ser incorporados en los scripts de pruebas automatizados.
+* Aplicar los comandos más utilizados de Appium que pueden ser incorporados en los scripts de pruebas automatizados. 
 
 ## Desarrollo
 
 Desarrolla un script de pruebas que incluya al menos 5 comandos de appium
 
 <details>
-  <summary> Ejemplo </summary>
+  <summary> Solución </summary>
 
   ```Java
 package tests;
