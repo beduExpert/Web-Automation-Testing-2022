@@ -2,7 +2,7 @@
 
 ## Objetivo
 
-* Agregar los objetivos del ejemplo (Mínimo agregar 2 objetivos y Borrar está linea una vez se hay leido)
+* Demostrar el proceso de instalación y configuración de Selenium Grid.
 
 ## Desarrollo
 
