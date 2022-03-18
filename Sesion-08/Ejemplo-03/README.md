@@ -14,7 +14,7 @@ Appium ofrece múltiples comandos para interactuar con los dispositivos móviles
 driver.getStatus();
 ```
 
-- `Ejecutar Script`: Ejecuta una variedad de comandos móviles nativos que no están asociados con un endpoint específico. La sintaxis es `execute("mobile: <commandName>", <argumento JSON serializable>)``
+- `Ejecutar Script`: Ejecuta una variedad de comandos móviles nativos que no están asociados con un endpoint específico. La sintaxis es `execute("mobile: <commandName>", <argumento JSON serializable>)`
 
 ```Java
 driver.executeScript("mobile: scroll", ImmutableMap.of("direction", "down"));

@@ -19,7 +19,7 @@ Los métodos en esta interfaz se dividen en tres categorías:
 - Selección de Elementos Web
 - Ayudas de depuración
 
-Los métodos clave son get(String), que se usa para cargar una nueva página web, y varios métodos similares a findElement(By), que se usa para encontrar WebElements.
+Los métodos clave son `get(String)`, que se usa para cargar una nueva página web, y varios métodos similares a `findElement(By)`, que se usa para encontrar WebElements.
 
 Estos son las propiedades más utilizados de esta clase:
 
@@ -29,9 +29,7 @@ package com.bedu.web_automation_course;
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.AfterTest;
-
 import java.time.Duration;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -46,8 +44,7 @@ public class base {
 				driver = new ChromeDriver();
 				driver.manage().window().maximize();
 				driver.get("https://google.com/");
-				driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-				
+				driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));			
 		  }
 
 		  @Test
@@ -62,9 +59,7 @@ public class base {
 		  public void afterTest() {
 			  	driver.close();
 		  }
-
 }
-
 ```
 
 
@@ -80,9 +75,7 @@ package com.bedu.web_automation_course;
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.AfterTest;
-
 import java.time.Duration;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -100,8 +93,7 @@ public class base {
 				driver = new ChromeDriver();
 				driver.manage().window().maximize();
 				driver.get("https://google.com/");
-				driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-				
+				driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));			
 		  }
 
 		  @Test
@@ -129,5 +121,3 @@ public class base {
 
 }
 ```
-
-

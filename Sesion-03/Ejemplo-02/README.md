@@ -2,10 +2,9 @@
 
 ## Objetivo
 
-* Demostrar el sus usos y ventajas del patrón `Page Object Model (POM)` como patron de automatización de pruebas.
+* Demostrar los usos y ventajas del patrón `Page Object Model (POM)` como patron de automatización de pruebas.
 
 ## Desarrollo
-
 
 Dentro de la interfaz de usuario de una aplicación web, hay áreas con las que interactúan las pruebas. Un `objeto de página (Object Page)` simplemente los modela como objetos dentro del código de prueba. Esto reduce la cantidad de código duplicado y significa que si la interfaz de usuario cambia, la solución solo debe aplicarse en un lugar.
 
