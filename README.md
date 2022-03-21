@@ -1,5 +1,5 @@
 # Web Automation Testing
-<div style="text-align: justify;">
+
 ## :wave: Bienvenid@s
 
 Bienvenidos al modulo de Web Automation Testing!!! donde aprenderemos a construir casos de pruebas automatizadas para aplicaciones WEB utilizando el framework de `Selenium Webdriver`, y aprenderemos un poco sobre el proceso a automatización de pruebas en aplicaciones mobile con Appium.
@@ -42,4 +42,3 @@ Como proyecto desarrollaremos un framework de pruebas automatizadas sobre funcio
 - [`Sesión 06:` Selenium Grid](./Sesion-06)
 - [`Sesión 07:` Appium: Automatización móvil](./Sesion-07)
 - [`Sesión 08:` Appium: Primeros pasos](./Sesion-08)
-</div>
