@@ -56,7 +56,7 @@ En este tema veremos 1 primera forma: `Con la ayuda de la anotación de parámet
 - [**`RETO 1`**](./Reto-01)
 ---
 
-#### <ins>Tema 4: TestNG como proveedor de origen de Datos.</ins> `EN PROCESO`
+#### <ins>Tema 4: TestNG como proveedor de origen de Datos.</ins>
 
 Como se había mencionado el el tema anterior, hay dos formas en las que podemos lograr la parametrización en `TestNG`;
 
