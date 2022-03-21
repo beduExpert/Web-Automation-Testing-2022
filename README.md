@@ -30,6 +30,7 @@ Este modulo tiene como objetivo la automatización de casos de prueba de cualqui
   - Appium
   - Appium Inspector
   - Android Virtual Device (Android Studio)
+  - [Android Virtual Device (Android Studio)](https://developer.android.com/studio)
 
 ## 💻 Proyecto
 
