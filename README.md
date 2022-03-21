@@ -2,7 +2,7 @@
 
 ## :wave: Bienvenid@s
 
-Bienvenidos al modulo de Web Automation Testing!!! donde aprenderemos a construir casos de pruebas automatizadas para aplicaciones WEB utilizando el framework de Selenium Bebdriver, y aprenderemos un poco sobre el proceso a automatización de pruebas en aplicaciones mobile con Appium.
+Bienvenidos al modulo de Web Automation Testing!!! donde aprenderemos a construir casos de pruebas automatizadas para aplicaciones WEB utilizando el framework de `Selenium Webdriver`, y aprenderemos un poco sobre el proceso a automatización de pruebas en aplicaciones mobile con Appium.
 
 ## :dart: Objetivo
 
