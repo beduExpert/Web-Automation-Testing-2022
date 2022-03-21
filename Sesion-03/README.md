@@ -40,7 +40,7 @@ El beneficio es que __si la interfaz de usuario cambia para la página, las prue
 - [**`RETO 1`**](./Reto-01)
 ---
 
-#### <ins>Tema 3: Implementación de POM en Selenium</ins> `EN PROCESO`
+#### <ins>Tema 3: Implementación de POM en Selenium</ins>
 
 En este tema abordaremos con ejercicios practicos como implementar `Page Object Model` en nuestros proyectos de automatización de Pruebas.
 
