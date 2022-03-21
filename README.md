@@ -6,7 +6,7 @@ Bienvenidos al modulo de Web Automation Testing!!! donde aprenderemos a construi
 
 ## :dart: Objetivo
 
-Este modulo tiene como objetivo la automatización de casos de prueba de cualquier aplicación web utilizando Selenium y Java, consumiendo datos desde Bases de datos y empleando Page Object Model (POM) como patrón de diseño, y aplicación básica sobre automatización de aplicaciones móviles con Appium.
+Este modulo tiene como objetivo la automatización de casos de prueba de cualquier aplicación web utilizando `Selenium` y `Java`, consumiendo datos desde `Bases de datos` y empleando `Page Object Model (POM)` como patrón de diseño, y aplicación básica sobre automatización de aplicaciones móviles con `Appium`.
 
 ## :gear: Requerimientos
 
